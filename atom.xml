@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>平凡之路</title>
+  <subtitle>走走停停 生活点滴</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-07-12T06:08:36.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Barry</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/07/10/Hello%20World/"/>
+    <id>http://yoursite.com/2016/07/10/Hello World/</id>
+    <published>2016-07-10T05:11:58.000Z</published>
+    <updated>2016-07-12T06:08:36.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
