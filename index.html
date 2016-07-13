@@ -498,8 +498,9 @@
 
 
 
-%i和
-          ...
+%i和%d的区别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在printf格式串中使用时，二者没有区别。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。
+
+          
 
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/07/13/1/#more" rel="contents">
