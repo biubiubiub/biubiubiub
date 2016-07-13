@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C语言," />
 
 
 
@@ -88,15 +88,172 @@
 
 
 
-<meta name="description" content="走走停停 生活点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="平凡之路">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="转换说明符
+含义
+
+
+
+
+%c
+字符
+
+
+%s
+字符串
+
+
+%d
+有符号十进制整数
+
+
+%i
+有符号十进制整数
+
+
+%o
+八进制整数
+
+
+%x
+十六进制整数
+
+
+%u
+无符号十进制整数
+
+
+%p
+指针
+
+
+%f
+浮点数
+
+
+%e
+浮点数指数形式
+
+
+%g
+浮点数不显示无意义的零
+
+
+
+
+%i和%d的区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&amp;nbs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="转换说明符">
+<meta property="og:url" content="http://yoursite.com/2016/07/13/1/index.html">
 <meta property="og:site_name" content="平凡之路">
-<meta property="og:description" content="走走停停 生活点滴">
+<meta property="og:description" content="转换说明符
+含义
+
+
+
+
+%c
+字符
+
+
+%s
+字符串
+
+
+%d
+有符号十进制整数
+
+
+%i
+有符号十进制整数
+
+
+%o
+八进制整数
+
+
+%x
+十六进制整数
+
+
+%u
+无符号十进制整数
+
+
+%p
+指针
+
+
+%f
+浮点数
+
+
+%e
+浮点数指数形式
+
+
+%g
+浮点数不显示无意义的零
+
+
+
+
+%i和%d的区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&amp;nbs">
+<meta property="og:updated_time" content="2016-07-13T07:53:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="平凡之路">
-<meta name="twitter:description" content="走走停停 生活点滴">
+<meta name="twitter:title" content="转换说明符">
+<meta name="twitter:description" content="转换说明符
+含义
+
+
+
+
+%c
+字符
+
+
+%s
+字符串
+
+
+%d
+有符号十进制整数
+
+
+%i
+有符号十进制整数
+
+
+%o
+八进制整数
+
+
+%x
+十六进制整数
+
+
+%u
+无符号十进制整数
+
+
+%p
+指针
+
+
+%f
+浮点数
+
+
+%e
+浮点数指数形式
+
+
+%g
+浮点数不显示无意义的零
+
+
+
+
+%i和%d的区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&amp;nbs">
 
 
 
@@ -117,9 +274,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/13/1/"/>
 
-  <title> 平凡之路 - 走走停停 生活点滴 </title>
+  <title> 转换说明符 | 平凡之路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -140,9 +297,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +394,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -261,10 +416,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/07/13/1/" itemprop="url">
-                  转换说明符
-                </a>
+                转换说明符
               
             
           </h1>
@@ -323,9 +475,7 @@
       
 
       
-        
-          
-            <table>
+        <table>
 <thead>
 <tr>
 <th>转换说明符</th>
@@ -382,148 +532,59 @@
 <p><br></p>
 <h3 id="i和-d的区别："><a href="#i和-d的区别：" class="headerlink" title="%i和%d的区别："></a>%i和%d的区别：</h3><h5 id="nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。"><a href="#nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。" class="headerlink" title="&nbsp;&nbsp;&nbsp;在printf格式串中使用时，二者没有区别。"></a>&nbsp;&nbsp;&nbsp;在printf格式串中使用时，二者没有区别。</h5><h5 id="nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。"><a href="#nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。" class="headerlink" title="&nbsp;&nbsp;&nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。"></a>&nbsp;&nbsp;&nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。</h5><p><br></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/10/Hello World/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-10T13:11:58+08:00" content="2016-07-10">
-              2016-07-10
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/C语言/" rel="tag">#C语言</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。"><a href="#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。" class="headerlink" title="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。"></a>这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=26196652&auto=1&height=66"></iframe>
-          
-        
-      
-    </div>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/10/Hello World/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -531,6 +592,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -550,8 +615,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -628,6 +702,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#i和-d的区别："><span class="nav-number">1.</span> <span class="nav-text">%i和%d的区别：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。"><span class="nav-number">1.0.1.</span> <span class="nav-text">   在printf格式串中使用时，二者没有区别。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。"><span class="nav-number">1.0.2.</span> <span class="nav-text">   在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -725,6 +810,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
