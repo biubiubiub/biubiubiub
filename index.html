@@ -325,8 +325,14 @@
       
         
           
-            <h3 id="遇到函数的时候换行"><a href="#遇到函数的时候换行" class="headerlink" title="* 遇到函数的时候换行"></a>* 遇到函数的时候换行</h3><h3 id="遇到分号结束语句的时候换行"><a href="#遇到分号结束语句的时候换行" class="headerlink" title="* 遇到分号结束语句的时候换行"></a>* 遇到分号结束语句的时候换行</h3><h3 id="遇到大括号时换行"><a href="#遇到大括号时换行" class="headerlink" title="* 遇到大括号时换行"></a>* 遇到大括号时换行</h3><h3 id="逻辑上完整的一行代码超出视觉处理能力时换行"><a href="#逻辑上完整的一行代码超出视觉处理能力时换行" class="headerlink" title="* 逻辑上完整的一行代码超出视觉处理能力时换行"></a>* 逻辑上完整的一行代码超出视觉处理能力时换行</h3>
+          * 遇到函数的时候换行* 遇到分号结束语句的时候换行* 遇到大括号时换行* 逻辑上完整的一行代码超出视觉处理能力时换行
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/13/2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -437,64 +443,69 @@
       
         
           
-            <table>
-<thead>
-<tr>
-<th>转换说明符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>%c</td>
-<td>字符</td>
-</tr>
-<tr>
-<td>%s</td>
-<td>字符串</td>
-</tr>
-<tr>
-<td>%d</td>
-<td>有符号十进制整数</td>
-</tr>
-<tr>
-<td>%i</td>
-<td>有符号十进制整数</td>
-</tr>
-<tr>
-<td>%o</td>
-<td>八进制整数</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>十六进制整数</td>
-</tr>
-<tr>
-<td>%u</td>
-<td>无符号十进制整数</td>
-</tr>
-<tr>
-<td>%p</td>
-<td>指针</td>
-</tr>
-<tr>
-<td>%f</td>
-<td>浮点数</td>
-</tr>
-<tr>
-<td>%e</td>
-<td>浮点数指数形式</td>
-</tr>
-<tr>
-<td>%g</td>
-<td>浮点数不显示无意义的零</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<h3 id="i和-d的区别："><a href="#i和-d的区别：" class="headerlink" title="%i和%d的区别："></a>%i和%d的区别：</h3><h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在printf格式串中使用时，二者没有区别。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在printf格式串中使用时，二者没有区别。</h5><h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。</h5><p><br></p>
-
           
+
+
+转换说明符
+含义
+
+
+
+
+%c
+字符
+
+
+%s
+字符串
+
+
+%d
+有符号十进制整数
+
+
+%i
+有符号十进制整数
+
+
+%o
+八进制整数
+
+
+%x
+十六进制整数
+
+
+%u
+无符号十进制整数
+
+
+%p
+指针
+
+
+%f
+浮点数
+
+
+%e
+浮点数指数形式
+
+
+%g
+浮点数不显示无意义的零
+
+
+
+
+%i和
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/13/1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -605,8 +616,14 @@
       
         
           
-            <h2 id="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。"><a href="#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。" class="headerlink" title="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。"></a>这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=26196652&auto=0&height=66"></iframe>
+          这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/10/0/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
