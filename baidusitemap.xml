@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/07/14/4/</loc>
+    <lastmod>2016-07-14T04:23:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>逆序的三位数</title>
+        <pubTime>2016-07-14T03:57:23.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/14/3/</loc>
-    <lastmod>2016-07-14T03:55:04.000Z</lastmod>
+    <lastmod>2016-07-14T04:01:51.000Z</lastmod>
     <data>
         <display>
         <title>C语言基础知识——计算</title>

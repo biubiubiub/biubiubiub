@@ -262,6 +262,151 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/14/4/" itemprop="url">
+                  逆序的三位数
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-14T11:57:23+08:00" content="2016-07-14">
+              2016-07-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>程序每次读入一个正三位数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>你的程序每次读到一个3位的正整数。</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>输出逆序的数。</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>163</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>361</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>a、b、c分别是原数的的百位、十位、个位，r、s、t分别是逆序的数的百位、十位、个位,x、y分别是原数和逆序数。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int x,y,a,b,c,r,s,t;
+scanf(&quot;%d&quot;,&amp;x);
+a=x/100;
+b=(x-a*100)/10;
+c=x-a*100-b*10;
+r=c;
+s=b;
+t=a;
+y=r*100+s*10+t;
+printf(&quot;%d\n&quot;,y);
+return 0;
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/14/3/" itemprop="url">
                   C语言基础知识——计算
                 </a>
@@ -333,7 +478,13 @@
 <li>标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。<h2 id="c语言的关键字"><a href="#c语言的关键字" class="headerlink" title="c语言的关键字"></a>c语言的关键字</h2></li>
 <li>auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict<h2 id="变量的初始化"><a href="#变量的初始化" class="headerlink" title="变量的初始化"></a>变量的初始化</h2></li>
 <li>&lt;类型名称&gt; &lt;变量名称&gt; = &lt;初始值&gt;;</li>
-<li>组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。<h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><h2 id="表达式-1"><a href="#表达式-1" class="headerlink" title="表达式"></a>表达式</h2></li>
+<li>组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。<br><br></li>
+</ul>
+</blockquote>
+</blockquote>
+<h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><blockquote>
+<h2 id="表达式定义"><a href="#表达式定义" class="headerlink" title="表达式定义"></a>表达式定义</h2><blockquote>
+<ul>
 <li>一个表达式是一系列运算符和算子的组合,用来计算一个值。<h2 id="运算符和算子"><a href="#运算符和算子" class="headerlink" title="运算符和算子"></a>运算符和算子</h2></li>
 <li>运算符(operator)是指进行运算的动作,比如加法运算符“+”,减法运算符“-”。</li>
 <li>算子(operand)是指参与运算的值,这个值可能是常数,也可能是变量,还可能是一个方法的返回值。<h2 id="递增递减运算符"><a href="#递增递减运算符" class="headerlink" title="递增递减运算符"></a>递增递减运算符</h2></li>
@@ -808,7 +959,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -816,7 +967,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -825,7 +976,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

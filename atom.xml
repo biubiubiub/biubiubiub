@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-14T03:55:04.000Z</updated>
+  <updated>2016-07-14T04:23:18.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>逆序的三位数</title>
+    <link href="http://yoursite.com/2016/07/14/4/"/>
+    <id>http://yoursite.com/2016/07/14/4/</id>
+    <published>2016-07-14T03:57:23.000Z</published>
+    <updated>2016-07-14T04:23:18.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;程序每次读入一个正三位数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你的程序每次读到一个3位的正整数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输出逆序的数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;163&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;361&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;a、b、c分别是原数的的百位、十位、个位，r、s、t分别是逆序的数的百位、十位、个位,x、y分别是原数和逆序数。&lt;/p&gt;
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+int main()
+{
+    int x,y,a,b,c,r,s,t;
+scanf(&amp;quot;%d&amp;quot;,&amp;amp;x);
+a=x/100;
+b=(x-a*100)/10;
+c=x-a*100-b*10;
+r=c;
+s=b;
+t=a;
+y=r*100+s*10+t;
+printf(&amp;quot;%d\n&amp;quot;,y);
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C语言基础知识——计算</title>
     <link href="http://yoursite.com/2016/07/14/3/"/>
     <id>http://yoursite.com/2016/07/14/3/</id>
     <published>2016-07-14T03:18:50.000Z</published>
-    <updated>2016-07-14T03:55:04.000Z</updated>
+    <updated>2016-07-14T04:01:51.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
@@ -30,7 +88,13 @@
 &lt;li&gt;标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。&lt;h2 id=&quot;c语言的关键字&quot;&gt;&lt;a href=&quot;#c语言的关键字&quot; class=&quot;headerlink&quot; title=&quot;c语言的关键字&quot;&gt;&lt;/a&gt;c语言的关键字&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict&lt;h2 id=&quot;变量的初始化&quot;&gt;&lt;a href=&quot;#变量的初始化&quot; class=&quot;headerlink&quot; title=&quot;变量的初始化&quot;&gt;&lt;/a&gt;变量的初始化&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt; = &amp;lt;初始值&amp;gt;;&lt;/li&gt;
-&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;h1 id=&quot;表达式&quot;&gt;&lt;a href=&quot;#表达式&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h1&gt;&lt;h2 id=&quot;表达式-1&quot;&gt;&lt;a href=&quot;#表达式-1&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;表达式&quot;&gt;&lt;a href=&quot;#表达式&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;表达式定义&quot;&gt;&lt;a href=&quot;#表达式定义&quot; class=&quot;headerlink&quot; title=&quot;表达式定义&quot;&gt;&lt;/a&gt;表达式定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;一个表达式是一系列运算符和算子的组合,用来计算一个值。&lt;h2 id=&quot;运算符和算子&quot;&gt;&lt;a href=&quot;#运算符和算子&quot; class=&quot;headerlink&quot; title=&quot;运算符和算子&quot;&gt;&lt;/a&gt;运算符和算子&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;运算符(operator)是指进行运算的动作,比如加法运算符“+”,减法运算符“-”。&lt;/li&gt;
 &lt;li&gt;算子(operand)是指参与运算的值,这个值可能是常数,也可能是变量,还可能是一个方法的返回值。&lt;h2 id=&quot;递增递减运算符&quot;&gt;&lt;a href=&quot;#递增递减运算符&quot; class=&quot;headerlink&quot; title=&quot;递增递减运算符&quot;&gt;&lt;/a&gt;递增递减运算符&lt;/h2&gt;&lt;/li&gt;
