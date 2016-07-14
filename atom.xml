@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-14T16:12:21.000Z</updated>
+  <updated>2016-07-14T16:16:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>C语言基础知识——循环</title>
-    <link href="http://yoursite.com/2016/07/14/7/"/>
-    <id>http://yoursite.com/2016/07/14/7/</id>
+    <link href="http://yoursite.com/2016/07/14/7.1/"/>
+    <id>http://yoursite.com/2016/07/14/7.1/</id>
     <published>2016-07-14T13:16:49.000Z</published>
-    <updated>2016-07-14T16:12:21.000Z</updated>
+    <updated>2016-07-14T16:16:19.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;循环&quot;&gt;&lt;a href=&quot;#循环&quot; class=&quot;headerlink&quot; title=&quot;循环&quot;&gt;&lt;/a&gt;循环&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;while循环&quot;&gt;&lt;a href=&quot;#while循环&quot; class=&quot;headerlink&quot; title=&quot;while循环&quot;&gt;&lt;/a&gt;while循环&lt;/h2&gt;&lt;blockquote&gt;
@@ -64,10 +64,10 @@ while(循环条件)；
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;算平均数&quot;&gt;&lt;a href=&quot;#算平均数&quot; class=&quot;headerlink&quot; title=&quot;算平均数&quot;&gt;&lt;/a&gt;算平均数&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count = &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; number = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; avg;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (number != &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;span class=&quot;comment&quot;&gt;//当输入-1时，程序停止运行&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	sum += number;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	count ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;number);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	avg = sum/count;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,avg);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;数的逆序&quot;&gt;&lt;a href=&quot;#数的逆序&quot; class=&quot;headerlink&quot; title=&quot;数的逆序&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;数的逆序&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;整数的分解&lt;/a&gt;&lt;h2 id=&quot;判断位数&quot;&gt;&lt;a href=&quot;#判断位数&quot; class=&quot;headerlink&quot; title=&quot;判断位数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;判断位数&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;猜数游戏&quot;&gt;&lt;a href=&quot;#猜数游戏&quot; class=&quot;headerlink&quot; title=&quot;猜数游戏&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;猜数游戏&lt;/a&gt;&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;整数的分解&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&quot;判断位数&quot;&gt;&lt;a href=&quot;#判断位数&quot; class=&quot;headerlink&quot; title=&quot;判断位数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;判断位数&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;猜数游戏&quot;&gt;&lt;a href=&quot;#猜数游戏&quot; class=&quot;headerlink&quot; title=&quot;猜数游戏&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;猜数游戏&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
