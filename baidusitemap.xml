@@ -4,8 +4,52 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/07/14/7/</loc>
+    <lastmod>2016-07-14T16:12:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>C语言基础知识——循环</title>
+        <pubTime>2016-07-14T13:16:49.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/14/4/</loc>
+    <lastmod>2016-07-14T15:37:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>逆序的三位数</title>
+        <pubTime>2016-07-14T03:57:23.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/14/6.1/</loc>
-    <lastmod>2016-07-14T10:07:06.000Z</lastmod>
+    <lastmod>2016-07-14T15:31:27.000Z</lastmod>
     <data>
         <display>
         <title>时间换算</title>
@@ -107,28 +151,6 @@
            
              
               <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/07/14/4/</loc>
-    <lastmod>2016-07-14T04:23:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>逆序的三位数</title>
-        <pubTime>2016-07-14T03:57:23.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>题解</tag>
-         
-         
-           
-             
-              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>
