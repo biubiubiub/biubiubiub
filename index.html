@@ -341,13 +341,11 @@
 </blockquote>
 </blockquote>
 <h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
-<p>如果小时小于10，则没有千位部分</p>
-<blockquote>
-<p>三位数表示小时小于10<br>如果小时是0，则没有百位部分<br>两位数表示小时是0且分大于10<br>如果小时不是0而分小于10分，需要保留十位上的0<br>三位数且十位是0，表示小时小于10且分小于10<br>四位数且十位是0，表示小时大于10且分小于10<br>如果小时是0而分小于10分的，则不需要保留十位上的0<br>一位数表示小时是0且分小于10分<br>UTC时间相当于BJT减去8<br>小时减去8</p>
+<p>如果小时小于10，则没有千位部分:三位数表示小时小于10<br>如果小时是0，则没有百位部分:两位数表示小时是0且分大于10<br>如果小时不是0而分小于10分，需要保留十位上的0:三位数且十位是0，表示小时小于10且分小于10;四位数且十位是0，表示小时大于10且分小于10<br>如果小时是0而分小于10分的，则不需要保留十位上的0:一位数表示小时是0且分小于10分<br>UTC时间相当于BJT减去8:小时减去8</p>
 </blockquote>
-</blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>#include <stdio.h></stdio.h></p>
-<pre><code>int main(int argc, const char * argv[])
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code>#include &lt;stdio.h&gt;
+
+int main(int argc, const char * argv[])
 {
     int BJT;
     int UTC;
