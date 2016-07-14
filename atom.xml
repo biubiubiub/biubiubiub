@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-14T04:23:18.000Z</updated>
+  <updated>2016-07-14T08:48:38.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言基础知识——判断</title>
+    <link href="http://yoursite.com/2016/07/14/5/"/>
+    <id>http://yoursite.com/2016/07/14/5/</id>
+    <published>2016-07-14T08:18:11.000Z</published>
+    <updated>2016-07-14T08:48:38.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;判断&quot;&gt;&lt;a href=&quot;#判断&quot; class=&quot;headerlink&quot; title=&quot;判断&quot;&gt;&lt;/a&gt;判断&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;选择结构&quot;&gt;&lt;a href=&quot;#选择结构&quot; class=&quot;headerlink&quot; title=&quot;选择结构&quot;&gt;&lt;/a&gt;选择结构&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;单分支选择结构：要么执行一个操作，要么跳过它，用if语句来实现。&lt;/li&gt;
+&lt;li&gt;双分支选择结构：在两个不同的操作中选择其中的一个来执行，用if-else语句来实现。&lt;/li&gt;
+&lt;li&gt;多分支选择结构：面临两种以上选择（需要连续执行多个条件判断）时，用级连式if语句：else-if。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;if( 表达式1 )
+{
+    语句A
+}
+else if( 表达式2 )
+{
+    语句B
+}
+else if( 表达式3 )
+{
+    语句C
+}
+else
+{
+    语句D
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;嵌套的if&quot;&gt;&lt;a href=&quot;#嵌套的if&quot; class=&quot;headerlink&quot; title=&quot;嵌套的if&quot;&gt;&lt;/a&gt;嵌套的if&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;当if的条件满足或者不满足的时候要执行的语句也可以是一条if或if-else语句，这就是嵌套的if语句。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;if( code == READY)
+    if( count &amp;lt; 20 )
+        printf(&amp;quot;一切正常\n&amp;quot;)；
+    else
+        printf（“继续等待\n”）；
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;else的匹配&quot;&gt;&lt;a href=&quot;#else的匹配&quot; class=&quot;headerlink&quot; title=&quot;else的匹配&quot;&gt;&lt;/a&gt;else的匹配&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;else总是和最近的那个if匹配。&lt;/li&gt;
+&lt;li&gt;缩进格式不能暗 else的匹配。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;分支&quot;&gt;&lt;a href=&quot;#分支&quot; class=&quot;headerlink&quot; title=&quot;分支&quot;&gt;&lt;/a&gt;分支&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;switch-case语句&quot;&gt;&lt;a href=&quot;#switch-case语句&quot; class=&quot;headerlink&quot; title=&quot;switch case语句&quot;&gt;&lt;/a&gt;switch case语句&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;开关语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;switch( 表达式 )
+{
+    case 常量1: 
+               语句序列1；
+               break;
+    case 常量2: 
+               语句序列2；
+               break;
+
+        ......
+
+    default:
+             语句序列n；
+             break;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;判断&quot;&gt;&lt;a href=&quot;#判断&quot; class=&quot;headerlink&quot; title=&quot;判断&quot;&gt;&lt;/a&gt;判断&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;选择结构&quot;&gt;&lt;a href=&quot;#选择结构&quot; class=&quot;headerlink&quot; title=&quot;选择结构
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>逆序的三位数</title>
@@ -78,7 +171,7 @@ return 0;
     <link href="http://yoursite.com/2016/07/14/3/"/>
     <id>http://yoursite.com/2016/07/14/3/</id>
     <published>2016-07-14T03:18:50.000Z</published>
-    <updated>2016-07-14T04:01:51.000Z</updated>
+    <updated>2016-07-14T06:47:16.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
@@ -122,6 +215,8 @@ return 0;
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
   </entry>
   
   <entry>
@@ -129,7 +224,7 @@ return 0;
     <link href="http://yoursite.com/2016/07/13/2/"/>
     <id>http://yoursite.com/2016/07/13/2/</id>
     <published>2016-07-13T12:42:18.000Z</published>
-    <updated>2016-07-13T12:48:51.000Z</updated>
+    <updated>2016-07-14T06:47:07.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;</content>
     
@@ -144,6 +239,8 @@ return 0;
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
   </entry>
   
   <entry>
@@ -151,7 +248,7 @@ return 0;
     <link href="http://yoursite.com/2016/07/13/1/"/>
     <id>http://yoursite.com/2016/07/13/1/</id>
     <published>2016-07-13T07:14:44.000Z</published>
-    <updated>2016-07-13T07:56:19.000Z</updated>
+    <updated>2016-07-14T06:46:52.000Z</updated>
     
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -236,6 +333,8 @@ return 0;
     
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   

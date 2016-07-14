@@ -262,6 +262,186 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/14/5/" itemprop="url">
+                  C语言基础知识——判断
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-14T16:18:11+08:00" content="2016-07-14">
+              2016-07-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h1><blockquote>
+<h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><blockquote>
+<ul>
+<li>单分支选择结构：要么执行一个操作，要么跳过它，用if语句来实现。</li>
+<li>双分支选择结构：在两个不同的操作中选择其中的一个来执行，用if-else语句来实现。</li>
+<li>多分支选择结构：面临两种以上选择（需要连续执行多个条件判断）时，用级连式if语句：else-if。</li>
+</ul>
+</blockquote>
+</blockquote>
+<pre><code>if( 表达式1 )
+{
+    语句A
+}
+else if( 表达式2 )
+{
+    语句B
+}
+else if( 表达式3 )
+{
+    语句C
+}
+else
+{
+    语句D
+}
+</code></pre><blockquote>
+<h2 id="嵌套的if"><a href="#嵌套的if" class="headerlink" title="嵌套的if"></a>嵌套的if</h2><blockquote>
+<ul>
+<li>当if的条件满足或者不满足的时候要执行的语句也可以是一条if或if-else语句，这就是嵌套的if语句。</li>
+</ul>
+</blockquote>
+</blockquote>
+<pre><code>if( code == READY)
+    if( count &lt; 20 )
+        printf(&quot;一切正常\n&quot;)；
+    else
+        printf（“继续等待\n”）；
+</code></pre><blockquote>
+<h2 id="else的匹配"><a href="#else的匹配" class="headerlink" title="else的匹配"></a>else的匹配</h2><blockquote>
+<ul>
+<li>else总是和最近的那个if匹配。</li>
+<li>缩进格式不能暗 else的匹配。</li>
+</ul>
+</blockquote>
+</blockquote>
+<p><br></p>
+<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><blockquote>
+<h2 id="switch-case语句"><a href="#switch-case语句" class="headerlink" title="switch case语句"></a>switch case语句</h2><blockquote>
+<ul>
+<li>开关语句</li>
+</ul>
+</blockquote>
+</blockquote>
+<pre><code>switch( 表达式 )
+{
+    case 常量1: 
+               语句序列1；
+               break;
+    case 常量2: 
+               语句序列2；
+               break;
+
+        ......
+
+    default:
+             语句序列n；
+             break;
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/14/4/" itemprop="url">
                   逆序的三位数
                 </a>
@@ -959,7 +1139,7 @@ return 0;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -976,7 +1156,7 @@ return 0;
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
