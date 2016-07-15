@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/07/14/7.1/</loc>
-    <lastmod>2016-07-15T02:46:52.000Z</lastmod>
+    <lastmod>2016-07-15T03:14:47.000Z</lastmod>
     <data>
         <display>
         <title>C语言基础知识——循环</title>
@@ -19,6 +19,28 @@
            
              
               <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/12/</loc>
+    <lastmod>2016-07-15T03:13:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>判断位数</title>
+        <pubTime>2016-07-15T03:08:39.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>

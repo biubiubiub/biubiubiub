@@ -88,12 +88,15 @@
 
 
 
+<meta name="description" content="才情功力，有时不及真挚要紧">
 <meta property="og:type" content="website">
 <meta property="og:title" content="当做成长">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="才情功力，有时不及真挚要紧">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="当做成长">
+<meta name="twitter:description" content="才情功力，有时不及真挚要紧">
 
 
 
@@ -116,7 +119,7 @@
 
   <link rel="canonical" href="http://yoursite.com/"/>
 
-  <title> 当做成长 -  </title>
+  <title> 当做成长 - 才情功力，有时不及真挚要紧 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -153,7 +156,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">走走停停 生活点滴</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -237,6 +240,137 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/15/12/" itemprop="url">
+                  判断位数
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-15T11:08:39+08:00" content="2016-07-15">
+              2016-07-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>判断一个非负整数的位数</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>输入一个非负整数</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>输出该数的位数</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>12345</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>5</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>考虑到0的情况，用do-while循环</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> n = <span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">do</span></div><div class="line">   	&#123;</div><div class="line">       	n ++ ;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">while</span>(x &gt; <span class="number">0</span>);</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"这个数的位数是%d\n"</span>,n);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -848,7 +982,7 @@ while(循环条件)；
 <h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
 <h2 id="计数循环"><a href="#计数循环" class="headerlink" title="计数循环"></a>计数循环</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> count = <span class="number">100</span>;</div><div class="line">   	<span class="keyword">while</span> ( count &gt; <span class="number">1</span>)</div><div class="line">   	&#123;</div><div class="line">       	count--;</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,count);</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"发射！\n"</span>);</div><div class="line">   <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
 </code></pre><h2 id="算平均数"><a href="#算平均数" class="headerlink" title="算平均数"></a>算平均数</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> count = <span class="number">-1</span>;</div><div class="line">   	<span class="keyword">int</span> number = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> avg;</div><div class="line">   	<span class="keyword">while</span> (number != <span class="number">-1</span>)<span class="comment">//当输入-1时，程序停止运行</span></div><div class="line">   	&#123;</div><div class="line">       	sum += number;</div><div class="line">       	count ++;</div><div class="line">       	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;number);</div><div class="line">   	&#125;</div><div class="line">   	avg = sum/count;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,avg);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="">判断位数</a></h2><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
+</code></pre><h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="http://biubiubiu.site/2016/07/15/12/" target="_blank" rel="external">判断位数</a></h2><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
 <ul>
 <li><a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a></li>
 </ul>
@@ -1485,118 +1619,6 @@ return 0;
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/13/2/" itemprop="url">
-                  代码风格之换行
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-13T20:42:18+08:00" content="2016-07-13">
-              2016-07-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/C语言/" itemprop="url" rel="index">
-                    <span itemprop="name">C语言</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="遇到函数的时候换行"><a href="#遇到函数的时候换行" class="headerlink" title="* 遇到函数的时候换行"></a>* 遇到函数的时候换行</h3><h3 id="遇到分号结束语句的时候换行"><a href="#遇到分号结束语句的时候换行" class="headerlink" title="* 遇到分号结束语句的时候换行"></a>* 遇到分号结束语句的时候换行</h3><h3 id="遇到大括号时换行"><a href="#遇到大括号时换行" class="headerlink" title="* 遇到大括号时换行"></a>* 遇到大括号时换行</h3><h3 id="逻辑上完整的一行代码超出视觉处理能力时换行"><a href="#逻辑上完整的一行代码超出视觉处理能力时换行" class="headerlink" title="* 逻辑上完整的一行代码超出视觉处理能力时换行"></a>* 逻辑上完整的一行代码超出视觉处理能力时换行</h3>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1637,12 +1659,12 @@ return 0;
                src="/uploads/avatar.png"
                alt="Barry" />
           <p class="site-author-name" itemprop="name">Barry</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">才情功力，有时不及真挚要紧</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
