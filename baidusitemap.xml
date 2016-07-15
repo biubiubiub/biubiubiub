@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/15/8.1/</loc>
-    <lastmod>2016-07-15T01:11:22.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/14/7.1/</loc>
+    <lastmod>2016-07-15T01:35:44.000Z</lastmod>
     <data>
         <display>
-        <title>整数的分解</title>
-        <pubTime>2016-07-15T01:00:22.000Z</pubTime>
+        <title>C语言基础知识——循环</title>
+        <pubTime>2016-07-14T13:16:49.000Z</pubTime>
         
         <tag>C语言</tag>
          
@@ -27,26 +27,33 @@
     
   <url>
     <loc>http://yoursite.com/2016/07/15/9/</loc>
-    <lastmod>2016-07-15T01:10:00.000Z</lastmod>
+    <lastmod>2016-07-15T01:34:58.000Z</lastmod>
     <data>
         <display>
-        <title>9</title>
+        <title>数的逆序</title>
         <pubTime>2016-07-15T01:10:00.000Z</pubTime>
         
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
          
            
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/14/7.1/</loc>
-    <lastmod>2016-07-14T16:16:19.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/15/8.1/</loc>
+    <lastmod>2016-07-15T01:11:22.000Z</lastmod>
     <data>
         <display>
-        <title>C语言基础知识——循环</title>
-        <pubTime>2016-07-14T13:16:49.000Z</pubTime>
+        <title>整数的分解</title>
+        <pubTime>2016-07-15T01:00:22.000Z</pubTime>
         
         <tag>C语言</tag>
          

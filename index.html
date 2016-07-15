@@ -263,7 +263,7 @@
               
                 
                 <a class="post-title-link" href="/2016/07/15/9/" itemprop="url">
-                  9
+                  数的逆序
                 </a>
               
             
@@ -281,6 +281,25 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -306,7 +325,26 @@
       
         
           
-            
+            <h1 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a>数的逆序</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>你的程序每次读到一个正整数。</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>输出逆序的数。</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>12345</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>54321</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>用到了<a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a>和<a href="http://biubiubiu.site/2016/07/14/7.1/" target="_blank" rel="external">循环</a>的知识。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,digit,ret=<span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">while</span>( x &gt; <span class="number">0</span> )</div><div class="line">   	&#123;</div><div class="line">       	digit = x % <span class="number">10</span>;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">       	ret = ret * <span class="number">10</span> + digit;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ret);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
           
         
       
@@ -573,9 +611,9 @@ while(循环条件)；
 <h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
 <h2 id="计数循环"><a href="#计数循环" class="headerlink" title="计数循环"></a>计数循环</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> count = <span class="number">100</span>;</div><div class="line">   	<span class="keyword">while</span> ( count &gt; <span class="number">1</span>)</div><div class="line">   	&#123;</div><div class="line">       	count--;</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,count);</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"发射！\n"</span>);</div><div class="line">   <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
 </code></pre><h2 id="算平均数"><a href="#算平均数" class="headerlink" title="算平均数"></a>算平均数</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> count = <span class="number">-1</span>;</div><div class="line">   	<span class="keyword">int</span> number = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> avg;</div><div class="line">   	<span class="keyword">while</span> (number != <span class="number">-1</span>)<span class="comment">//当输入-1时，程序停止运行</span></div><div class="line">   	&#123;</div><div class="line">       	sum += number;</div><div class="line">       	count ++;</div><div class="line">       	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;number);</div><div class="line">   	&#125;</div><div class="line">   	avg = sum/count;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,avg);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="">数的逆序</a></h2><blockquote>
+</code></pre><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
 <ul>
-<li><a href="">整数的分解</a></li>
+<li><a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a></li>
 </ul>
 </blockquote>
 <h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="">判断位数</a></h2><h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a><a href="">猜数游戏</a></h2></blockquote>
