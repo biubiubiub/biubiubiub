@@ -5,11 +5,55 @@
     
   <url>
     <loc>http://yoursite.com/2016/07/14/7.1/</loc>
-    <lastmod>2016-07-15T01:35:44.000Z</lastmod>
+    <lastmod>2016-07-15T02:46:52.000Z</lastmod>
     <data>
         <display>
         <title>C语言基础知识——循环</title>
         <pubTime>2016-07-14T13:16:49.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/10/</loc>
+    <lastmod>2016-07-15T02:45:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>猜数游戏</title>
+        <pubTime>2016-07-15T01:41:00.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/11/</loc>
+    <lastmod>2016-07-15T02:33:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>随机数</title>
+        <pubTime>2016-07-15T02:28:04.000Z</pubTime>
         
         <tag>C语言</tag>
          

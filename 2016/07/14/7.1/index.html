@@ -76,7 +76,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="平凡之路" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
 
 
 
@@ -110,7 +110,7 @@ do-while循环
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言基础知识——循环">
 <meta property="og:url" content="http://yoursite.com/2016/07/14/7.1/index.html">
-<meta property="og:site_name" content="平凡之路">
+<meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="循环
 while循环
 
@@ -132,7 +132,7 @@ do-while循环
 在进入循环的时候不做检查，而是在执行完一轮循环体的代码之后">
 <meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/while.png">
 <meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/do-while.png">
-<meta property="og:updated_time" content="2016-07-15T01:35:44.000Z">
+<meta property="og:updated_time" content="2016-07-15T02:46:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言基础知识——循环">
 <meta name="twitter:description" content="循环
@@ -177,7 +177,7 @@ do-while循环
 
   <link rel="canonical" href="http://yoursite.com/2016/07/14/7.1/"/>
 
-  <title> C语言基础知识——循环 | 平凡之路 </title>
+  <title> C语言基础知识——循环 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -208,11 +208,11 @@ do-while循环
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">平凡之路</span>
+      <span class="site-title">当做成长</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">走走停停 生活点滴</p>
+  <p class="site-subtitle"></p>
 </div>
 
 <div class="site-nav-toggle">
@@ -416,12 +416,17 @@ while(循环条件)；
 <h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
 <h2 id="计数循环"><a href="#计数循环" class="headerlink" title="计数循环"></a>计数循环</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> count = <span class="number">100</span>;</div><div class="line">   	<span class="keyword">while</span> ( count &gt; <span class="number">1</span>)</div><div class="line">   	&#123;</div><div class="line">       	count--;</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,count);</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"发射！\n"</span>);</div><div class="line">   <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
 </code></pre><h2 id="算平均数"><a href="#算平均数" class="headerlink" title="算平均数"></a>算平均数</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> count = <span class="number">-1</span>;</div><div class="line">   	<span class="keyword">int</span> number = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> avg;</div><div class="line">   	<span class="keyword">while</span> (number != <span class="number">-1</span>)<span class="comment">//当输入-1时，程序停止运行</span></div><div class="line">   	&#123;</div><div class="line">       	sum += number;</div><div class="line">       	count ++;</div><div class="line">       	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;number);</div><div class="line">   	&#125;</div><div class="line">   	avg = sum/count;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,avg);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
+</code></pre><h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="">判断位数</a></h2><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
 <ul>
 <li><a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a></li>
 </ul>
 </blockquote>
-<h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="">判断位数</a></h2><h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a><a href="">猜数游戏</a></h2></blockquote>
+<h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a><a href="http://biubiubiu.site/2016/07/15/10/" target="_blank" rel="external">猜数游戏</a></h2><blockquote>
+<ul>
+<li><a href="http://biubiubiu.site/2016/07/15/11/" target="_blank" rel="external">随机数</a></li>
+</ul>
+</blockquote>
+</blockquote>
 
       
     </div>
@@ -528,12 +533,12 @@ while(循环条件)；
                src="/uploads/avatar.png"
                alt="Barry" />
           <p class="site-author-name" itemprop="name">Barry</p>
-          <p class="site-description motion-element" itemprop="description">走走停停 生活点滴</p>
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -606,7 +611,7 @@ while(循环条件)；
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#循环"><span class="nav-number">1.</span> <span class="nav-text">循环</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#while循环"><span class="nav-number">1.1.</span> <span class="nav-text">while循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#do-while循环"><span class="nav-number">1.2.</span> <span class="nav-text">do-while循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两种循环的关系"><span class="nav-number">1.3.</span> <span class="nav-text">两种循环的关系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环应用"><span class="nav-number">2.</span> <span class="nav-text">循环应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计数循环"><span class="nav-number">2.1.</span> <span class="nav-text">计数循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算平均数"><span class="nav-number">2.2.</span> <span class="nav-text">算平均数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数的逆序"><span class="nav-number">2.3.</span> <span class="nav-text">数的逆序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断位数"><span class="nav-number">2.4.</span> <span class="nav-text">判断位数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#猜数游戏"><span class="nav-number">2.5.</span> <span class="nav-text">猜数游戏</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#循环"><span class="nav-number">1.</span> <span class="nav-text">循环</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#while循环"><span class="nav-number">1.1.</span> <span class="nav-text">while循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#do-while循环"><span class="nav-number">1.2.</span> <span class="nav-text">do-while循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两种循环的关系"><span class="nav-number">1.3.</span> <span class="nav-text">两种循环的关系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环应用"><span class="nav-number">2.</span> <span class="nav-text">循环应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计数循环"><span class="nav-number">2.1.</span> <span class="nav-text">计数循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算平均数"><span class="nav-number">2.2.</span> <span class="nav-text">算平均数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断位数"><span class="nav-number">2.3.</span> <span class="nav-text">判断位数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数的逆序"><span class="nav-number">2.4.</span> <span class="nav-text">数的逆序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#猜数游戏"><span class="nav-number">2.5.</span> <span class="nav-text">猜数游戏</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
