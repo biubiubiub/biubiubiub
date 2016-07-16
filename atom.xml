@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-15T03:13:47.000Z</updated>
+  <updated>2016-07-16T10:07:23.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,151 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>素数</title>
+    <link href="http://yoursite.com/2016/07/16/14/"/>
+    <id>http://yoursite.com/2016/07/16/14/</id>
+    <published>2016-07-16T08:14:59.000Z</published>
+    <updated>2016-07-16T10:07:23.000Z</updated>
+    
+    <content type="html">&lt;p&gt;素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….&lt;/p&gt;
+&lt;h1 id=&quot;判断素数&quot;&gt;&lt;a href=&quot;#判断素数&quot; class=&quot;headerlink&quot; title=&quot;判断素数&quot;&gt;&lt;/a&gt;判断素数&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;使用枚举的方法&quot;&gt;&lt;a href=&quot;#使用枚举的方法&quot; class=&quot;headerlink&quot; title=&quot;使用枚举的方法&quot;&gt;&lt;/a&gt;使用枚举的方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;枚举：遍历列举&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; i &amp;lt; x ; i ++ )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;不是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;找出100以内的素数&quot;&gt;&lt;a href=&quot;#找出100以内的素数&quot; class=&quot;headerlink&quot; title=&quot;找出100以内的素数&quot;&gt;&lt;/a&gt;找出100以内的素数&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;用循环的嵌套&quot;&gt;&lt;a href=&quot;#用循环的嵌套&quot; class=&quot;headerlink&quot; title=&quot;用循环的嵌套&quot;&gt;&lt;/a&gt;用循环的嵌套&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; x &amp;lt;= &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; ; x ++ )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//这个初始化要放在这一层循环里&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i =&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; i &amp;lt; x ;i ++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;   &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d &quot;&lt;/span&gt;,x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;找出前50个素数&quot;&gt;&lt;a href=&quot;#找出前50个素数&quot; class=&quot;headerlink&quot; title=&quot;找出前50个素数&quot;&gt;&lt;/a&gt;找出前50个素数&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//用来计数，50个素数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(x=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;count&amp;lt;&lt;span class=&quot;number&quot;&gt;50&lt;/span&gt;;x++)&lt;span class=&quot;comment&quot;&gt;//循环条件可以与x没有关系&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;i&amp;lt;x;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	count++;&lt;span class=&quot;comment&quot;&gt;//不能放在循环外&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\t&quot;&lt;/span&gt;,x);&lt;span class=&quot;comment&quot;&gt;// \t是为了能够整齐地缩进&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(count%&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;span class=&quot;comment&quot;&gt;//这一步是使这些素数每5个排列一行，共10行整齐地显示出来&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….&lt;/p&gt;
+&lt;h1 id=&quot;判断素数&quot;&gt;&lt;a href=&quot;#判断素数&quot; class=&quot;headerlink&quot; title=&quot;判断素数&quot;&gt;&lt;/a&gt;判断素数&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 i
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言基础知识——循环控制</title>
+    <link href="http://yoursite.com/2016/07/16/13/"/>
+    <id>http://yoursite.com/2016/07/16/13/</id>
+    <published>2016-07-16T03:19:06.000Z</published>
+    <updated>2016-07-16T10:07:28.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
+{
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
+&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
+&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;循环次数&quot;&gt;&lt;a href=&quot;#循环次数&quot; class=&quot;headerlink&quot; title=&quot;循环次数&quot;&gt;&lt;/a&gt;循环次数&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;for(i=0;i&amp;lt;n;i++)等价于 for(i=1;i&amp;lt;=n-1;i++)&lt;/li&gt;
+&lt;li&gt;循环次数是n，循环结束以后i的值是n。循环的控制变量i，选择从0开始还是从1开始，是判断i&amp;lt;n还是判断i&amp;lt;=n，    对循环的次数和循环结束后变量的值都有影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Tips-for-loops&quot;&gt;&lt;a href=&quot;#Tips-for-loops&quot; class=&quot;headerlink&quot; title=&quot;Tips for loops&quot;&gt;&lt;/a&gt;Tips for loops&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果有固定次数，用for循环&lt;/li&gt;
+&lt;li&gt;如果必须执行一次，用do-while循环&lt;/li&gt;
+&lt;li&gt;其他情况用while循环&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;循环控制&quot;&gt;&lt;a href=&quot;#循环控制&quot; class=&quot;headerlink&quot; title=&quot;循环控制&quot;&gt;&lt;/a&gt;循环控制&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;break-VS-continue&quot;&gt;&lt;a href=&quot;#break-VS-continue&quot; class=&quot;headerlink&quot; title=&quot;break VS continue&quot;&gt;&lt;/a&gt;break VS continue&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png&quot; alt=&quot;break VS continue&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;break:跳出循环&lt;/li&gt;
+&lt;li&gt;continue:跳过循环的这一轮剩下的语句，进入下一轮&lt;/li&gt;
+&lt;li&gt;break和continue只能对它所在的那层循环做&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;嵌套的循环&quot;&gt;&lt;a href=&quot;#嵌套的循环&quot; class=&quot;headerlink&quot; title=&quot;嵌套的循环&quot;&gt;&lt;/a&gt;嵌套的循环&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;每一层循环的循环控制变量不能相同&lt;/li&gt;
+&lt;li&gt;尽量避免太多和太深的循环嵌套结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/16/14/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数(判断素数、找出100以内的素数、找出前50个素数)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;凑硬币(接力break、使用goto语句)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;循环应用&quot;&gt;&lt;a href=&quot;#循环应用&quot; class=&quot;headerlink&quot; title=&quot;循环应用&quot;&gt;&lt;/a&gt;循环应用&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;二级标题-1&quot;&gt;&lt;a href=&quot;#二级标题-1&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;二级标题-2&quot;&gt;&lt;a href=&quot;#二级标题-2&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;二级标题-3&quot;&gt;&lt;a href=&quot;#二级标题-3&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; tit
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>判断位数</title>
