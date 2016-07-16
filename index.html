@@ -262,6 +262,142 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/16/15/" itemprop="url">
+                  凑硬币
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-16T18:19:14+08:00" content="2016-07-16">
+              2016-07-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>如何用1角、2角和5角的硬币凑出10元以下的金额？</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
+<blockquote>
+<ul>
+<li>使用枚举的方法</li>
+<li>循环的嵌套</li>
+<li>接力break或使用goto语句<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1></li>
+</ul>
+</blockquote>
+<h2 id="接力break-得到一种凑钱方案就停止"><a href="#接力break-得到一种凑钱方案就停止" class="headerlink" title="接力break(得到一种凑钱方案就停止)"></a>接力break(得到一种凑钱方案就停止)</h2><blockquote>
+<p>只在最内层使用break只能使最内层的循环停止，这里是用exit理同<a href="http://biubiubiu.site/2016/07/16/14/" target="_blank" rel="external">素数</a>题</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="keyword">int</span> <span class="built_in">exit</span> = <span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">               		<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="built_in">exit</span> = <span class="number">1</span>;</div><div class="line">                   	<span class="keyword">break</span>;</div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">           	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">               	<span class="keyword">break</span>;</div><div class="line">       	&#125;</div><div class="line">       	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">           	<span class="keyword">break</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h2 id="使用goto语句（得到一种凑钱方案就停止）"><a href="#使用goto语句（得到一种凑钱方案就停止）" class="headerlink" title="使用goto语句（得到一种凑钱方案就停止）"></a>使用goto语句（得到一种凑钱方案就停止）</h2><blockquote>
+<p>goto语句也称为无条件转移语句。<br>因为C语言是结构化的程序设计语言，所以有人认为使用goto破坏了这种语言的结构化的特点。<br>goto语句可能会破坏程序的逻辑性，降低程序的可读性。<br>建议只在跳出多层循环时使用。<br><a href="http://baike.baidu.com/link?url=ZjxM063lAiZEN9gRzFWBO-PiXTTrf2TIazc6TVV2bdP4pbnP7g2hCdpscYVQTv6s27ocfFA8Wi9ASVg_yRN0HK#8" target="_blank" rel="external">goto语句的发展历程</a></p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">                   	<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="keyword">goto</span> out;<span class="comment">//goto的位置是根据情况任意标注的</span></div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">out:</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/16/14/" itemprop="url">
                   素数
                 </a>
@@ -504,7 +640,7 @@
 <h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2><blockquote>
 <ul>
 <li><a href="http://biubiubiu.site/2016/07/16/14/" target="_blank" rel="external">素数(判断素数、找出100以内的素数、找出前50个素数)</a></li>
-<li><a href="">凑硬币(接力break、使用goto语句)</a></li>
+<li><a href="http://biubiubiu.site/2016/07/16/15/" target="_blank" rel="external">凑硬币(接力break、使用goto语句)</a></li>
 </ul>
 </blockquote>
 </blockquote>
@@ -1470,186 +1606,6 @@ while(循环条件)；
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/14/5/" itemprop="url">
-                  C语言基础知识——判断
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-14T16:18:11+08:00" content="2016-07-14">
-              2016-07-14
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/C语言/" itemprop="url" rel="index">
-                    <span itemprop="name">C语言</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h1><blockquote>
-<h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><blockquote>
-<ul>
-<li>单分支选择结构：要么执行一个操作，要么跳过它，用if语句来实现。</li>
-<li>双分支选择结构：在两个不同的操作中选择其中的一个来执行，用if-else语句来实现。</li>
-<li>多分支选择结构：面临两种以上选择（需要连续执行多个条件判断）时，用级连式if语句：else-if。</li>
-</ul>
-</blockquote>
-</blockquote>
-<pre><code>if( 表达式1 )
-{
-    语句A
-}
-else if( 表达式2 )
-{
-    语句B
-}
-else if( 表达式3 )
-{
-    语句C
-}
-else
-{
-    语句D
-}
-</code></pre><blockquote>
-<h2 id="嵌套的if"><a href="#嵌套的if" class="headerlink" title="嵌套的if"></a>嵌套的if</h2><blockquote>
-<ul>
-<li>当if的条件满足或者不满足的时候要执行的语句也可以是一条if或if-else语句，这就是嵌套的if语句。</li>
-</ul>
-</blockquote>
-</blockquote>
-<pre><code>if( code == READY)
-    if( count &lt; 20 )
-        printf(&quot;一切正常\n&quot;)；
-    else
-        printf（“继续等待\n”）；
-</code></pre><blockquote>
-<h2 id="else的匹配"><a href="#else的匹配" class="headerlink" title="else的匹配"></a>else的匹配</h2><blockquote>
-<ul>
-<li>else总是和最近的那个if匹配。</li>
-<li>缩进格式不能暗 else的匹配。</li>
-</ul>
-</blockquote>
-</blockquote>
-<p><br></p>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><blockquote>
-<h2 id="switch-case语句"><a href="#switch-case语句" class="headerlink" title="switch case语句"></a>switch case语句</h2><blockquote>
-<ul>
-<li>开关语句</li>
-</ul>
-</blockquote>
-</blockquote>
-<pre><code>switch( 表达式 )
-{
-    case 常量1: 
-               语句序列1；
-               break;
-    case 常量2: 
-               语句序列2；
-               break;
-
-        ......
-
-    default:
-             语句序列n；
-             break;
-}
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1695,7 +1651,7 @@ else
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
