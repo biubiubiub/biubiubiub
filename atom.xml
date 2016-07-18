@@ -318,20 +318,24 @@
     <link href="http://yoursite.com/2016/07/15/11/"/>
     <id>http://yoursite.com/2016/07/15/11/</id>
     <published>2016-07-15T02:28:04.000Z</published>
-    <updated>2016-07-15T02:33:07.000Z</updated>
+    <updated>2016-07-18T01:20:31.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
 &lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
     
     <summary type="html">
     
       &lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
-&lt;p&gt;将随机得到的整数number%100的结果是[0,
+&lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -451,16 +455,18 @@
     <link href="http://yoursite.com/2016/07/15/8.1/"/>
     <id>http://yoursite.com/2016/07/15/8.1/</id>
     <published>2016-07-15T01:00:22.000Z</published>
-    <updated>2016-07-15T01:11:22.000Z</updated>
+    <updated>2016-07-18T01:20:15.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;a href=&quot;#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot; class=&quot;headerlink&quot; title=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;/a&gt;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;1-对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;a href=&quot;#1-对一个整数做％10的操作，就得到它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;1. 对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;/a&gt;1. 对一个整数做％10的操作，就得到它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;2-对一个整数做-10的操作，就去掉了它的个位数；&quot;&gt;&lt;a href=&quot;#2-对一个整数做-10的操作，就去掉了它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;2. 对一个整数做/10的操作，就去掉了它的个位数；&quot;&gt;&lt;/a&gt;2. 对一个整数做/10的操作，就去掉了它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;a href=&quot;#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot; class=&quot;headerlink&quot; title=&quot;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;/a&gt;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&lt;/h2&gt;&lt;h2 id=&quot;4-依此类推。&quot;&gt;&lt;a href=&quot;#4-依此类推。&quot; class=&quot;headerlink&quot; title=&quot;4. 依此类推。&quot;&gt;&lt;/a&gt;4. 依此类推。&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;a href=&quot;#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot; class=&quot;headerlink&quot; title=&quot;一个整数是由一个至多个数
+      &lt;h1 id=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;a href=&quot;#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot; class=&quot;headerlink&quot; title=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;/a&gt;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;1-对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;a href=&quot;#1-对一个整数做％10的操作，就得到它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;1. 对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;/a&gt;1. 对一个整数做％10的操作，就得到它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;2-对一个整数做-10的操作，就去掉了它的个位数；&quot;&gt;&lt;a href=&quot;#2-对一个整数做-10的操作，就去掉了它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;2. 对一个整数做/10的操作，就去掉了它的个位数；&quot;&gt;&lt;/a&gt;2. 对一个整数做/10的操作，就去掉了它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;a href=&quot;#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot; class=&quot;headerlink&quot; title=&quot;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;/a&gt;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&lt;/h2&gt;&lt;h2 id=&quot;4-依此类推。&quot;&gt;&lt;a href=&quot;#4-依此类推。&quot; class=&quot;headerlink&quot; title=&quot;4. 依此类推。&quot;&gt;&lt;/a&gt;4. 依此类推。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
     
     </summary>
     
@@ -880,13 +886,13 @@ return 0;
     <link href="http://yoursite.com/2016/07/13/2/"/>
     <id>http://yoursite.com/2016/07/13/2/</id>
     <published>2016-07-13T12:42:18.000Z</published>
-    <updated>2016-07-14T06:47:07.000Z</updated>
+    <updated>2016-07-18T01:19:44.000Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;</content>
+    <content type="html">&lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句
+      &lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;
     
     </summary>
     
@@ -1039,13 +1045,14 @@ return 0;
     <link href="http://yoursite.com/2016/07/10/0/"/>
     <id>http://yoursite.com/2016/07/10/0/</id>
     <published>2016-07-10T05:11:58.000Z</published>
-    <updated>2016-07-13T13:13:54.000Z</updated>
+    <updated>2016-07-18T01:19:33.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</content>
+    <content type="html">&lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学
+      &lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;br&gt;
     
     </summary>
     

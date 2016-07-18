@@ -841,14 +841,17 @@
 
       
         
-          
-            <h1 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h1><blockquote>
+          <h1 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h1><blockquote>
 <p>每次召唤rand()就得到一个随机的整数</p>
 <p>将随机得到的整数number%100的结果是[0,99]的一个整数</p>
 </blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	srand(time(<span class="number">0</span>));<span class="comment">//为了使随机数更像是随机数，现在不理解</span></div><div class="line">   	<span class="keyword">int</span> a = rand();</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a%<span class="number">100</span>);<span class="comment">//a%100得到的是[0,99]的整数</span></div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></div><div class="line"></span>&#123;</div><div class="line">   	srand(time(<span class="number">0</span>));<span class="comment">//为了使随机数更像是随机数，现在不理解</span></div><div class="line">   	<span class="keyword">int</span> a = rand();</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a%<span class="number">100</span>);<span class="comment">//a%100得到的是[0,99]的整数</span></div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/11/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1210,12 +1213,14 @@
 
       
         
-          
-            <h1 id="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"><a href="#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？" class="headerlink" title="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"></a>一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？</h1><blockquote>
+          <h1 id="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"><a href="#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？" class="headerlink" title="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"></a>一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？</h1><blockquote>
 <h2 id="1-对一个整数做％10的操作，就得到它的个位数；"><a href="#1-对一个整数做％10的操作，就得到它的个位数；" class="headerlink" title="1. 对一个整数做％10的操作，就得到它的个位数；"></a>1. 对一个整数做％10的操作，就得到它的个位数；</h2><h2 id="2-对一个整数做-10的操作，就去掉了它的个位数；"><a href="#2-对一个整数做-10的操作，就去掉了它的个位数；" class="headerlink" title="2. 对一个整数做/10的操作，就去掉了它的个位数；"></a>2. 对一个整数做/10的操作，就去掉了它的个位数；</h2><h2 id="3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；"><a href="#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；" class="headerlink" title="3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；"></a>3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；</h2><h2 id="4-依此类推。"><a href="#4-依此类推。" class="headerlink" title="4. 依此类推。"></a>4. 依此类推。</h2></blockquote>
-<p><br></p>
-
-          
+<p><br><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/8.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
