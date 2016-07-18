@@ -102,11 +102,7 @@ Sample Input
 12345
 
 Sample Output
-54321
-
-
-题解用到了整数的分解和循环的知识。
-代码1234567891011121">
+54321">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数的逆序">
 <meta property="og:url" content="http://yoursite.com/2016/07/15/9/index.html">
@@ -125,12 +121,8 @@ Sample Input
 12345
 
 Sample Output
-54321
-
-
-题解用到了整数的分解和循环的知识。
-代码1234567891011121">
-<meta property="og:updated_time" content="2016-07-15T01:34:58.000Z">
+54321">
+<meta property="og:updated_time" content="2016-07-18T01:12:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数的逆序">
 <meta name="twitter:description" content="数的逆序
@@ -147,11 +139,7 @@ Sample Input
 12345
 
 Sample Output
-54321
-
-
-题解用到了整数的分解和循环的知识。
-代码1234567891011121">
+54321">
 
 
 
@@ -390,6 +378,7 @@ Sample Output
 <p>54321</p>
 </blockquote>
 </blockquote>
+<a id="more"></a>
 <h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>用到了<a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a>和<a href="http://biubiubiu.site/2016/07/14/7.1/" target="_blank" rel="external">循环</a>的知识。</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,digit,ret=<span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">while</span>( x &gt; <span class="number">0</span> )</div><div class="line">   	&#123;</div><div class="line">       	digit = x % <span class="number">10</span>;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">       	ret = ret * <span class="number">10</span> + digit;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ret);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>

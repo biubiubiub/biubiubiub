@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-16T14:02:00.000Z</updated>
+  <updated>2016-07-18T01:14:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/07/16/15.1/"/>
     <id>http://yoursite.com/2016/07/16/15.1/</id>
     <published>2016-07-16T10:19:14.000Z</published>
-    <updated>2016-07-16T14:02:00.000Z</updated>
+    <updated>2016-07-18T01:14:46.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -36,6 +36,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;接力break-得到一种凑钱方案就停止&quot;&gt;&lt;a href=&quot;#接力break-得到一种凑钱方案就停止&quot; class=&quot;headerlink&quot; title=&quot;接力break(得到一种凑钱方案就停止)&quot;&gt;&lt;/a&gt;接力break(得到一种凑钱方案就停止)&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;只在最内层使用break只能使最内层的循环停止，这里是用exit理同&lt;a href=&quot;http://biubiubiu.site/2016/07/16/14/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数&lt;/a&gt;题&lt;/p&gt;
@@ -53,7 +54,19 @@
     <summary type="html">
     
       &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如何用1角、2角和5角的硬币凑出10元以下的金额？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;使用枚举的方法&lt;/li&gt;
+&lt;li&gt;循环的嵌套&lt;/li&gt;
+&lt;li&gt;接力break或使用goto语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -71,7 +84,7 @@
     <link href="http://yoursite.com/2016/07/16/14/"/>
     <id>http://yoursite.com/2016/07/16/14/</id>
     <published>2016-07-16T08:14:59.000Z</published>
-    <updated>2016-07-16T10:07:23.000Z</updated>
+    <updated>2016-07-18T01:14:13.000Z</updated>
     
     <content type="html">&lt;p&gt;素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….&lt;/p&gt;
 &lt;h1 id=&quot;判断素数&quot;&gt;&lt;a href=&quot;#判断素数&quot; class=&quot;headerlink&quot; title=&quot;判断素数&quot;&gt;&lt;/a&gt;判断素数&lt;/h1&gt;&lt;blockquote&gt;
@@ -83,6 +96,7 @@
 &lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; i &amp;lt; x ; i ++ )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;不是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;找出100以内的素数&quot;&gt;&lt;a href=&quot;#找出100以内的素数&quot; class=&quot;headerlink&quot; title=&quot;找出100以内的素数&quot;&gt;&lt;/a&gt;找出100以内的素数&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;用循环的嵌套&quot;&gt;&lt;a href=&quot;#用循环的嵌套&quot; class=&quot;headerlink&quot; title=&quot;用循环的嵌套&quot;&gt;&lt;/a&gt;用循环的嵌套&lt;/h2&gt;&lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; x &amp;lt;= &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; ; x ++ )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//这个初始化要放在这一层循环里&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i =&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; i &amp;lt; x ;i ++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;   &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d &quot;&lt;/span&gt;,x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -94,7 +108,14 @@
     
       &lt;p&gt;素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….&lt;/p&gt;
 &lt;h1 id=&quot;判断素数&quot;&gt;&lt;a href=&quot;#判断素数&quot; class=&quot;headerlink&quot; title=&quot;判断素数&quot;&gt;&lt;/a&gt;判断素数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 i
+&lt;h2 id=&quot;使用枚举的方法&quot;&gt;&lt;a href=&quot;#使用枚举的方法&quot; class=&quot;headerlink&quot; title=&quot;使用枚举的方法&quot;&gt;&lt;/a&gt;使用枚举的方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;枚举：遍历列举&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prime = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;( &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ; i &amp;lt; x ; i ++ )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(x%i == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	prime = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;不是素数\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -112,7 +133,7 @@
     <link href="http://yoursite.com/2016/07/16/13.1/"/>
     <id>http://yoursite.com/2016/07/16/13.1/</id>
     <published>2016-07-16T03:19:06.000Z</published>
-    <updated>2016-07-16T14:06:17.000Z</updated>
+    <updated>2016-07-18T01:13:52.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
@@ -133,6 +154,9 @@
 &lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
 &lt;h2 id=&quot;循环次数&quot;&gt;&lt;a href=&quot;#循环次数&quot; class=&quot;headerlink&quot; title=&quot;循环次数&quot;&gt;&lt;/a&gt;循环次数&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;for(i=0;i&amp;lt;n;i++)等价于 for(i=1;i&amp;lt;=n-1;i++)&lt;/li&gt;
@@ -198,7 +222,25 @@
     <summary type="html">
     
       &lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; tit
+&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
+{
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
+&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
+&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -216,7 +258,7 @@
     <link href="http://yoursite.com/2016/07/15/12/"/>
     <id>http://yoursite.com/2016/07/15/12/</id>
     <published>2016-07-15T03:08:39.000Z</published>
-    <updated>2016-07-15T03:13:47.000Z</updated>
+    <updated>2016-07-18T01:13:19.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -235,6 +277,7 @@
 &lt;p&gt;5&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;考虑到0的情况，用do-while循环&lt;/p&gt;
 &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	n ++ ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	x = x / &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(x &amp;gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;这个数的位数是%d\n&quot;&lt;/span&gt;,n);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;</content>
@@ -242,7 +285,22 @@
     <summary type="html">
     
       &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;判断一个非负整数的位数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输入一个非负整数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输出该数的位数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;12345&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;5&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -291,7 +349,7 @@
     <link href="http://yoursite.com/2016/07/15/10/"/>
     <id>http://yoursite.com/2016/07/15/10/</id>
     <published>2016-07-15T01:41:00.000Z</published>
-    <updated>2016-07-15T02:45:20.000Z</updated>
+    <updated>2016-07-18T01:12:57.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -299,7 +357,8 @@
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;a href=&quot;#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot; class=&quot;headerlink&quot; title=&quot;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;/a&gt;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&lt;/h2&gt;&lt;h2 id=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;a href=&quot;#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot; class=&quot;headerlink&quot; title=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;/a&gt;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&lt;/h2&gt;&lt;h2 id=&quot;1-计算机随机想一个数，记在变量number里&quot;&gt;&lt;a href=&quot;#1-计算机随机想一个数，记在变量number里&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机随机想一个数，记在变量number里&quot;&gt;&lt;/a&gt;1. 计算机随机想一个数，记在变量number里&lt;/h2&gt;&lt;h2 id=&quot;2-一个负责记次数的变量count初始化为0&quot;&gt;&lt;a href=&quot;#2-一个负责记次数的变量count初始化为0&quot; class=&quot;headerlink&quot; title=&quot;2. 一个负责记次数的变量count初始化为0&quot;&gt;&lt;/a&gt;2. 一个负责记次数的变量count初始化为0&lt;/h2&gt;&lt;h2 id=&quot;3-让用户输入一个数字x&quot;&gt;&lt;a href=&quot;#3-让用户输入一个数字x&quot; class=&quot;headerlink&quot; title=&quot;3. 让用户输入一个数字x&quot;&gt;&lt;/a&gt;3. 让用户输入一个数字x&lt;/h2&gt;&lt;h2 id=&quot;4-count加一&quot;&gt;&lt;a href=&quot;#4-count加一&quot; class=&quot;headerlink&quot; title=&quot;4. count加一&quot;&gt;&lt;/a&gt;4. count加一&lt;/h2&gt;&lt;h2 id=&quot;5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot;&gt;&lt;a href=&quot;#5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot; class=&quot;headerlink&quot; title=&quot;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&quot;&gt;&lt;/a&gt;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&lt;/h2&gt;&lt;h2 id=&quot;6-如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;a href=&quot;#6-如果a和number是不相等的，程序转回到第三步&quot; class=&quot;headerlink&quot; title=&quot;6. 如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;/a&gt;6. 如果a和number是不相等的，程序转回到第三步&lt;/h2&gt;&lt;h2 id=&quot;7-否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;a href=&quot;#7-否则，程序输出“猜中”和所用次数，然后结束&quot; class=&quot;headerlink&quot; title=&quot;7. 否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;/a&gt;7. 否则，程序输出“猜中”和所用次数，然后结束&lt;/h2&gt;&lt;h2 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/11/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;随机数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;a href=&quot;#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot; class=&quot;headerlink&quot; title=&quot;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;/a&gt;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&lt;/h2&gt;&lt;h2 id=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;a href=&quot;#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot; class=&quot;headerlink&quot; title=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;/a&gt;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;1-计算机随机想一个数，记在变量number里&quot;&gt;&lt;a href=&quot;#1-计算机随机想一个数，记在变量number里&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机随机想一个数，记在变量number里&quot;&gt;&lt;/a&gt;1. 计算机随机想一个数，记在变量number里&lt;/h2&gt;&lt;h2 id=&quot;2-一个负责记次数的变量count初始化为0&quot;&gt;&lt;a href=&quot;#2-一个负责记次数的变量count初始化为0&quot; class=&quot;headerlink&quot; title=&quot;2. 一个负责记次数的变量count初始化为0&quot;&gt;&lt;/a&gt;2. 一个负责记次数的变量count初始化为0&lt;/h2&gt;&lt;h2 id=&quot;3-让用户输入一个数字x&quot;&gt;&lt;a href=&quot;#3-让用户输入一个数字x&quot; class=&quot;headerlink&quot; title=&quot;3. 让用户输入一个数字x&quot;&gt;&lt;/a&gt;3. 让用户输入一个数字x&lt;/h2&gt;&lt;h2 id=&quot;4-count加一&quot;&gt;&lt;a href=&quot;#4-count加一&quot; class=&quot;headerlink&quot; title=&quot;4. count加一&quot;&gt;&lt;/a&gt;4. count加一&lt;/h2&gt;&lt;h2 id=&quot;5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot;&gt;&lt;a href=&quot;#5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot; class=&quot;headerlink&quot; title=&quot;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&quot;&gt;&lt;/a&gt;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&lt;/h2&gt;&lt;h2 id=&quot;6-如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;a href=&quot;#6-如果a和number是不相等的，程序转回到第三步&quot; class=&quot;headerlink&quot; title=&quot;6. 如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;/a&gt;6. 如果a和number是不相等的，程序转回到第三步&lt;/h2&gt;&lt;h2 id=&quot;7-否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;a href=&quot;#7-否则，程序输出“猜中”和所用次数，然后结束&quot; class=&quot;headerlink&quot; title=&quot;7. 否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;/a&gt;7. 否则，程序输出“猜中”和所用次数，然后结束&lt;/h2&gt;&lt;h2 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/11/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;随机数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;br&gt;将随机得到的整数number%100的结果是［0,99］的一个整数&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
@@ -309,7 +368,12 @@
     <summary type="html">
     
       &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;让计算机来想一个数,然后让用户来猜,用户每输一个数,就告诉它是大了还是小了,直到用户猜中为止,最后还要告诉用户它猜了多少次。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;a href=&quot;#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot; class=&quot;headerlink&quot; title=&quot;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;/a&gt;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&lt;/h2&gt;&lt;h2 id=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;a href=&quot;#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot; class=&quot;headerlink&quot; title=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;/a&gt;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&lt;/h2&gt;
     
     </summary>
     
@@ -327,7 +391,7 @@
     <link href="http://yoursite.com/2016/07/15/9/"/>
     <id>http://yoursite.com/2016/07/15/9/</id>
     <published>2016-07-15T01:10:00.000Z</published>
-    <updated>2016-07-15T01:34:58.000Z</updated>
+    <updated>2016-07-18T01:12:29.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;数的逆序&quot;&gt;&lt;a href=&quot;#数的逆序&quot; class=&quot;headerlink&quot; title=&quot;数的逆序&quot;&gt;&lt;/a&gt;数的逆序&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -346,6 +410,7 @@
 &lt;p&gt;54321&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;用到了&lt;a href=&quot;http://biubiubiu.site/2016/07/15/8.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;整数的分解&lt;/a&gt;和&lt;a href=&quot;http://biubiubiu.site/2016/07/14/7.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;循环&lt;/a&gt;的知识。&lt;/p&gt;
 &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x,digit,ret=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( x &amp;gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	digit = x % &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	x = x / &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	ret = ret * &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt; + digit;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,ret);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;</content>
@@ -353,7 +418,22 @@
     <summary type="html">
     
       &lt;h1 id=&quot;数的逆序&quot;&gt;&lt;a href=&quot;#数的逆序&quot; class=&quot;headerlink&quot; title=&quot;数的逆序&quot;&gt;&lt;/a&gt;数的逆序&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;h
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你的程序每次读到一个正整数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输出逆序的数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;12345&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;54321&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -398,7 +478,7 @@
     <link href="http://yoursite.com/2016/07/14/7.1/"/>
     <id>http://yoursite.com/2016/07/14/7.1/</id>
     <published>2016-07-14T13:16:49.000Z</published>
-    <updated>2016-07-15T03:14:47.000Z</updated>
+    <updated>2016-07-18T01:12:04.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;循环&quot;&gt;&lt;a href=&quot;#循环&quot; class=&quot;headerlink&quot; title=&quot;循环&quot;&gt;&lt;/a&gt;循环&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;while循环&quot;&gt;&lt;a href=&quot;#while循环&quot; class=&quot;headerlink&quot; title=&quot;while循环&quot;&gt;&lt;/a&gt;while循环&lt;/h2&gt;&lt;blockquote&gt;
@@ -415,6 +495,7 @@
     循环体语句
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/while.png&quot; alt=&quot;while&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&quot;do-while循环&quot;&gt;&lt;a href=&quot;#do-while循环&quot; class=&quot;headerlink&quot; title=&quot;do-while循环&quot;&gt;&lt;/a&gt;do-while循环&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
@@ -456,7 +537,20 @@ while(循环条件)；
     <summary type="html">
     
       &lt;h1 id=&quot;循环&quot;&gt;&lt;a href=&quot;#循环&quot; class=&quot;headerlink&quot; title=&quot;循环&quot;&gt;&lt;/a&gt;循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;while循环&quot;&gt;&lt;a href=&quot;#while循环&quot; class=&quot;headerlink&quot; title
+&lt;h2 id=&quot;while循环&quot;&gt;&lt;a href=&quot;#while循环&quot; class=&quot;headerlink&quot; title=&quot;while循环&quot;&gt;&lt;/a&gt;while循环&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果我们把while翻译作“当”,那么一个while循环的意思就是:当条件满足时,不断地重复循环体内的语句。&lt;/li&gt;
+&lt;li&gt;循环执行之前判断是否继续循环，所以有可能循环一次也没有被执行。&lt;/li&gt;
+&lt;li&gt;条件成立是循环继续的条件。&lt;/li&gt;
+&lt;li&gt;循环体内要有改变条件的机会。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;while(循环条件)
+{
+    循环体语句
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/while.png&quot; alt=&quot;while&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -474,12 +568,17 @@ while(循环条件)；
     <link href="http://yoursite.com/2016/07/14/6.1/"/>
     <id>http://yoursite.com/2016/07/14/6.1/</id>
     <published>2016-07-14T08:56:06.000Z</published>
-    <updated>2016-07-14T15:31:27.000Z</updated>
+    <updated>2016-07-18T01:11:35.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示9点5分，36表示0点36分，7表示0点7分。&lt;br&gt;有效的输入范围是0到2359，即你的程序不可能从测试服务器读到0到2359以外的输入数据。&lt;br&gt;你的程序要输出这个时间对应的UTC时间，输出的格式和输入的相同，即输出一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。&lt;br&gt;提醒：要小心跨日的换算。&lt;/p&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;p&gt;一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。&lt;/p&gt;
@@ -500,7 +599,10 @@ while(循环条件)；
     <summary type="html">
     
       &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示9点5分，36表示0点36分，7表示0点7分。&lt;br&gt;有效的输入范围是0到2359，即你的程序不可能从测试服务器读到0到2359以外的输入数据。&lt;br&gt;你的程序要输出这个时间对应的UTC时间，输出的格式和输入的相同，即输出一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。&lt;br&gt;提醒：要小心跨日的换算。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -518,7 +620,7 @@ while(循环条件)；
     <link href="http://yoursite.com/2016/07/14/5/"/>
     <id>http://yoursite.com/2016/07/14/5/</id>
     <published>2016-07-14T08:18:11.000Z</published>
-    <updated>2016-07-14T08:48:38.000Z</updated>
+    <updated>2016-07-18T01:10:45.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;判断&quot;&gt;&lt;a href=&quot;#判断&quot; class=&quot;headerlink&quot; title=&quot;判断&quot;&gt;&lt;/a&gt;判断&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;选择结构&quot;&gt;&lt;a href=&quot;#选择结构&quot; class=&quot;headerlink&quot; title=&quot;选择结构&quot;&gt;&lt;/a&gt;选择结构&lt;/h2&gt;&lt;blockquote&gt;
@@ -545,7 +647,8 @@ else
 {
     语句D
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
 &lt;h2 id=&quot;嵌套的if&quot;&gt;&lt;a href=&quot;#嵌套的if&quot; class=&quot;headerlink&quot; title=&quot;嵌套的if&quot;&gt;&lt;/a&gt;嵌套的if&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;当if的条件满足或者不满足的时候要执行的语句也可以是一条if或if-else语句，这就是嵌套的if语句。&lt;/li&gt;
@@ -593,7 +696,31 @@ else
     <summary type="html">
     
       &lt;h1 id=&quot;判断&quot;&gt;&lt;a href=&quot;#判断&quot; class=&quot;headerlink&quot; title=&quot;判断&quot;&gt;&lt;/a&gt;判断&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;选择结构&quot;&gt;&lt;a href=&quot;#选择结构&quot; class=&quot;headerlink&quot; title=&quot;选择结构
+&lt;h2 id=&quot;选择结构&quot;&gt;&lt;a href=&quot;#选择结构&quot; class=&quot;headerlink&quot; title=&quot;选择结构&quot;&gt;&lt;/a&gt;选择结构&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;单分支选择结构：要么执行一个操作，要么跳过它，用if语句来实现。&lt;/li&gt;
+&lt;li&gt;双分支选择结构：在两个不同的操作中选择其中的一个来执行，用if-else语句来实现。&lt;/li&gt;
+&lt;li&gt;多分支选择结构：面临两种以上选择（需要连续执行多个条件判断）时，用级连式if语句：else-if。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;if( 表达式1 )
+{
+    语句A
+}
+else if( 表达式2 )
+{
+    语句B
+}
+else if( 表达式3 )
+{
+    语句C
+}
+else
+{
+    语句D
+}
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -611,7 +738,7 @@ else
     <link href="http://yoursite.com/2016/07/14/4/"/>
     <id>http://yoursite.com/2016/07/14/4/</id>
     <published>2016-07-14T03:57:23.000Z</published>
-    <updated>2016-07-14T15:37:50.000Z</updated>
+    <updated>2016-07-18T01:10:25.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -630,6 +757,7 @@ else
 &lt;p&gt;361&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;a、b、c分别是原数的的百位、十位、个位，r、s、t分别是逆序的数的百位、十位、个位,x、y分别是原数和逆序数。&lt;/p&gt;
 &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;```c
 #include &amp;lt;stdio.h&amp;gt;
@@ -653,7 +781,22 @@ return 0;
     <summary type="html">
     
       &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;程序每次读入一个正三位数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你的程序每次读到一个3位的正整数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输出逆序的数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;163&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;361&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -671,7 +814,7 @@ return 0;
     <link href="http://yoursite.com/2016/07/14/3/"/>
     <id>http://yoursite.com/2016/07/14/3/</id>
     <published>2016-07-14T03:18:50.000Z</published>
-    <updated>2016-07-14T06:47:16.000Z</updated>
+    <updated>2016-07-18T01:10:07.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
@@ -681,10 +824,12 @@ return 0;
 &lt;li&gt;标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。&lt;h2 id=&quot;c语言的关键字&quot;&gt;&lt;a href=&quot;#c语言的关键字&quot; class=&quot;headerlink&quot; title=&quot;c语言的关键字&quot;&gt;&lt;/a&gt;c语言的关键字&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict&lt;h2 id=&quot;变量的初始化&quot;&gt;&lt;a href=&quot;#变量的初始化&quot; class=&quot;headerlink&quot; title=&quot;变量的初始化&quot;&gt;&lt;/a&gt;变量的初始化&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt; = &amp;lt;初始值&amp;gt;;&lt;/li&gt;
-&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;表达式&quot;&gt;&lt;a href=&quot;#表达式&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;表达式定义&quot;&gt;&lt;a href=&quot;#表达式定义&quot; class=&quot;headerlink&quot; title=&quot;表达式定义&quot;&gt;&lt;/a&gt;表达式定义&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
@@ -706,7 +851,18 @@ return 0;
     <summary type="html">
     
       &lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量
+&lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;变量定义的一般形式就是：&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt;;&lt;h2 id=&quot;变量的名字&quot;&gt;&lt;a href=&quot;#变量的名字&quot; class=&quot;headerlink&quot; title=&quot;变量的名字&quot;&gt;&lt;/a&gt;变量的名字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;变量需要一个名字,变量的名字是一种“标识符”,意思是它是用来识别这个和那个的不同的名字。&lt;/li&gt;
+&lt;li&gt;标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。&lt;h2 id=&quot;c语言的关键字&quot;&gt;&lt;a href=&quot;#c语言的关键字&quot; class=&quot;headerlink&quot; title=&quot;c语言的关键字&quot;&gt;&lt;/a&gt;c语言的关键字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict&lt;h2 id=&quot;变量的初始化&quot;&gt;&lt;a href=&quot;#变量的初始化&quot; class=&quot;headerlink&quot; title=&quot;变量的初始化&quot;&gt;&lt;/a&gt;变量的初始化&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt; = &amp;lt;初始值&amp;gt;;&lt;/li&gt;
+&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -748,7 +904,7 @@ return 0;
     <link href="http://yoursite.com/2016/07/13/1/"/>
     <id>http://yoursite.com/2016/07/13/1/</id>
     <published>2016-07-13T07:14:44.000Z</published>
-    <updated>2016-07-14T06:46:52.000Z</updated>
+    <updated>2016-07-18T01:09:37.000Z</updated>
     
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -805,6 +961,7 @@ return 0;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;i和-d的区别：&quot;&gt;&lt;a href=&quot;#i和-d的区别：&quot; class=&quot;headerlink&quot; title=&quot;%i和%d的区别：&quot;&gt;&lt;/a&gt;%i和%d的区别：&lt;/h3&gt;&lt;h5 id=&quot;nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。&quot; class=&quot;headerlink&quot; title=&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&quot;&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&lt;/h5&gt;&lt;h5 id=&quot;nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。&quot; class=&quot;headerlink&quot; title=&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。&quot;&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。&lt;/h5&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </content>
     
@@ -825,7 +982,46 @@ return 0;
 &lt;tr&gt;
 &lt;td&gt;%s&lt;/td&gt;
 &lt;td&gt;字符串&lt;/td&gt;
-&lt;/tr
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%i&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%o&lt;/td&gt;
+&lt;td&gt;八进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;十六进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%u&lt;/td&gt;
+&lt;td&gt;无符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%p&lt;/td&gt;
+&lt;td&gt;指针&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%f&lt;/td&gt;
+&lt;td&gt;浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%e&lt;/td&gt;
+&lt;td&gt;浮点数指数形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%g&lt;/td&gt;
+&lt;td&gt;浮点数不显示无意义的零&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     

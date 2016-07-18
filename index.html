@@ -324,8 +324,7 @@
 
       
         
-          
-            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
 <p>如何用1角、2角和5角的硬币凑出10元以下的金额？</p>
 </blockquote>
@@ -339,20 +338,11 @@
 </ul>
 </blockquote>
 </blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><blockquote>
-<h2 id="接力break-得到一种凑钱方案就停止"><a href="#接力break-得到一种凑钱方案就停止" class="headerlink" title="接力break(得到一种凑钱方案就停止)"></a>接力break(得到一种凑钱方案就停止)</h2><blockquote>
-<p>只在最内层使用break只能使最内层的循环停止，这里是用exit理同<a href="http://biubiubiu.site/2016/07/16/14/" target="_blank" rel="external">素数</a>题</p>
-</blockquote>
-</blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="keyword">int</span> <span class="built_in">exit</span> = <span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">               		<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="built_in">exit</span> = <span class="number">1</span>;</div><div class="line">                   	<span class="keyword">break</span>;</div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">           	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">               	<span class="keyword">break</span>;</div><div class="line">       	&#125;</div><div class="line">       	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">           	<span class="keyword">break</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><blockquote>
-<h2 id="使用goto语句（得到一种凑钱方案就停止）"><a href="#使用goto语句（得到一种凑钱方案就停止）" class="headerlink" title="使用goto语句（得到一种凑钱方案就停止）"></a>使用goto语句（得到一种凑钱方案就停止）</h2><blockquote>
-<p>goto语句也称为无条件转移语句。<br>因为C语言是结构化的程序设计语言，所以有人认为使用goto破坏了这种语言的结构化的特点。<br>goto语句可能会破坏程序的逻辑性，降低程序的可读性。<br>建议只在跳出多层循环时使用。<br><a href="http://baike.baidu.com/link?url=ZjxM063lAiZEN9gRzFWBO-PiXTTrf2TIazc6TVV2bdP4pbnP7g2hCdpscYVQTv6s27ocfFA8Wi9ASVg_yRN0HK#8" target="_blank" rel="external">goto语句的发展历程</a></p>
-</blockquote>
-</blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">                   	<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="keyword">goto</span> out;<span class="comment">//goto的位置是根据情况任意标注的</span></div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">out:</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/16/15.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -462,8 +452,7 @@
 
       
         
-          
-            <p>素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….</p>
+          <p>素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….</p>
 <h1 id="判断素数"><a href="#判断素数" class="headerlink" title="判断素数"></a>判断素数</h1><blockquote>
 <h2 id="使用枚举的方法"><a href="#使用枚举的方法" class="headerlink" title="使用枚举的方法"></a>使用枚举的方法</h2><blockquote>
 <ul>
@@ -471,15 +460,13 @@
 </ul>
 </blockquote>
 </blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> prime = <span class="number">1</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">2</span> ; i &lt; x ; i ++ )</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">if</span>(x%i == <span class="number">0</span>)</div><div class="line">       	&#123;</div><div class="line">           	prime = <span class="number">0</span>;</div><div class="line">           	<span class="keyword">break</span>;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">if</span>(prime == <span class="number">1</span>)</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"是素数\n"</span>);</div><div class="line">   	<span class="keyword">else</span></div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"不是素数\n"</span>);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></div><div class="line"></span>&#123;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> prime = <span class="number">1</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">2</span> ; i &lt; x ; i ++ )</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">if</span>(x%i == <span class="number">0</span>)</div><div class="line">       	&#123;</div><div class="line">           	prime = <span class="number">0</span>;</div><div class="line">           	<span class="keyword">break</span>;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">if</span>(prime == <span class="number">1</span>)</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"是素数\n"</span>);</div><div class="line">   	<span class="keyword">else</span></div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"不是素数\n"</span>);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre><p><br></p>
-<h1 id="找出100以内的素数"><a href="#找出100以内的素数" class="headerlink" title="找出100以内的素数"></a>找出100以内的素数</h1><blockquote>
-<h2 id="用循环的嵌套"><a href="#用循环的嵌套" class="headerlink" title="用循环的嵌套"></a>用循环的嵌套</h2></blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   </div><div class="line">   	<span class="keyword">for</span>( <span class="keyword">int</span> x = <span class="number">2</span> ; x &lt;= <span class="number">100</span> ; x ++ )</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">int</span> prime = <span class="number">1</span>;<span class="comment">//这个初始化要放在这一层循环里</span></div><div class="line">       	<span class="keyword">for</span>( <span class="keyword">int</span> i =<span class="number">2</span> ; i &lt; x ;i ++)</div><div class="line">       	&#123;   </div><div class="line">           </div><div class="line">           	<span class="keyword">if</span>(x%i==<span class="number">0</span>)</div><div class="line">           	&#123;</div><div class="line">               	prime = <span class="number">0</span>;</div><div class="line">               	<span class="keyword">break</span>;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">       	<span class="keyword">if</span>(prime==<span class="number">1</span>)</div><div class="line">       	&#123;</div><div class="line">           <span class="built_in">printf</span>(<span class="string">"%d "</span>,x);</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><p><br></p>
-<h1 id="找出前50个素数"><a href="#找出前50个素数" class="headerlink" title="找出前50个素数"></a>找出前50个素数</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> count=<span class="number">0</span>;<span class="comment">//用来计数，50个素数</span></div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> i;</div><div class="line">   	<span class="keyword">for</span>(x=<span class="number">2</span>;count&lt;<span class="number">50</span>;x++)<span class="comment">//循环条件可以与x没有关系</span></div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">int</span> prime=<span class="number">1</span>;</div><div class="line">       	<span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;x;i++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">if</span>(x%i==<span class="number">0</span>)</div><div class="line">           	&#123;</div><div class="line">               	prime = <span class="number">0</span>;</div><div class="line">               	<span class="keyword">break</span>;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">       	<span class="keyword">if</span>(prime==<span class="number">1</span>)</div><div class="line">       	&#123;</div><div class="line">           	count++;<span class="comment">//不能放在循环外</span></div><div class="line">           	<span class="built_in">printf</span>(<span class="string">"%d\t"</span>,x);<span class="comment">// \t是为了能够整齐地缩进</span></div><div class="line">           	<span class="keyword">if</span>(count%<span class="number">5</span>==<span class="number">0</span>)<span class="comment">//这一步是使这些素数每5个排列一行，共10行整齐地显示出来</span></div><div class="line">           	&#123;</div><div class="line">               	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">       	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/16/14/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -589,8 +576,7 @@
 
       
         
-          
-            <h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><blockquote>
+          <h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><blockquote>
 <h2 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h2></blockquote>
 <pre><code>for(初始化;条件;每轮的动作)
 {
@@ -609,68 +595,12 @@
 <li>循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。</li>
 </ul>
 </blockquote>
-<h2 id="循环次数"><a href="#循环次数" class="headerlink" title="循环次数"></a>循环次数</h2><blockquote>
-<ul>
-<li>for(i=0;i&lt;n;i++)等价于 for(i=1;i&lt;=n-1;i++)</li>
-<li>循环次数是n，循环结束以后i的值是n。循环的控制变量i，选择从0开始还是从1开始，是判断i&lt;n还是判断i&lt;=n，    对循环的次数和循环结束后变量的值都有影响</li>
-</ul>
 </blockquote>
-<h2 id="Tips-for-loops"><a href="#Tips-for-loops" class="headerlink" title="Tips for loops"></a>Tips for loops</h2><blockquote>
-<ul>
-<li>如果有固定次数，用for循环</li>
-<li>如果必须执行一次，用do-while循环</li>
-<li>其他情况用while循环</li>
-</ul>
-</blockquote>
-</blockquote>
-<p><br></p>
-<h1 id="循环控制"><a href="#循环控制" class="headerlink" title="循环控制"></a>循环控制</h1><blockquote>
-<h2 id="break-VS-continue"><a href="#break-VS-continue" class="headerlink" title="break VS continue"></a>break VS continue</h2><p><img src="http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png" alt="break VS continue"></p>
-<blockquote>
-<ul>
-<li>break:跳出循环</li>
-<li>continue:跳过循环的这一轮剩下的语句，进入下一轮</li>
-<li>break和continue只能对它所在的那层循环做</li>
-</ul>
-</blockquote>
-<h2 id="嵌套的循环"><a href="#嵌套的循环" class="headerlink" title="嵌套的循环"></a>嵌套的循环</h2><blockquote>
-<ul>
-<li>每一层循环的循环控制变量不能相同</li>
-<li>尽量避免太多和太深的循环嵌套结构</li>
-</ul>
-</blockquote>
-<h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2><blockquote>
-<ul>
-<li><a href="http://biubiubiu.site/2016/07/16/14/" target="_blank" rel="external">素数(判断素数、找出100以内的素数、找出前50个素数)</a></li>
-<li><a href="http://biubiubiu.site/2016/07/16/15/" target="_blank" rel="external">凑硬币(接力break、使用goto语句)</a></li>
-</ul>
-</blockquote>
-</blockquote>
-<p><br></p>
-<h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><blockquote>
-<ul>
-<li></li>
-</ul>
-</blockquote>
-<h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><blockquote>
-<ul>
-<li></li>
-</ul>
-</blockquote>
-<h2 id="二级标题-2"><a href="#二级标题-2" class="headerlink" title="二级标题"></a>二级标题</h2><blockquote>
-<ul>
-<li></li>
-</ul>
-</blockquote>
-<h2 id="二级标题-3"><a href="#二级标题-3" class="headerlink" title="二级标题"></a>二级标题</h2><blockquote>
-<ul>
-<li></li>
-</ul>
-</blockquote>
-</blockquote>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/16/13.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -780,8 +710,7 @@
 
       
         
-          
-            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
 <p>判断一个非负整数的位数</p>
 </blockquote>
@@ -798,10 +727,11 @@
 <p>5</p>
 </blockquote>
 </blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>考虑到0的情况，用do-while循环</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> n = <span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">do</span></div><div class="line">   	&#123;</div><div class="line">       	n ++ ;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">while</span>(x &gt; <span class="number">0</span>);</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"这个数的位数是%d\n"</span>,n);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/12/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -912,13 +842,19 @@
       
         
           
-            <h1 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h1><blockquote>
-<p>每次召唤rand()就得到一个随机的整数</p>
-<p>将随机得到的整数number%100的结果是[0,99]的一个整数</p>
-</blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	srand(time(<span class="number">0</span>));<span class="comment">//为了使随机数更像是随机数，现在不理解</span></div><div class="line">   	<span class="keyword">int</span> a = rand();</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a%<span class="number">100</span>);<span class="comment">//a%100得到的是[0,99]的整数</span></div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+          随机数
+每次召唤rand()就得到一个随机的整数
+将随机得到的整数number%100的结果是[0,99]的一个整数
+
+12345678910#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;time.h&gt;int main()&#123;   	srand(time(0));//为了使随机数更像是随机数，现在不理解   	int a = rand();   	printf("%d\n",a%100);//a%100得到的是[0,99]的整数   	return 0;&#125;
+
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/11/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1028,20 +964,18 @@
 
       
         
-          
-            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
 <p>让计算机来想一个数,然后让用户来猜,用户每输一个数,就告诉它是大了还是小了,直到用户猜中为止,最后还要告诉用户它猜了多少次。</p>
 </blockquote>
 </blockquote>
 <h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
-<h2 id="因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。"><a href="#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。" class="headerlink" title="因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。"></a>因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。</h2><h2 id="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"><a href="#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环" class="headerlink" title="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"></a>要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环</h2><h2 id="1-计算机随机想一个数，记在变量number里"><a href="#1-计算机随机想一个数，记在变量number里" class="headerlink" title="1. 计算机随机想一个数，记在变量number里"></a>1. 计算机随机想一个数，记在变量number里</h2><h2 id="2-一个负责记次数的变量count初始化为0"><a href="#2-一个负责记次数的变量count初始化为0" class="headerlink" title="2. 一个负责记次数的变量count初始化为0"></a>2. 一个负责记次数的变量count初始化为0</h2><h2 id="3-让用户输入一个数字x"><a href="#3-让用户输入一个数字x" class="headerlink" title="3. 让用户输入一个数字x"></a>3. 让用户输入一个数字x</h2><h2 id="4-count加一"><a href="#4-count加一" class="headerlink" title="4. count加一"></a>4. count加一</h2><h2 id="5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”"><a href="#5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”" class="headerlink" title="5. 判断x和number的大小关系：如果a&gt;number，输出“大”；如果a&lt;number，输出“小”"></a>5. 判断x和number的大小关系：如果a&gt;number，输出“大”；如果a&lt;number，输出“小”</h2><h2 id="6-如果a和number是不相等的，程序转回到第三步"><a href="#6-如果a和number是不相等的，程序转回到第三步" class="headerlink" title="6. 如果a和number是不相等的，程序转回到第三步"></a>6. 如果a和number是不相等的，程序转回到第三步</h2><h2 id="7-否则，程序输出“猜中”和所用次数，然后结束"><a href="#7-否则，程序输出“猜中”和所用次数，然后结束" class="headerlink" title="7. 否则，程序输出“猜中”和所用次数，然后结束"></a>7. 否则，程序输出“猜中”和所用次数，然后结束</h2><h2 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a><a href="http://biubiubiu.site/2016/07/15/11/" target="_blank" rel="external">随机数</a></h2><blockquote>
-<p>每次召唤rand()就得到一个随机的整数<br>将随机得到的整数number%100的结果是［0,99］的一个整数</p>
-</blockquote>
-</blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	srand(time(<span class="number">0</span>));</div><div class="line">   	<span class="keyword">int</span> number = rand()%<span class="number">100</span>+<span class="number">1</span>;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">do</span></div><div class="line">   	&#123;</div><div class="line">       	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">       	count ++ ;</div><div class="line">       	<span class="keyword">if</span>( x &gt; number )</div><div class="line">           	<span class="built_in">printf</span>(<span class="string">"你猜的数大了\n"</span>);</div><div class="line">       	<span class="keyword">else</span> <span class="keyword">if</span>( x &lt; number)</div><div class="line">           	<span class="built_in">printf</span>(<span class="string">"你猜的数小了\n"</span>);</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">while</span>(x != number);</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"恭喜你猜对了，所用次数是%d\n"</span>,count);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+<h2 id="因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。"><a href="#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。" class="headerlink" title="因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。"></a>因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。</h2><h2 id="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"><a href="#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环" class="headerlink" title="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"></a>要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环</h2>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/10/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1151,8 +1085,7 @@
 
       
         
-          
-            <h1 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a>数的逆序</h1><blockquote>
+          <h1 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a>数的逆序</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
 <p>程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。</p>
 </blockquote>
@@ -1169,10 +1102,11 @@
 <p>54321</p>
 </blockquote>
 </blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>用到了<a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a>和<a href="http://biubiubiu.site/2016/07/14/7.1/" target="_blank" rel="external">循环</a>的知识。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,digit,ret=<span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">while</span>( x &gt; <span class="number">0</span> )</div><div class="line">   	&#123;</div><div class="line">       	digit = x % <span class="number">10</span>;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">       	ret = ret * <span class="number">10</span> + digit;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ret);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/9/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1283,11 +1217,17 @@
       
         
           
-            <h1 id="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"><a href="#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？" class="headerlink" title="一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？"></a>一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？</h1><blockquote>
-<h2 id="1-对一个整数做％10的操作，就得到它的个位数；"><a href="#1-对一个整数做％10的操作，就得到它的个位数；" class="headerlink" title="1. 对一个整数做％10的操作，就得到它的个位数；"></a>1. 对一个整数做％10的操作，就得到它的个位数；</h2><h2 id="2-对一个整数做-10的操作，就去掉了它的个位数；"><a href="#2-对一个整数做-10的操作，就去掉了它的个位数；" class="headerlink" title="2. 对一个整数做/10的操作，就去掉了它的个位数；"></a>2. 对一个整数做/10的操作，就去掉了它的个位数；</h2><h2 id="3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；"><a href="#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；" class="headerlink" title="3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；"></a>3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；</h2><h2 id="4-依此类推。"><a href="#4-依此类推。" class="headerlink" title="4. 依此类推。"></a>4. 依此类推。</h2></blockquote>
-<p><br></p>
+          一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？
+1. 对一个整数做％10的操作，就得到它的个位数；2. 对一个整数做/10的操作，就去掉了它的个位数；3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；4. 依此类推。
+
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/8.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1397,8 +1337,7 @@
 
       
         
-          
-            <h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><blockquote>
+          <h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><blockquote>
 <h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><blockquote>
 <ul>
 <li>如果我们把while翻译作“当”,那么一个while循环的意思就是:当条件满足时,不断地重复循环体内的语句。</li>
@@ -1413,44 +1352,11 @@
     循环体语句
 }
 </code></pre><p><img src="http://oab0hmzob.bkt.clouddn.com/while.png" alt="while"></p>
-<blockquote>
-<h2 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h2><blockquote>
-<ul>
-<li>在进入循环的时候不做检查，而是在执行完一轮循环体的代码之后，再来检查循环的条件是否满足，如果满足则继续下一轮的循环，不满足则结束循环。</li>
-</ul>
-</blockquote>
-</blockquote>
-<pre><code>do
-{
-    循环体语句
-}
-while(循环条件)；
-</code></pre><p><img src="http://oab0hmzob.bkt.clouddn.com/do-while.png" alt="do-while"></p>
-<blockquote>
-<h2 id="两种循环的关系"><a href="#两种循环的关系" class="headerlink" title="两种循环的关系"></a>两种循环的关系</h2><blockquote>
-<ul>
-<li>相同点：都是条件满足时执行循环，条件不满足时结束循环。</li>
-<li>不同点：do-while在循环体执行结束时才判断条件，循环会至少执行一遍。while先判断再执行循环体，循环可能不会执行。</li>
-</ul>
-</blockquote>
-</blockquote>
-<p><br></p>
-<h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
-<h2 id="计数循环"><a href="#计数循环" class="headerlink" title="计数循环"></a>计数循环</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> count = <span class="number">100</span>;</div><div class="line">   	<span class="keyword">while</span> ( count &gt; <span class="number">1</span>)</div><div class="line">   	&#123;</div><div class="line">       	count--;</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,count);</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"发射！\n"</span>);</div><div class="line">   <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="算平均数"><a href="#算平均数" class="headerlink" title="算平均数"></a>算平均数</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> count = <span class="number">-1</span>;</div><div class="line">   	<span class="keyword">int</span> number = <span class="number">0</span>;</div><div class="line">   	<span class="keyword">int</span> avg;</div><div class="line">   	<span class="keyword">while</span> (number != <span class="number">-1</span>)<span class="comment">//当输入-1时，程序停止运行</span></div><div class="line">   	&#123;</div><div class="line">       	sum += number;</div><div class="line">       	count ++;</div><div class="line">       	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;number);</div><div class="line">   	&#125;</div><div class="line">   	avg = sum/count;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,avg);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h2 id="判断位数"><a href="#判断位数" class="headerlink" title="判断位数"></a><a href="http://biubiubiu.site/2016/07/15/12/" target="_blank" rel="external">判断位数</a></h2><h2 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a><a href="http://biubiubiu.site/2016/07/15/9/" target="_blank" rel="external">数的逆序</a></h2><blockquote>
-<ul>
-<li><a href="http://biubiubiu.site/2016/07/15/8.1/" target="_blank" rel="external">整数的分解</a></li>
-</ul>
-</blockquote>
-<h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a><a href="http://biubiubiu.site/2016/07/15/10/" target="_blank" rel="external">猜数游戏</a></h2><blockquote>
-<ul>
-<li><a href="http://biubiubiu.site/2016/07/15/11/" target="_blank" rel="external">随机数</a></li>
-</ul>
-</blockquote>
-</blockquote>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/14/7.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1560,28 +1466,16 @@ while(循环条件)；
 
       
         
-          
-            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
 <p>UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示9点5分，36表示0点36分，7表示0点7分。<br>有效的输入范围是0到2359，即你的程序不可能从测试服务器读到0到2359以外的输入数据。<br>你的程序要输出这个时间对应的UTC时间，输出的格式和输入的相同，即输出一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。<br>提醒：要小心跨日的换算。</p>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><p>一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
-<p>一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
-<p>803</p>
-</blockquote>
-<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
-<p>3</p>
 </blockquote>
 </blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
-<p>如果小时小于10，则没有千位部分:三位数表示小时小于10<br>如果小时是0，则没有百位部分:两位数表示小时是0且分大于10<br>如果小时不是0而分小于10分，需要保留十位上的0:三位数且十位是0，表示小时小于10且分小于10;四位数且十位是0，表示小时大于10且分小于10<br>如果小时是0而分小于10分的，则不需要保留十位上的0:一位数表示小时是0且分小于10分<br>UTC时间相当于BJT减去8:小时减去8</p>
-</blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> BJT;</div><div class="line">   	<span class="keyword">int</span> UTC;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;BJT);</div><div class="line">   	<span class="keyword">if</span> ( BJT &lt; <span class="number">100</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = <span class="number">1600</span> + BJT ;</div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">100</span> &amp;&amp; BJT &lt; <span class="number">800</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = ( BJT / <span class="number">100</span> ) * <span class="number">100</span> + <span class="number">1600</span> + BJT % <span class="number">100</span>;<span class="comment">//(BJT/100)*100算出时，BJT%100算出分</span></div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">800</span> &amp;&amp; BJT &lt;<span class="number">2400</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = BJT - <span class="number">800</span>;</div><div class="line">       	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,UTC);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/14/6.1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
