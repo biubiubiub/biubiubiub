@@ -90,65 +90,56 @@
 
 <meta name="description" content="题目
 Description
-输一个非负整数,正序输出它的每一位数字
+输入两个正整数a和b，求出它们的最大公约数
 
 Input
-一个非负整数
+两个正整数
 
 Output
-按照正序排列的每一位数字
+它们的最大公约数
 
 Sample Input
-13425
+12 18
 
 Sample Output
-1 3 4 2 5
-
-
-题解13425/10000=1————113425%10000=342510000/10=10003425/1000=3————–33425%1000=4251000">
+6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正序分解整数">
-<meta property="og:url" content="http://yoursite.com/2016/07/20/18/index.html">
+<meta property="og:title" content="求最大公约数">
+<meta property="og:url" content="http://yoursite.com/2016/07/20/19.1/index.html">
 <meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="题目
 Description
-输一个非负整数,正序输出它的每一位数字
+输入两个正整数a和b，求出它们的最大公约数
 
 Input
-一个非负整数
+两个正整数
 
 Output
-按照正序排列的每一位数字
+它们的最大公约数
 
 Sample Input
-13425
+12 18
 
 Sample Output
-1 3 4 2 5
-
-
-题解13425/10000=1————113425%10000=342510000/10=10003425/1000=3————–33425%1000=4251000">
-<meta property="og:updated_time" content="2016-07-20T13:05:48.000Z">
+6">
+<meta property="og:updated_time" content="2016-07-21T04:33:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正序分解整数">
+<meta name="twitter:title" content="求最大公约数">
 <meta name="twitter:description" content="题目
 Description
-输一个非负整数,正序输出它的每一位数字
+输入两个正整数a和b，求出它们的最大公约数
 
 Input
-一个非负整数
+两个正整数
 
 Output
-按照正序排列的每一位数字
+它们的最大公约数
 
 Sample Input
-13425
+12 18
 
 Sample Output
-1 3 4 2 5
-
-
-题解13425/10000=1————113425%10000=342510000/10=10003425/1000=3————–33425%1000=4251000">
+6">
 
 
 
@@ -169,9 +160,9 @@ Sample Output
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/20/18/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/20/19.1/"/>
 
-  <title> 正序分解整数 | 当做成长 </title>
+  <title> 求最大公约数 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -311,7 +302,7 @@ Sample Output
             
             
               
-                正序分解整数
+                求最大公约数
               
             
           </h1>
@@ -323,7 +314,7 @@ Sample Output
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T10:52:19+08:00" content="2016-07-20">
+            <time itemprop="dateCreated" datetime="2016-07-20T21:06:38+08:00" content="2016-07-20">
               2016-07-20
             </time>
           </span>
@@ -372,23 +363,39 @@ Sample Output
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>输一个非负整数,正序输出它的每一位数字</p>
+<p>输入两个正整数a和b，求出它们的最大公约数</p>
 </blockquote>
 <h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-<p>一个非负整数</p>
+<p>两个正整数</p>
 </blockquote>
 <h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
-<p>按照正序排列的每一位数字</p>
+<p>它们的最大公约数</p>
 </blockquote>
 <h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
-<p>13425</p>
+<p>12 18</p>
 </blockquote>
 <h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
-<p>1 3 4 2 5</p>
+<p>6</p>
 </blockquote>
 </blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>13425/10000=1————1<br>13425%10000=3425<br>10000/10=1000<br>3425/1000=3————–3<br>3425%1000=425<br>1000/10=100<br>425/100=4—————-4<br>425%100=25<br>100/10=10<br>25/10=2——————2<br>25%10=5<br>10/10=1<br>5/10=5——————-5<br>5%10=5<br>1/10=0<br>5/0=0</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"> <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x;</div><div class="line">   	<span class="keyword">int</span> mask=<span class="number">1</span>;</div><div class="line">   	<span class="keyword">int</span> t;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">int</span> m=x;</div><div class="line">   	<span class="keyword">while</span>(m&gt;<span class="number">9</span>)</div><div class="line">   	&#123;</div><div class="line">       	m/=<span class="number">10</span>;</div><div class="line">       	mask *= <span class="number">10</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">while</span>(mask&gt;<span class="number">0</span>)<span class="comment">//这里不能用x&gt;0，不然的话输出是7而不是7 0 0</span></div><div class="line">   	&#123;</div><div class="line">       	t = x / mask;</div><div class="line">       	x %= mask;</div><div class="line">       	mask /= <span class="number">10</span>;</div><div class="line">       	<span class="built_in">printf</span>(<span class="string">"%d"</span>,t);</div><div class="line">       	<span class="keyword">if</span>(mask&gt;=<span class="number">1</span>)</div><div class="line">       	&#123;</div><div class="line">           	<span class="built_in">printf</span>(<span class="string">" "</span>);</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="枚举法"><a href="#枚举法" class="headerlink" title="枚举法"></a>枚举法</h2><blockquote>
+<ol>
+<li>设t=1</li>
+<li>若a和b都能被t整除,则记下这个t</li>
+<li>t=t+1,重复第二步直到t等于a和b中较小的那个</li>
+<li>那么，曾经记下的最大的能整出a和b的t就是所求的最大公约数</li>
+</ol>
+</blockquote>
+<h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><blockquote>
+<ol>
+<li>如果b=0，计算结束，a就是最大公约数</li>
+<li>否则，计算a除以b的余数，再让a等于b，b等于那个余数</li>
+<li>回到第一步</li>
+</ol>
+</blockquote>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="枚举法："><a href="#枚举法：" class="headerlink" title="枚举法："></a>枚举法：</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> a,b;</div><div class="line">   	<span class="keyword">int</span> min;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;a,&amp;b);</div><div class="line">   	<span class="keyword">if</span>(a&gt;b)</div><div class="line">   	&#123;</div><div class="line">       	min=b;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">else</span></div><div class="line">   	&#123;</div><div class="line">       	min=a;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">int</span> gcd = <span class="number">1</span>;</div><div class="line">   	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;min;i++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">if</span>(a%i==<span class="number">0</span>)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">if</span>(b%i==<span class="number">0</span>)</div><div class="line">           	&#123;</div><div class="line">               	gcd=i;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d和%d的最大公约数是%d\n"</span>,a,b,gcd);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="辗转相除法-1"><a href="#辗转相除法-1" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> a,b;</div><div class="line">   	<span class="keyword">int</span> t;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;a,&amp;b);</div><div class="line">   	<span class="keyword">while</span>(b != <span class="number">0</span>)</div><div class="line">   	&#123;</div><div class="line">       	t = a%b;</div><div class="line">       	a = b;</div><div class="line">       	b = t;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"最大公约数是%d\n"</span>,a);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>
       
     </div>
@@ -422,16 +429,16 @@ Sample Output
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/20/17/" rel="next" title="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n">
-                <i class="fa fa-chevron-left"></i> 计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n
+              <a href="/2016/07/20/18.1/" rel="next" title="正序分解整数">
+                <i class="fa fa-chevron-left"></i> 正序分解整数
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/20/19/" rel="prev" title="求最大公约数">
-                求最大公约数 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/21/20.1/" rel="prev" title="C语言基础知识——函数">
+                C语言基础知识——函数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -573,7 +580,7 @@ Sample Output
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Input"><span class="nav-number">1.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Output"><span class="nav-number">1.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Input"><span class="nav-number">1.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Output"><span class="nav-number">1.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#枚举法"><span class="nav-number">2.1.</span> <span class="nav-text">枚举法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#辗转相除法"><span class="nav-number">2.2.</span> <span class="nav-text">辗转相除法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#枚举法："><span class="nav-number">3.1.</span> <span class="nav-text">枚举法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#辗转相除法-1"><span class="nav-number">3.2.</span> <span class="nav-text">辗转相除法</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
