@@ -90,38 +90,20 @@
 
 <meta name="description" content="题目
 Description
-我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
-
-Input
-两个正整数，第一个表示n，第二个表示m。
-
-Output
-一个整数，表示第n个素数">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0">
 <meta property="og:type" content="article">
-<meta property="og:title" content="素数求和">
+<meta property="og:title" content="素数求和（循环）">
 <meta property="og:url" content="http://yoursite.com/2016/07/21/C /answers/22/index.html">
 <meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="题目
 Description
-我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
-
-Input
-两个正整数，第一个表示n，第二个表示m。
-
-Output
-一个整数，表示第n个素数">
-<meta property="og:updated_time" content="2016-07-21T09:45:09.000Z">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0">
+<meta property="og:updated_time" content="2016-07-22T02:13:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="素数求和">
+<meta name="twitter:title" content="素数求和（循环）">
 <meta name="twitter:description" content="题目
 Description
-我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
-
-Input
-两个正整数，第一个表示n，第二个表示m。
-
-Output
-一个整数，表示第n个素数">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0">
 
 
 
@@ -144,7 +126,7 @@ Output
 
   <link rel="canonical" href="http://yoursite.com/2016/07/21/C /answers/22/"/>
 
-  <title> 素数求和 | 当做成长 </title>
+  <title> 素数求和（循环） | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +266,7 @@ Output
             
             
               
-                素数求和
+                素数求和（循环）
               
             
           </h1>
@@ -345,10 +327,8 @@ Output
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&lt;n&lt;=m&lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！</p>
-</blockquote>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-<p>两个正整数，第一个表示n，第二个表示m。</p>
+<p>我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0<n<=m<=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！ <a="" id="more"></n<=m<=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！></p>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><p>两个正整数，第一个表示n，第二个表示m。</p>
 </blockquote>
 <h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
 <p>一个整数，表示第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。</p>
@@ -360,7 +340,9 @@ Output
 <p>15</p>
 </blockquote>
 </blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>先简化，做一个“求第n个素数是什么”<br>再把“求第n个素数和第m个素数是什么”加进去<br>最后用循环做出所有的和</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> n,m;</div><div class="line">    <span class="keyword">int</span> i;</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">1</span>;<span class="comment">//用于计数</span></div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;n,&amp;m);</div><div class="line">    <span class="keyword">for</span>(x=<span class="number">2</span>; count&lt;=m ;x++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">int</span> prime=<span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;x;i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(x%i==<span class="number">0</span>)</div><div class="line">            &#123;</div><div class="line">                prime=<span class="number">0</span>;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(prime==<span class="number">1</span>)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(count&gt;=n &amp;&amp; count&lt;=m)</div><div class="line">            &#123;</div><div class="line">                sum += x;</div><div class="line">            &#125;</div><div class="line">            count++;</div><div class="line">        &#125;</div><div class="line">    </div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
       
     </div>
 
@@ -471,7 +453,7 @@ Output
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
