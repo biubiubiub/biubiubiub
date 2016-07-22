@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C语言,题解," />
+  <meta name="keywords" content="C语言,基础知识," />
 
 
 
@@ -88,22 +88,51 @@
 
 
 
-<meta name="description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
+<meta name="description" content="数组
+定义数组
+
+&amp;lt;类型&amp;gt; 变量名称[元素数量]; 如 int grades[100];
+元素数量必须是整数
+C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量数组的特点
+其中所有的元素具有相同的数据类型
+一旦创建,不能改变其大小
+数组中的元素在内存中是连续依次排列的int a[10]
+一个int的数组
+10个单元:a[0],a[1],…,a[9]
+每个单元就是一个in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n">
-<meta property="og:url" content="http://yoursite.com/2016/07/20/C /answers/17.1/index.html">
+<meta property="og:title" content="C语言基础知识——数组">
+<meta property="og:url" content="http://yoursite.com/2016/07/22/C /basics/array/index.html">
 <meta property="og:site_name" content="当做成长">
-<meta property="og:description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
-<meta property="og:updated_time" content="2016-07-21T04:31:46.000Z">
+<meta property="og:description" content="数组
+定义数组
+
+&amp;lt;类型&amp;gt; 变量名称[元素数量]; 如 int grades[100];
+元素数量必须是整数
+C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量数组的特点
+其中所有的元素具有相同的数据类型
+一旦创建,不能改变其大小
+数组中的元素在内存中是连续依次排列的int a[10]
+一个int的数组
+10个单元:a[0],a[1],…,a[9]
+每个单元就是一个in">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/array.png">
+<meta property="og:updated_time" content="2016-07-22T17:44:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n">
-<meta name="twitter:description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
+<meta name="twitter:title" content="C语言基础知识——数组">
+<meta name="twitter:description" content="数组
+定义数组
+
+&amp;lt;类型&amp;gt; 变量名称[元素数量]; 如 int grades[100];
+元素数量必须是整数
+C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量数组的特点
+其中所有的元素具有相同的数据类型
+一旦创建,不能改变其大小
+数组中的元素在内存中是连续依次排列的int a[10]
+一个int的数组
+10个单元:a[0],a[1],…,a[9]
+每个单元就是一个in">
+<meta name="twitter:image" content="http://oab0hmzob.bkt.clouddn.com/array.png">
 
 
 
@@ -124,9 +153,9 @@ Description
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/20/C /answers/17.1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/22/C /basics/array/"/>
 
-  <title> 计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n | 当做成长 </title>
+  <title> C语言基础知识——数组 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +295,7 @@ Description
             
             
               
-                计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n
+                C语言基础知识——数组
               
             
           </h1>
@@ -278,8 +307,8 @@ Description
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T10:52:10+08:00" content="2016-07-20">
-              2016-07-20
+            <time itemprop="dateCreated" datetime="2016-07-22T20:18:49+08:00" content="2016-07-22">
+              2016-07-22
             </time>
           </span>
 
@@ -292,8 +321,8 @@ Description
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
                   </a>
                 </span>
 
@@ -325,15 +354,34 @@ Description
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n</p>
+        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><blockquote>
+<h2 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h2><blockquote>
+<ul>
+<li>&lt;类型&gt; 变量名称[元素数量]; 如 int grades[100];</li>
+<li>元素数量必须是整数</li>
+<li>C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量<h2 id="数组的特点"><a href="#数组的特点" class="headerlink" title="数组的特点"></a>数组的特点</h2></li>
+<li>其中所有的元素具有相同的数据类型</li>
+<li>一旦创建,不能改变其大小</li>
+<li>数组中的元素在内存中是连续依次排列的<h2 id="int-a-10"><a href="#int-a-10" class="headerlink" title="int a[10]"></a>int a[10]</h2></li>
+<li>一个int的数组</li>
+<li>10个单元:a[0],a[1],…,a[9]<br><img src="http://oab0hmzob.bkt.clouddn.com/array.png" alt="array"></li>
+<li>每个单元就是一个int类型的变量</li>
+<li>可以出现在赋值的左边或右边，如a[2] = a[1]+6;</li>
+<li>在赋值左边的叫做左值<h2 id="数组的单元"><a href="#数组的单元" class="headerlink" title="数组的单元"></a>数组的单元</h2></li>
+<li>数组的每个单元就是数组类型的一个变量</li>
+<li>使用数组时放在[]中的数字叫做下标或索引,下标从0开始计数<h2 id="有效的下标范围"><a href="#有效的下标范围" class="headerlink" title="有效的下标范围"></a>有效的下标范围</h2></li>
+<li>编译器和运行环境都不会检查数组下标是否越界,无论是对数组单元做读还是写</li>
+<li>一旦程序运行,越界的数组访问可能造成问题,导致程序崩溃，可能会提示如segmentation fault</li>
+<li>要保证程序只使用有效的下标值:[0,数组的大小-1]<h2 id="长度为0的数组？"><a href="#长度为0的数组？" class="headerlink" title="长度为0的数组？"></a>长度为0的数组？</h2></li>
+<li>int a[0];</li>
+<li>可以存在，但是无用<h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2></li>
+<li><a href="">求平均数</a></li>
+<li><a href="">统计次数</a></li>
+</ul>
 </blockquote>
 </blockquote>
-<a id="more"></a>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>需要一个变量来控制正负号</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> n;</div><div class="line">   	<span class="keyword">double</span> sum=<span class="number">0.0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</div><div class="line">   	<span class="keyword">double</span> sign=<span class="number">1.0</span>;</div><div class="line">   	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</div><div class="line">   	&#123;</div><div class="line">       	sum += sign / i;</div><div class="line">       	sign = -sign;<span class="comment">//用于控制正负号</span></div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%f\n"</span>,sum);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+<p><br></p>
+
       
     </div>
 
@@ -357,7 +405,7 @@ Description
           
             <a href="/tags/C语言/" rel="tag">#C语言</a>
           
-            <a href="/tags/题解/" rel="tag">#题解</a>
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
           
         </div>
       
@@ -366,16 +414,16 @@ Description
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/20/C /answers/16.1/" rel="next" title="计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n">
-                <i class="fa fa-chevron-left"></i> 计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n
+              <a href="/2016/07/22/C /answers/23/" rel="next" title="素数求和（函数）">
+                <i class="fa fa-chevron-left"></i> 素数求和（函数）
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/20/C /answers/18.1/" rel="prev" title="正序分解整数">
-                正序分解整数 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/22/C /answers/averagingarray/" rel="prev" title="求平均数（数组）">
+                求平均数（数组） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -517,7 +565,7 @@ Description
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数组"><span class="nav-number">1.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义数组"><span class="nav-number">1.1.</span> <span class="nav-text">定义数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的特点"><span class="nav-number">1.2.</span> <span class="nav-text">数组的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#int-a-10"><span class="nav-number">1.3.</span> <span class="nav-text">int a[10]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的单元"><span class="nav-number">1.4.</span> <span class="nav-text">数组的单元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有效的下标范围"><span class="nav-number">1.5.</span> <span class="nav-text">有效的下标范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#长度为0的数组？"><span class="nav-number">1.6.</span> <span class="nav-text">长度为0的数组？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关题目"><span class="nav-number">1.7.</span> <span class="nav-text">相关题目</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

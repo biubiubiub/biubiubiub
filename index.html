@@ -524,6 +524,145 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/22/C /basics/array/" itemprop="url">
+                  C语言基础知识——数组
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-22T20:18:49+08:00" content="2016-07-22">
+              2016-07-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><blockquote>
+<h2 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h2><blockquote>
+<ul>
+<li>&lt;类型&gt; 变量名称[元素数量]; 如 int grades[100];</li>
+<li>元素数量必须是整数</li>
+<li>C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量<h2 id="数组的特点"><a href="#数组的特点" class="headerlink" title="数组的特点"></a>数组的特点</h2></li>
+<li>其中所有的元素具有相同的数据类型</li>
+<li>一旦创建,不能改变其大小</li>
+<li>数组中的元素在内存中是连续依次排列的<h2 id="int-a-10"><a href="#int-a-10" class="headerlink" title="int a[10]"></a>int a[10]</h2></li>
+<li>一个int的数组</li>
+<li>10个单元:a[0],a[1],…,a[9]<br><img src="http://oab0hmzob.bkt.clouddn.com/array.png" alt="array"></li>
+<li>每个单元就是一个int类型的变量</li>
+<li>可以出现在赋值的左边或右边，如a[2] = a[1]+6;</li>
+<li>在赋值左边的叫做左值<h2 id="数组的单元"><a href="#数组的单元" class="headerlink" title="数组的单元"></a>数组的单元</h2></li>
+<li>数组的每个单元就是数组类型的一个变量</li>
+<li>使用数组时放在[]中的数字叫做下标或索引,下标从0开始计数<h2 id="有效的下标范围"><a href="#有效的下标范围" class="headerlink" title="有效的下标范围"></a>有效的下标范围</h2></li>
+<li>编译器和运行环境都不会检查数组下标是否越界,无论是对数组单元做读还是写</li>
+<li>一旦程序运行,越界的数组访问可能造成问题,导致程序崩溃，可能会提示如segmentation fault</li>
+<li>要保证程序只使用有效的下标值:[0,数组的大小-1]<h2 id="长度为0的数组？"><a href="#长度为0的数组？" class="headerlink" title="长度为0的数组？"></a>长度为0的数组？</h2></li>
+<li>int a[0];</li>
+<li>可以存在，但是无用<h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2></li>
+<li><a href="">求平均数</a></li>
+<li><a href="">统计次数</a></li>
+</ul>
+</blockquote>
+</blockquote>
+<p><br></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/22/C /answers/23/" itemprop="url">
                   素数求和（函数）
                 </a>
@@ -1358,125 +1497,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/20/C /answers/17.1/" itemprop="url">
-                  计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T10:52:10+08:00" content="2016-07-20">
-              2016-07-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n</p>
-</blockquote>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/20/C /answers/17.1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1522,7 +1542,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
