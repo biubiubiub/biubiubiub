@@ -108,7 +108,7 @@
     <link href="http://yoursite.com/2016/07/22/C%20/basics/array/"/>
     <id>http://yoursite.com/2016/07/22/C /basics/array/</id>
     <published>2016-07-22T12:18:49.000Z</published>
-    <updated>2016-07-22T17:48:24.000Z</updated>
+    <updated>2016-07-22T17:59:11.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;定义数组&quot;&gt;&lt;a href=&quot;#定义数组&quot; class=&quot;headerlink&quot; title=&quot;定义数组&quot;&gt;&lt;/a&gt;定义数组&lt;/h2&gt;&lt;blockquote&gt;
@@ -131,8 +131,8 @@
 &lt;li&gt;要保证程序只使用有效的下标值:[0,数组的大小-1]&lt;h2 id=&quot;长度为0的数组？&quot;&gt;&lt;a href=&quot;#长度为0的数组？&quot; class=&quot;headerlink&quot; title=&quot;长度为0的数组？&quot;&gt;&lt;/a&gt;长度为0的数组？&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;int a[0];&lt;/li&gt;
 &lt;li&gt;可以存在，但是无用&lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;求平均数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;统计次数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/averagingarray/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求平均数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/countarray/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计次数&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
@@ -171,7 +171,7 @@
 &lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%94%99%E8%AF%AF%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png&quot; alt=&quot;错误的数组赋值&quot;&gt;&lt;/li&gt;
 &lt;li&gt;数组变量本身不能被赋值&lt;/li&gt;
 &lt;li&gt;要把一个数组的所有元素交给另一个数组,必须采用遍历&lt;/li&gt;
-&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%94%99%E8%AF%AF%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png&quot; alt=&quot;正确的数组赋值&quot;&gt;&lt;h2 id=&quot;遍历数组&quot;&gt;&lt;a href=&quot;#遍历数组&quot; class=&quot;headerlink&quot; title=&quot;遍历数组&quot;&gt;&lt;/a&gt;遍历数组&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png&quot; alt=&quot;正确的数组赋值&quot;&gt;&lt;h2 id=&quot;遍历数组&quot;&gt;&lt;a href=&quot;#遍历数组&quot; class=&quot;headerlink&quot; title=&quot;遍历数组&quot;&gt;&lt;/a&gt;遍历数组&lt;/h2&gt;&lt;/li&gt;
 &lt;li&gt;通常都是使用for循环,让循环变量i从0到&amp;lt;数组的长度,这样循环体内最大的i正好是数组最大的有效下标&lt;/li&gt;
 &lt;li&gt;常见错误：&lt;blockquote&gt;
 &lt;ul&gt;
