@@ -614,6 +614,59 @@
 </blockquote>
 </blockquote>
 <p><br></p>
+<h1 id="数组的运算"><a href="#数组的运算" class="headerlink" title="数组的运算"></a>数组的运算</h1><blockquote>
+<h2 id="数组的集成初始化"><a href="#数组的集成初始化" class="headerlink" title="数组的集成初始化"></a>数组的集成初始化</h2><blockquote>
+<ul>
+<li>int a[]={2,4,6,7,1,3,5,6,3,65,33,81,19};<blockquote>
+<ul>
+<li>直接用大括号给出数组所有元素的初始值</li>
+<li>不需要给出数组的大小，编译器会数</li>
+</ul>
+</blockquote>
+</li>
+<li>int b[10]={2};<blockquote>
+<ul>
+<li>如果给出了数组的大小,但是后面的初始值数量不足,则其后的元素被初始化为0</li>
+<li>int b[10]={2};等价于int b[10]={2,0,0,0,0,0,0,0,0,0};<h2 id="集成初始化时的定位"><a href="#集成初始化时的定位" class="headerlink" title="集成初始化时的定位"></a>集成初始化时的定位</h2></li>
+</ul>
+</blockquote>
+</li>
+<li>int a[10]={[0]=2,[2]=3,6,};<blockquote>
+<ul>
+<li>用[n]在初始化数据中给出定位</li>
+<li>没有定位的数据接在前面的位置后面，如上式中6的意思是[3]=6</li>
+<li>其他位置的值补零</li>
+<li>也可以不给出数组大小,让编译器算</li>
+<li>特别适合初始数据稀疏的数组<h2 id="数组的大小"><a href="#数组的大小" class="headerlink" title="数组的大小"></a>数组的大小</h2></li>
+</ul>
+</blockquote>
+</li>
+<li>sizeof给出整个数组所占据的内容的大小,单位是字节</li>
+<li>sizeof(a)/sizeof(a[0])</li>
+<li>sizeof(a[0])给出数组中单个元素的大小,于是相除就得到了数组的单元个数</li>
+<li>这样的代码,一旦修改数组中初始的数据,不需要修改遍历的代码<h2 id="数组的赋值"><a href="#数组的赋值" class="headerlink" title="数组的赋值"></a>数组的赋值</h2></li>
+<li><img src="http://oab0hmzob.bkt.clouddn.com/%E9%94%99%E8%AF%AF%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png" alt="错误的数组赋值"></li>
+<li>数组变量本身不能被赋值</li>
+<li>要把一个数组的所有元素交给另一个数组,必须采用遍历</li>
+<li><img src="http://oab0hmzob.bkt.clouddn.com/%E9%94%99%E8%AF%AF%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png" alt="正确的数组赋值"><h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2></li>
+<li>通常都是使用for循环,让循环变量i从0到&lt;数组的长度,这样循环体内最大的i正好是数组最大的有效下标</li>
+<li>常见错误：<blockquote>
+<ul>
+<li>循环结束条件是&lt;=数组长度</li>
+<li>离开循环后,继续用i的值来做数组元素的下标<h2 id="相关题目-1"><a href="#相关题目-1" class="headerlink" title="相关题目"></a>相关题目</h2></li>
+</ul>
+</blockquote>
+</li>
+<li><a href="">判断素数</a><blockquote>
+<ul>
+<li><a href="">构造素数表</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<p><br></p>
 
           
         
