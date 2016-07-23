@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C语言,题解," />
+  <meta name="keywords" content="C语言,基础知识," />
 
 
 
@@ -88,46 +88,66 @@
 
 
 
-<meta name="description" content="题目
-Description
-如何用1角、2角和5角的硬币凑出10元以下的金额？
+<meta name="description" content="for循环
+格式
+for(初始化;条件;每轮的动作)
+{
+
+}
 
 
-题解
+
+for循环中每一个表达式都是可以省略的
+for( ;条件; )等价于while(条件)
 
 
-使用枚举的方法
-循环的嵌套
-接力break或使用goto语句">
+小技巧
+
+做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1
+循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="凑硬币">
-<meta property="og:url" content="http://yoursite.com/2016/07/16/C /answers/15.1/index.html">
+<meta property="og:title" content="C语言基础知识——循环控制">
+<meta property="og:url" content="http://yoursite.com/2016/07/16/C /basics/13.1/index.html">
 <meta property="og:site_name" content="当做成长">
-<meta property="og:description" content="题目
-Description
-如何用1角、2角和5角的硬币凑出10元以下的金额？
+<meta property="og:description" content="for循环
+格式
+for(初始化;条件;每轮的动作)
+{
+
+}
 
 
-题解
+
+for循环中每一个表达式都是可以省略的
+for( ;条件; )等价于while(条件)
 
 
-使用枚举的方法
-循环的嵌套
-接力break或使用goto语句">
-<meta property="og:updated_time" content="2016-07-22T03:13:10.000Z">
+小技巧
+
+做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1
+循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png">
+<meta property="og:updated_time" content="2016-07-22T03:13:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="凑硬币">
-<meta name="twitter:description" content="题目
-Description
-如何用1角、2角和5角的硬币凑出10元以下的金额？
+<meta name="twitter:title" content="C语言基础知识——循环控制">
+<meta name="twitter:description" content="for循环
+格式
+for(初始化;条件;每轮的动作)
+{
+
+}
 
 
-题解
+
+for循环中每一个表达式都是可以省略的
+for( ;条件; )等价于while(条件)
 
 
-使用枚举的方法
-循环的嵌套
-接力break或使用goto语句">
+小技巧
+
+做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1
+循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。">
+<meta name="twitter:image" content="http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png">
 
 
 
@@ -148,9 +168,9 @@ Description
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/16/C /answers/15.1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/16/C /basics/13.1/"/>
 
-  <title> 凑硬币 | 当做成长 </title>
+  <title> C语言基础知识——循环控制 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -290,7 +310,7 @@ Description
             
             
               
-                凑硬币
+                C语言基础知识——循环控制
               
             
           </h1>
@@ -302,7 +322,7 @@ Description
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-16T18:19:14+08:00" content="2016-07-16">
+            <time itemprop="dateCreated" datetime="2016-07-16T11:19:06+08:00" content="2016-07-16">
               2016-07-16
             </time>
           </span>
@@ -316,8 +336,8 @@ Description
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
                   </a>
                 </span>
 
@@ -349,34 +369,82 @@ Description
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>如何用1角、2角和5角的硬币凑出10元以下的金额？</p>
-</blockquote>
-</blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
+        <h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><blockquote>
+<h2 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h2></blockquote>
+<pre><code>for(初始化;条件;每轮的动作)
+{
+
+}
+</code></pre><blockquote>
 <blockquote>
 <ul>
-<li>使用枚举的方法</li>
-<li>循环的嵌套</li>
-<li>接力break或使用goto语句</li>
+<li>for循环中每一个表达式都是可以省略的</li>
+<li>for( ;条件; )等价于while(条件)</li>
+</ul>
+</blockquote>
+<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><blockquote>
+<ul>
+<li>做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1</li>
+<li>循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。</li>
 </ul>
 </blockquote>
 </blockquote>
 <a id="more"></a>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><blockquote>
-<h2 id="接力break-得到一种凑钱方案就停止"><a href="#接力break-得到一种凑钱方案就停止" class="headerlink" title="接力break(得到一种凑钱方案就停止)"></a>接力break(得到一种凑钱方案就停止)</h2><blockquote>
-<p>只在最内层使用break只能使最内层的循环停止，这里是用exit理同<a href="http://biubiubiu.site/2016/07/16/C%20/answers/14/" target="_blank" rel="external">素数</a>题</p>
+<blockquote>
+<h2 id="循环次数"><a href="#循环次数" class="headerlink" title="循环次数"></a>循环次数</h2><blockquote>
+<ul>
+<li>for(i=0;i&lt;n;i++)等价于 for(i=1;i&lt;=n-1;i++)</li>
+<li>循环次数是n，循环结束以后i的值是n。循环的控制变量i，选择从0开始还是从1开始，是判断i&lt;n还是判断i&lt;=n，    对循环的次数和循环结束后变量的值都有影响</li>
+</ul>
+</blockquote>
+<h2 id="Tips-for-loops"><a href="#Tips-for-loops" class="headerlink" title="Tips for loops"></a>Tips for loops</h2><blockquote>
+<ul>
+<li>如果有固定次数，用for循环</li>
+<li>如果必须执行一次，用do-while循环</li>
+<li>其他情况用while循环</li>
+</ul>
 </blockquote>
 </blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="keyword">int</span> <span class="built_in">exit</span> = <span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">               		<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="built_in">exit</span> = <span class="number">1</span>;</div><div class="line">                   	<span class="keyword">break</span>;</div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">           	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">               	<span class="keyword">break</span>;</div><div class="line">       	&#125;</div><div class="line">       	<span class="keyword">if</span>(<span class="built_in">exit</span> == <span class="number">1</span>)</div><div class="line">           	<span class="keyword">break</span>;</div><div class="line">   	&#125;</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><blockquote>
-<h2 id="使用goto语句（得到一种凑钱方案就停止）"><a href="#使用goto语句（得到一种凑钱方案就停止）" class="headerlink" title="使用goto语句（得到一种凑钱方案就停止）"></a>使用goto语句（得到一种凑钱方案就停止）</h2><blockquote>
-<p>goto语句也称为无条件转移语句。<br>因为C语言是结构化的程序设计语言，所以有人认为使用goto破坏了这种语言的结构化的特点。<br>goto语句可能会破坏程序的逻辑性，降低程序的可读性。<br>建议只在跳出多层循环时使用。<br><a href="http://baike.baidu.com/link?url=ZjxM063lAiZEN9gRzFWBO-PiXTTrf2TIazc6TVV2bdP4pbnP7g2hCdpscYVQTv6s27ocfFA8Wi9ASVg_yRN0HK#8" target="_blank" rel="external">goto语句的发展历程</a></p>
+<p><br></p>
+<h1 id="循环控制"><a href="#循环控制" class="headerlink" title="循环控制"></a>循环控制</h1><blockquote>
+<h2 id="break-VS-continue"><a href="#break-VS-continue" class="headerlink" title="break VS continue"></a>break VS continue</h2><p><img src="http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png" alt="break VS continue"></p>
+<blockquote>
+<ul>
+<li>break:跳出循环</li>
+<li>continue:跳过循环的这一轮剩下的语句，进入下一轮</li>
+<li>break和continue只能对它所在的那层循环做</li>
+</ul>
+</blockquote>
+<h2 id="嵌套的循环"><a href="#嵌套的循环" class="headerlink" title="嵌套的循环"></a>嵌套的循环</h2><blockquote>
+<ul>
+<li>每一层循环的循环控制变量不能相同</li>
+<li>尽量避免太多和太深的循环嵌套结构</li>
+</ul>
+</blockquote>
+<h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2><blockquote>
+<ul>
+<li><a href="http://biubiubiu.site/2016/07/16/C%20/answers/14/" target="_blank" rel="external">素数(判断素数、找出100以内的素数、找出前50个素数)</a></li>
+<li><a href="http://biubiubiu.site/2016/07/16/C%20/answers/15.1/" target="_blank" rel="external">凑硬币(接力break、使用goto语句)</a></li>
+</ul>
 </blockquote>
 </blockquote>
-<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,one,two,five;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">for</span>(one=<span class="number">0</span>;one&lt;=x*<span class="number">10</span>;one++)</div><div class="line">   	&#123;</div><div class="line">       	<span class="keyword">for</span>(two=<span class="number">0</span>;two&lt;=x*<span class="number">10</span>/<span class="number">2</span>;two++)</div><div class="line">       	&#123;</div><div class="line">           	<span class="keyword">for</span>(five=<span class="number">0</span>;five&lt;=x*<span class="number">10</span>/<span class="number">2</span>;five++)</div><div class="line">           	&#123;</div><div class="line">               	<span class="keyword">if</span>(one*<span class="number">1</span>+two*<span class="number">2</span>+five*<span class="number">5</span>==x*<span class="number">10</span>)</div><div class="line">               	&#123;</div><div class="line">                   	<span class="built_in">printf</span>(<span class="string">"可以用%d个1角的加%d个2角的加%d个5角的得到%d元\n"</span>,one,two,five,x);</div><div class="line">                   	<span class="keyword">goto</span> out;<span class="comment">//goto的位置是根据情况任意标注的</span></div><div class="line">               	&#125;</div><div class="line">           	&#125;</div><div class="line">       	&#125;</div><div class="line">   	&#125;</div><div class="line">out:</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+<p><br></p>
+<h1 id="循环应用"><a href="#循环应用" class="headerlink" title="循环应用"></a>循环应用</h1><blockquote>
+<h2 id="计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n"><a href="#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n" class="headerlink" title="计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n"></a><a href="http://biubiubiu.site/2016/07/20/C%20/answers/16.1/" target="_blank" rel="external">计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n</a></h2><h2 id="计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1"><a href="#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1" class="headerlink" title="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n"></a><a href="http://biubiubiu.site/2016/07/20/C%20/answers/17.1/" target="_blank" rel="external">计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n</a></h2><h2 id="正序分解整数"><a href="#正序分解整数" class="headerlink" title="正序分解整数"></a><a href="http://biubiubiu.site/2016/07/20/C%20/answers/18.1/" target="_blank" rel="external">正序分解整数</a></h2><blockquote>
+<ul>
+<li>相关知识：</li>
+<li><a href="http://biubiubiu.site/2016/07/15/C%20/basics/8.1/" target="_blank" rel="external">整数的分解</a></li>
+<li><a href="http://biubiubiu.site/2016/07/15/C%20/answers/9/" target="_blank" rel="external">逆序的处理</a></li>
+</ul>
+</blockquote>
+<h2 id="求最大公约数"><a href="#求最大公约数" class="headerlink" title="求最大公约数"></a><a href="http://biubiubiu.site/2016/07/20/C%20/answers/19.1/" target="_blank" rel="external">求最大公约数</a></h2><blockquote>
+<ul>
+<li>枚举法</li>
+<li>辗转相除法</li>
+</ul>
+</blockquote>
+<h2 id="素数求和（循环）"><a href="#素数求和（循环）" class="headerlink" title="素数求和（循环）"></a><a href="http://biubiubiu.site/2016/07/21/C%20/answers/22/" target="_blank" rel="external">素数求和（循环）</a></h2></blockquote>
+
       
     </div>
 
@@ -400,7 +468,7 @@ Description
           
             <a href="/tags/C语言/" rel="tag">#C语言</a>
           
-            <a href="/tags/题解/" rel="tag">#题解</a>
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
           
         </div>
       
@@ -409,16 +477,16 @@ Description
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/16/C /answers/14/" rel="next" title="素数">
-                <i class="fa fa-chevron-left"></i> 素数
+              <a href="/2016/07/15/C /answers/12/" rel="next" title="判断位数">
+                <i class="fa fa-chevron-left"></i> 判断位数
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/20/C /answers/16.1/" rel="prev" title="计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n">
-                计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/16/C /answers/14/" rel="prev" title="素数">
+                素数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -560,7 +628,7 @@ Description
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#接力break-得到一种凑钱方案就停止"><span class="nav-number">3.1.</span> <span class="nav-text">接力break(得到一种凑钱方案就停止)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用goto语句（得到一种凑钱方案就停止）"><span class="nav-number">3.2.</span> <span class="nav-text">使用goto语句（得到一种凑钱方案就停止）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#for循环"><span class="nav-number">1.</span> <span class="nav-text">for循环</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#格式"><span class="nav-number">1.1.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小技巧"><span class="nav-number">1.2.</span> <span class="nav-text">小技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环次数"><span class="nav-number">1.3.</span> <span class="nav-text">循环次数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips-for-loops"><span class="nav-number">1.4.</span> <span class="nav-text">Tips for loops</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环控制"><span class="nav-number">2.</span> <span class="nav-text">循环控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#break-VS-continue"><span class="nav-number">2.1.</span> <span class="nav-text">break VS continue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套的循环"><span class="nav-number">2.2.</span> <span class="nav-text">嵌套的循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关题目"><span class="nav-number">2.3.</span> <span class="nav-text">相关题目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环应用"><span class="nav-number">3.</span> <span class="nav-text">循环应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n"><span class="nav-number">3.1.</span> <span class="nav-text">计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1"><span class="nav-number">3.2.</span> <span class="nav-text">计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正序分解整数"><span class="nav-number">3.3.</span> <span class="nav-text">正序分解整数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求最大公约数"><span class="nav-number">3.4.</span> <span class="nav-text">求最大公约数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#素数求和（循环）"><span class="nav-number">3.5.</span> <span class="nav-text">素数求和（循环）</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
