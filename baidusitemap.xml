@@ -28,6 +28,28 @@
     
     
   <url>
+    <loc>http://yoursite.com/2016/07/21/java/basics/Hello-World/</loc>
+    <lastmod>2016-07-21T12:59:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>第一个java程序——Hello World</title>
+        <pubTime>2016-07-21T12:34:47.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/13/C%20/basics/2/</loc>
     <lastmod>2016-07-18T01:19:44.000Z</lastmod>
     <data>
