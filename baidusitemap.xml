@@ -5,6 +5,116 @@
     
     
   <url>
+    <loc>http://yoursite.com/2016/07/16/C%20/basics/13.1/</loc>
+    <lastmod>2016-07-22T03:13:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>C语言基础知识——循环控制</title>
+        <pubTime>2016-07-16T03:19:06.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/C%20/answers/10/</loc>
+    <lastmod>2016-07-22T03:13:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>猜数游戏</title>
+        <pubTime>2016-07-15T01:41:00.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/16/C%20/answers/15.1/</loc>
+    <lastmod>2016-07-22T03:13:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>凑硬币</title>
+        <pubTime>2016-07-16T10:19:14.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/21/C%20/answers/21/</loc>
+    <lastmod>2016-07-22T03:13:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>奇偶个数</title>
+        <pubTime>2016-07-21T06:56:24.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/C%20/answers/9/</loc>
+    <lastmod>2016-07-22T03:13:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>数的逆序</title>
+        <pubTime>2016-07-15T01:10:00.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/14/C%20/basics/7.1/</loc>
     <lastmod>2016-07-22T03:05:43.000Z</lastmod>
     <data>
@@ -26,6 +136,50 @@
     </url>
 
     
+  <url>
+    <loc>http://yoursite.com/2016/07/21/C%20/basics/20.1/</loc>
+    <lastmod>2016-07-22T03:01:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>C语言基础知识——函数</title>
+        <pubTime>2016-07-21T02:09:25.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/21/C%20/answers/22/</loc>
+    <lastmod>2016-07-22T02:13:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>素数求和（循环）</title>
+        <pubTime>2016-07-21T07:16:19.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://yoursite.com/2016/07/21/java/basics/Hello-World/</loc>
@@ -43,6 +197,138 @@
            
              
               <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/20/C%20/answers/19.1/</loc>
+    <lastmod>2016-07-21T04:33:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>求最大公约数</title>
+        <pubTime>2016-07-20T13:06:38.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/20/C%20/answers/18.1/</loc>
+    <lastmod>2016-07-21T04:33:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>正序分解整数</title>
+        <pubTime>2016-07-20T02:52:19.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/20/C%20/answers/17.1/</loc>
+    <lastmod>2016-07-21T04:31:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n</title>
+        <pubTime>2016-07-20T02:52:10.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/20/C%20/answers/16.1/</loc>
+    <lastmod>2016-07-21T04:31:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n</title>
+        <pubTime>2016-07-20T02:51:49.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/C%20/basics/11/</loc>
+    <lastmod>2016-07-18T01:20:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>随机数</title>
+        <pubTime>2016-07-15T02:28:04.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/C%20/basics/8.1/</loc>
+    <lastmod>2016-07-18T01:20:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>整数的分解</title>
+        <pubTime>2016-07-15T01:00:22.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
@@ -87,6 +373,50 @@
            
              
               <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/16/C%20/answers/14/</loc>
+    <lastmod>2016-07-18T01:14:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>素数</title>
+        <pubTime>2016-07-16T08:14:59.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/15/C%20/answers/12/</loc>
+    <lastmod>2016-07-18T01:13:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>判断位数</title>
+        <pubTime>2016-07-15T03:08:39.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>
