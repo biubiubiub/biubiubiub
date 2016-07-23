@@ -4,21 +4,21 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/22/C%20/basics/array/</loc>
-    <lastmod>2016-07-23T02:47:14.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/22/C%20/answers/countarray/</loc>
+    <lastmod>2016-07-23T02:57:05.000Z</lastmod>
     <data>
         <display>
-        <title>C语言基础知识——数组</title>
-        <pubTime>2016-07-22T12:18:49.000Z</pubTime>
+        <title>统计次数(数组)</title>
+        <pubTime>2016-07-22T13:05:23.000Z</pubTime>
         
         <tag>C语言</tag>
          
-        <tag>基础知识</tag>
+        <tag>题解</tag>
          
          
            
              
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>
@@ -27,7 +27,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/07/22/C%20/answers/averagingarray/</loc>
-    <lastmod>2016-07-22T17:36:03.000Z</lastmod>
+    <lastmod>2016-07-23T02:56:59.000Z</lastmod>
     <data>
         <display>
         <title>求平均数（数组）</title>
@@ -48,21 +48,21 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/22/C%20/answers/countarray/</loc>
-    <lastmod>2016-07-22T17:35:51.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/22/C%20/basics/array/</loc>
+    <lastmod>2016-07-23T02:47:14.000Z</lastmod>
     <data>
         <display>
-        <title>统计次数(数组)</title>
-        <pubTime>2016-07-22T13:05:23.000Z</pubTime>
+        <title>C语言基础知识——数组</title>
+        <pubTime>2016-07-22T12:18:49.000Z</pubTime>
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
+        <tag>基础知识</tag>
          
          
            
              
-              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
