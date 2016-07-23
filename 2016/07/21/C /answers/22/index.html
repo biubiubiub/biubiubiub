@@ -90,20 +90,38 @@
 
 <meta name="description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
+
+Input
+两个正整数，第一个表示n，第二个表示m。
+
+Output
+一个整数，表示第n个素数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时间换算">
-<meta property="og:url" content="http://yoursite.com/2016/07/14/C /answers/6.1/index.html">
+<meta property="og:title" content="素数求和（循环）">
+<meta property="og:url" content="http://yoursite.com/2016/07/21/C /answers/22/index.html">
 <meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
-<meta property="og:updated_time" content="2016-07-18T01:11:35.000Z">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
+
+Input
+两个正整数，第一个表示n，第二个表示m。
+
+Output
+一个整数，表示第n个素数">
+<meta property="og:updated_time" content="2016-07-23T05:27:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="时间换算">
+<meta name="twitter:title" content="素数求和（循环）">
 <meta name="twitter:description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
+我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！
+
+Input
+两个正整数，第一个表示n，第二个表示m。
+
+Output
+一个整数，表示第n个素数">
 
 
 
@@ -124,9 +142,9 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/14/C /answers/6.1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/21/C /answers/22/"/>
 
-  <title> 时间换算 | 当做成长 </title>
+  <title> 素数求和（循环） | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +284,7 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
             
             
               
-                时间换算
+                素数求和（循环）
               
             
           </h1>
@@ -278,8 +296,8 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-14T16:56:06+08:00" content="2016-07-14">
-              2016-07-14
+            <time itemprop="dateCreated" datetime="2016-07-21T15:16:19+08:00" content="2016-07-21">
+              2016-07-21
             </time>
           </span>
 
@@ -327,28 +345,24 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示9点5分，36表示0点36分，7表示0点7分。<br>有效的输入范围是0到2359，即你的程序不可能从测试服务器读到0到2359以外的输入数据。<br>你的程序要输出这个时间对应的UTC时间，输出的格式和输入的相同，即输出一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。<br>提醒：要小心跨日的换算。</p>
+<p>我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&lt;n&lt;=m&lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>两个正整数，第一个表示n，第二个表示m。</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>一个整数，表示第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>2 4 </p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>15</p>
 </blockquote>
 </blockquote>
 <a id="more"></a>
-<blockquote>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-<p>一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
-<p>一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
-<p>803</p>
-</blockquote>
-<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
-<p>3</p>
-</blockquote>
-</blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
-<p>如果小时小于10，则没有千位部分:三位数表示小时小于10<br>如果小时是0，则没有百位部分:两位数表示小时是0且分大于10<br>如果小时不是0而分小于10分，需要保留十位上的0:三位数且十位是0，表示小时小于10且分小于10;四位数且十位是0，表示小时大于10且分小于10<br>如果小时是0而分小于10分的，则不需要保留十位上的0:一位数表示小时是0且分小于10分<br>UTC时间相当于BJT减去8:小时减去8</p>
-</blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> BJT;</div><div class="line">   	<span class="keyword">int</span> UTC;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;BJT);</div><div class="line">   	<span class="keyword">if</span> ( BJT &lt; <span class="number">100</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = <span class="number">1600</span> + BJT ;</div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">100</span> &amp;&amp; BJT &lt; <span class="number">800</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = ( BJT / <span class="number">100</span> ) * <span class="number">100</span> + <span class="number">1600</span> + BJT % <span class="number">100</span>;<span class="comment">//(BJT/100)*100算出时，BJT%100算出分</span></div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">800</span> &amp;&amp; BJT &lt;<span class="number">2400</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = BJT - <span class="number">800</span>;</div><div class="line">       	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,UTC);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>先简化，做一个“求第n个素数是什么”<br>再把“求第n个素数和第m个素数是什么”加进去<br>最后用循环做出所有的和</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> n,m;</div><div class="line">    <span class="keyword">int</span> i;</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">1</span>;<span class="comment">//用于计数</span></div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;n,&amp;m);</div><div class="line">    <span class="keyword">for</span>(x=<span class="number">2</span>; count&lt;=m ;x++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">int</span> prime=<span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;x;i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(x%i==<span class="number">0</span>)</div><div class="line">            &#123;</div><div class="line">                prime=<span class="number">0</span>;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(prime==<span class="number">1</span>)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(count&gt;=n &amp;&amp; count&lt;=m)</div><div class="line">            &#123;</div><div class="line">                sum += x;</div><div class="line">            &#125;</div><div class="line">            count++;</div><div class="line">        &#125;</div><div class="line">    </div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>
       
     </div>
@@ -382,16 +396,16 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/14/C /basics/5/" rel="next" title="C语言基础知识——判断">
-                <i class="fa fa-chevron-left"></i> C语言基础知识——判断
+              <a href="/2016/07/21/C /answers/21/" rel="next" title="奇偶个数">
+                <i class="fa fa-chevron-left"></i> 奇偶个数
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/14/C /basics/7.1/" rel="prev" title="C语言基础知识——循环">
-                C语言基础知识——循环 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/21/java/basics/Hello-World/" rel="prev" title="第一个java程序——Hello World">
+                第一个java程序——Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

@@ -90,20 +90,56 @@
 
 <meta name="description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
+计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）
+
+Input
+多个正整数（不确定个数）
+
+Output
+这些正整数的平均数和大于平均数的数
+
+Sample Input
+1 2 3 －1
+
+Sample Output
+平均数是2.000000 大于平均数的有：3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时间换算">
-<meta property="og:url" content="http://yoursite.com/2016/07/14/C /answers/6.1/index.html">
+<meta property="og:title" content="求平均数（数组）">
+<meta property="og:url" content="http://yoursite.com/2016/07/22/C /answers/averagingarray/index.html">
 <meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
-<meta property="og:updated_time" content="2016-07-18T01:11:35.000Z">
+计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）
+
+Input
+多个正整数（不确定个数）
+
+Output
+这些正整数的平均数和大于平均数的数
+
+Sample Input
+1 2 3 －1
+
+Sample Output
+平均数是2.000000 大于平均数的有：3">
+<meta property="og:updated_time" content="2016-07-23T02:56:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="时间换算">
+<meta name="twitter:title" content="求平均数（数组）">
 <meta name="twitter:description" content="题目
 Description
-UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示">
+计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）
+
+Input
+多个正整数（不确定个数）
+
+Output
+这些正整数的平均数和大于平均数的数
+
+Sample Input
+1 2 3 －1
+
+Sample Output
+平均数是2.000000 大于平均数的有：3">
 
 
 
@@ -124,9 +160,9 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/14/C /answers/6.1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/22/C /answers/averagingarray/"/>
 
-  <title> 时间换算 | 当做成长 </title>
+  <title> 求平均数（数组） | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +302,7 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
             
             
               
-                时间换算
+                求平均数（数组）
               
             
           </h1>
@@ -278,8 +314,8 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-14T16:56:06+08:00" content="2016-07-14">
-              2016-07-14
+            <time itemprop="dateCreated" datetime="2016-07-22T20:45:23+08:00" content="2016-07-22">
+              2016-07-22
             </time>
           </span>
 
@@ -327,28 +363,24 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现在，你的程序要读入一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。如1124表示11点24分，而905表示9点5分，36表示0点36分，7表示0点7分。<br>有效的输入范围是0到2359，即你的程序不可能从测试服务器读到0到2359以外的输入数据。<br>你的程序要输出这个时间对应的UTC时间，输出的格式和输入的相同，即输出一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。<br>提醒：要小心跨日的换算。</p>
+<p>计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>多个正整数（不确定个数）</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>这些正整数的平均数和大于平均数的数</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>1 2 3 －1</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>平均数是2.000000 大于平均数的有：3</p>
 </blockquote>
 </blockquote>
 <a id="more"></a>
-<blockquote>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-<p>一个整数，表示BJT的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
-<p>一个整数，表示UTC的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于10，则没有千位部分；如果小时是0，则没有百位部分；如果小时不是0而分小于10分，需要保留十位上的0；如果小时是0而分小于10分的，则不需要保留十位上的0。</p>
-</blockquote>
-<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
-<p>803</p>
-</blockquote>
-<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
-<p>3</p>
-</blockquote>
-</blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
-<p>如果小时小于10，则没有千位部分:三位数表示小时小于10<br>如果小时是0，则没有百位部分:两位数表示小时是0且分大于10<br>如果小时不是0而分小于10分，需要保留十位上的0:三位数且十位是0，表示小时小于10且分小于10;四位数且十位是0，表示小时大于10且分小于10<br>如果小时是0而分小于10分的，则不需要保留十位上的0:一位数表示小时是0且分小于10分<br>UTC时间相当于BJT减去8:小时减去8</p>
-</blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> BJT;</div><div class="line">   	<span class="keyword">int</span> UTC;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;BJT);</div><div class="line">   	<span class="keyword">if</span> ( BJT &lt; <span class="number">100</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = <span class="number">1600</span> + BJT ;</div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">100</span> &amp;&amp; BJT &lt; <span class="number">800</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = ( BJT / <span class="number">100</span> ) * <span class="number">100</span> + <span class="number">1600</span> + BJT % <span class="number">100</span>;<span class="comment">//(BJT/100)*100算出时，BJT%100算出分</span></div><div class="line">       	&#125;</div><div class="line">   	<span class="keyword">else</span> <span class="keyword">if</span> ( BJT &gt;= <span class="number">800</span> &amp;&amp; BJT &lt;<span class="number">2400</span> )</div><div class="line">       	&#123;</div><div class="line">           	UTC = BJT - <span class="number">800</span>;</div><div class="line">       	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,UTC);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>必须先记录每一个输入的数字,计算平均数之后,再检查记录下来的每一个数字,与平均数比较,决定是否输出</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> number[<span class="number">100</span>];<span class="comment">//定义数组</span></div><div class="line">    <span class="keyword">double</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="keyword">double</span> average;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">    <span class="keyword">while</span>(x!=<span class="number">-1</span>)</div><div class="line">    &#123;</div><div class="line">        number[count]=x;<span class="comment">//对数组中的元素赋值</span></div><div class="line">        sum += x;</div><div class="line">        count++;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>(count&gt;<span class="number">0</span>)</div><div class="line">    &#123;</div><div class="line">        average=sum/count;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"平均数是%f\n"</span>,average);</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"大于平均数的有："</span>);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;count;i++)<span class="comment">//遍历数组</span></div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(number[i]&gt;average)</div><div class="line">            &#123;</div><div class="line">                <span class="built_in">printf</span>(<span class="string">"%d \n"</span>,number[i]);<span class="comment">//使用数组中的元素</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>
       
     </div>
@@ -382,16 +414,16 @@ UTC是世界协调时，BJT是北京时间，UTC时间相当于BJT减去8。现�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/14/C /basics/5/" rel="next" title="C语言基础知识——判断">
-                <i class="fa fa-chevron-left"></i> C语言基础知识——判断
+              <a href="/2016/07/22/C /basics/array/" rel="next" title="C语言基础知识——数组">
+                <i class="fa fa-chevron-left"></i> C语言基础知识——数组
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/14/C /basics/7.1/" rel="prev" title="C语言基础知识——循环">
-                C语言基础知识——循环 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/22/C /answers/countarray/" rel="prev" title="统计次数(数组)">
+                统计次数(数组) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
