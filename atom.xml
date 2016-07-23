@@ -133,216 +133,6 @@
   </entry>
   
   <entry>
-    <title>C语言基础知识——函数</title>
-    <link href="http://yoursite.com/2016/07/21/C%20/basics/20.1/"/>
-    <id>http://yoursite.com/2016/07/21/C /basics/20.1/</id>
-    <published>2016-07-21T02:09:25.000Z</published>
-    <updated>2016-07-22T03:01:18.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;函数的定义&quot;&gt;&lt;a href=&quot;#函数的定义&quot; class=&quot;headerlink&quot; title=&quot;函数的定义&quot;&gt;&lt;/a&gt;函数的定义&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;什么是函数？&quot;&gt;&lt;a href=&quot;#什么是函数？&quot; class=&quot;headerlink&quot; title=&quot;什么是函数？&quot;&gt;&lt;/a&gt;什么是函数？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;函数是一块代码,接收零个或多个参数,做一件事情,并返回零个或一个值&lt;/li&gt;
-&lt;li&gt;可以先想象成数学中的函数 y=f(x)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;为什么要用函数？&quot;&gt;&lt;a href=&quot;#为什么要用函数？&quot; class=&quot;headerlink&quot; title=&quot;为什么要用函数？&quot;&gt;&lt;/a&gt;为什么要用函数？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;可以重复使用，减少繁冗的代码，有需要时方便修改。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;函数定义&quot;&gt;&lt;a href=&quot;#函数定义&quot; class=&quot;headerlink&quot; title=&quot;函数定义&quot;&gt;&lt;/a&gt;函数定义&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89.png&quot; alt=&quot;函数定义&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;函数的使用&quot;&gt;&lt;a href=&quot;#函数的使用&quot; class=&quot;headerlink&quot; title=&quot;函数的使用&quot;&gt;&lt;/a&gt;函数的使用&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;调用函数&quot;&gt;&lt;a href=&quot;#调用函数&quot; class=&quot;headerlink&quot; title=&quot;调用函数&quot;&gt;&lt;/a&gt;调用函数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;函数名(参数值)&lt;/li&gt;
-&lt;li&gt;()的作用是 表示函数调用&lt;/li&gt;
-&lt;li&gt;即使没有参数也要用()&lt;/li&gt;
-&lt;li&gt;如果有参数，则需要给出正确的数量和顺序，这些值会被按照顺序依次来初始化函数中的参数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;函数返回&quot;&gt;&lt;a href=&quot;#函数返回&quot; class=&quot;headerlink&quot; title=&quot;函数返回&quot;&gt;&lt;/a&gt;函数返回&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;函数知道每一次是哪里调用它,会返回到正确的地方&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;从函数中返回值&quot;&gt;&lt;a href=&quot;#从函数中返回值&quot; class=&quot;headerlink&quot; title=&quot;从函数中返回值&quot;&gt;&lt;/a&gt;从函数中返回值&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; ret;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a&amp;gt;b)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		ret=a;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		ret=b;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;return停止函数的执行，并返回一个值&lt;/li&gt;
-&lt;li&gt;可以没有返回值 return;&lt;/li&gt;
-&lt;li&gt;return 表达式;&lt;/li&gt;
-&lt;li&gt;一个函数里可以出现多个return语句(不推荐)&lt;/li&gt;
-&lt;li&gt;返回值可以再赋值给变量，可以再传递给函数，甚至可以丢弃&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;没有返回值的函数&quot;&gt;&lt;a href=&quot;#没有返回值的函数&quot; class=&quot;headerlink&quot; title=&quot;没有返回值的函数&quot;&gt;&lt;/a&gt;没有返回值的函数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;void 函数名(参数表)&lt;/li&gt;
-&lt;li&gt;不能使用带值的return&lt;/li&gt;
-&lt;li&gt;可以没有return&lt;/li&gt;
-&lt;li&gt;调用的时候不能做返回值的赋值&lt;/li&gt;
-&lt;li&gt;如果函数有返回值，则必须使用带值的return&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;函数的参数&quot;&gt;&lt;a href=&quot;#函数的参数&quot; class=&quot;headerlink&quot; title=&quot;函数的参数&quot;&gt;&lt;/a&gt;函数的参数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;函数的先后关系&quot;&gt;&lt;a href=&quot;#函数的先后关系&quot; class=&quot;headerlink&quot; title=&quot;函数的先后关系&quot;&gt;&lt;/a&gt;函数的先后关系&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; begin,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; end)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=begin;i&amp;lt;=end;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		sum+=i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d与%d的和是%d\n&quot;&lt;/span&gt;,begin,end);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;35&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;45&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;像这样把sum()写在上面，是因为：&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;c的编译器自上而下顺序分析代码&lt;/li&gt;
-&lt;li&gt;在看到sum(1,10)的时候，编译器需要知道sum()要几个参数，每个参数的类型，返回什么值&lt;/li&gt;
-&lt;li&gt;从而检查对sum()的调用是否正确&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	sum(&lt;span class=&quot;number&quot;&gt;35&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;45&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; begin,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; end)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=begin;i&amp;lt;=end;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		sum+=i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d与%d的和是%d\n&quot;&lt;/span&gt;,begin,end);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果把sum()写在下面&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;旧标准会假设所调用的参数都是int，返回也是int&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;函数原型&quot;&gt;&lt;a href=&quot;#函数原型&quot; class=&quot;headerlink&quot; title=&quot;函数原型&quot;&gt;&lt;/a&gt;函数原型&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B.png&quot; alt=&quot;函数原型&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;参数传递&quot;&gt;&lt;a href=&quot;#参数传递&quot; class=&quot;headerlink&quot; title=&quot;参数传递&quot;&gt;&lt;/a&gt;参数传递&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;调用函数-1&quot;&gt;&lt;a href=&quot;#调用函数-1&quot; class=&quot;headerlink&quot; title=&quot;调用函数&quot;&gt;&lt;/a&gt;调用函数&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果函数有参数,调用函数时必须传递给它数量、类型正确的值&lt;/li&gt;
-&lt;li&gt;可以传递给函数的值是表达式的结果,这包括:字面量、变量、函数的返回值、计算的结果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;类型不匹配？&quot;&gt;&lt;a href=&quot;#类型不匹配？&quot; class=&quot;headerlink&quot; title=&quot;类型不匹配？&quot;&gt;&lt;/a&gt;类型不匹配？&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;调用函数时给的值与参数的类型不匹配是C语言传统上最大的漏洞&lt;/li&gt;
-&lt;li&gt;编译器总是悄悄替你把类型转换好,但是这很可能不是你所期望的&lt;/li&gt;
-&lt;li&gt;后续的语言,C++/Java在这方面很严格&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;参数传递过去的是什么？&quot;&gt;&lt;a href=&quot;#参数传递过去的是什么？&quot; class=&quot;headerlink&quot; title=&quot;参数传递过去的是什么？&quot;&gt;&lt;/a&gt;参数传递过去的是什么？&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;C语言在调用函数时，永远只能传值给函数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;传值&quot;&gt;&lt;a href=&quot;#传值&quot; class=&quot;headerlink&quot; title=&quot;传值&quot;&gt;&lt;/a&gt;传值&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;每个函数有自己的变量空间,参数也位于这个独立的空间中,和其他函数没有关系&lt;/li&gt;
-&lt;li&gt;过去,对于函数参数表中的参数,叫做“形式参数”,调用函数时给的值,叫做“实际参数”&lt;/li&gt;
-&lt;li&gt;由于容易让人误会实际参数就是实际在函数中进行计算的参数,误会调用函数的时候把变量而不是值传进去了,所以不建议继续这种古老的方式来称呼它们&lt;/li&gt;
-&lt;li&gt;它们是参数和值的关系&lt;br&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%BC%A0%E5%80%BC.png&quot; alt=&quot;传值&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;函数的变量&quot;&gt;&lt;a href=&quot;#函数的变量&quot; class=&quot;headerlink&quot; title=&quot;函数的变量&quot;&gt;&lt;/a&gt;函数的变量&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;本地变量&quot;&gt;&lt;a href=&quot;#本地变量&quot; class=&quot;headerlink&quot; title=&quot;本地变量&quot;&gt;&lt;/a&gt;本地变量&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;函数的每次运行,就产生了一个独立的变量空间,在这个空间中的变量,是函数的这次运行所独有的,称作本地变量&lt;/li&gt;
-&lt;li&gt;定义在函数内部的变量就是本地变量&lt;/li&gt;
-&lt;li&gt;参数也是本地变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;变量的生存期和作用域&quot;&gt;&lt;a href=&quot;#变量的生存期和作用域&quot; class=&quot;headerlink&quot; title=&quot;变量的生存期和作用域&quot;&gt;&lt;/a&gt;变量的生存期和作用域&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;生存期:什么时候这个变量开始出现了,到什么时候它消亡了&lt;/li&gt;
-&lt;li&gt;作用域:在(代码的)什么范围内可以访问这个变量(这个变量可以起作用)&lt;/li&gt;
-&lt;li&gt;对于本地变量,这两个问题的答案是统一的:大括号内，也叫做“块”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;本地变量的规则&quot;&gt;&lt;a href=&quot;#本地变量的规则&quot; class=&quot;headerlink&quot; title=&quot;本地变量的规则&quot;&gt;&lt;/a&gt;本地变量的规则&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;本地变量是定义在块内的&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;它可以是定义在函数的块内&lt;/li&gt;
-&lt;li&gt;也可以是定义在语句的块内&lt;/li&gt;
-&lt;li&gt;甚至可以随便在一对大括号内来定义变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;程序运行进入这个块之前,其中的变量不存在,离开这个块,其中的变量就消失了&lt;/li&gt;
-&lt;li&gt;块外面定义的变量在里面仍然有效&lt;/li&gt;
-&lt;li&gt;块里面定义了和外面同名的变量则掩盖了外面的&lt;/li&gt;
-&lt;li&gt;不能在一个块内定义同名的变量&lt;/li&gt;
-&lt;li&gt;本地变量不会被默认初始化&lt;/li&gt;
-&lt;li&gt;参数在进入函数的时候被初始化了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;其他细节&quot;&gt;&lt;a href=&quot;#其他细节&quot; class=&quot;headerlink&quot; title=&quot;其他细节&quot;&gt;&lt;/a&gt;其他细节&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;没有参数时&quot;&gt;&lt;a href=&quot;#没有参数时&quot; class=&quot;headerlink&quot; title=&quot;没有参数时&quot;&gt;&lt;/a&gt;没有参数时&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;void f(void)是明确没有参数&lt;/li&gt;
-&lt;li&gt;void f()在传统C中，它表示f函数的参数表未知，并不表示没有参数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;调用函数时的逗号和逗号运算符怎么区分&quot;&gt;&lt;a href=&quot;#调用函数时的逗号和逗号运算符怎么区分&quot; class=&quot;headerlink&quot; title=&quot;调用函数时的逗号和逗号运算符怎么区分?&quot;&gt;&lt;/a&gt;调用函数时的逗号和逗号运算符怎么区分?&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;调用函数时的圆括号里的逗号是标点符号,不是运算符&lt;/li&gt;
-&lt;li&gt;f(a,b)这里面的逗号是标点符号&lt;/li&gt;
-&lt;li&gt;f((a,b))这里面的逗号是逗号运算符&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;函数里的函数？&quot;&gt;&lt;a href=&quot;#函数里的函数？&quot; class=&quot;headerlink&quot; title=&quot;函数里的函数？&quot;&gt;&lt;/a&gt;函数里的函数？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;C语言不允许函数嵌套定义&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;关于main&quot;&gt;&lt;a href=&quot;#关于main&quot; class=&quot;headerlink&quot; title=&quot;关于main&quot;&gt;&lt;/a&gt;关于main&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;int main()也是一个函数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;素数求和（函数）&quot;&gt;&lt;a href=&quot;#素数求和（函数）&quot; class=&quot;headerlink&quot; title=&quot;素数求和（函数）&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/23/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数求和（函数）&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;函数的定义&quot;&gt;&lt;a href=&quot;#函数的定义&quot; class=&quot;headerlink&quot; title=&quot;函数的定义&quot;&gt;&lt;/a&gt;函数的定义&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;什么是函数？&quot;&gt;&lt;a href=&quot;#什么是函数？&quot; class=&quot;headerlink&quot; title=&quot;什么是函数？&quot;&gt;&lt;/a&gt;什么是函数？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;函数是一块代码,接收零个或多个参数,做一件事情,并返回零个或一个值&lt;/li&gt;
-&lt;li&gt;可以先想象成数学中的函数 y=f(x)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;为什么要用函数？&quot;&gt;&lt;a href=&quot;#为什么要用函数？&quot; class=&quot;headerlink&quot; title=&quot;为什么要用函数？&quot;&gt;&lt;/a&gt;为什么要用函数？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;可以重复使用，减少繁冗的代码，有需要时方便修改。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;函数定义&quot;&gt;&lt;a href=&quot;#函数定义&quot; class=&quot;headerlink&quot; title=&quot;函数定义&quot;&gt;&lt;/a&gt;函数定义&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89.png&quot; alt=&quot;函数定义&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
     <title>求最大公约数</title>
     <link href="http://yoursite.com/2016/07/20/C%20/answers/19.1/"/>
     <id>http://yoursite.com/2016/07/20/C /answers/19.1/</id>
@@ -659,124 +449,6 @@
   </entry>
   
   <entry>
-    <title>C语言基础知识——循环控制</title>
-    <link href="http://yoursite.com/2016/07/16/C%20/basics/13.1/"/>
-    <id>http://yoursite.com/2016/07/16/C /basics/13.1/</id>
-    <published>2016-07-16T03:19:06.000Z</published>
-    <updated>2016-07-22T03:13:15.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
-{
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
-&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
-&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;循环次数&quot;&gt;&lt;a href=&quot;#循环次数&quot; class=&quot;headerlink&quot; title=&quot;循环次数&quot;&gt;&lt;/a&gt;循环次数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for(i=0;i&amp;lt;n;i++)等价于 for(i=1;i&amp;lt;=n-1;i++)&lt;/li&gt;
-&lt;li&gt;循环次数是n，循环结束以后i的值是n。循环的控制变量i，选择从0开始还是从1开始，是判断i&amp;lt;n还是判断i&amp;lt;=n，    对循环的次数和循环结束后变量的值都有影响&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Tips-for-loops&quot;&gt;&lt;a href=&quot;#Tips-for-loops&quot; class=&quot;headerlink&quot; title=&quot;Tips for loops&quot;&gt;&lt;/a&gt;Tips for loops&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果有固定次数，用for循环&lt;/li&gt;
-&lt;li&gt;如果必须执行一次，用do-while循环&lt;/li&gt;
-&lt;li&gt;其他情况用while循环&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;循环控制&quot;&gt;&lt;a href=&quot;#循环控制&quot; class=&quot;headerlink&quot; title=&quot;循环控制&quot;&gt;&lt;/a&gt;循环控制&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;break-VS-continue&quot;&gt;&lt;a href=&quot;#break-VS-continue&quot; class=&quot;headerlink&quot; title=&quot;break VS continue&quot;&gt;&lt;/a&gt;break VS continue&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png&quot; alt=&quot;break VS continue&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;break:跳出循环&lt;/li&gt;
-&lt;li&gt;continue:跳过循环的这一轮剩下的语句，进入下一轮&lt;/li&gt;
-&lt;li&gt;break和continue只能对它所在的那层循环做&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;嵌套的循环&quot;&gt;&lt;a href=&quot;#嵌套的循环&quot; class=&quot;headerlink&quot; title=&quot;嵌套的循环&quot;&gt;&lt;/a&gt;嵌套的循环&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;每一层循环的循环控制变量不能相同&lt;/li&gt;
-&lt;li&gt;尽量避免太多和太深的循环嵌套结构&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/16/C%20/answers/14/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数(判断素数、找出100以内的素数、找出前50个素数)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/16/C%20/answers/15.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;凑硬币(接力break、使用goto语句)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;循环应用&quot;&gt;&lt;a href=&quot;#循环应用&quot; class=&quot;headerlink&quot; title=&quot;循环应用&quot;&gt;&lt;/a&gt;循环应用&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n&quot;&gt;&lt;a href=&quot;#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n&quot; class=&quot;headerlink&quot; title=&quot;计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/16.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1&quot;&gt;&lt;a href=&quot;#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1&quot; class=&quot;headerlink&quot; title=&quot;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/17.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;正序分解整数&quot;&gt;&lt;a href=&quot;#正序分解整数&quot; class=&quot;headerlink&quot; title=&quot;正序分解整数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/18.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;正序分解整数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;相关知识：&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/basics/8.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;整数的分解&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/answers/9/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;逆序的处理&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;求最大公约数&quot;&gt;&lt;a href=&quot;#求最大公约数&quot; class=&quot;headerlink&quot; title=&quot;求最大公约数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/19.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求最大公约数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;枚举法&lt;/li&gt;
-&lt;li&gt;辗转相除法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;素数求和（循环）&quot;&gt;&lt;a href=&quot;#素数求和（循环）&quot; class=&quot;headerlink&quot; title=&quot;素数求和（循环）&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/21/C%20/answers/22/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数求和（循环）&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
-{
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
-&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
-&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
     <title>判断位数</title>
     <link href="http://yoursite.com/2016/07/15/C%20/answers/12/"/>
     <id>http://yoursite.com/2016/07/15/C /answers/12/</id>
@@ -833,41 +505,6 @@
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随机数</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/basics/11/"/>
-    <id>http://yoursite.com/2016/07/15/C /basics/11/</id>
-    <published>2016-07-15T02:28:04.000Z</published>
-    <updated>2016-07-18T01:20:31.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
-&lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
-&lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -970,35 +607,6 @@
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>整数的分解</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/basics/8.1/"/>
-    <id>http://yoursite.com/2016/07/15/C /basics/8.1/</id>
-    <published>2016-07-15T01:00:22.000Z</published>
-    <updated>2016-07-18T01:20:15.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;a href=&quot;#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot; class=&quot;headerlink&quot; title=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;/a&gt;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;1-对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;a href=&quot;#1-对一个整数做％10的操作，就得到它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;1. 对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;/a&gt;1. 对一个整数做％10的操作，就得到它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;2-对一个整数做-10的操作，就去掉了它的个位数；&quot;&gt;&lt;a href=&quot;#2-对一个整数做-10的操作，就去掉了它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;2. 对一个整数做/10的操作，就去掉了它的个位数；&quot;&gt;&lt;/a&gt;2. 对一个整数做/10的操作，就去掉了它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;a href=&quot;#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot; class=&quot;headerlink&quot; title=&quot;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;/a&gt;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&lt;/h2&gt;&lt;h2 id=&quot;4-依此类推。&quot;&gt;&lt;a href=&quot;#4-依此类推。&quot; class=&quot;headerlink&quot; title=&quot;4. 依此类推。&quot;&gt;&lt;/a&gt;4. 依此类推。&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;a href=&quot;#一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot; class=&quot;headerlink&quot; title=&quot;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&quot;&gt;&lt;/a&gt;一个整数是由一个至多个数字组成的，如何分解出整数的各个位上的数字，然后加以计算？&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;1-对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;a href=&quot;#1-对一个整数做％10的操作，就得到它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;1. 对一个整数做％10的操作，就得到它的个位数；&quot;&gt;&lt;/a&gt;1. 对一个整数做％10的操作，就得到它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;2-对一个整数做-10的操作，就去掉了它的个位数；&quot;&gt;&lt;a href=&quot;#2-对一个整数做-10的操作，就去掉了它的个位数；&quot; class=&quot;headerlink&quot; title=&quot;2. 对一个整数做/10的操作，就去掉了它的个位数；&quot;&gt;&lt;/a&gt;2. 对一个整数做/10的操作，就去掉了它的个位数；&lt;/h2&gt;&lt;h2 id=&quot;3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;a href=&quot;#3-然后再对上一步的结果做-10的操作，就得到原来的数的十位数了；&quot; class=&quot;headerlink&quot; title=&quot;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&quot;&gt;&lt;/a&gt;3. 然后再对上一步的结果做%10的操作，就得到原来的数的十位数了；&lt;/h2&gt;&lt;h2 id=&quot;4-依此类推。&quot;&gt;&lt;a href=&quot;#4-依此类推。&quot; class=&quot;headerlink&quot; title=&quot;4. 依此类推。&quot;&gt;&lt;/a&gt;4. 依此类推。&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -1335,6 +943,256 @@ return 0;
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言基础知识——计算</title>
+    <link href="http://yoursite.com/2016/07/14/C%20/basics/3/"/>
+    <id>http://yoursite.com/2016/07/14/C /basics/3/</id>
+    <published>2016-07-14T03:18:50.000Z</published>
+    <updated>2016-07-18T01:10:07.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;变量定义的一般形式就是：&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt;;&lt;h2 id=&quot;变量的名字&quot;&gt;&lt;a href=&quot;#变量的名字&quot; class=&quot;headerlink&quot; title=&quot;变量的名字&quot;&gt;&lt;/a&gt;变量的名字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;变量需要一个名字,变量的名字是一种“标识符”,意思是它是用来识别这个和那个的不同的名字。&lt;/li&gt;
+&lt;li&gt;标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。&lt;h2 id=&quot;c语言的关键字&quot;&gt;&lt;a href=&quot;#c语言的关键字&quot; class=&quot;headerlink&quot; title=&quot;c语言的关键字&quot;&gt;&lt;/a&gt;c语言的关键字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict&lt;h2 id=&quot;变量的初始化&quot;&gt;&lt;a href=&quot;#变量的初始化&quot; class=&quot;headerlink&quot; title=&quot;变量的初始化&quot;&gt;&lt;/a&gt;变量的初始化&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt; = &amp;lt;初始值&amp;gt;;&lt;/li&gt;
+&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;表达式&quot;&gt;&lt;a href=&quot;#表达式&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;表达式定义&quot;&gt;&lt;a href=&quot;#表达式定义&quot; class=&quot;headerlink&quot; title=&quot;表达式定义&quot;&gt;&lt;/a&gt;表达式定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;一个表达式是一系列运算符和算子的组合,用来计算一个值。&lt;h2 id=&quot;运算符和算子&quot;&gt;&lt;a href=&quot;#运算符和算子&quot; class=&quot;headerlink&quot; title=&quot;运算符和算子&quot;&gt;&lt;/a&gt;运算符和算子&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;运算符(operator)是指进行运算的动作,比如加法运算符“+”,减法运算符“-”。&lt;/li&gt;
+&lt;li&gt;算子(operand)是指参与运算的值,这个值可能是常数,也可能是变量,还可能是一个方法的返回值。&lt;h2 id=&quot;递增递减运算符&quot;&gt;&lt;a href=&quot;#递增递减运算符&quot; class=&quot;headerlink&quot; title=&quot;递增递减运算符&quot;&gt;&lt;/a&gt;递增递减运算符&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;“++”和“–”是两个很特殊的运算符,它们是单目运算符,这个算子还必须是变量。这两个运算符分别叫做递增和递减运算符,他们的作用就是给这个变量+1或者-1。&lt;/li&gt;
+&lt;li&gt;可以单独使用，但是不要组合使用。&lt;/li&gt;
+&lt;li&gt;count++;&lt;/li&gt;
+&lt;li&gt;count+=1;&lt;/li&gt;
+&lt;li&gt;count=count+1;&lt;h2 id=&quot;前缀后缀&quot;&gt;&lt;a href=&quot;#前缀后缀&quot; class=&quot;headerlink&quot; title=&quot;前缀后缀&quot;&gt;&lt;/a&gt;前缀后缀&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;a=i++等价于a=i;i=i+1;（先赋值，后自增）&lt;/li&gt;
+&lt;li&gt;a=++i等价于i=i+1;a=i;（先自增，后赋值）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;变量的定义&quot;&gt;&lt;a href=&quot;#变量的定义&quot; class=&quot;headerlink&quot; title=&quot;变量的定义&quot;&gt;&lt;/a&gt;变量的定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;变量定义的一般形式就是：&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt;;&lt;h2 id=&quot;变量的名字&quot;&gt;&lt;a href=&quot;#变量的名字&quot; class=&quot;headerlink&quot; title=&quot;变量的名字&quot;&gt;&lt;/a&gt;变量的名字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;变量需要一个名字,变量的名字是一种“标识符”,意思是它是用来识别这个和那个的不同的名字。&lt;/li&gt;
+&lt;li&gt;标识符有标识符的构造规则。基本的原则是：标识符只能由字母／数字和下划线组成，数字不可以出现在第一个位置上，c语言的关键字不可以用做标识符。&lt;h2 id=&quot;c语言的关键字&quot;&gt;&lt;a href=&quot;#c语言的关键字&quot; class=&quot;headerlink&quot; title=&quot;c语言的关键字&quot;&gt;&lt;/a&gt;c语言的关键字&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;auto,break,case,char,const,continue,default,do,double, else,enum,extern,float,for,goto,if,int,long,register,return, short,signed,sizeof,static,struct,switch,typedef,union, unsigned,void,volatile,while, inline,restrict&lt;h2 id=&quot;变量的初始化&quot;&gt;&lt;a href=&quot;#变量的初始化&quot; class=&quot;headerlink&quot; title=&quot;变量的初始化&quot;&gt;&lt;/a&gt;变量的初始化&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;类型名称&amp;gt; &amp;lt;变量名称&amp;gt; = &amp;lt;初始值&amp;gt;;&lt;/li&gt;
+&lt;li&gt;组合变量定义的时候,也可以在这个定义中单独给单个变量赋初值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码风格之换行</title>
+    <link href="http://yoursite.com/2016/07/13/C%20/basics/2/"/>
+    <id>http://yoursite.com/2016/07/13/C /basics/2/</id>
+    <published>2016-07-13T12:42:18.000Z</published>
+    <updated>2016-07-18T01:19:44.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;遇到函数的时候换行&quot;&gt;&lt;a href=&quot;#遇到函数的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到函数的时候换行&quot;&gt;&lt;/a&gt;* 遇到函数的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到分号结束语句的时候换行&quot;&gt;&lt;a href=&quot;#遇到分号结束语句的时候换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到分号结束语句的时候换行&quot;&gt;&lt;/a&gt;* 遇到分号结束语句的时候换行&lt;/h3&gt;&lt;h3 id=&quot;遇到大括号时换行&quot;&gt;&lt;a href=&quot;#遇到大括号时换行&quot; class=&quot;headerlink&quot; title=&quot;* 遇到大括号时换行&quot;&gt;&lt;/a&gt;* 遇到大括号时换行&lt;/h3&gt;&lt;h3 id=&quot;逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;a href=&quot;#逻辑上完整的一行代码超出视觉处理能力时换行&quot; class=&quot;headerlink&quot; title=&quot;* 逻辑上完整的一行代码超出视觉处理能力时换行&quot;&gt;&lt;/a&gt;* 逻辑上完整的一行代码超出视觉处理能力时换行&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转换说明符</title>
+    <link href="http://yoursite.com/2016/07/13/C%20/basics/1/"/>
+    <id>http://yoursite.com/2016/07/13/C /basics/1/</id>
+    <published>2016-07-13T07:14:44.000Z</published>
+    <updated>2016-07-18T01:09:37.000Z</updated>
+    
+    <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;转换说明符&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;%c&lt;/td&gt;
+&lt;td&gt;字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%s&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%i&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%o&lt;/td&gt;
+&lt;td&gt;八进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;十六进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%u&lt;/td&gt;
+&lt;td&gt;无符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%p&lt;/td&gt;
+&lt;td&gt;指针&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%f&lt;/td&gt;
+&lt;td&gt;浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%e&lt;/td&gt;
+&lt;td&gt;浮点数指数形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%g&lt;/td&gt;
+&lt;td&gt;浮点数不显示无意义的零&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;i和-d的区别：&quot;&gt;&lt;a href=&quot;#i和-d的区别：&quot; class=&quot;headerlink&quot; title=&quot;%i和%d的区别：&quot;&gt;&lt;/a&gt;%i和%d的区别：&lt;/h3&gt;&lt;h5 id=&quot;nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在printf格式串中使用时，二者没有区别。&quot; class=&quot;headerlink&quot; title=&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&quot;&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在printf格式串中使用时，二者没有区别。&lt;/h5&gt;&lt;h5 id=&quot;nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-在scanf格式串中，-d只能与十进制形式的整数相匹配；而-i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么-i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX-那么-i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用-i代替-d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用-d。&quot; class=&quot;headerlink&quot; title=&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。&quot;&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在scanf格式串中，%d只能与十进制形式的整数相匹配；而%i可以匹配用八进制、十进制、十六进制表示的整数。如果输入的数有前缀0，那么%i会把它作为八进制数来处理；如果输入的数有前缀Ox或者OX,那么%i把它作为十六进制数来处理。如果用户意外地将0放在数的开始处，那么用%i代替%d读取数可能有意料之外的结果。由于这是一个陷阱，所以建议采用%d。&lt;/h5&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;转换说明符&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;%c&lt;/td&gt;
+&lt;td&gt;字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%s&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%i&lt;/td&gt;
+&lt;td&gt;有符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%o&lt;/td&gt;
+&lt;td&gt;八进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;十六进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%u&lt;/td&gt;
+&lt;td&gt;无符号十进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%p&lt;/td&gt;
+&lt;td&gt;指针&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%f&lt;/td&gt;
+&lt;td&gt;浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%e&lt;/td&gt;
+&lt;td&gt;浮点数指数形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%g&lt;/td&gt;
+&lt;td&gt;浮点数不显示无意义的零&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/07/10/life/0/"/>
+    <id>http://yoursite.com/2016/07/10/life/0/</id>
+    <published>2016-07-10T05:11:58.000Z</published>
+    <updated>2016-07-18T01:19:33.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot;&gt;&lt;a href=&quot;#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。&quot; class=&quot;headerlink&quot; title=&quot;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&quot;&gt;&lt;/a&gt;这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。&lt;/h2&gt;&lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=26196652&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   

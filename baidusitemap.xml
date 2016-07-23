@@ -5,28 +5,6 @@
     
     
   <url>
-    <loc>http://yoursite.com/2016/07/16/C%20/basics/13.1/</loc>
-    <lastmod>2016-07-22T03:13:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>C语言基础知识——循环控制</title>
-        <pubTime>2016-07-16T03:19:06.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>基础知识</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/07/15/C%20/answers/10/</loc>
     <lastmod>2016-07-22T03:13:11.000Z</lastmod>
     <data>
@@ -121,28 +99,6 @@
         <display>
         <title>C语言基础知识——循环</title>
         <pubTime>2016-07-14T13:16:49.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>基础知识</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/07/21/C%20/basics/20.1/</loc>
-    <lastmod>2016-07-22T03:01:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>C语言基础知识——函数</title>
-        <pubTime>2016-07-21T02:09:25.000Z</pubTime>
         
         <tag>C语言</tag>
          
@@ -285,50 +241,6 @@
            
              
               <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/07/15/C%20/basics/11/</loc>
-    <lastmod>2016-07-18T01:20:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>随机数</title>
-        <pubTime>2016-07-15T02:28:04.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>基础知识</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/07/15/C%20/basics/8.1/</loc>
-    <lastmod>2016-07-18T01:20:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>整数的分解</title>
-        <pubTime>2016-07-15T01:00:22.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>基础知识</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
