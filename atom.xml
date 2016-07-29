@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-23T05:41:27.000Z</updated>
+  <updated>2016-07-29T15:04:39.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,27 +16,229 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2016/07/23/C%20/answers/isprime-array/"/>
-    <id>http://yoursite.com/2016/07/23/C /answers/isprime-array/</id>
-    <published>2016-07-23T05:41:27.000Z</published>
-    <updated>2016-07-23T05:41:27.000Z</updated>
+    <title>Arduino入门——LED灯渐变</title>
+    <link href="http://yoursite.com/2016/07/29/Arduino/1/"/>
+    <id>http://yoursite.com/2016/07/29/Arduino/1/</id>
+    <published>2016-07-29T15:01:00.000Z</published>
+    <updated>2016-07-29T15:04:39.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/led%E7%81%AF%E6%B8%90%E5%8F%98.png&quot; alt=&quot;LED灯渐变源码&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ArduBlock代码&quot;&gt;&lt;a href=&quot;#ArduBlock代码&quot; class=&quot;headerlink&quot; title=&quot;ArduBlock代码&quot;&gt;&lt;/a&gt;ArduBlock代码&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/led%E7%81%AF%E6%B8%90%E5%8F%981.png&quot; alt=&quot;LED灯渐变ardu&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;测试视频&quot;&gt;&lt;a href=&quot;#测试视频&quot; class=&quot;headerlink&quot; title=&quot;测试视频&quot;&gt;&lt;/a&gt;测试视频&lt;/h1&gt;&lt;div class=&quot;video-container&quot;&gt;&lt;/div&gt;</content>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;im
+    
     </summary>
     
+      <category term="Arduino" scheme="http://yoursite.com/categories/Arduino/"/>
+    
+    
+      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
   <entry>
-    <title>统计次数(数组)</title>
+    <title>Arduino入门——针脚灯闪烁</title>
+    <link href="http://yoursite.com/2016/07/29/Arduino/0/"/>
+    <id>http://yoursite.com/2016/07/29/Arduino/0/</id>
+    <published>2016-07-29T14:52:00.000Z</published>
+    <updated>2016-07-29T15:01:13.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%92%88%E8%84%9A%E7%81%AF%E9%97%AA%E7%83%81%E6%BA%90%E7%A0%81.png&quot; alt=&quot;针脚灯闪烁源码&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ArduBlock代码&quot;&gt;&lt;a href=&quot;#ArduBlock代码&quot; class=&quot;headerlink&quot; title=&quot;ArduBlock代码&quot;&gt;&lt;/a&gt;ArduBlock代码&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%92%88%E8%84%9A%E7%81%AF%E9%97%AA%E7%83%81.png&quot; alt=&quot;针脚灯闪烁ardu&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;测试视频&quot;&gt;&lt;a href=&quot;#测试视频&quot; class=&quot;headerlink&quot; title=&quot;测试视频&quot;&gt;&lt;/a&gt;测试视频&lt;/h1&gt;&lt;div class=&quot;video-container&quot;&gt;&lt;/div&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;h2 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h2&gt;&lt;p&gt;&lt;im
+    
+    </summary>
+    
+      <category term="Arduino" scheme="http://yoursite.com/categories/Arduino/"/>
+    
+    
+      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>构造素数表</title>
+    <link href="http://yoursite.com/2016/07/23/C%20/basics/prime-table/"/>
+    <id>http://yoursite.com/2016/07/23/C /basics/prime-table/</id>
+    <published>2016-07-23T07:55:49.000Z</published>
+    <updated>2016-07-23T08:15:34.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;算法和伪代码&quot;&gt;&lt;a href=&quot;#算法和伪代码&quot; class=&quot;headerlink&quot; title=&quot;算法和伪代码&quot;&gt;&lt;/a&gt;算法和伪代码&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;想要构造n以内的素数表&quot;&gt;&lt;a href=&quot;#想要构造n以内的素数表&quot; class=&quot;headerlink&quot; title=&quot;想要构造n以内的素数表&quot;&gt;&lt;/a&gt;想要构造n以内的素数表&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;算法:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;令x为2&lt;/li&gt;
+&lt;li&gt;将2x、3x、4x直至 ax &amp;lt; n的数标记为非素数&lt;/li&gt;
+&lt;li&gt;令x为下一个没有被标记为非素数的数，重复2；直到所有的数都已经尝试完毕 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;伪代码:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;设prime[n],初始化其所有元素为1,prime[x]为1表示是素数&lt;/li&gt;
+&lt;li&gt;令x=2&lt;/li&gt;
+&lt;li&gt;如果x是素数,则对于(i=2;x &lt;em&gt; i &amp;lt; n;i++)令prime[i &lt;/em&gt; x]=0&lt;/li&gt;
+&lt;li&gt;令x++,如果x &amp;lt; n,重复3,否则结束&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;算法和伪代码&quot;&gt;&lt;a href=&quot;#算法和伪代码&quot; class=&quot;headerlink&quot; title=&quot;算法和伪代码&quot;&gt;&lt;/a&gt;算法和伪代码&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;想要构造n以内的素数表&quot;&gt;&lt;a href=&quot;#想要构造n以内的素数表&quot; 
+    
+    </summary>
+    
+      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>判断素数（数组）</title>
+    <link href="http://yoursite.com/2016/07/23/C%20/answers/isprime-array/"/>
+    <id>http://yoursite.com/2016/07/23/C /answers/isprime-array/</id>
+    <published>2016-07-23T07:20:23.000Z</published>
+    <updated>2016-07-23T07:54:12.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;判断一个数是不是素数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot;&gt;&lt;a href=&quot;#方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot; class=&quot;headerlink&quot; title=&quot;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot;&gt;&lt;/a&gt;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&lt;/h2&gt;&lt;h2 id=&quot;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍&quot;&gt;&lt;a href=&quot;#方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍&quot; class=&quot;headerlink&quot; title=&quot;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍&quot;&gt;&lt;/a&gt;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍&lt;/h2&gt;&lt;h2 id=&quot;方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍&quot;&gt;&lt;a href=&quot;#方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍&quot; class=&quot;headerlink&quot; title=&quot;方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍&quot;&gt;&lt;/a&gt;方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍&lt;/h2&gt;&lt;h2 id=&quot;方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表&quot;&gt;&lt;a href=&quot;#方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表&quot; class=&quot;headerlink&quot; title=&quot;方案四：判断能否被已知的且小于x的素数整除 ——&amp;gt;构造素数表&quot;&gt;&lt;/a&gt;方案四：判断能否被已知的且小于x的素数整除 ——&amp;gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/basics/prime-table/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;构造素数表&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;判断一个数是不是素数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot;&gt;&lt;a href=&quot;#方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot; class=&quot;headerlink&quot; title=&quot;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&quot;&gt;&lt;/a&gt;方案一：从2到x-1测试是否可以整除，循环要走n-1遍&lt;/h2&gt;&lt;h2 id=&quot;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍&quot;&gt;&lt;a href=&quot;#方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍&quot; class=&quot;headerlink&quot; title=&quot;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍&quot;&gt;&lt;/a&gt;方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍&lt;/h2&gt;&lt;h2 id=&quot;方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍&quot;&gt;&lt;a href=&quot;#方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍&quot; class=&quot;headerlink&quot; title=&quot;方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍&quot;&gt;&lt;/a&gt;方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍&lt;/h2&gt;&lt;h2 id=&quot;方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表&quot;&gt;&lt;a href=&quot;#方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表&quot; class=&quot;headerlink&quot; title=&quot;方案四：判断能否被已知的且小于x的素数整除 ——&amp;gt;构造素数表&quot;&gt;&lt;/a&gt;方案四：判断能否被已知的且小于x的素数整除 ——&amp;gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/basics/prime-table/&quot;&gt;构造素数表&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜索（数组）</title>
+    <link href="http://yoursite.com/2016/07/23/C%20/answers/search-array/"/>
+    <id>http://yoursite.com/2016/07/23/C /answers/search-array/</id>
+    <published>2016-07-23T06:57:23.000Z</published>
+    <updated>2016-07-23T07:19:52.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;搜索一个数字在一个数组中的位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;一个数字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;它在数组中的位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;找出key在数组a中的位置&quot;&gt;&lt;a href=&quot;#找出key在数组a中的位置&quot; class=&quot;headerlink&quot; title=&quot;找出key在数组a中的位置&quot;&gt;&lt;/a&gt;找出key在数组a中的位置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;key是在数组a中的位置&lt;/li&gt;
+&lt;li&gt;a是要搜索的数组&lt;/li&gt;
+&lt;li&gt;length是数组a的长度&lt;/li&gt;
+&lt;li&gt;如果找到，返回其在a中的位置；如果找不到则返回-1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; key,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[],&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;32&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; key,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[],&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[]=&amp;#123;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; loc;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;请输入一个数字：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    loc= search(x,a,&lt;span class=&quot;keyword&quot;&gt;sizeof&lt;/span&gt;(a)/&lt;span class=&quot;keyword&quot;&gt;sizeof&lt;/span&gt;(a[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(loc!=&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d在第%d个位置上\n&quot;&lt;/span&gt;,x,loc);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d不存在\n&quot;&lt;/span&gt;,x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; key,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[],&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; ret=&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;length;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(a[i]==key)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            ret=a[i];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;搜索一个数字在一个数组中的位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;一个数字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;它在数组中的位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;找出key在数组a中的位置&quot;&gt;&lt;a href=&quot;#找出key在数组a中的位置&quot; class=&quot;headerlink&quot; title=&quot;找出key在数组a中的位置&quot;&gt;&lt;/a&gt;找出key在数组a中的位置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;key是在数组a中的位置&lt;/li&gt;
+&lt;li&gt;a是要搜索的数组&lt;/li&gt;
+&lt;li&gt;length是数组a的长度&lt;/li&gt;
+&lt;li&gt;如果找到，返回其在a中的位置；如果找不到则返回-1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; key,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[],&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>统计次数（数组）</title>
     <link href="http://yoursite.com/2016/07/22/C%20/answers/count-array/"/>
     <id>http://yoursite.com/2016/07/22/C /answers/count-array/</id>
     <published>2016-07-22T13:05:23.000Z</published>
-    <updated>2016-07-23T05:42:13.000Z</updated>
+    <updated>2016-07-23T06:39:27.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -160,7 +362,7 @@
     <link href="http://yoursite.com/2016/07/22/C%20/basics/array/"/>
     <id>http://yoursite.com/2016/07/22/C /basics/array/</id>
     <published>2016-07-22T12:18:49.000Z</published>
-    <updated>2016-07-23T05:47:41.000Z</updated>
+    <updated>2016-07-23T07:54:14.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;定义数组&quot;&gt;&lt;a href=&quot;#定义数组&quot; class=&quot;headerlink&quot; title=&quot;定义数组&quot;&gt;&lt;/a&gt;定义数组&lt;/h2&gt;&lt;blockquote&gt;
@@ -210,8 +412,8 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/averagingarray/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求平均数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/countarray/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计次数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/averaging-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求平均数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/count-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计次数&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
@@ -279,9 +481,10 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;相关题目-1&quot;&gt;&lt;a href=&quot;#相关题目-1&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;判断素数&lt;/a&gt;&lt;blockquote&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/answers/search-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搜索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/answers/isprime-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;判断素数&lt;/a&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;构造素数表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/basics/prime-table/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;构造素数表&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -358,11 +561,11 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -371,7 +574,7 @@
     <link href="http://yoursite.com/2016/07/22/C%20/answers/23/"/>
     <id>http://yoursite.com/2016/07/22/C /answers/23/</id>
     <published>2016-07-22T02:41:23.000Z</published>
-    <updated>2016-07-23T05:44:46.000Z</updated>
+    <updated>2016-07-23T07:21:08.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -421,6 +624,8 @@
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
@@ -455,7 +660,7 @@
     <link href="http://yoursite.com/2016/07/21/C%20/answers/22/"/>
     <id>http://yoursite.com/2016/07/21/C /answers/22/</id>
     <published>2016-07-21T07:16:19.000Z</published>
-    <updated>2016-07-23T05:44:40.000Z</updated>
+    <updated>2016-07-23T07:20:59.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -509,6 +714,8 @@
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -767,11 +974,11 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -1057,7 +1264,7 @@
     <link href="http://yoursite.com/2016/07/16/C%20/answers/14/"/>
     <id>http://yoursite.com/2016/07/16/C /answers/14/</id>
     <published>2016-07-16T08:14:59.000Z</published>
-    <updated>2016-07-23T05:43:11.000Z</updated>
+    <updated>2016-07-23T07:20:47.000Z</updated>
     
     <content type="html">&lt;p&gt;素数：只能被1和自身整除的数，不包括1，如2，3，5，7，11，13，17….&lt;/p&gt;
 &lt;h1 id=&quot;判断素数&quot;&gt;&lt;a href=&quot;#判断素数&quot; class=&quot;headerlink&quot; title=&quot;判断素数&quot;&gt;&lt;/a&gt;判断素数&lt;/h1&gt;&lt;blockquote&gt;
@@ -1100,6 +1307,8 @@
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -1215,210 +1424,9 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
-    
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-  </entry>
-  
-  <entry>
-    <title>判断位数</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/answers/12/"/>
-    <id>http://yoursite.com/2016/07/15/C /answers/12/</id>
-    <published>2016-07-15T03:08:39.000Z</published>
-    <updated>2016-07-18T01:13:19.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;判断一个非负整数的位数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输入一个非负整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输出该数的位数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;12345&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;5&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;考虑到0的情况，用do-while循环&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	n ++ ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	x = x / &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(x &amp;gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;这个数的位数是%d\n&quot;&lt;/span&gt;,n);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;判断一个非负整数的位数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输入一个非负整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输出该数的位数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;12345&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;5&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随机数</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/basics/11/"/>
-    <id>http://yoursite.com/2016/07/15/C /basics/11/</id>
-    <published>2016-07-15T02:28:04.000Z</published>
-    <updated>2016-07-18T01:20:31.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
-&lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;随机数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;/p&gt;
-&lt;p&gt;将随机得到的整数number%100的结果是[0,99]的一个整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//为了使随机数更像是随机数，现在不理解&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = rand();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,a%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//a%100得到的是[0,99]的整数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>猜数游戏</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/answers/10/"/>
-    <id>http://yoursite.com/2016/07/15/C /answers/10/</id>
-    <published>2016-07-15T01:41:00.000Z</published>
-    <updated>2016-07-23T05:42:45.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;让计算机来想一个数,然后让用户来猜,用户每输一个数,就告诉它是大了还是小了,直到用户猜中为止,最后还要告诉用户它猜了多少次。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;a href=&quot;#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot; class=&quot;headerlink&quot; title=&quot;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;/a&gt;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&lt;/h2&gt;&lt;h2 id=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;a href=&quot;#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot; class=&quot;headerlink&quot; title=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;/a&gt;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;1-计算机随机想一个数，记在变量number里&quot;&gt;&lt;a href=&quot;#1-计算机随机想一个数，记在变量number里&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机随机想一个数，记在变量number里&quot;&gt;&lt;/a&gt;1. 计算机随机想一个数，记在变量number里&lt;/h2&gt;&lt;h2 id=&quot;2-一个负责记次数的变量count初始化为0&quot;&gt;&lt;a href=&quot;#2-一个负责记次数的变量count初始化为0&quot; class=&quot;headerlink&quot; title=&quot;2. 一个负责记次数的变量count初始化为0&quot;&gt;&lt;/a&gt;2. 一个负责记次数的变量count初始化为0&lt;/h2&gt;&lt;h2 id=&quot;3-让用户输入一个数字x&quot;&gt;&lt;a href=&quot;#3-让用户输入一个数字x&quot; class=&quot;headerlink&quot; title=&quot;3. 让用户输入一个数字x&quot;&gt;&lt;/a&gt;3. 让用户输入一个数字x&lt;/h2&gt;&lt;h2 id=&quot;4-count加一&quot;&gt;&lt;a href=&quot;#4-count加一&quot; class=&quot;headerlink&quot; title=&quot;4. count加一&quot;&gt;&lt;/a&gt;4. count加一&lt;/h2&gt;&lt;h2 id=&quot;5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot;&gt;&lt;a href=&quot;#5-判断x和number的大小关系：如果a-gt-number，输出“大”；如果a-lt-number，输出“小”&quot; class=&quot;headerlink&quot; title=&quot;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&quot;&gt;&lt;/a&gt;5. 判断x和number的大小关系：如果a&amp;gt;number，输出“大”；如果a&amp;lt;number，输出“小”&lt;/h2&gt;&lt;h2 id=&quot;6-如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;a href=&quot;#6-如果a和number是不相等的，程序转回到第三步&quot; class=&quot;headerlink&quot; title=&quot;6. 如果a和number是不相等的，程序转回到第三步&quot;&gt;&lt;/a&gt;6. 如果a和number是不相等的，程序转回到第三步&lt;/h2&gt;&lt;h2 id=&quot;7-否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;a href=&quot;#7-否则，程序输出“猜中”和所用次数，然后结束&quot; class=&quot;headerlink&quot; title=&quot;7. 否则，程序输出“猜中”和所用次数，然后结束&quot;&gt;&lt;/a&gt;7. 否则，程序输出“猜中”和所用次数，然后结束&lt;/h2&gt;&lt;h2 id=&quot;随机数&quot;&gt;&lt;a href=&quot;#随机数&quot; class=&quot;headerlink&quot; title=&quot;随机数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/basics/11/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;随机数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;每次召唤rand()就得到一个随机的整数&lt;br&gt;将随机得到的整数number%100的结果是［0,99］的一个整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	srand(time(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; number = rand()%&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	count ++ ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( x &amp;gt; number )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;你猜的数大了\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( x &amp;lt; number)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;你猜的数小了\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(x != number);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;恭喜你猜对了，所用次数是%d\n&quot;&lt;/span&gt;,count);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;让计算机来想一个数,然后让用户来猜,用户每输一个数,就告诉它是大了还是小了,直到用户猜中为止,最后还要告诉用户它猜了多少次。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;a href=&quot;#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。&quot; class=&quot;headerlink&quot; title=&quot;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&quot;&gt;&lt;/a&gt;因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。&lt;/h2&gt;&lt;h2 id=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;a href=&quot;#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot; class=&quot;headerlink&quot; title=&quot;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&quot;&gt;&lt;/a&gt;要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数的逆序</title>
-    <link href="http://yoursite.com/2016/07/15/C%20/answers/9/"/>
-    <id>http://yoursite.com/2016/07/15/C /answers/9/</id>
-    <published>2016-07-15T01:10:00.000Z</published>
-    <updated>2016-07-23T05:45:39.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;数的逆序&quot;&gt;&lt;a href=&quot;#数的逆序&quot; class=&quot;headerlink&quot; title=&quot;数的逆序&quot;&gt;&lt;/a&gt;数的逆序&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;你的程序每次读到一个正整数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输出逆序的数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;12345&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;54321&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;用到了&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/basics/8.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;整数的分解&lt;/a&gt;和&lt;a href=&quot;http://biubiubiu.site/2016/07/14/C%20/basics/7.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;循环&lt;/a&gt;的知识。&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x,digit,ret=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( x &amp;gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; )&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	digit = x % &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	x = x / &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	ret = ret * &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt; + digit;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,ret);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;数的逆序&quot;&gt;&lt;a href=&quot;#数的逆序&quot; class=&quot;headerlink&quot; title=&quot;数的逆序&quot;&gt;&lt;/a&gt;数的逆序&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;你的程序每次读到一个正整数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输出逆序的数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;12345&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;54321&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
     
