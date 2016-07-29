@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/29/Arduino/1/</loc>
-    <lastmod>2016-07-29T15:13:01.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/29/Arduino/0/</loc>
+    <lastmod>2016-07-29T15:15:41.000Z</lastmod>
     <data>
         <display>
-        <title>Arduino入门——LED灯渐变</title>
-        <pubTime>2016-07-29T15:01:00.000Z</pubTime>
+        <title>Arduino入门——针脚灯闪烁</title>
+        <pubTime>2016-07-29T14:52:00.000Z</pubTime>
         
         <tag>Arduino</tag>
          
@@ -26,12 +26,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/29/Arduino/0/</loc>
-    <lastmod>2016-07-29T15:12:59.000Z</lastmod>
+    <loc>http://yoursite.com/2016/07/29/Arduino/1/</loc>
+    <lastmod>2016-07-29T15:15:40.000Z</lastmod>
     <data>
         <display>
-        <title>Arduino入门——针脚灯闪烁</title>
-        <pubTime>2016-07-29T14:52:00.000Z</pubTime>
+        <title>Arduino入门——LED灯渐变</title>
+        <pubTime>2016-07-29T15:01:00.000Z</pubTime>
         
         <tag>Arduino</tag>
          
