@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C语言,题解,循环," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -88,58 +88,13 @@
 
 
 
-<meta name="description" content="数的逆序
-Description
-程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。
-
-Input
-你的程序每次读到一个正整数。
-
-Output
-输出逆序的数。
-
-Sample Input
-12345
-
-Sample Output
-54321">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数的逆序">
-<meta property="og:url" content="http://yoursite.com/2016/07/15/C /answers/9/index.html">
+<meta property="og:title" content="当做成长">
+<meta property="og:url" content="http://yoursite.com/2016/07/29/Arduino/3/index.html">
 <meta property="og:site_name" content="当做成长">
-<meta property="og:description" content="数的逆序
-Description
-程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。
-
-Input
-你的程序每次读到一个正整数。
-
-Output
-输出逆序的数。
-
-Sample Input
-12345
-
-Sample Output
-54321">
-<meta property="og:updated_time" content="2016-07-23T05:45:39.000Z">
+<meta property="og:updated_time" content="2016-07-29T15:07:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数的逆序">
-<meta name="twitter:description" content="数的逆序
-Description
-程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。
-
-Input
-你的程序每次读到一个正整数。
-
-Output
-输出逆序的数。
-
-Sample Input
-12345
-
-Sample Output
-54321">
+<meta name="twitter:title" content="当做成长">
 
 
 
@@ -160,9 +115,9 @@ Sample Output
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/15/C /answers/9/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/29/Arduino/3/"/>
 
-  <title> 数的逆序 | 当做成长 </title>
+  <title>  | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -302,7 +257,7 @@ Sample Output
             
             
               
-                数的逆序
+                
               
             
           </h1>
@@ -314,30 +269,11 @@ Sample Output
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-15T09:10:00+08:00" content="2016-07-15">
-              2016-07-15
+            <time itemprop="dateCreated" datetime="2016-07-29T23:07:11+08:00" content="2016-07-29">
+              2016-07-29
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
@@ -361,27 +297,7 @@ Sample Output
       
 
       
-        <h1 id="数的逆序"><a href="#数的逆序" class="headerlink" title="数的逆序"></a>数的逆序</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>程序每次读入一个正整数，然后输出逆序的数字。注意，当输入的数字含有结尾的0时，输出不应带有前导的0。比如输入700，输出应该是7。</p>
-</blockquote>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-<p>你的程序每次读到一个正整数。</p>
-</blockquote>
-<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
-<p>输出逆序的数。</p>
-</blockquote>
-<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
-<p>12345</p>
-</blockquote>
-<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
-<p>54321</p>
-</blockquote>
-</blockquote>
-<a id="more"></a>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>用到了<a href="http://biubiubiu.site/2016/07/15/C%20/basics/8.1/" target="_blank" rel="external">整数的分解</a>和<a href="http://biubiubiu.site/2016/07/14/C%20/basics/7.1/" target="_blank" rel="external">循环</a>的知识。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> x,digit,ret=<span class="number">0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</div><div class="line">   	<span class="keyword">while</span>( x &gt; <span class="number">0</span> )</div><div class="line">   	&#123;</div><div class="line">       	digit = x % <span class="number">10</span>;</div><div class="line">       	x = x / <span class="number">10</span>;</div><div class="line">       	ret = ret * <span class="number">10</span> + digit;</div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ret);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+        <div class="video-container"></div>
       
     </div>
 
@@ -401,32 +317,18 @@ Sample Output
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/C语言/" rel="tag">#C语言</a>
-          
-            <a href="/tags/题解/" rel="tag">#题解</a>
-          
-            <a href="/tags/循环/" rel="tag">#循环</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/15/C /basics/8.1/" rel="next" title="整数的分解">
-                <i class="fa fa-chevron-left"></i> 整数的分解
+              <a href="/2016/07/29/Arduino/1/" rel="next" title="Arduino入门——LED灯渐变">
+                <i class="fa fa-chevron-left"></i> Arduino入门——LED灯渐变
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/15/C /answers/10/" rel="prev" title="猜数游戏">
-                猜数游戏 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -567,7 +469,7 @@ Sample Output
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数的逆序"><span class="nav-number">1.</span> <span class="nav-text">数的逆序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Input"><span class="nav-number">1.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Output"><span class="nav-number">1.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>

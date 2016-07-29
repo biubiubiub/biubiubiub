@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T15:04:39.000Z</updated>
+  <updated>2016-07-29T15:07:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2016/07/29/Arduino/3/"/>
+    <id>http://yoursite.com/2016/07/29/Arduino/3/</id>
+    <published>2016-07-29T15:07:11.000Z</published>
+    <updated>2016-07-29T15:07:29.000Z</updated>
+    
+    <content type="html">&lt;div class=&quot;video-container&quot;&gt;&lt;/div&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;video-container&quot;&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Arduino入门——LED灯渐变</title>
@@ -1309,126 +1327,6 @@
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言基础知识——循环控制</title>
-    <link href="http://yoursite.com/2016/07/16/C%20/basics/13.1/"/>
-    <id>http://yoursite.com/2016/07/16/C /basics/13.1/</id>
-    <published>2016-07-16T03:19:06.000Z</published>
-    <updated>2016-07-23T05:46:26.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
-{
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
-&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
-&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;循环次数&quot;&gt;&lt;a href=&quot;#循环次数&quot; class=&quot;headerlink&quot; title=&quot;循环次数&quot;&gt;&lt;/a&gt;循环次数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for(i=0;i&amp;lt;n;i++)等价于 for(i=1;i&amp;lt;=n-1;i++)&lt;/li&gt;
-&lt;li&gt;循环次数是n，循环结束以后i的值是n。循环的控制变量i，选择从0开始还是从1开始，是判断i&amp;lt;n还是判断i&amp;lt;=n，    对循环的次数和循环结束后变量的值都有影响&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Tips-for-loops&quot;&gt;&lt;a href=&quot;#Tips-for-loops&quot; class=&quot;headerlink&quot; title=&quot;Tips for loops&quot;&gt;&lt;/a&gt;Tips for loops&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果有固定次数，用for循环&lt;/li&gt;
-&lt;li&gt;如果必须执行一次，用do-while循环&lt;/li&gt;
-&lt;li&gt;其他情况用while循环&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;循环控制&quot;&gt;&lt;a href=&quot;#循环控制&quot; class=&quot;headerlink&quot; title=&quot;循环控制&quot;&gt;&lt;/a&gt;循环控制&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;break-VS-continue&quot;&gt;&lt;a href=&quot;#break-VS-continue&quot; class=&quot;headerlink&quot; title=&quot;break VS continue&quot;&gt;&lt;/a&gt;break VS continue&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/break%20VS%20continue.png&quot; alt=&quot;break VS continue&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;break:跳出循环&lt;/li&gt;
-&lt;li&gt;continue:跳过循环的这一轮剩下的语句，进入下一轮&lt;/li&gt;
-&lt;li&gt;break和continue只能对它所在的那层循环做&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;嵌套的循环&quot;&gt;&lt;a href=&quot;#嵌套的循环&quot; class=&quot;headerlink&quot; title=&quot;嵌套的循环&quot;&gt;&lt;/a&gt;嵌套的循环&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;每一层循环的循环控制变量不能相同&lt;/li&gt;
-&lt;li&gt;尽量避免太多和太深的循环嵌套结构&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/16/C%20/answers/14/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数(判断素数、找出100以内的素数、找出前50个素数)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/16/C%20/answers/15.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;凑硬币(接力break、使用goto语句)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;循环应用&quot;&gt;&lt;a href=&quot;#循环应用&quot; class=&quot;headerlink&quot; title=&quot;循环应用&quot;&gt;&lt;/a&gt;循环应用&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n&quot;&gt;&lt;a href=&quot;#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n&quot; class=&quot;headerlink&quot; title=&quot;计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/16.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + …. + 1/n&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1&quot;&gt;&lt;a href=&quot;#计算f-n-1-1-1-2-1-3-1-4-1-5-…-1-n-1&quot; class=&quot;headerlink&quot; title=&quot;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/17.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;正序分解整数&quot;&gt;&lt;a href=&quot;#正序分解整数&quot; class=&quot;headerlink&quot; title=&quot;正序分解整数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/18.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;正序分解整数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;相关知识：&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/basics/8.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;整数的分解&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/15/C%20/answers/9/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;逆序的处理&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;求最大公约数&quot;&gt;&lt;a href=&quot;#求最大公约数&quot; class=&quot;headerlink&quot; title=&quot;求最大公约数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/20/C%20/answers/19.1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求最大公约数&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;枚举法&lt;/li&gt;
-&lt;li&gt;辗转相除法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;素数求和（循环）&quot;&gt;&lt;a href=&quot;#素数求和（循环）&quot; class=&quot;headerlink&quot; title=&quot;素数求和（循环）&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/21/C%20/answers/22/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;素数求和（循环）&lt;/a&gt;&lt;/h2&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;for(初始化;条件;每轮的动作)
-{
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;for循环中每一个表达式都是可以省略的&lt;/li&gt;
-&lt;li&gt;for( ;条件; )等价于while(条件)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;做求和的程序时，记录结果的变量应该初始化为0，而做求积德变量时，记录结果的变量应该初始化为1&lt;/li&gt;
-&lt;li&gt;循环控制变量i只在循环里被使用了，在循环外面它没有任何用处。因此，我们可以把变量i的定义写到for语句里面去。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
     
   </entry>
   
