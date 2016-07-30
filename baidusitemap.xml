@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/07/30/Arduino/5/</loc>
+    <lastmod>2016-07-30T08:32:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>Arduino入门——舵机</title>
+        <pubTime>2016-07-30T08:30:00.000Z</pubTime>
+        
+        <tag>Arduino</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="Arduino" url="http://yoursite.com/categories/Arduino/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/07/30/Arduino/4/</loc>
     <lastmod>2016-07-30T06:31:25.000Z</lastmod>
     <data>
@@ -125,11 +147,11 @@
          
         <tag>C语言</tag>
          
+        <tag>素数</tag>
+         
         <tag>函数</tag>
          
         <tag>数组</tag>
-         
-        <tag>素数</tag>
          
          
            
@@ -175,11 +197,11 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
+        <tag>题解</tag>
          
         <tag>素数</tag>
          
-        <tag>题解</tag>
+        <tag>数组</tag>
          
          
            
@@ -201,11 +223,11 @@
         
         <tag>C语言</tag>
          
-        <tag>函数</tag>
+        <tag>题解</tag>
          
         <tag>素数</tag>
          
-        <tag>题解</tag>
+        <tag>函数</tag>
          
          
            
@@ -227,11 +249,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>循环</tag>
          
         <tag>素数</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -253,11 +275,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>循环</tag>
          
         <tag>素数</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -279,11 +301,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>函数</tag>
          
         <tag>数组</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -305,9 +327,9 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
-         
         <tag>题解</tag>
+         
+        <tag>数组</tag>
          
          
            
@@ -451,9 +473,9 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
-         
         <tag>题解</tag>
+         
+        <tag>数组</tag>
          
          
            
@@ -475,9 +497,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -499,9 +521,9 @@
         
         <tag>C语言</tag>
          
-        <tag>if语句</tag>
-         
         <tag>题解</tag>
+         
+        <tag>if语句</tag>
          
          
            
@@ -523,9 +545,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -547,9 +569,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -571,9 +593,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -595,9 +617,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -619,9 +641,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -643,9 +665,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -667,9 +689,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
