@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-01T05:42:36.000Z</updated>
+  <updated>2016-08-01T05:45:02.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,15 +20,15 @@
     <link href="http://yoursite.com/2016/08/01/java/basics/data-type/"/>
     <id>http://yoursite.com/2016/08/01/java/basics/data-type/</id>
     <published>2016-08-01T05:34:47.000Z</published>
-    <updated>2016-08-01T05:42:36.000Z</updated>
+    <updated>2016-08-01T05:45:02.000Z</updated>
     
     <content type="html">&lt;p&gt;Java 语言是一种强类型语言。通俗点说就是，在 Java 中存储的数据都是有类型的，而且必须在编译时就确定其类型。&lt;/p&gt;
 &lt;h1 id=&quot;两大数据类型&quot;&gt;&lt;a href=&quot;#两大数据类型&quot; class=&quot;headerlink&quot; title=&quot;两大数据类型&quot;&gt;&lt;/a&gt;两大数据类型&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;在-Java-的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot;&gt;&lt;a href=&quot;#在-Java-的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot;&gt;&lt;/a&gt;在 Java 的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;两大数据类型&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg&quot; alt=&quot;两大数据类型&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;常用的基本数据类型&quot;&gt;&lt;a href=&quot;#常用的基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;常用的基本数据类型&quot;&gt;&lt;/a&gt;常用的基本数据类型&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B2.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用的基本数据类型&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%B3%A8%E6%84%8F.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;注意&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;常用的基本数据类型&quot;&gt;&lt;a href=&quot;#常用的基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;常用的基本数据类型&quot;&gt;&lt;/a&gt;常用的基本数据类型&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B2.jpg&quot; alt=&quot;常用的基本数据类型&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%B3%A8%E6%84%8F.png&quot; alt=&quot;注意&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&quot;String-是一种常见的引用数据类型&quot;&gt;&lt;a href=&quot;#String-是一种常见的引用数据类型&quot; class=&quot;headerlink&quot; title=&quot;String 是一种常见的引用数据类型&quot;&gt;&lt;/a&gt;String 是一种常见的引用数据类型&lt;/h2&gt;&lt;/blockquote&gt;
 &lt;h1 id=&quot;Java-中-float-与-double-的区别&quot;&gt;&lt;a href=&quot;#Java-中-float-与-double-的区别&quot; class=&quot;headerlink&quot; title=&quot;Java 中 float 与 double 的区别&quot;&gt;&lt;/a&gt;Java 中 float 与 double 的区别&lt;/h1&gt;&lt;blockquote&gt;
@@ -42,7 +42,7 @@
       &lt;p&gt;Java 语言是一种强类型语言。通俗点说就是，在 Java 中存储的数据都是有类型的，而且必须在编译时就确定其类型。&lt;/p&gt;
 &lt;h1 id=&quot;两大数据类型&quot;&gt;&lt;a href=&quot;#两大数据类型&quot; class=&quot;headerlink&quot; title=&quot;两大数据类型&quot;&gt;&lt;/a&gt;两大数据类型&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;在-Java-的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot;&gt;&lt;a href=&quot;#在-Java-的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&quot;&gt;&lt;/a&gt;在 Java 的领域里，基本数据类型变量存的是数据本身，而引用类型变量存的是保存数据的空间地址。&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg&quot;&gt;两大数据类型&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg&quot; alt=&quot;两大数据类型&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -60,16 +60,16 @@
     <link href="http://yoursite.com/2016/08/01/java/basics/variable/"/>
     <id>http://yoursite.com/2016/08/01/java/basics/variable/</id>
     <published>2016-08-01T03:57:47.000Z</published>
-    <updated>2016-08-01T05:33:46.000Z</updated>
+    <updated>2016-08-01T05:45:00.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;描述变量&quot;&gt;&lt;a href=&quot;#描述变量&quot; class=&quot;headerlink&quot; title=&quot;描述变量&quot;&gt;&lt;/a&gt;描述变量&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;a href=&quot;#在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;/a&gt;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&lt;/h2&gt;&lt;h2 id=&quot;在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;a href=&quot;#在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;/a&gt;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;变量的使用&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;a href=&quot;#在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;/a&gt;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&lt;/h2&gt;&lt;h2 id=&quot;在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;a href=&quot;#在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;/a&gt;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8.jpg&quot; alt=&quot;变量的使用&quot;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;变量命名的规则&quot;&gt;&lt;a href=&quot;#变量命名的规则&quot; class=&quot;headerlink&quot; title=&quot;变量命名的规则&quot;&gt;&lt;/a&gt;变量命名的规则&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;变量命名的规则&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;变量命名的规则&quot;&gt;&lt;a href=&quot;#变量命名的规则&quot; class=&quot;headerlink&quot; title=&quot;变量命名的规则&quot;&gt;&lt;/a&gt;变量命名的规则&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89.jpg&quot; alt=&quot;变量命名的规则&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h1 id=&quot;符合规范的命名&quot;&gt;&lt;a href=&quot;#符合规范的命名&quot; class=&quot;headerlink&quot; title=&quot;符合规范的命名&quot;&gt;&lt;/a&gt;符合规范的命名&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E5%91%BD%E5%90%8D%20%E6%AD%A3%E7%A1%AE.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;符合规范的命名&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;不符合规范的命名&quot;&gt;&lt;a href=&quot;#不符合规范的命名&quot; class=&quot;headerlink&quot; title=&quot;不符合规范的命名&quot;&gt;&lt;/a&gt;不符合规范的命名&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E5%91%BD%E5%90%8D%20%E9%94%99%E8%AF%AF.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;不符合规范的命名&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;符合规范的命名&quot;&gt;&lt;a href=&quot;#符合规范的命名&quot; class=&quot;headerlink&quot; title=&quot;符合规范的命名&quot;&gt;&lt;/a&gt;符合规范的命名&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E5%91%BD%E5%90%8D%20%E6%AD%A3%E7%A1%AE.jpg&quot; alt=&quot;符合规范的命名&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;不符合规范的命名&quot;&gt;&lt;a href=&quot;#不符合规范的命名&quot; class=&quot;headerlink&quot; title=&quot;不符合规范的命名&quot;&gt;&lt;/a&gt;不符合规范的命名&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E5%91%BD%E5%90%8D%20%E9%94%99%E8%AF%AF.jpg&quot; alt=&quot;不符合规范的命名&quot;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;好的变量命名习惯&quot;&gt;&lt;a href=&quot;#好的变量命名习惯&quot; class=&quot;headerlink&quot; title=&quot;好的变量命名习惯&quot;&gt;&lt;/a&gt;好的变量命名习惯&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如-myAge&quot;&gt;&lt;a href=&quot;#1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如-myAge&quot; class=&quot;headerlink&quot; title=&quot;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge&quot;&gt;&lt;/a&gt;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge&lt;/h2&gt;&lt;h2 id=&quot;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名-stuName-保存“学生姓名”信息&quot;&gt;&lt;a href=&quot;#2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名-stuName-保存“学生姓名”信息&quot; class=&quot;headerlink&quot; title=&quot;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名 stuName 保存“学生姓名”信息&quot;&gt;&lt;/a&gt;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名 stuName 保存“学生姓名”信息&lt;/h2&gt;&lt;h2 id=&quot;PS：-Java-变量名的长度没有限制，但-Java-语言是区分大小写的，所以-price-和-Price-是两个完全不同的变量&quot;&gt;&lt;a href=&quot;#PS：-Java-变量名的长度没有限制，但-Java-语言是区分大小写的，所以-price-和-Price-是两个完全不同的变量&quot; class=&quot;headerlink&quot; title=&quot;PS： Java 变量名的长度没有限制，但 Java 语言是区分大小写的，所以 price 和 Price 是两个完全不同的变量&quot;&gt;&lt;/a&gt;PS： Java 变量名的长度没有限制，但 Java 语言是区分大小写的，所以 price 和 Price 是两个完全不同的变量&lt;/h2&gt;&lt;/blockquote&gt;
@@ -78,7 +78,7 @@
     <summary type="html">
     
       &lt;h1 id=&quot;描述变量&quot;&gt;&lt;a href=&quot;#描述变量&quot; class=&quot;headerlink&quot; title=&quot;描述变量&quot;&gt;&lt;/a&gt;描述变量&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;a href=&quot;#在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;/a&gt;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&lt;/h2&gt;&lt;h2 id=&quot;在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;a href=&quot;#在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;/a&gt;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8.jpg&quot;&gt;变量的使用&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;a href=&quot;#在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;/a&gt;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&lt;/h2&gt;&lt;h2 id=&quot;在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;a href=&quot;#在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;/a&gt;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8.jpg&quot; alt=&quot;变量的使用&quot;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
