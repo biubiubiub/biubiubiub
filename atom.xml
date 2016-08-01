@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-30T08:32:01.000Z</updated>
+  <updated>2016-08-01T02:35:17.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello August</title>
+    <link href="http://yoursite.com/2016/08/01/life/plan/"/>
+    <id>http://yoursite.com/2016/08/01/life/plan/</id>
+    <published>2016-08-01T02:35:00.000Z</published>
+    <updated>2016-08-01T02:35:17.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;8月学习计划&quot;&gt;&lt;a href=&quot;#8月学习计划&quot; class=&quot;headerlink&quot; title=&quot;8月学习计划&quot;&gt;&lt;/a&gt;8月学习计划&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://biubiubiu.site/categories/C语言/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;C语言基础&lt;/a&gt;重新学习&lt;br&gt;学习&lt;a href=&quot;http://biubiubiu.site/categories/Arduino/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Arduino&lt;/a&gt;，尝试做平衡车或四轴飞行器&lt;br&gt;预习&lt;a href=&quot;http://biubiubiu.site/categories/java/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;java&lt;/a&gt;基础知识&lt;br&gt;单词、听力、口语日常打卡&lt;br&gt;读书&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;8月健身计划&quot;&gt;&lt;a href=&quot;#8月健身计划&quot; class=&quot;headerlink&quot; title=&quot;8月健身计划&quot;&gt;&lt;/a&gt;8月健身计划&lt;/h1&gt;&lt;p&gt;热身&lt;br&gt;俯卧撑30个&lt;br&gt;杠铃弯举10kg＊15个&lt;br&gt;史密斯卧推20kg＊10个&lt;br&gt;引体向上力竭&lt;br&gt;俯卧撑25个&lt;br&gt;拉索夹胸12kg＊2＊10个&lt;br&gt;杠铃弯举10kg＊15个&lt;br&gt;引体向上力竭&lt;br&gt;俯卧撑20个&lt;br&gt;杠铃弯举10kg＊10个&lt;br&gt;史密斯卧推20kg＊8个&lt;br&gt;高位下拉32kg＊10&lt;br&gt;俯卧撑15个&lt;br&gt;仰卧起坐20个&lt;br&gt;史密斯卧推力竭&lt;br&gt;俯身划船20kg＊10个&lt;br&gt;杠铃弯举力竭&lt;br&gt;根据情况增加训练&lt;br&gt;拉伸&lt;br&gt;椭圆机150卡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;a href=&quot;#每5天对计划的完成度进行总结&quot; class=&quot;headerlink&quot; title=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;/a&gt;每5天对计划的完成度进行总结&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;8月学习计划&quot;&gt;&lt;a href=&quot;#8月学习计划&quot; class=&quot;headerlink&quot; title=&quot;8月学习计划&quot;&gt;&lt;/a&gt;8月学习计划&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://biubiubiu.site/categories/C语言/&quot;&gt;C语言基础&lt;/a&gt;重新学习&lt;br&gt;学习&lt;a href=&quot;http://biubiubiu.site/categories/Arduino/&quot;&gt;Arduino&lt;/a&gt;，尝试做平衡车或四轴飞行器&lt;br&gt;预习&lt;a href=&quot;http://biubiubiu.site/categories/java/&quot;&gt;java&lt;/a&gt;基础知识&lt;br&gt;单词、听力、口语日常打卡&lt;br&gt;读书&lt;br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Arduino入门——舵机</title>
@@ -1250,44 +1285,6 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;按照正序排列的每一位数字&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n</title>
-    <link href="http://yoursite.com/2016/07/20/C%20/answers/17.1/"/>
-    <id>http://yoursite.com/2016/07/20/C /answers/17.1/</id>
-    <published>2016-07-20T02:52:10.000Z</published>
-    <updated>2016-07-23T05:43:45.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;需要一个变量来控制正负号&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; sum=&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;n);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; sign=&lt;span class=&quot;number&quot;&gt;1.0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	sum += sign / i;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;       	sign = -sign;&lt;span class=&quot;comment&quot;&gt;//用于控制正负号&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%f\n&quot;&lt;/span&gt;,sum);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
     
