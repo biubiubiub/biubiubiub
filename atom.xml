@@ -47,9 +47,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -58,7 +58,7 @@
     <link href="http://yoursite.com/2016/08/01/java/basics/variable/"/>
     <id>http://yoursite.com/2016/08/01/java/basics/variable/</id>
     <published>2016-08-01T03:57:47.000Z</published>
-    <updated>2016-08-01T05:45:00.000Z</updated>
+    <updated>2016-08-01T06:08:09.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;描述变量&quot;&gt;&lt;a href=&quot;#描述变量&quot; class=&quot;headerlink&quot; title=&quot;描述变量&quot;&gt;&lt;/a&gt;描述变量&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;a href=&quot;#在-Java-中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&quot;&gt;&lt;/a&gt;在 Java 中，我们通过三个元素描述变量：变量类型、变量名以及变量值。&lt;/h2&gt;&lt;h2 id=&quot;在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;a href=&quot;#在-Java-程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot; class=&quot;headerlink&quot; title=&quot;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&quot;&gt;&lt;/a&gt;在 Java 程序中，我们也可以根据所需要保存的数据的格式，将其保存在指定类型的变量空间中，并且通过变量名快速定位。&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8.jpg&quot; alt=&quot;变量的使用&quot;&gt;&lt;/p&gt;
@@ -71,6 +71,8 @@
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;好的变量命名习惯&quot;&gt;&lt;a href=&quot;#好的变量命名习惯&quot; class=&quot;headerlink&quot; title=&quot;好的变量命名习惯&quot;&gt;&lt;/a&gt;好的变量命名习惯&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如-myAge&quot;&gt;&lt;a href=&quot;#1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如-myAge&quot; class=&quot;headerlink&quot; title=&quot;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge&quot;&gt;&lt;/a&gt;1、变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge&lt;/h2&gt;&lt;h2 id=&quot;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名-stuName-保存“学生姓名”信息&quot;&gt;&lt;a href=&quot;#2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名-stuName-保存“学生姓名”信息&quot; class=&quot;headerlink&quot; title=&quot;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名 stuName 保存“学生姓名”信息&quot;&gt;&lt;/a&gt;2、变量命名时，尽量简短且能清楚的表达变量的作用，做到见名知意。如：定义变量名 stuName 保存“学生姓名”信息&lt;/h2&gt;&lt;h2 id=&quot;PS：-Java-变量名的长度没有限制，但-Java-语言是区分大小写的，所以-price-和-Price-是两个完全不同的变量&quot;&gt;&lt;a href=&quot;#PS：-Java-变量名的长度没有限制，但-Java-语言是区分大小写的，所以-price-和-Price-是两个完全不同的变量&quot; class=&quot;headerlink&quot; title=&quot;PS： Java 变量名的长度没有限制，但 Java 语言是区分大小写的，所以 price 和 Price 是两个完全不同的变量&quot;&gt;&lt;/a&gt;PS： Java 变量名的长度没有限制，但 Java 语言是区分大小写的，所以 price 和 Price 是两个完全不同的变量&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;变量的使用规则&quot;&gt;&lt;a href=&quot;#变量的使用规则&quot; class=&quot;headerlink&quot; title=&quot;变量的使用规则&quot;&gt;&lt;/a&gt;变量的使用规则&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;1-java中的变量需要先声明后使用&quot;&gt;&lt;a href=&quot;#1-java中的变量需要先声明后使用&quot; class=&quot;headerlink&quot; title=&quot;1.java中的变量需要先声明后使用&quot;&gt;&lt;/a&gt;1.java中的变量需要先声明后使用&lt;/h2&gt;&lt;h2 id=&quot;2-变量使用时，可以声明变量的同时进行初始化；也可以先声明后赋值&quot;&gt;&lt;a href=&quot;#2-变量使用时，可以声明变量的同时进行初始化；也可以先声明后赋值&quot; class=&quot;headerlink&quot; title=&quot;2.变量使用时，可以声明变量的同时进行初始化；也可以先声明后赋值&quot;&gt;&lt;/a&gt;2.变量使用时，可以声明变量的同时进行初始化；也可以先声明后赋值&lt;/h2&gt;&lt;h2 id=&quot;3-变量中每次只能赋一个值&quot;&gt;&lt;a href=&quot;#3-变量中每次只能赋一个值&quot; class=&quot;headerlink&quot; title=&quot;3.变量中每次只能赋一个值&quot;&gt;&lt;/a&gt;3.变量中每次只能赋一个值&lt;/h2&gt;&lt;h2 id=&quot;4-main方法中定义的变量必须先赋值，然后才能输出&quot;&gt;&lt;a href=&quot;#4-main方法中定义的变量必须先赋值，然后才能输出&quot; class=&quot;headerlink&quot; title=&quot;4.main方法中定义的变量必须先赋值，然后才能输出&quot;&gt;&lt;/a&gt;4.main方法中定义的变量必须先赋值，然后才能输出&lt;/h2&gt;&lt;h2 id=&quot;5-虽然语法中没有提示错误，但在实际开发中，变量名不建议使用中文，容易产生安全隐患，譬如后期跨平台操作时出现乱码等等&quot;&gt;&lt;a href=&quot;#5-虽然语法中没有提示错误，但在实际开发中，变量名不建议使用中文，容易产生安全隐患，譬如后期跨平台操作时出现乱码等等&quot; class=&quot;headerlink&quot; title=&quot;5.虽然语法中没有提示错误，但在实际开发中，变量名不建议使用中文，容易产生安全隐患，譬如后期跨平台操作时出现乱码等等&quot;&gt;&lt;/a&gt;5.虽然语法中没有提示错误，但在实际开发中，变量名不建议使用中文，容易产生安全隐患，譬如后期跨平台操作时出现乱码等等&lt;/h2&gt;&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
@@ -84,9 +86,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -123,9 +125,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -152,9 +154,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
     
       <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
@@ -403,15 +405,15 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -449,11 +451,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -523,11 +525,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -587,9 +589,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -649,9 +651,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -859,9 +861,9 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
@@ -920,11 +922,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -947,9 +949,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -1009,9 +1011,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
@@ -1062,9 +1064,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
     
   </entry>
   
