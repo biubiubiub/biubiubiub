@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-01T05:45:02.000Z</updated>
+  <updated>2016-08-01T05:46:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/01/java/basics/data-type/"/>
     <id>http://yoursite.com/2016/08/01/java/basics/data-type/</id>
     <published>2016-08-01T05:34:47.000Z</published>
-    <updated>2016-08-01T05:45:02.000Z</updated>
+    <updated>2016-08-01T05:46:42.000Z</updated>
     
     <content type="html">&lt;p&gt;Java 语言是一种强类型语言。通俗点说就是，在 Java 中存储的数据都是有类型的，而且必须在编译时就确定其类型。&lt;/p&gt;
 &lt;h1 id=&quot;两大数据类型&quot;&gt;&lt;a href=&quot;#两大数据类型&quot; class=&quot;headerlink&quot; title=&quot;两大数据类型&quot;&gt;&lt;/a&gt;两大数据类型&lt;/h1&gt;&lt;blockquote&gt;
@@ -32,9 +32,7 @@
 &lt;blockquote&gt;
 &lt;h2 id=&quot;String-是一种常见的引用数据类型&quot;&gt;&lt;a href=&quot;#String-是一种常见的引用数据类型&quot; class=&quot;headerlink&quot; title=&quot;String 是一种常见的引用数据类型&quot;&gt;&lt;/a&gt;String 是一种常见的引用数据类型&lt;/h2&gt;&lt;/blockquote&gt;
 &lt;h1 id=&quot;Java-中-float-与-double-的区别&quot;&gt;&lt;a href=&quot;#Java-中-float-与-double-的区别&quot; class=&quot;headerlink&quot; title=&quot;Java 中 float 与 double 的区别&quot;&gt;&lt;/a&gt;Java 中 float 与 double 的区别&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;1-float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot;&gt;&lt;a href=&quot;#1-float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot; class=&quot;headerlink&quot; title=&quot;1.float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot;&gt;&lt;/a&gt;1.float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&lt;/h2&gt;&lt;p&gt;double是双精度浮点数，内存分配8个字节，占64位，有效小数位15位&lt;/p&gt;
-&lt;h2 id=&quot;2-java中默认声明的小数是double类型的，如double-d-4-0&quot;&gt;&lt;a href=&quot;#2-java中默认声明的小数是double类型的，如double-d-4-0&quot; class=&quot;headerlink&quot; title=&quot;2.java中默认声明的小数是double类型的，如double d=4.0&quot;&gt;&lt;/a&gt;2.java中默认声明的小数是double类型的，如double d=4.0&lt;/h2&gt;&lt;p&gt;如果声明： float x = 4.0则会报错，需要如下写法：float x = 4.0f或者float x = (float)4.0&lt;br&gt;其中4.0f后面的f只是为了区别double，并不代表任何数字上的意义              &lt;/p&gt;
-&lt;h2 id=&quot;3-对编程人员而言，double-和-float-的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot;&gt;&lt;a href=&quot;#3-对编程人员而言，double-和-float-的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot; class=&quot;headerlink&quot; title=&quot;3.对编程人员而言，double 和 float 的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot;&gt;&lt;/a&gt;3.对编程人员而言，double 和 float 的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot;&gt;&lt;a href=&quot;#1-float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot; class=&quot;headerlink&quot; title=&quot;1.float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&quot;&gt;&lt;/a&gt;1.float是单精度浮点数，内存分配4个字节，占32位，有效小数位6-7位&lt;/h2&gt;&lt;h2 id=&quot;double是双精度浮点数，内存分配8个字节，占64位，有效小数位15位&quot;&gt;&lt;a href=&quot;#double是双精度浮点数，内存分配8个字节，占64位，有效小数位15位&quot; class=&quot;headerlink&quot; title=&quot;double是双精度浮点数，内存分配8个字节，占64位，有效小数位15位&quot;&gt;&lt;/a&gt;double是双精度浮点数，内存分配8个字节，占64位，有效小数位15位&lt;/h2&gt;&lt;h2 id=&quot;2-java中默认声明的小数是double类型的，如double-d-4-0&quot;&gt;&lt;a href=&quot;#2-java中默认声明的小数是double类型的，如double-d-4-0&quot; class=&quot;headerlink&quot; title=&quot;2.java中默认声明的小数是double类型的，如double d=4.0&quot;&gt;&lt;/a&gt;2.java中默认声明的小数是double类型的，如double d=4.0&lt;/h2&gt;&lt;h2 id=&quot;如果声明：-float-x-4-0则会报错，需要如下写法：float-x-4-0f或者float-x-float-4-0&quot;&gt;&lt;a href=&quot;#如果声明：-float-x-4-0则会报错，需要如下写法：float-x-4-0f或者float-x-float-4-0&quot; class=&quot;headerlink&quot; title=&quot;如果声明： float x = 4.0则会报错，需要如下写法：float x = 4.0f或者float x = (float)4.0&quot;&gt;&lt;/a&gt;如果声明： float x = 4.0则会报错，需要如下写法：float x = 4.0f或者float x = (float)4.0&lt;/h2&gt;&lt;h2 id=&quot;其中4-0f后面的f只是为了区别double，并不代表任何数字上的意义&quot;&gt;&lt;a href=&quot;#其中4-0f后面的f只是为了区别double，并不代表任何数字上的意义&quot; class=&quot;headerlink&quot; title=&quot;其中4.0f后面的f只是为了区别double，并不代表任何数字上的意义&quot;&gt;&lt;/a&gt;其中4.0f后面的f只是为了区别double，并不代表任何数字上的意义&lt;/h2&gt;&lt;h2 id=&quot;3-对编程人员而言，double-和-float-的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot;&gt;&lt;a href=&quot;#3-对编程人员而言，double-和-float-的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot; class=&quot;headerlink&quot; title=&quot;3.对编程人员而言，double 和 float 的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&quot;&gt;&lt;/a&gt;3.对编程人员而言，double 和 float 的区别是double精度高，但double消耗内存是float的两倍，且double的运算速度较float稍慢。&lt;/h2&gt;&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
@@ -409,11 +407,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
-    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -451,11 +449,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -525,11 +523,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -589,9 +587,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -651,9 +649,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -922,11 +920,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
-    
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -1011,9 +1009,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
@@ -1064,9 +1062,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="循环" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
