@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C语言,题解,循环," />
+  <meta name="keywords" content="基础知识,java," />
 
 
 
@@ -88,22 +88,52 @@
 
 
 
-<meta name="description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
+<meta name="description" content="什么是运算符？
+运算符是一种“功能”符号，用以通知 Java 进行相关的运算。
+算术运算符
+赋值运算符
+比较运算符
+
+比较的结果是一个布尔值（ true 或 false ）
+逻辑运算符
+条件运算符
+条件运算符（ ? : ）也称为 “三元运算符”。语法形式：布尔表达式 ？ 表达式1 ：表达式2运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值
+运算符优先级">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n">
-<meta property="og:url" content="http://yoursite.com/2016/07/20/C /answers/17.1/index.html">
+<meta property="og:title" content="java基础知识——运算符">
+<meta property="og:url" content="http://yoursite.com/2016/08/03/java/basics/operator/index.html">
 <meta property="og:site_name" content="当做成长">
-<meta property="og:description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
-<meta property="og:updated_time" content="2016-07-23T05:43:45.000Z">
+<meta property="og:description" content="什么是运算符？
+运算符是一种“功能”符号，用以通知 Java 进行相关的运算。
+算术运算符
+赋值运算符
+比较运算符
+
+比较的结果是一个布尔值（ true 或 false ）
+逻辑运算符
+条件运算符
+条件运算符（ ? : ）也称为 “三元运算符”。语法形式：布尔表达式 ？ 表达式1 ：表达式2运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值
+运算符优先级">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.jpg">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6.jpg">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6.jpg">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6.jpg">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7.jpg">
+<meta property="og:updated_time" content="2016-08-03T03:15:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n">
-<meta name="twitter:description" content="题目
-Description
-计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n">
+<meta name="twitter:title" content="java基础知识——运算符">
+<meta name="twitter:description" content="什么是运算符？
+运算符是一种“功能”符号，用以通知 Java 进行相关的运算。
+算术运算符
+赋值运算符
+比较运算符
+
+比较的结果是一个布尔值（ true 或 false ）
+逻辑运算符
+条件运算符
+条件运算符（ ? : ）也称为 “三元运算符”。语法形式：布尔表达式 ？ 表达式1 ：表达式2运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值
+运算符优先级">
+<meta name="twitter:image" content="http://oab0hmzob.bkt.clouddn.com/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.jpg">
 
 
 
@@ -124,9 +154,9 @@ Description
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/20/C /answers/17.1/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/03/java/basics/operator/"/>
 
-  <title> 计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n | 当做成长 </title>
+  <title> java基础知识——运算符 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +296,7 @@ Description
             
             
               
-                计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + .... +1/n
+                java基础知识——运算符
               
             
           </h1>
@@ -278,8 +308,8 @@ Description
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T10:52:10+08:00" content="2016-07-20">
-              2016-07-20
+            <time itemprop="dateCreated" datetime="2016-08-03T10:29:47+08:00" content="2016-08-03">
+              2016-08-03
             </time>
           </span>
 
@@ -292,8 +322,8 @@ Description
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -325,15 +355,18 @@ Description
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>计算f(n) = 1/1 - 1/2 + 1/3 - 1/4 + 1/5 + …. +1/n</p>
-</blockquote>
-</blockquote>
-<a id="more"></a>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>需要一个变量来控制正负号</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">   	<span class="keyword">int</span> n;</div><div class="line">   	<span class="keyword">double</span> sum=<span class="number">0.0</span>;</div><div class="line">   	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</div><div class="line">   	<span class="keyword">double</span> sign=<span class="number">1.0</span>;</div><div class="line">   	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</div><div class="line">   	&#123;</div><div class="line">       	sum += sign / i;</div><div class="line">       	sign = -sign;<span class="comment">//用于控制正负号</span></div><div class="line">   	&#125;</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%f\n"</span>,sum);</div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+        <h1 id="什么是运算符？"><a href="#什么是运算符？" class="headerlink" title="什么是运算符？"></a>什么是运算符？</h1><blockquote>
+<h2 id="运算符是一种“功能”符号，用以通知-Java-进行相关的运算。"><a href="#运算符是一种“功能”符号，用以通知-Java-进行相关的运算。" class="headerlink" title="运算符是一种“功能”符号，用以通知 Java 进行相关的运算。"></a>运算符是一种“功能”符号，用以通知 Java 进行相关的运算。</h2></blockquote>
+<h1 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.jpg" alt="算术运算符"></p>
+<h1 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6.jpg" alt="赋值运算符"></p>
+<h1 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6.jpg" alt="比较运算符"></p>
+<blockquote>
+<h2 id="比较的结果是一个布尔值（-true-或-false-）"><a href="#比较的结果是一个布尔值（-true-或-false-）" class="headerlink" title="比较的结果是一个布尔值（ true 或 false ）"></a>比较的结果是一个布尔值（ true 或 false ）</h2></blockquote>
+<h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6.jpg" alt="逻辑运算符"></p>
+<h1 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h1><blockquote>
+<h2 id="条件运算符（-）也称为-“三元运算符”。"><a href="#条件运算符（-）也称为-“三元运算符”。" class="headerlink" title="条件运算符（ ? : ）也称为 “三元运算符”。"></a>条件运算符（ ? : ）也称为 “三元运算符”。</h2><h2 id="语法形式：布尔表达式-？-表达式1-：表达式2"><a href="#语法形式：布尔表达式-？-表达式1-：表达式2" class="headerlink" title="语法形式：布尔表达式 ？ 表达式1 ：表达式2"></a>语法形式：布尔表达式 ？ 表达式1 ：表达式2</h2><h2 id="运算过程：如果布尔表达式的值为-true-，则返回-表达式1-的值，否则返回-表达式2-的值"><a href="#运算过程：如果布尔表达式的值为-true-，则返回-表达式1-的值，否则返回-表达式2-的值" class="headerlink" title="运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值"></a>运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值</h2></blockquote>
+<h1 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7.jpg" alt="运算符优先级"></p>
+
       
     </div>
 
@@ -355,11 +388,9 @@ Description
       
         <div class="post-tags">
           
-            <a href="/tags/C语言/" rel="tag">#C语言</a>
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
           
-            <a href="/tags/题解/" rel="tag">#题解</a>
-          
-            <a href="/tags/循环/" rel="tag">#循环</a>
+            <a href="/tags/java/" rel="tag">#java</a>
           
         </div>
       
@@ -368,17 +399,13 @@ Description
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/20/C /answers/16.1/" rel="next" title="计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n">
-                <i class="fa fa-chevron-left"></i> 计算f(n) = 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + .... + 1/n
+              <a href="/2016/08/03/java/basics/comment-out/" rel="next" title="java基础知识——使用注释">
+                <i class="fa fa-chevron-left"></i> java基础知识——使用注释
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/20/C /answers/18.1/" rel="prev" title="正序分解整数">
-                正序分解整数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -519,7 +546,7 @@ Description
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是运算符？"><span class="nav-number">1.</span> <span class="nav-text">什么是运算符？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符是一种“功能”符号，用以通知-Java-进行相关的运算。"><span class="nav-number">1.1.</span> <span class="nav-text">运算符是一种“功能”符号，用以通知 Java 进行相关的运算。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#算术运算符"><span class="nav-number">2.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#赋值运算符"><span class="nav-number">3.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#比较运算符"><span class="nav-number">4.</span> <span class="nav-text">比较运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#比较的结果是一个布尔值（-true-或-false-）"><span class="nav-number">4.1.</span> <span class="nav-text">比较的结果是一个布尔值（ true 或 false ）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">5.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#条件运算符"><span class="nav-number">6.</span> <span class="nav-text">条件运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#条件运算符（-）也称为-“三元运算符”。"><span class="nav-number">6.1.</span> <span class="nav-text">条件运算符（ ? : ）也称为 “三元运算符”。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法形式：布尔表达式-？-表达式1-：表达式2"><span class="nav-number">6.2.</span> <span class="nav-text">语法形式：布尔表达式 ？ 表达式1 ：表达式2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算过程：如果布尔表达式的值为-true-，则返回-表达式1-的值，否则返回-表达式2-的值"><span class="nav-number">6.3.</span> <span class="nav-text">运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符优先级"><span class="nav-number">7.</span> <span class="nav-text">运算符优先级</span></a></li></ol></div>
             
           </div>
         </section>

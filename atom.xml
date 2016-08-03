@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-03T01:41:27.000Z</updated>
+  <updated>2016-08-03T03:15:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,90 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java基础知识——运算符</title>
+    <link href="http://yoursite.com/2016/08/03/java/basics/operator/"/>
+    <id>http://yoursite.com/2016/08/03/java/basics/operator/</id>
+    <published>2016-08-03T02:29:47.000Z</published>
+    <updated>2016-08-03T03:15:19.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;什么是运算符？&quot;&gt;&lt;a href=&quot;#什么是运算符？&quot; class=&quot;headerlink&quot; title=&quot;什么是运算符？&quot;&gt;&lt;/a&gt;什么是运算符？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;运算符是一种“功能”符号，用以通知-Java-进行相关的运算。&quot;&gt;&lt;a href=&quot;#运算符是一种“功能”符号，用以通知-Java-进行相关的运算。&quot; class=&quot;headerlink&quot; title=&quot;运算符是一种“功能”符号，用以通知 Java 进行相关的运算。&quot;&gt;&lt;/a&gt;运算符是一种“功能”符号，用以通知 Java 进行相关的运算。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;算术运算符&quot;&gt;&lt;a href=&quot;#算术运算符&quot; class=&quot;headerlink&quot; title=&quot;算术运算符&quot;&gt;&lt;/a&gt;算术运算符&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.jpg&quot; alt=&quot;算术运算符&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;赋值运算符&quot;&gt;&lt;a href=&quot;#赋值运算符&quot; class=&quot;headerlink&quot; title=&quot;赋值运算符&quot;&gt;&lt;/a&gt;赋值运算符&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6.jpg&quot; alt=&quot;赋值运算符&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;比较运算符&quot;&gt;&lt;a href=&quot;#比较运算符&quot; class=&quot;headerlink&quot; title=&quot;比较运算符&quot;&gt;&lt;/a&gt;比较运算符&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6.jpg&quot; alt=&quot;比较运算符&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;比较的结果是一个布尔值（-true-或-false-）&quot;&gt;&lt;a href=&quot;#比较的结果是一个布尔值（-true-或-false-）&quot; class=&quot;headerlink&quot; title=&quot;比较的结果是一个布尔值（ true 或 false ）&quot;&gt;&lt;/a&gt;比较的结果是一个布尔值（ true 或 false ）&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;逻辑运算符&quot;&gt;&lt;a href=&quot;#逻辑运算符&quot; class=&quot;headerlink&quot; title=&quot;逻辑运算符&quot;&gt;&lt;/a&gt;逻辑运算符&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6.jpg&quot; alt=&quot;逻辑运算符&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;条件运算符&quot;&gt;&lt;a href=&quot;#条件运算符&quot; class=&quot;headerlink&quot; title=&quot;条件运算符&quot;&gt;&lt;/a&gt;条件运算符&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;条件运算符（-）也称为-“三元运算符”。&quot;&gt;&lt;a href=&quot;#条件运算符（-）也称为-“三元运算符”。&quot; class=&quot;headerlink&quot; title=&quot;条件运算符（ ? : ）也称为 “三元运算符”。&quot;&gt;&lt;/a&gt;条件运算符（ ? : ）也称为 “三元运算符”。&lt;/h2&gt;&lt;h2 id=&quot;语法形式：布尔表达式-？-表达式1-：表达式2&quot;&gt;&lt;a href=&quot;#语法形式：布尔表达式-？-表达式1-：表达式2&quot; class=&quot;headerlink&quot; title=&quot;语法形式：布尔表达式 ？ 表达式1 ：表达式2&quot;&gt;&lt;/a&gt;语法形式：布尔表达式 ？ 表达式1 ：表达式2&lt;/h2&gt;&lt;h2 id=&quot;运算过程：如果布尔表达式的值为-true-，则返回-表达式1-的值，否则返回-表达式2-的值&quot;&gt;&lt;a href=&quot;#运算过程：如果布尔表达式的值为-true-，则返回-表达式1-的值，否则返回-表达式2-的值&quot; class=&quot;headerlink&quot; title=&quot;运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值&quot;&gt;&lt;/a&gt;运算过程：如果布尔表达式的值为 true ，则返回 表达式1 的值，否则返回 表达式2 的值&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;运算符优先级&quot;&gt;&lt;a href=&quot;#运算符优先级&quot; class=&quot;headerlink&quot; title=&quot;运算符优先级&quot;&gt;&lt;/a&gt;运算符优先级&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7.jpg&quot; alt=&quot;运算符优先级&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是运算符？&quot;&gt;&lt;a href=&quot;#什么是运算符？&quot; class=&quot;headerlink&quot; title=&quot;什么是运算符？&quot;&gt;&lt;/a&gt;什么是运算符？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;运算符是一种“功能”符号，用以通知-Java-进行相关的运算。&quot;
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java基础知识——使用注释</title>
+    <link href="http://yoursite.com/2016/08/03/java/basics/comment-out/"/>
+    <id>http://yoursite.com/2016/08/03/java/basics/comment-out/</id>
+    <published>2016-08-03T02:15:47.000Z</published>
+    <updated>2016-08-03T02:26:40.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在编写程序时，经常需要添加一些注释，用以描述某段代码的作用。被注释的代码块在程序运行时是不会被执行的。&lt;/p&gt;
+&lt;p&gt;一般来说，对于一份规范的程序源代码而言，注释应该占到源代码的 1/3 以上。因此，注释是程序源代码的重要组成部分。&lt;/p&gt;
+&lt;p&gt;java中注释有三种类型：单行注释、多行注释、文档注释。&lt;/p&gt;
+&lt;h1 id=&quot;单行注释&quot;&gt;&lt;a href=&quot;#单行注释&quot; class=&quot;headerlink&quot; title=&quot;单行注释&quot;&gt;&lt;/a&gt;单行注释&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;单行注释以-开头，行末结尾&quot;&gt;&lt;a href=&quot;#单行注释以-开头，行末结尾&quot; class=&quot;headerlink&quot; title=&quot;单行注释以 // 开头，行末结尾&quot;&gt;&lt;/a&gt;单行注释以 // 开头，行末结尾&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//System.out.println(&quot;Hello World!&quot;);&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;多行注释&quot;&gt;&lt;a href=&quot;#多行注释&quot; class=&quot;headerlink&quot; title=&quot;多行注释&quot;&gt;&lt;/a&gt;多行注释&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;多行注释以-开头，以-结尾&quot;&gt;&lt;a href=&quot;#多行注释以-开头，以-结尾&quot; class=&quot;headerlink&quot; title=&quot;多行注释以 / 开头，以 / 结尾&quot;&gt;&lt;/a&gt;多行注释以 /&lt;em&gt; 开头，以 &lt;/em&gt;/ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;文档注释&quot;&gt;&lt;a href=&quot;#文档注释&quot; class=&quot;headerlink&quot; title=&quot;文档注释&quot;&gt;&lt;/a&gt;文档注释&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;文档注释以-开头，以-结尾&quot;&gt;&lt;a href=&quot;#文档注释以-开头，以-结尾&quot; class=&quot;headerlink&quot; title=&quot;文档注释以 /* 开头，以 / 结尾&quot;&gt;&lt;/a&gt;文档注释以 /&lt;em&gt;* 开头，以 &lt;/em&gt;/ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是文档注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@author&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@version&lt;/span&gt; v1.0&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;使用文档注释时还可以使用-javadoc-标记，生成更详细的文档信息：&quot;&gt;&lt;a href=&quot;#使用文档注释时还可以使用-javadoc-标记，生成更详细的文档信息：&quot; class=&quot;headerlink&quot; title=&quot;使用文档注释时还可以使用 javadoc 标记，生成更详细的文档信息：&quot;&gt;&lt;/a&gt;使用文档注释时还可以使用 javadoc 标记，生成更详细的文档信息：&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;author-标明开发该类模块的作者&quot;&gt;&lt;a href=&quot;#author-标明开发该类模块的作者&quot; class=&quot;headerlink&quot; title=&quot;@author 标明开发该类模块的作者&quot;&gt;&lt;/a&gt;@author 标明开发该类模块的作者&lt;/h2&gt;&lt;h2 id=&quot;version-标明该类模块的版本&quot;&gt;&lt;a href=&quot;#version-标明该类模块的版本&quot; class=&quot;headerlink&quot; title=&quot;@version 标明该类模块的版本&quot;&gt;&lt;/a&gt;@version 标明该类模块的版本&lt;/h2&gt;&lt;h2 id=&quot;see-参考转向，也就是相关主题&quot;&gt;&lt;a href=&quot;#see-参考转向，也就是相关主题&quot; class=&quot;headerlink&quot; title=&quot;@see 参考转向，也就是相关主题&quot;&gt;&lt;/a&gt;@see 参考转向，也就是相关主题&lt;/h2&gt;&lt;h2 id=&quot;param-对方法中某参数的说明&quot;&gt;&lt;a href=&quot;#param-对方法中某参数的说明&quot; class=&quot;headerlink&quot; title=&quot;@param 对方法中某参数的说明&quot;&gt;&lt;/a&gt;@param 对方法中某参数的说明&lt;/h2&gt;&lt;h2 id=&quot;return-对方法返回值的说明&quot;&gt;&lt;a href=&quot;#return-对方法返回值的说明&quot; class=&quot;headerlink&quot; title=&quot;@return 对方法返回值的说明&quot;&gt;&lt;/a&gt;@return 对方法返回值的说明&lt;/h2&gt;&lt;h2 id=&quot;exception-对方法可能抛出的异常进行说明&quot;&gt;&lt;a href=&quot;#exception-对方法可能抛出的异常进行说明&quot; class=&quot;headerlink&quot; title=&quot;@exception 对方法可能抛出的异常进行说明&quot;&gt;&lt;/a&gt;@exception 对方法可能抛出的异常进行说明&lt;/h2&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在编写程序时，经常需要添加一些注释，用以描述某段代码的作用。被注释的代码块在程序运行时是不会被执行的。&lt;/p&gt;
+&lt;p&gt;一般来说，对于一份规范的程序源代码而言，注释应该占到源代码的 1/3 以上。因此，注释是程序源代码的重要组成部分。&lt;/p&gt;
+&lt;p&gt;java中注释有三种类型：单行注释、多行注释、文档注释。&lt;/p&gt;
+&lt;h1 id=&quot;单行注释&quot;&gt;&lt;a href=&quot;#单行注释&quot; class=&quot;headerlink&quot; title=&quot;单行注释&quot;&gt;&lt;/a&gt;单行注释&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;单行注释以-开头，行末结尾&quot;&gt;&lt;a href=&quot;#单行注释以-开头，行末结尾&quot; class=&quot;headerlink&quot; title=&quot;单行注释以 // 开头，行末结尾&quot;&gt;&lt;/a&gt;单行注释以 // 开头，行末结尾&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//System.out.println(&quot;Hello World!&quot;);&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;多行注释&quot;&gt;&lt;a href=&quot;#多行注释&quot; class=&quot;headerlink&quot; title=&quot;多行注释&quot;&gt;&lt;/a&gt;多行注释&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;多行注释以-开头，以-结尾&quot;&gt;&lt;a href=&quot;#多行注释以-开头，以-结尾&quot; class=&quot;headerlink&quot; title=&quot;多行注释以 / 开头，以 / 结尾&quot;&gt;&lt;/a&gt;多行注释以 /&lt;em&gt; 开头，以 &lt;/em&gt;/ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础知识——Java常量的应用</title>
@@ -960,92 +1044,6 @@
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>素数求和（函数）</title>
-    <link href="http://yoursite.com/2016/07/22/C%20/answers/23/"/>
-    <id>http://yoursite.com/2016/07/22/C /answers/23/</id>
-    <published>2016-07-22T02:41:23.000Z</published>
-    <updated>2016-07-23T07:21:08.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;两个正整数，第一个表示n，第二个表示m。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;一个整数，表示第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;2 4 &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;15&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;实参把值赋给了形参，与变量名无关&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;32&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;33&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;34&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;prime&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a)&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//x的值赋给了a&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; ret=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;i&amp;lt;a;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(a%i==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            ret=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;span class=&quot;comment&quot;&gt;//返回值返回给了prime&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n,m;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//用于计数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d %d&quot;&lt;/span&gt;,&amp;amp;n,&amp;amp;m);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;; count&amp;lt;=m ;x++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(prime(x)==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;span class=&quot;comment&quot;&gt;//这里输入的是x，并把x的值赋给了函数里的a，返回值如果是1，就执行下面的循环，否则不执行&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(count&amp;gt;=n &amp;amp;&amp;amp; count&amp;lt;=m)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                sum += x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            count++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,sum);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;我们认为2是第一个素数，3是第二个素数，5是第三个素数，依次类推。现在，给定两个整数n和m，0&amp;lt;n&amp;lt;=m&amp;lt;=200，你的程序要计算第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。注意：是第n个素数到第m个素数，不是n和m之间的素数！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;两个正整数，第一个表示n，第二个表示m。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;一个整数，表示第n个素数到第m个素数之间所有的素数的和，包括第n个素数和第m个素数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;2 4 &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;15&lt;br&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
-    
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一个java程序——Hello World</title>
-    <link href="http://yoursite.com/2016/07/21/java/basics/Hello-World/"/>
-    <id>http://yoursite.com/2016/07/21/java/basics/Hello-World/</id>
-    <published>2016-07-21T12:34:47.000Z</published>
-    <updated>2016-07-21T12:59:07.000Z</updated>
-    
-    <content type="html">&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; hello;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hello&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;// TODO Auto-generated method stub&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;l
-    
-    </summary>
-    
-      <category term="java" scheme="http://yoursite.com/categories/java/"/>
-    
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
