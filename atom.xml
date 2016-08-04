@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-03T03:15:19.000Z</updated>
+  <updated>2016-08-04T09:17:28.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,157 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java基础知识——数组</title>
+    <link href="http://yoursite.com/2016/08/04/java/basics/array/"/>
+    <id>http://yoursite.com/2016/08/04/java/basics/array/</id>
+    <published>2016-08-04T06:47:47.000Z</published>
+    <updated>2016-08-04T09:17:28.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;a href=&quot;#数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot; class=&quot;headerlink&quot; title=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;/a&gt;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] score = &amp;#123; &lt;span class=&quot;number&quot;&gt;76&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;83&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;92&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;87&lt;/span&gt;&amp;#125;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92&quot;&gt;&lt;a href=&quot;#数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92&quot; class=&quot;headerlink&quot; title=&quot;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92&quot;&gt;&lt;/a&gt;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;操作数组的四个步骤&quot;&gt;&lt;a href=&quot;#操作数组的四个步骤&quot; class=&quot;headerlink&quot; title=&quot;操作数组的四个步骤&quot;&gt;&lt;/a&gt;操作数组的四个步骤&lt;/h1&gt;&lt;h2 id=&quot;1-声明数组&quot;&gt;&lt;a href=&quot;#1-声明数组&quot; class=&quot;headerlink&quot; title=&quot;1.声明数组&quot;&gt;&lt;/a&gt;1.声明数组&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;语法：-数据类型-数组名-或者-数据类型-数组名&quot;&gt;&lt;a href=&quot;#语法：-数据类型-数组名-或者-数据类型-数组名&quot; class=&quot;headerlink&quot; title=&quot;语法： 数据类型[] 数组名;   或者   数据类型 数组名[];&quot;&gt;&lt;/a&gt;语法： 数据类型[] 数组名;   或者   数据类型 数组名[];&lt;/h3&gt;&lt;h3 id=&quot;其中，数组名可以是任意合法的变量名&quot;&gt;&lt;a href=&quot;#其中，数组名可以是任意合法的变量名&quot; class=&quot;headerlink&quot; title=&quot;其中，数组名可以是任意合法的变量名&quot;&gt;&lt;/a&gt;其中，数组名可以是任意合法的变量名&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;2-分配空间&quot;&gt;&lt;a href=&quot;#2-分配空间&quot; class=&quot;headerlink&quot; title=&quot;2.分配空间&quot;&gt;&lt;/a&gt;2.分配空间&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;简单的说，就是指定数组中最多可以存储多少个元素&quot;&gt;&lt;a href=&quot;#简单的说，就是指定数组中最多可以存储多少个元素&quot; class=&quot;headerlink&quot; title=&quot;简单的说，就是指定数组中最多可以存储多少个元素&quot;&gt;&lt;/a&gt;简单的说，就是指定数组中最多可以存储多少个元素&lt;/h3&gt;&lt;h3 id=&quot;语法：-数组名-new-数据类型-数组长度&quot;&gt;&lt;a href=&quot;#语法：-数组名-new-数据类型-数组长度&quot; class=&quot;headerlink&quot; title=&quot;语法： 数组名 = new 数据类型 [ 数组长度 ];&quot;&gt;&lt;/a&gt;语法： 数组名 = new 数据类型 [ 数组长度 ];&lt;/h3&gt;&lt;h3 id=&quot;其中，数组长度就是数组中能存放元素的个数&quot;&gt;&lt;a href=&quot;#其中，数组长度就是数组中能存放元素的个数&quot; class=&quot;headerlink&quot; title=&quot;其中，数组长度就是数组中能存放元素的个数&quot;&gt;&lt;/a&gt;其中，数组长度就是数组中能存放元素的个数&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;scores = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//长度为5的整数数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;height = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//长度为5的浮点型数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;names = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; String[&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//长度为5的字符串数组&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;我们可以在声明数组的同时为它分配空间&quot;&gt;&lt;a href=&quot;#我们可以在声明数组的同时为它分配空间&quot; class=&quot;headerlink&quot; title=&quot;我们可以在声明数组的同时为它分配空间&quot;&gt;&lt;/a&gt;我们可以在声明数组的同时为它分配空间&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] scores = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;];&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;3-赋值&quot;&gt;&lt;a href=&quot;#3-赋值&quot; class=&quot;headerlink&quot; title=&quot;3.赋值&quot;&gt;&lt;/a&gt;3.赋值&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的&quot;&gt;&lt;a href=&quot;#分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的&quot; class=&quot;headerlink&quot; title=&quot;分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的&quot;&gt;&lt;/a&gt;分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;scores[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;89&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;scores[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;77&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;4-处理数组中的数据&quot;&gt;&lt;a href=&quot;#4-处理数组中的数据&quot; class=&quot;headerlink&quot; title=&quot;4.处理数组中的数据&quot;&gt;&lt;/a&gt;4.处理数组中的数据&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值&quot;&gt;&lt;a href=&quot;#我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值&quot; class=&quot;headerlink&quot; title=&quot;我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值&quot;&gt;&lt;/a&gt;我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;scores数组中第一个元素的值：&quot;&lt;/span&gt; + scores[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;直接创建数组的方式&quot;&gt;&lt;a href=&quot;#直接创建数组的方式&quot; class=&quot;headerlink&quot; title=&quot;直接创建数组的方式&quot;&gt;&lt;/a&gt;直接创建数组的方式&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;它将声明数组、分配空间和赋值合并完成&quot;&gt;&lt;a href=&quot;#它将声明数组、分配空间和赋值合并完成&quot; class=&quot;headerlink&quot; title=&quot;它将声明数组、分配空间和赋值合并完成&quot;&gt;&lt;/a&gt;它将声明数组、分配空间和赋值合并完成&lt;/h3&gt;&lt;h3 id=&quot;如-int-scores-78-91-84-68-等价于-int-scores-new-int-78-91-84-68&quot;&gt;&lt;a href=&quot;#如-int-scores-78-91-84-68-等价于-int-scores-new-int-78-91-84-68&quot; class=&quot;headerlink&quot; title=&quot;如 int[] scores = { 78, 91, 84, 68}; 等价于 int[] scores = new int[]{ 78, 91, 84, 68};&quot;&gt;&lt;/a&gt;如 int[] scores = { 78, 91, 84, 68}; 等价于 int[] scores = new int[]{ 78, 91, 84, 68};&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;使用循环操作java中的数组&quot;&gt;&lt;a href=&quot;#使用循环操作java中的数组&quot; class=&quot;headerlink&quot; title=&quot;使用循环操作java中的数组&quot;&gt;&lt;/a&gt;使用循环操作java中的数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;实际开发中我们经常使用循环控制数组成员的操作。&quot;&gt;&lt;a href=&quot;#实际开发中我们经常使用循环控制数组成员的操作。&quot; class=&quot;headerlink&quot; title=&quot;实际开发中我们经常使用循环控制数组成员的操作。&quot;&gt;&lt;/a&gt;实际开发中我们经常使用循环控制数组成员的操作。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] scores = &amp;#123; &lt;span class=&quot;number&quot;&gt;78&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;84&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;68&lt;/span&gt;&amp;#125;;   &lt;span class=&quot;comment&quot;&gt;//定义一个长度为4的数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i&amp;lt;scores.length; i++)  &lt;span class=&quot;comment&quot;&gt;//循环变量从0开始递增到数组的最大长度scores.length&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;数组中第&quot;&lt;/span&gt; + (i+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) + &lt;span class=&quot;string&quot;&gt;&quot;个元素的值是&quot;&lt;/span&gt; + scores[i]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;其中，数组名-length-用于获取数组的长度&quot;&gt;&lt;a href=&quot;#其中，数组名-length-用于获取数组的长度&quot; class=&quot;headerlink&quot; title=&quot;其中，数组名.length 用于获取数组的长度&quot;&gt;&lt;/a&gt;其中，数组名.length 用于获取数组的长度&lt;/h2&gt;&lt;h2 id=&quot;需要注意的地方：&quot;&gt;&lt;a href=&quot;#需要注意的地方：&quot; class=&quot;headerlink&quot; title=&quot;需要注意的地方：&quot;&gt;&lt;/a&gt;需要注意的地方：&lt;/h2&gt;&lt;h2 id=&quot;1-数组下标从0开始。因此scores-3-表示数组中的第四个元素，而并非第三个元素&quot;&gt;&lt;a href=&quot;#1-数组下标从0开始。因此scores-3-表示数组中的第四个元素，而并非第三个元素&quot; class=&quot;headerlink&quot; title=&quot;1.数组下标从0开始。因此scores[3]表示数组中的第四个元素，而并非第三个元素&quot;&gt;&lt;/a&gt;1.数组下标从0开始。因此scores[3]表示数组中的第四个元素，而并非第三个元素&lt;/h2&gt;&lt;h2 id=&quot;2-数组下标的范围是从-0-到-数组长度-1，如果越界访问，就会报错。&quot;&gt;&lt;a href=&quot;#2-数组下标的范围是从-0-到-数组长度-1，如果越界访问，就会报错。&quot; class=&quot;headerlink&quot; title=&quot;2.数组下标的范围是从 0 到 数组长度-1，如果越界访问，就会报错。&quot;&gt;&lt;/a&gt;2.数组下标的范围是从 0 到 数组长度-1，如果越界访问，就会报错。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;使用-Arrays-类操作-java-中的数组&quot;&gt;&lt;a href=&quot;#使用-Arrays-类操作-java-中的数组&quot; class=&quot;headerlink&quot; title=&quot;使用 Arrays 类操作 java 中的数组&quot;&gt;&lt;/a&gt;使用 Arrays 类操作 java 中的数组&lt;/h1&gt;&lt;h2 id=&quot;什么是Arrays类？&quot;&gt;&lt;a href=&quot;#什么是Arrays类？&quot; class=&quot;headerlink&quot; title=&quot;什么是Arrays类？&quot;&gt;&lt;/a&gt;什么是Arrays类？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;Arrays-类是-Java-中提供的一个工具类，在-java-util-包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等&quot;&gt;&lt;a href=&quot;#Arrays-类是-Java-中提供的一个工具类，在-java-util-包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等&quot; class=&quot;headerlink&quot; title=&quot;Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等&quot;&gt;&lt;/a&gt;Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;Arrays中常用的方法：&quot;&gt;&lt;a href=&quot;#Arrays中常用的方法：&quot; class=&quot;headerlink&quot; title=&quot;Arrays中常用的方法：&quot;&gt;&lt;/a&gt;Arrays中常用的方法：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;1-排序&quot;&gt;&lt;a href=&quot;#1-排序&quot; class=&quot;headerlink&quot; title=&quot;1.排序&quot;&gt;&lt;/a&gt;1.排序&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;语法： Arrays.sort(数组名);&lt;br&gt;可以使用 sort( ) 方法实现对数组的排序，只要将数组名放在 sort( ) 方法的括号中，就可以完成对该数组的排序（按升序排列）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; sum;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Arrays;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Sum&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//定义一个整型数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] scores =&amp;#123; &lt;span class=&quot;number&quot;&gt;78&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;93&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;97&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;84&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;63&lt;/span&gt;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//使用Arrays类的sort()方法对数组进行排序&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Arrays.sort(scores);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;排序后的数组的值：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//循环遍历输出数组中的元素的值&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i &amp;lt; scores.length;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(scores[i]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;运行结果：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;排序后数组中元素的值：&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;63&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;78&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;84&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;93&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;97&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;2-将数组转换为字符串&quot;&gt;&lt;a href=&quot;#2-将数组转换为字符串&quot; class=&quot;headerlink&quot; title=&quot;2.将数组转换为字符串&quot;&gt;&lt;/a&gt;2.将数组转换为字符串&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;语法： Arrays.toString(数组名);&lt;br&gt;可以使用 toString( ) 方法将一个数组转换成字符串，该方法按顺序把多个数组元素连接在一起，多个元素之间使用逗号和空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; sum;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Arrays;	&lt;span class=&quot;comment&quot;&gt;//使用Arrays类时必须添加此行，导入包&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Sum&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//定义一个整形数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[]&amp;#123; &lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;126&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;53&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;86&lt;/span&gt; &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//使用Arrays类的toString()方法将数组转化为字符串并输出&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;输出数组nums中的元素：&quot;&lt;/span&gt; + Arrays.toString(nums));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;运行结果：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;输出数组nums中的元素：[&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;126&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;53&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;86&lt;/span&gt;]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;使用-foreach-操作数组&quot;&gt;&lt;a href=&quot;#使用-foreach-操作数组&quot; class=&quot;headerlink&quot; title=&quot;使用 foreach 操作数组&quot;&gt;&lt;/a&gt;使用 foreach 操作数组&lt;/h1&gt;&lt;h2 id=&quot;什么是-foreach-？&quot;&gt;&lt;a href=&quot;#什么是-foreach-？&quot; class=&quot;headerlink&quot; title=&quot;什么是 foreach ？&quot;&gt;&lt;/a&gt;什么是 foreach ？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;foreach-并不是-Java-中的关键字，是-for-语句的特殊简化版本，在遍历数组、集合时，-foreach-更简单便捷。从英文字面意思理解-foreach-也就是“-for-每一个”的意思&quot;&gt;&lt;a href=&quot;#foreach-并不是-Java-中的关键字，是-for-语句的特殊简化版本，在遍历数组、集合时，-foreach-更简单便捷。从英文字面意思理解-foreach-也就是“-for-每一个”的意思&quot; class=&quot;headerlink&quot; title=&quot;foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思&quot;&gt;&lt;/a&gt;foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(元素类型 元素变量:遍历对象)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    执行的代码&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;分别用for和foreach来遍历数组&quot;&gt;&lt;a href=&quot;#分别用for和foreach来遍历数组&quot; class=&quot;headerlink&quot; title=&quot;分别用for和foreach来遍历数组&quot;&gt;&lt;/a&gt;分别用for和foreach来遍历数组&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; sum;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Sum&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;	&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//定义一个字符串数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        String[] hobbys = &amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;sprots&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;music&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;reading&quot;&lt;/span&gt;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;***使用for循环输出数组中的元素***&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;hobbys.length;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(hobbys[i]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;***使用foreach循环输出数组中的元素***&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(String hobby : hobbys)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(hobby);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;运行结果：&quot;&gt;&lt;a href=&quot;#运行结果：&quot; class=&quot;headerlink&quot; title=&quot;运行结果：&quot;&gt;&lt;/a&gt;运行结果：&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;***使用&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;循环输出数组中的元素***&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;sprots&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;music&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;reading&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;***使用foreach循环输出数组中的元素***&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;sprots&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;music&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;reading&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;java-中的二维数组&quot;&gt;&lt;a href=&quot;#java-中的二维数组&quot; class=&quot;headerlink&quot; title=&quot;java 中的二维数组&quot;&gt;&lt;/a&gt;java 中的二维数组&lt;/h1&gt;&lt;h2 id=&quot;什么是二维数组？&quot;&gt;&lt;a href=&quot;#什么是二维数组？&quot; class=&quot;headerlink&quot; title=&quot;什么是二维数组？&quot;&gt;&lt;/a&gt;什么是二维数组？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。&quot;&gt;&lt;a href=&quot;#所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。&quot; class=&quot;headerlink&quot; title=&quot;所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。&quot;&gt;&lt;/a&gt;所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;使用二维数组的步骤&quot;&gt;&lt;a href=&quot;#使用二维数组的步骤&quot; class=&quot;headerlink&quot; title=&quot;使用二维数组的步骤&quot;&gt;&lt;/a&gt;使用二维数组的步骤&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;1-声明并分配空间&quot;&gt;&lt;a href=&quot;#1-声明并分配空间&quot; class=&quot;headerlink&quot; title=&quot;1.声明并分配空间&quot;&gt;&lt;/a&gt;1.声明并分配空间&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;数据类型[][] 数组名 ＝ &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; 数据类型[行的个数][列的个数]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;或者&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;数据类型[][] 数组名;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;数组名 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; 数据类型[行的个数][列的个数];&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//定义一个两行三列的二维数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[][] num = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;];&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;2-赋值&quot;&gt;&lt;a href=&quot;#2-赋值&quot; class=&quot;headerlink&quot; title=&quot;2.赋值&quot;&gt;&lt;/a&gt;2.赋值&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;二维数组的赋值，和一维数组类似，可以通过下标来逐个赋值，注意索引从 0 开始&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;数组名[行的索引][列的索引] = 值;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也可以在声明数组的同时为其赋值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;数据类型[][] 数组名 = &amp;#123;&amp;#123;值&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,值&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;...&amp;#125;,&amp;#123;值&lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;,值&lt;span class=&quot;number&quot;&gt;22&lt;/span&gt;...&amp;#125;,&amp;#123;值&lt;span class=&quot;number&quot;&gt;21&lt;/span&gt;,值&lt;span class=&quot;number&quot;&gt;22&lt;/span&gt;...&amp;#125;&amp;#125;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//给第1行第1列的元素赋值&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]=&lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;3-处理数据&quot;&gt;&lt;a href=&quot;#3-处理数据&quot; class=&quot;headerlink&quot; title=&quot;3.处理数据&quot;&gt;&lt;/a&gt;3.处理数据&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;二维数组的访问和输出同一维数组一样，只是多了一个下标而已。在循环输出时，需要里面再内嵌一个循环，即使用二重循环来输出二维数组中的每一个元素。如：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//定义一个2行3列的二维数组并赋值&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[][] num=&amp;#123;&amp;#123;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&amp;#125;,&amp;#123;&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;&amp;#125;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//定位行&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;num.length;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//定位每行的元素&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;num[i].length;j++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.print(num[i][j]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//实现换行&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;运行结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;123&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;456&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;需要了解的&quot;&gt;&lt;a href=&quot;#需要了解的&quot; class=&quot;headerlink&quot; title=&quot;需要了解的&quot;&gt;&lt;/a&gt;需要了解的&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;在定义二维数组时也可以只指定行的个数，然后再为每一行分别指定列的个数。如果每行的列数不同，则创建的是不规则的二维数组&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;   &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[][] num = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;][];&lt;span class=&quot;comment&quot;&gt;//定义一个三行的二维数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//为第一行分配两列&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//为第二行分配三列&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;]=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//为第三行分配四列&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//第一行第一列赋值为1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//第二行第二列赋值为2&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;num[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;]=&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//第三行第四列赋值为3&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;System.out.println(num[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;System.out.println(num[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;System.out.println(num[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;]);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;运行结果为：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;a href=&quot;#数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot; class=&quot;headerlink&quot; title=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;/a&gt;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] score = &amp;#123; &lt;span class=&quot;number&quot;&gt;76&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;83&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;92&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;87&lt;/span&gt;&amp;#125;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92&quot;&gt;&lt;a href=&quot;#数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92&quot; class=&quot;headerlink&quot; title=&quot;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92&quot;&gt;&lt;/a&gt;数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;操作数组的四个步骤&quot;&gt;&lt;a href=&quot;#操作数组的四个步骤&quot; class=&quot;headerlink&quot; title=&quot;操作数组的四个步骤&quot;&gt;&lt;/a&gt;操作数组的四个步骤&lt;/h1&gt;&lt;h2 id=&quot;1-声明数组&quot;&gt;&lt;a href=&quot;#1-声明数组&quot; class=&quot;headerlink&quot; title=&quot;1.声明数组&quot;&gt;&lt;/a&gt;1.声明数组&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;语法：-数据类型-数组名-或者-数据类型-数组名&quot;&gt;&lt;a href=&quot;#语法：-数据类型-数组名-或者-数据类型-数组名&quot; class=&quot;headerlink&quot; title=&quot;语法： 数据类型[] 数组名;   或者   数据类型 数组名[];&quot;&gt;&lt;/a&gt;语法： 数据类型[] 数组名;   或者   数据类型 数组名[];&lt;/h3&gt;&lt;h3 id=&quot;其中，数组名可以是任意合法的变量名&quot;&gt;&lt;a href=&quot;#其中，数组名可以是任意合法的变量名&quot; class=&quot;headerlink&quot; title=&quot;其中，数组名可以是任意合法的变量名&quot;&gt;&lt;/a&gt;其中，数组名可以是任意合法的变量名&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;2-分配空间&quot;&gt;&lt;a href=&quot;#2-分配空间&quot; class=&quot;headerlink&quot; title=&quot;2.分配空间&quot;&gt;&lt;/a&gt;2.分配空间&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;简单的说，就是指定数组中最多可以存储多少个元素&quot;&gt;&lt;a href=&quot;#简单的说，就是指定数组中最多可以存储多少个元素&quot; class=&quot;headerlink&quot; title=&quot;简单的说，就是指定数组中最多可以存储多少个元素&quot;&gt;&lt;/a&gt;简单的说，就是指定数组中最多可以存储多少个元素&lt;/h3&gt;&lt;h3 id=&quot;语法：-数组名-new-数据类型-数组长度&quot;&gt;&lt;a href=&quot;#语法：-数组名-new-数据类型-数组长度&quot; class=&quot;headerlink&quot; title=&quot;语法： 数组名 = new 数据类型 [ 数组长度 ];&quot;&gt;&lt;/a&gt;语法： 数组名 = new 数据类型 [ 数组长度 ];&lt;/h3&gt;&lt;h3 id=&quot;其中，数组长度就是数组中能存放元素的个数&quot;&gt;&lt;a href=&quot;#其中，数组长度就是数组中能存放元素的个数&quot; class=&quot;headerlink&quot; title=&quot;其中，数组长度就是数组中能存放元素的个数&quot;&gt;&lt;/a&gt;其中，数组长度就是数组中能存放元素的个数&lt;/h3&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础知识——运算符</title>
@@ -45,9 +196,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -56,7 +207,7 @@
     <link href="http://yoursite.com/2016/08/03/java/basics/comment-out/"/>
     <id>http://yoursite.com/2016/08/03/java/basics/comment-out/</id>
     <published>2016-08-03T02:15:47.000Z</published>
-    <updated>2016-08-03T03:18:50.000Z</updated>
+    <updated>2016-08-04T04:30:18.000Z</updated>
     
     <content type="html">&lt;p&gt;在编写程序时，经常需要添加一些注释，用以描述某段代码的作用。被注释的代码块在程序运行时是不会被执行的。&lt;/p&gt;
 &lt;p&gt;一般来说，对于一份规范的程序源代码而言，注释应该占到源代码的 1/3 以上。因此，注释是程序源代码的重要组成部分。&lt;/p&gt;
@@ -66,11 +217,11 @@
 &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//System.out.println(&quot;Hello World!&quot;);&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;多行注释&quot;&gt;&lt;a href=&quot;#多行注释&quot; class=&quot;headerlink&quot; title=&quot;多行注释&quot;&gt;&lt;/a&gt;多行注释&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;多行注释以-开头&quot;&gt;&lt;a href=&quot;#多行注释以-开头&quot; class=&quot;headerlink&quot; title=&quot;多行注释以 /* 开头&quot;&gt;&lt;/a&gt;多行注释以 /* 开头&lt;/h2&gt;&lt;h2 id=&quot;以-结尾&quot;&gt;&lt;a href=&quot;#以-结尾&quot; class=&quot;headerlink&quot; title=&quot;以 */ 结尾&quot;&gt;&lt;/a&gt;以 */ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;*/&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;文档注释&quot;&gt;&lt;a href=&quot;#文档注释&quot; class=&quot;headerlink&quot; title=&quot;文档注释&quot;&gt;&lt;/a&gt;文档注释&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;文档注释以-开头&quot;&gt;&lt;a href=&quot;#文档注释以-开头&quot; class=&quot;headerlink&quot; title=&quot;文档注释以 /** 开头&quot;&gt;&lt;/a&gt;文档注释以 /** 开头&lt;/h2&gt;&lt;h2 id=&quot;以-结尾-1&quot;&gt;&lt;a href=&quot;#以-结尾-1&quot; class=&quot;headerlink&quot; title=&quot;以 */ 结尾&quot;&gt;&lt;/a&gt;以 */ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是文档注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@author&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@version&lt;/span&gt; v1.0&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;*/&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是文档注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@author&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@version&lt;/span&gt; v1.0&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;使用文档注释时还可以使用-javadoc-标记，生成更详细的文档信息：&quot;&gt;&lt;a href=&quot;#使用文档注释时还可以使用-javadoc-标记，生成更详细的文档信息：&quot; class=&quot;headerlink&quot; title=&quot;使用文档注释时还可以使用 javadoc 标记，生成更详细的文档信息：&quot;&gt;&lt;/a&gt;使用文档注释时还可以使用 javadoc 标记，生成更详细的文档信息：&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;author-标明开发该类模块的作者&quot;&gt;&lt;a href=&quot;#author-标明开发该类模块的作者&quot; class=&quot;headerlink&quot; title=&quot;@author 标明开发该类模块的作者&quot;&gt;&lt;/a&gt;@author 标明开发该类模块的作者&lt;/h2&gt;&lt;h2 id=&quot;version-标明该类模块的版本&quot;&gt;&lt;a href=&quot;#version-标明该类模块的版本&quot; class=&quot;headerlink&quot; title=&quot;@version 标明该类模块的版本&quot;&gt;&lt;/a&gt;@version 标明该类模块的版本&lt;/h2&gt;&lt;h2 id=&quot;see-参考转向，也就是相关主题&quot;&gt;&lt;a href=&quot;#see-参考转向，也就是相关主题&quot; class=&quot;headerlink&quot; title=&quot;@see 参考转向，也就是相关主题&quot;&gt;&lt;/a&gt;@see 参考转向，也就是相关主题&lt;/h2&gt;&lt;h2 id=&quot;param-对方法中某参数的说明&quot;&gt;&lt;a href=&quot;#param-对方法中某参数的说明&quot; class=&quot;headerlink&quot; title=&quot;@param 对方法中某参数的说明&quot;&gt;&lt;/a&gt;@param 对方法中某参数的说明&lt;/h2&gt;&lt;h2 id=&quot;return-对方法返回值的说明&quot;&gt;&lt;a href=&quot;#return-对方法返回值的说明&quot; class=&quot;headerlink&quot; title=&quot;@return 对方法返回值的说明&quot;&gt;&lt;/a&gt;@return 对方法返回值的说明&lt;/h2&gt;&lt;h2 id=&quot;exception-对方法可能抛出的异常进行说明&quot;&gt;&lt;a href=&quot;#exception-对方法可能抛出的异常进行说明&quot; class=&quot;headerlink&quot; title=&quot;@exception 对方法可能抛出的异常进行说明&quot;&gt;&lt;/a&gt;@exception 对方法可能抛出的异常进行说明&lt;/h2&gt;&lt;/blockquote&gt;
 </content>
@@ -85,7 +236,7 @@
 &lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//System.out.println(&quot;Hello World!&quot;);&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;多行注释&quot;&gt;&lt;a href=&quot;#多行注释&quot; class=&quot;headerlink&quot; title=&quot;多行注释&quot;&gt;&lt;/a&gt;多行注释&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;多行注释以-开头&quot;&gt;&lt;a href=&quot;#多行注释以-开头&quot; class=&quot;headerlink&quot; title=&quot;多行注释以 /* 开头&quot;&gt;&lt;/a&gt;多行注释以 /* 开头&lt;/h2&gt;&lt;h2 id=&quot;以-结尾&quot;&gt;&lt;a href=&quot;#以-结尾&quot; class=&quot;headerlink&quot; title=&quot;以 */ 结尾&quot;&gt;&lt;/a&gt;以 */ 结尾&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 这是多行注释&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; * 可以包括多行内容&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;
     
     </summary>
@@ -93,9 +244,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -132,9 +283,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -183,9 +334,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -221,9 +372,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -260,9 +411,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -299,9 +450,9 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -332,9 +483,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="Arduino" scheme="http://yoursite.com/tags/Arduino/"/>
     
       <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
@@ -583,15 +734,15 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -629,11 +780,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -703,11 +854,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -767,9 +918,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -829,221 +980,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言基础知识——数组</title>
-    <link href="http://yoursite.com/2016/07/22/C%20/basics/array/"/>
-    <id>http://yoursite.com/2016/07/22/C /basics/array/</id>
-    <published>2016-07-22T12:18:49.000Z</published>
-    <updated>2016-07-23T07:54:14.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;定义数组&quot;&gt;&lt;a href=&quot;#定义数组&quot; class=&quot;headerlink&quot; title=&quot;定义数组&quot;&gt;&lt;/a&gt;定义数组&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;类型&amp;gt; 变量名称[元素数量]; 如 int grades[100];&lt;/li&gt;
-&lt;li&gt;元素数量必须是整数&lt;/li&gt;
-&lt;li&gt;C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;数组的特点&quot;&gt;&lt;a href=&quot;#数组的特点&quot; class=&quot;headerlink&quot; title=&quot;数组的特点&quot;&gt;&lt;/a&gt;数组的特点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;其中所有的元素具有相同的数据类型&lt;/li&gt;
-&lt;li&gt;一旦创建,不能改变其大小&lt;/li&gt;
-&lt;li&gt;数组中的元素在内存中是连续依次排列的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;int-a-10&quot;&gt;&lt;a href=&quot;#int-a-10&quot; class=&quot;headerlink&quot; title=&quot;int a[10]&quot;&gt;&lt;/a&gt;int a[10]&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;一个int的数组&lt;/li&gt;
-&lt;li&gt;10个单元:a[0],a[1],…,a[9]&lt;br&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/array.png&quot; alt=&quot;array&quot;&gt;&lt;/li&gt;
-&lt;li&gt;每个单元就是一个int类型的变量&lt;/li&gt;
-&lt;li&gt;可以出现在赋值的左边或右边，如a[2] = a[1]+6;&lt;/li&gt;
-&lt;li&gt;在赋值左边的叫做左值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;数组的单元&quot;&gt;&lt;a href=&quot;#数组的单元&quot; class=&quot;headerlink&quot; title=&quot;数组的单元&quot;&gt;&lt;/a&gt;数组的单元&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;数组的每个单元就是数组类型的一个变量&lt;/li&gt;
-&lt;li&gt;使用数组时放在[]中的数字叫做下标或索引,下标从0开始计数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;有效的下标范围&quot;&gt;&lt;a href=&quot;#有效的下标范围&quot; class=&quot;headerlink&quot; title=&quot;有效的下标范围&quot;&gt;&lt;/a&gt;有效的下标范围&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;编译器和运行环境都不会检查数组下标是否越界,无论是对数组单元做读还是写&lt;/li&gt;
-&lt;li&gt;一旦程序运行,越界的数组访问可能造成问题,导致程序崩溃，可能会提示如segmentation fault&lt;/li&gt;
-&lt;li&gt;要保证程序只使用有效的下标值:[0,数组的大小-1]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;长度为0的数组？&quot;&gt;&lt;a href=&quot;#长度为0的数组？&quot; class=&quot;headerlink&quot; title=&quot;长度为0的数组？&quot;&gt;&lt;/a&gt;长度为0的数组？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;int a[0];&lt;/li&gt;
-&lt;li&gt;可以存在，但是无用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;相关题目&quot;&gt;&lt;a href=&quot;#相关题目&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/averaging-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;求平均数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/22/C%20/answers/count-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计次数&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;数组的运算&quot;&gt;&lt;a href=&quot;#数组的运算&quot; class=&quot;headerlink&quot; title=&quot;数组的运算&quot;&gt;&lt;/a&gt;数组的运算&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;数组的集成初始化&quot;&gt;&lt;a href=&quot;#数组的集成初始化&quot; class=&quot;headerlink&quot; title=&quot;数组的集成初始化&quot;&gt;&lt;/a&gt;数组的集成初始化&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;int a[]={2,4,6,7,1,3,5,6,3,65,33,81,19};&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;直接用大括号给出数组所有元素的初始值&lt;/li&gt;
-&lt;li&gt;不需要给出数组的大小，编译器会数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;int b[10]={2};&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果给出了数组的大小,但是后面的初始值数量不足,则其后的元素被初始化为0&lt;/li&gt;
-&lt;li&gt;int b[10]={2};等价于int b[10]={2,0,0,0,0,0,0,0,0,0};&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;集成初始化时的定位&quot;&gt;&lt;a href=&quot;#集成初始化时的定位&quot; class=&quot;headerlink&quot; title=&quot;集成初始化时的定位&quot;&gt;&lt;/a&gt;集成初始化时的定位&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;int a[10]={[0]=2,[2]=3,6,};&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;用[n]在初始化数据中给出定位&lt;/li&gt;
-&lt;li&gt;没有定位的数据接在前面的位置后面，如上式中6的意思是[3]=6&lt;/li&gt;
-&lt;li&gt;其他位置的值补零&lt;/li&gt;
-&lt;li&gt;也可以不给出数组大小,让编译器算&lt;/li&gt;
-&lt;li&gt;特别适合初始数据稀疏的数组&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;数组的大小&quot;&gt;&lt;a href=&quot;#数组的大小&quot; class=&quot;headerlink&quot; title=&quot;数组的大小&quot;&gt;&lt;/a&gt;数组的大小&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;sizeof给出整个数组所占据的内容的大小,单位是字节&lt;/li&gt;
-&lt;li&gt;sizeof(a)/sizeof(a[0])&lt;/li&gt;
-&lt;li&gt;sizeof(a[0])给出数组中单个元素的大小,于是相除就得到了数组的单元个数&lt;/li&gt;
-&lt;li&gt;这样的代码,一旦修改数组中初始的数据,不需要修改遍历的代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;数组的赋值&quot;&gt;&lt;a href=&quot;#数组的赋值&quot; class=&quot;headerlink&quot; title=&quot;数组的赋值&quot;&gt;&lt;/a&gt;数组的赋值&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%94%99%E8%AF%AF%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png&quot; alt=&quot;错误的数组赋值&quot;&gt;&lt;/li&gt;
-&lt;li&gt;数组变量本身不能被赋值&lt;/li&gt;
-&lt;li&gt;要把一个数组的所有元素交给另一个数组,必须采用遍历&lt;/li&gt;
-&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC.png&quot; alt=&quot;正确的数组赋值&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;遍历数组&quot;&gt;&lt;a href=&quot;#遍历数组&quot; class=&quot;headerlink&quot; title=&quot;遍历数组&quot;&gt;&lt;/a&gt;遍历数组&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;通常都是使用for循环,让循环变量i从0到&amp;lt;数组的长度,这样循环体内最大的i正好是数组最大的有效下标&lt;/li&gt;
-&lt;li&gt;常见错误：&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;循环结束条件是&amp;lt;=数组长度&lt;/li&gt;
-&lt;li&gt;离开循环后,继续用i的值来做数组元素的下标&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;相关题目-1&quot;&gt;&lt;a href=&quot;#相关题目-1&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/answers/search-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搜索&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/answers/isprime-array/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;判断素数&lt;/a&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://biubiubiu.site/2016/07/23/C%20/basics/prime-table/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;构造素数表&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;二维数组&quot;&gt;&lt;a href=&quot;#二维数组&quot; class=&quot;headerlink&quot; title=&quot;二维数组&quot;&gt;&lt;/a&gt;二维数组&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;理解&quot;&gt;&lt;a href=&quot;#理解&quot; class=&quot;headerlink&quot; title=&quot;理解&quot;&gt;&lt;/a&gt;理解&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;int a[3][5];&lt;/li&gt;
-&lt;li&gt;通常理解为a是一个3行5列的矩阵&lt;/li&gt;
-&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%90%86%E8%A7%A3.png&quot; alt=&quot;二维数组理解&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;二维数组的遍历&quot;&gt;&lt;a href=&quot;#二维数组的遍历&quot; class=&quot;headerlink&quot; title=&quot;二维数组的遍历&quot;&gt;&lt;/a&gt;二维数组的遍历&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E9%81%8D%E5%8E%86.png&quot; alt=&quot;二维数组的遍历&quot;&gt;&lt;/li&gt;
-&lt;li&gt;a[i][j]是一个int，表示第i行第j列上的单元&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;二维数组的初始化&quot;&gt;&lt;a href=&quot;#二维数组的初始化&quot; class=&quot;headerlink&quot; title=&quot;二维数组的初始化&quot;&gt;&lt;/a&gt;二维数组的初始化&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[][&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]=&amp;#123;&amp;#123;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&amp;#125;,&amp;#123;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;&amp;#125;,&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;列数是必须给出的,行数可以由编译器来数&lt;/li&gt;
-&lt;li&gt;每行一个{},逗号分隔&lt;/li&gt;
-&lt;li&gt;最后的逗号可以存在,有古老的传统&lt;/li&gt;
-&lt;li&gt;如果省略,表示补零&lt;/li&gt;
-&lt;li&gt;也可以用定位(*C99 ONLY)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;相关题目-2&quot;&gt;&lt;a href=&quot;#相关题目-2&quot; class=&quot;headerlink&quot; title=&quot;相关题目&quot;&gt;&lt;/a&gt;相关题目&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;tic-tac-toe游戏&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;定义数组&quot;&gt;&lt;a href=&quot;#定义数组&quot; class=&quot;headerlink&quot; title=&quot;定义数组&quot;&gt;&lt;/a&gt;定义数组&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;类型&amp;gt; 变量名称[元素数量]; 如 int grades[100];&lt;/li&gt;
-&lt;li&gt;元素数量必须是整数&lt;/li&gt;
-&lt;li&gt;C99之前:元素数量必须是编译时刻确定的字面量，不能使用变化的变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;数组的特点&quot;&gt;&lt;a href=&quot;#数组的特点&quot; class=&quot;headerlink&quot; title=&quot;数组的特点&quot;&gt;&lt;/a&gt;数组的特点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;其中所有的元素具有相同的数据类型&lt;/li&gt;
-&lt;li&gt;一旦创建,不能改变其大小&lt;/li&gt;
-&lt;li&gt;数组中的元素在内存中是连续依次排列的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;int-a-10&quot;&gt;&lt;a href=&quot;#int-a-10&quot; class=&quot;headerlink&quot; title=&quot;int a[10]&quot;&gt;&lt;/a&gt;int a[10]&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;一个int的数组&lt;/li&gt;
-&lt;li&gt;10个单元:a[0],a[1],…,a[9]&lt;br&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/array.png&quot; alt=&quot;array&quot;&gt;&lt;/li&gt;
-&lt;li&gt;每个单元就是一个int类型的变量&lt;/li&gt;
-&lt;li&gt;可以出现在赋值的左边或右边，如a[2] = a[1]+6;&lt;/li&gt;
-&lt;li&gt;在赋值左边的叫做左值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   

@@ -1,0 +1,771 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link href="/css/My.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/My.js"></script>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java,基础知识," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="数组
+数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩
+1int[] score = &amp;#123; 76, 83, 92, 87&amp;#125;;
+
+数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92
+操作数组的四个步">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础知识——数组">
+<meta property="og:url" content="http://yoursite.com/2016/08/04/java/basics/array/index.html">
+<meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="数组
+数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩
+1int[] score = &amp;#123; 76, 83, 92, 87&amp;#125;;
+
+数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92
+操作数组的四个步">
+<meta property="og:updated_time" content="2016-08-04T09:17:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java基础知识——数组">
+<meta name="twitter:description" content="数组
+数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩
+1int[] score = &amp;#123; 76, 83, 92, 87&amp;#125;;
+
+数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92
+操作数组的四个步">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/04/java/basics/array/"/>
+
+  <title> java基础知识——数组 | 当做成长 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">当做成长</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java基础知识——数组
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-04T14:47:47+08:00" content="2016-08-04">
+              2016-08-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><blockquote>
+<h2 id="数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩"><a href="#数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩" class="headerlink" title="数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩"></a>数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩</h2></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span>[] score = &#123; <span class="number">76</span>, <span class="number">83</span>, <span class="number">92</span>, <span class="number">87</span>&#125;;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h2 id="数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92"><a href="#数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92" class="headerlink" title="数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92"></a>数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92</h2></blockquote>
+<h1 id="操作数组的四个步骤"><a href="#操作数组的四个步骤" class="headerlink" title="操作数组的四个步骤"></a>操作数组的四个步骤</h1><h2 id="1-声明数组"><a href="#1-声明数组" class="headerlink" title="1.声明数组"></a>1.声明数组</h2><blockquote>
+<h3 id="语法：-数据类型-数组名-或者-数据类型-数组名"><a href="#语法：-数据类型-数组名-或者-数据类型-数组名" class="headerlink" title="语法： 数据类型[] 数组名;   或者   数据类型 数组名[];"></a>语法： 数据类型[] 数组名;   或者   数据类型 数组名[];</h3><h3 id="其中，数组名可以是任意合法的变量名"><a href="#其中，数组名可以是任意合法的变量名" class="headerlink" title="其中，数组名可以是任意合法的变量名"></a>其中，数组名可以是任意合法的变量名</h3></blockquote>
+<h2 id="2-分配空间"><a href="#2-分配空间" class="headerlink" title="2.分配空间"></a>2.分配空间</h2><blockquote>
+<h3 id="简单的说，就是指定数组中最多可以存储多少个元素"><a href="#简单的说，就是指定数组中最多可以存储多少个元素" class="headerlink" title="简单的说，就是指定数组中最多可以存储多少个元素"></a>简单的说，就是指定数组中最多可以存储多少个元素</h3><h3 id="语法：-数组名-new-数据类型-数组长度"><a href="#语法：-数组名-new-数据类型-数组长度" class="headerlink" title="语法： 数组名 = new 数据类型 [ 数组长度 ];"></a>语法： 数组名 = new 数据类型 [ 数组长度 ];</h3><h3 id="其中，数组长度就是数组中能存放元素的个数"><a href="#其中，数组长度就是数组中能存放元素的个数" class="headerlink" title="其中，数组长度就是数组中能存放元素的个数"></a>其中，数组长度就是数组中能存放元素的个数</h3></blockquote>
+<a id="more"></a>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">scores = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];<span class="comment">//长度为5的整数数组</span></div><div class="line">height = <span class="keyword">new</span> <span class="keyword">double</span>[<span class="number">5</span>];<span class="comment">//长度为5的浮点型数组</span></div><div class="line">names = <span class="keyword">new</span> String[<span class="number">5</span>];<span class="comment">//长度为5的字符串数组</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h3 id="我们可以在声明数组的同时为它分配空间"><a href="#我们可以在声明数组的同时为它分配空间" class="headerlink" title="我们可以在声明数组的同时为它分配空间"></a>我们可以在声明数组的同时为它分配空间</h3></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span>[] scores = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</div></pre></td></tr></table></figure>
+</code></pre><h2 id="3-赋值"><a href="#3-赋值" class="headerlink" title="3.赋值"></a>3.赋值</h2><blockquote>
+<h3 id="分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的"><a href="#分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的" class="headerlink" title="分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的"></a>分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的</h3></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">scores[<span class="number">0</span>] = <span class="number">89</span>;</div><div class="line">scores[<span class="number">1</span>] = <span class="number">77</span>;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="4-处理数组中的数据"><a href="#4-处理数组中的数据" class="headerlink" title="4.处理数组中的数据"></a>4.处理数组中的数据</h2><blockquote>
+<h3 id="我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值"><a href="#我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值" class="headerlink" title="我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值"></a>我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值</h3></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.out.println(<span class="string">"scores数组中第一个元素的值："</span> + scores[<span class="number">0</span>]);</div></pre></td></tr></table></figure>
+</code></pre><h2 id="直接创建数组的方式"><a href="#直接创建数组的方式" class="headerlink" title="直接创建数组的方式"></a>直接创建数组的方式</h2><blockquote>
+<h3 id="它将声明数组、分配空间和赋值合并完成"><a href="#它将声明数组、分配空间和赋值合并完成" class="headerlink" title="它将声明数组、分配空间和赋值合并完成"></a>它将声明数组、分配空间和赋值合并完成</h3><h3 id="如-int-scores-78-91-84-68-等价于-int-scores-new-int-78-91-84-68"><a href="#如-int-scores-78-91-84-68-等价于-int-scores-new-int-78-91-84-68" class="headerlink" title="如 int[] scores = { 78, 91, 84, 68}; 等价于 int[] scores = new int[]{ 78, 91, 84, 68};"></a>如 int[] scores = { 78, 91, 84, 68}; 等价于 int[] scores = new int[]{ 78, 91, 84, 68};</h3></blockquote>
+<h1 id="使用循环操作java中的数组"><a href="#使用循环操作java中的数组" class="headerlink" title="使用循环操作java中的数组"></a>使用循环操作java中的数组</h1><blockquote>
+<h2 id="实际开发中我们经常使用循环控制数组成员的操作。"><a href="#实际开发中我们经常使用循环控制数组成员的操作。" class="headerlink" title="实际开发中我们经常使用循环控制数组成员的操作。"></a>实际开发中我们经常使用循环控制数组成员的操作。</h2></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span>[] scores = &#123; <span class="number">78</span>, <span class="number">91</span>, <span class="number">84</span>, <span class="number">68</span>&#125;;   <span class="comment">//定义一个长度为4的数组</span></div><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;scores.length; i++)  <span class="comment">//循环变量从0开始递增到数组的最大长度scores.length</span></div><div class="line">&#123;</div><div class="line">    System.out.println(<span class="string">"数组中第"</span> + (i+<span class="number">1</span>) + <span class="string">"个元素的值是"</span> + scores[i]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h2 id="其中，数组名-length-用于获取数组的长度"><a href="#其中，数组名-length-用于获取数组的长度" class="headerlink" title="其中，数组名.length 用于获取数组的长度"></a>其中，数组名.length 用于获取数组的长度</h2><h2 id="需要注意的地方："><a href="#需要注意的地方：" class="headerlink" title="需要注意的地方："></a>需要注意的地方：</h2><h2 id="1-数组下标从0开始。因此scores-3-表示数组中的第四个元素，而并非第三个元素"><a href="#1-数组下标从0开始。因此scores-3-表示数组中的第四个元素，而并非第三个元素" class="headerlink" title="1.数组下标从0开始。因此scores[3]表示数组中的第四个元素，而并非第三个元素"></a>1.数组下标从0开始。因此scores[3]表示数组中的第四个元素，而并非第三个元素</h2><h2 id="2-数组下标的范围是从-0-到-数组长度-1，如果越界访问，就会报错。"><a href="#2-数组下标的范围是从-0-到-数组长度-1，如果越界访问，就会报错。" class="headerlink" title="2.数组下标的范围是从 0 到 数组长度-1，如果越界访问，就会报错。"></a>2.数组下标的范围是从 0 到 数组长度-1，如果越界访问，就会报错。</h2></blockquote>
+<h1 id="使用-Arrays-类操作-java-中的数组"><a href="#使用-Arrays-类操作-java-中的数组" class="headerlink" title="使用 Arrays 类操作 java 中的数组"></a>使用 Arrays 类操作 java 中的数组</h1><h2 id="什么是Arrays类？"><a href="#什么是Arrays类？" class="headerlink" title="什么是Arrays类？"></a>什么是Arrays类？</h2><blockquote>
+<h3 id="Arrays-类是-Java-中提供的一个工具类，在-java-util-包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等"><a href="#Arrays-类是-Java-中提供的一个工具类，在-java-util-包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等" class="headerlink" title="Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等"></a>Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等</h3></blockquote>
+<h2 id="Arrays中常用的方法："><a href="#Arrays中常用的方法：" class="headerlink" title="Arrays中常用的方法："></a>Arrays中常用的方法：</h2><blockquote>
+<h3 id="1-排序"><a href="#1-排序" class="headerlink" title="1.排序"></a>1.排序</h3><blockquote>
+<p>语法： Arrays.sort(数组名);<br>可以使用 sort( ) 方法实现对数组的排序，只要将数组名放在 sort( ) 方法的括号中，就可以完成对该数组的排序（按升序排列）</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> sum;</div><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sum</span> </span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//定义一个整型数组</span></div><div class="line">        <span class="keyword">int</span>[] scores =&#123; <span class="number">78</span>, <span class="number">93</span>, <span class="number">97</span>, <span class="number">84</span>, <span class="number">63</span>&#125;;</div><div class="line">        </div><div class="line">        <span class="comment">//使用Arrays类的sort()方法对数组进行排序</span></div><div class="line">        Arrays.sort(scores);</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"排序后的数组的值："</span>);</div><div class="line">        </div><div class="line">        <span class="comment">//循环遍历输出数组中的元素的值</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; scores.length;i++)</div><div class="line">        &#123;</div><div class="line">            System.out.println(scores[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>运行结果：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">排序后数组中元素的值：</div><div class="line"><span class="number">63</span></div><div class="line"><span class="number">78</span></div><div class="line"><span class="number">84</span></div><div class="line"><span class="number">93</span></div><div class="line"><span class="number">97</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h3 id="2-将数组转换为字符串"><a href="#2-将数组转换为字符串" class="headerlink" title="2.将数组转换为字符串"></a>2.将数组转换为字符串</h3><blockquote>
+<p>语法： Arrays.toString(数组名);<br>可以使用 toString( ) 方法将一个数组转换成字符串，该方法按顺序把多个数组元素连接在一起，多个元素之间使用逗号和空格隔开</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> sum;</div><div class="line"><span class="keyword">import</span> java.util.Arrays;	<span class="comment">//使用Arrays类时必须添加此行，导入包</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sum</span> </span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//定义一个整形数组</span></div><div class="line">        <span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123; <span class="number">25</span>, <span class="number">7</span>, <span class="number">126</span>, <span class="number">53</span>, <span class="number">14</span>, <span class="number">86</span> &#125;;</div><div class="line">        </div><div class="line">        <span class="comment">//使用Arrays类的toString()方法将数组转化为字符串并输出</span></div><div class="line">        System.out.println(<span class="string">"输出数组nums中的元素："</span> + Arrays.toString(nums));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>运行结果：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输出数组nums中的元素：[<span class="number">25</span>, <span class="number">7</span>, <span class="number">126</span>, <span class="number">53</span>, <span class="number">14</span>, <span class="number">86</span>]</div></pre></td></tr></table></figure>
+</code></pre><h1 id="使用-foreach-操作数组"><a href="#使用-foreach-操作数组" class="headerlink" title="使用 foreach 操作数组"></a>使用 foreach 操作数组</h1><h2 id="什么是-foreach-？"><a href="#什么是-foreach-？" class="headerlink" title="什么是 foreach ？"></a>什么是 foreach ？</h2><blockquote>
+<h3 id="foreach-并不是-Java-中的关键字，是-for-语句的特殊简化版本，在遍历数组、集合时，-foreach-更简单便捷。从英文字面意思理解-foreach-也就是“-for-每一个”的意思"><a href="#foreach-并不是-Java-中的关键字，是-for-语句的特殊简化版本，在遍历数组、集合时，-foreach-更简单便捷。从英文字面意思理解-foreach-也就是“-for-每一个”的意思" class="headerlink" title="foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思"></a>foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思</h3></blockquote>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(元素类型 元素变量:遍历对象)</div><div class="line">&#123;</div><div class="line">    执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="分别用for和foreach来遍历数组"><a href="#分别用for和foreach来遍历数组" class="headerlink" title="分别用for和foreach来遍历数组"></a>分别用for和foreach来遍历数组</h2><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> sum;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sum</span> </span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></div><div class="line">    &#123;	</div><div class="line">        <span class="comment">//定义一个字符串数组</span></div><div class="line">        String[] hobbys = &#123;<span class="string">"sprots"</span>,<span class="string">"music"</span>,<span class="string">"reading"</span>&#125;;</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"***使用for循环输出数组中的元素***"</span>);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;hobbys.length;i++)</div><div class="line">        &#123;</div><div class="line">            System.out.println(hobbys[i]);</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        System.out.println();</div><div class="line">        </div><div class="line">        System.out.println(<span class="string">"***使用foreach循环输出数组中的元素***"</span>);</div><div class="line">        <span class="keyword">for</span>(String hobby : hobbys)</div><div class="line">        &#123;</div><div class="line">            System.out.println(hobby);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h2 id="运行结果："><a href="#运行结果：" class="headerlink" title="运行结果："></a>运行结果：</h2></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">***使用<span class="keyword">for</span>循环输出数组中的元素***</div><div class="line">sprots</div><div class="line">music</div><div class="line">reading</div><div class="line"></div><div class="line">***使用foreach循环输出数组中的元素***</div><div class="line">sprots</div><div class="line">music</div><div class="line">reading</div></pre></td></tr></table></figure>
+</code></pre><h1 id="java-中的二维数组"><a href="#java-中的二维数组" class="headerlink" title="java 中的二维数组"></a>java 中的二维数组</h1><h2 id="什么是二维数组？"><a href="#什么是二维数组？" class="headerlink" title="什么是二维数组？"></a>什么是二维数组？</h2><blockquote>
+<h3 id="所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。"><a href="#所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。" class="headerlink" title="所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。"></a>所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。</h3></blockquote>
+<h2 id="使用二维数组的步骤"><a href="#使用二维数组的步骤" class="headerlink" title="使用二维数组的步骤"></a>使用二维数组的步骤</h2><blockquote>
+<h3 id="1-声明并分配空间"><a href="#1-声明并分配空间" class="headerlink" title="1.声明并分配空间"></a>1.声明并分配空间</h3></blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">数据类型[][] 数组名 ＝ <span class="keyword">new</span> 数据类型[行的个数][列的个数]</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>或者</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">数据类型[][] 数组名;</div><div class="line">数组名 = <span class="keyword">new</span> 数据类型[行的个数][列的个数];</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>如：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义一个两行三列的二维数组</span></div><div class="line"><span class="keyword">int</span>[][] num = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][<span class="number">3</span>];</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h3 id="2-赋值"><a href="#2-赋值" class="headerlink" title="2.赋值"></a>2.赋值</h3><blockquote>
+<p>二维数组的赋值，和一维数组类似，可以通过下标来逐个赋值，注意索引从 0 开始</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">数组名[行的索引][列的索引] = 值;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>也可以在声明数组的同时为其赋值</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">数据类型[][] 数组名 = &#123;&#123;值<span class="number">1</span>,值<span class="number">2</span>...&#125;,&#123;值<span class="number">11</span>,值<span class="number">22</span>...&#125;,&#123;值<span class="number">21</span>,值<span class="number">22</span>...&#125;&#125;;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>如：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//给第1行第1列的元素赋值</span></div><div class="line">num[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">12</span>;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h3 id="3-处理数据"><a href="#3-处理数据" class="headerlink" title="3.处理数据"></a>3.处理数据</h3><blockquote>
+<p>二维数组的访问和输出同一维数组一样，只是多了一个下标而已。在循环输出时，需要里面再内嵌一个循环，即使用二重循环来输出二维数组中的每一个元素。如：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义一个2行3列的二维数组并赋值</span></div><div class="line"><span class="keyword">int</span>[][] num=&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;</div><div class="line"><span class="comment">//定位行</span></div><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;num.length;i++)</div><div class="line">&#123;</div><div class="line">    <span class="comment">//定位每行的元素</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;num[i].length;j++)</div><div class="line">    &#123;</div><div class="line">        System.out.print(num[i][j]);</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//实现换行</span></div><div class="line">    System.out.println();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>运行结果</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">123</span></div><div class="line"><span class="number">456</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h3 id="需要了解的"><a href="#需要了解的" class="headerlink" title="需要了解的"></a>需要了解的</h3><blockquote>
+<p>在定义二维数组时也可以只指定行的个数，然后再为每一行分别指定列的个数。如果每行的列数不同，则创建的是不规则的二维数组</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">   <span class="keyword">int</span>[][] num = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][];<span class="comment">//定义一个三行的二维数组</span></div><div class="line">num[<span class="number">0</span>]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];<span class="comment">//为第一行分配两列</span></div><div class="line">num[<span class="number">1</span>]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];<span class="comment">//为第二行分配三列</span></div><div class="line">num[<span class="number">2</span>]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];<span class="comment">//为第三行分配四列</span></div><div class="line">num[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;<span class="comment">//第一行第一列赋值为1</span></div><div class="line">num[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">2</span>;<span class="comment">//第二行第二列赋值为2</span></div><div class="line">num[<span class="number">2</span>][<span class="number">3</span>]=<span class="number">3</span>;<span class="comment">//第三行第四列赋值为3</span></div><div class="line">System.out.println(num[<span class="number">0</span>][<span class="number">0</span>]);</div><div class="line">System.out.println(num[<span class="number">1</span>][<span class="number">1</span>]);</div><div class="line">System.out.println(num[<span class="number">2</span>][<span class="number">3</span>]);</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>运行结果为：</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div></pre></td></tr></table></figure>
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/03/java/basics/operator/" rel="next" title="java基础知识——运算符">
+                <i class="fa fa-chevron-left"></i> java基础知识——运算符
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Q" />
+          <p class="site-author-name" itemprop="name">Q</p>
+          <p class="site-description motion-element" itemprop="description">欢迎你来到我的博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">46</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/biubiubiub" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/biubiubiub/biubiubiub.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数组"><span class="nav-number">1.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩"><span class="nav-number">1.1.</span> <span class="nav-text">数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores-0-获取数组中的第一个元素76，score-2-可以获取数组中的第三个元素92"><span class="nav-number">1.2.</span> <span class="nav-text">数组中的元素都可以通过下标来访问，下标从0开始。例如，可以通过scores[0]获取数组中的第一个元素76，score[2]可以获取数组中的第三个元素92</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作数组的四个步骤"><span class="nav-number">2.</span> <span class="nav-text">操作数组的四个步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-声明数组"><span class="nav-number">2.1.</span> <span class="nav-text">1.声明数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法：-数据类型-数组名-或者-数据类型-数组名"><span class="nav-number">2.1.1.</span> <span class="nav-text">语法： 数据类型[] 数组名;   或者   数据类型 数组名[];</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其中，数组名可以是任意合法的变量名"><span class="nav-number">2.1.2.</span> <span class="nav-text">其中，数组名可以是任意合法的变量名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-分配空间"><span class="nav-number">2.2.</span> <span class="nav-text">2.分配空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的说，就是指定数组中最多可以存储多少个元素"><span class="nav-number">2.2.1.</span> <span class="nav-text">简单的说，就是指定数组中最多可以存储多少个元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法：-数组名-new-数据类型-数组长度"><span class="nav-number">2.2.2.</span> <span class="nav-text">语法： 数组名 = new 数据类型 [ 数组长度 ];</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其中，数组长度就是数组中能存放元素的个数"><span class="nav-number">2.2.3.</span> <span class="nav-text">其中，数组长度就是数组中能存放元素的个数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我们可以在声明数组的同时为它分配空间"><span class="nav-number">2.2.4.</span> <span class="nav-text">我们可以在声明数组的同时为它分配空间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-赋值"><span class="nav-number">2.3.</span> <span class="nav-text">3.赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的"><span class="nav-number">2.3.1.</span> <span class="nav-text">分配空间后就可以向数组中放数据了，数组中元素都是通过下标来访问的</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-处理数组中的数据"><span class="nav-number">2.4.</span> <span class="nav-text">4.处理数组中的数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值"><span class="nav-number">2.4.1.</span> <span class="nav-text">我们可以对赋值后的数组进行操作和处理，如获取并输出数组中元素的值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直接创建数组的方式"><span class="nav-number">2.5.</span> <span class="nav-text">直接创建数组的方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#它将声明数组、分配空间和赋值合并完成"><span class="nav-number">2.5.1.</span> <span class="nav-text">它将声明数组、分配空间和赋值合并完成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如-int-scores-78-91-84-68-等价于-int-scores-new-int-78-91-84-68"><span class="nav-number">2.5.2.</span> <span class="nav-text">如 int[] scores = { 78, 91, 84, 68}; 等价于 int[] scores = new int[]{ 78, 91, 84, 68};</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用循环操作java中的数组"><span class="nav-number">3.</span> <span class="nav-text">使用循环操作java中的数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实际开发中我们经常使用循环控制数组成员的操作。"><span class="nav-number">3.1.</span> <span class="nav-text">实际开发中我们经常使用循环控制数组成员的操作。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其中，数组名-length-用于获取数组的长度"><span class="nav-number">3.2.</span> <span class="nav-text">其中，数组名.length 用于获取数组的长度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需要注意的地方："><span class="nav-number">3.3.</span> <span class="nav-text">需要注意的地方：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-数组下标从0开始。因此scores-3-表示数组中的第四个元素，而并非第三个元素"><span class="nav-number">3.4.</span> <span class="nav-text">1.数组下标从0开始。因此scores[3]表示数组中的第四个元素，而并非第三个元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-数组下标的范围是从-0-到-数组长度-1，如果越界访问，就会报错。"><span class="nav-number">3.5.</span> <span class="nav-text">2.数组下标的范围是从 0 到 数组长度-1，如果越界访问，就会报错。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用-Arrays-类操作-java-中的数组"><span class="nav-number">4.</span> <span class="nav-text">使用 Arrays 类操作 java 中的数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Arrays类？"><span class="nav-number">4.1.</span> <span class="nav-text">什么是Arrays类？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Arrays-类是-Java-中提供的一个工具类，在-java-util-包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等"><span class="nav-number">4.1.1.</span> <span class="nav-text">Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Arrays中常用的方法："><span class="nav-number">4.2.</span> <span class="nav-text">Arrays中常用的方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-排序"><span class="nav-number">4.2.1.</span> <span class="nav-text">1.排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-将数组转换为字符串"><span class="nav-number">4.2.2.</span> <span class="nav-text">2.将数组转换为字符串</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用-foreach-操作数组"><span class="nav-number">5.</span> <span class="nav-text">使用 foreach 操作数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-foreach-？"><span class="nav-number">5.1.</span> <span class="nav-text">什么是 foreach ？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-并不是-Java-中的关键字，是-for-语句的特殊简化版本，在遍历数组、集合时，-foreach-更简单便捷。从英文字面意思理解-foreach-也就是“-for-每一个”的意思"><span class="nav-number">5.1.1.</span> <span class="nav-text">foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">5.2.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分别用for和foreach来遍历数组"><span class="nav-number">5.3.</span> <span class="nav-text">分别用for和foreach来遍历数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行结果："><span class="nav-number">5.4.</span> <span class="nav-text">运行结果：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#java-中的二维数组"><span class="nav-number">6.</span> <span class="nav-text">java 中的二维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是二维数组？"><span class="nav-number">6.1.</span> <span class="nav-text">什么是二维数组？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。"><span class="nav-number">6.1.1.</span> <span class="nav-text">所谓二维数组，可以简单的理解为是一种“特殊”的一维数组，它的每个数组空间中保存的是一个一维数组。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用二维数组的步骤"><span class="nav-number">6.2.</span> <span class="nav-text">使用二维数组的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-声明并分配空间"><span class="nav-number">6.2.1.</span> <span class="nav-text">1.声明并分配空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-赋值"><span class="nav-number">6.2.2.</span> <span class="nav-text">2.赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-处理数据"><span class="nav-number">6.2.3.</span> <span class="nav-text">3.处理数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要了解的"><span class="nav-number">6.2.4.</span> <span class="nav-text">需要了解的</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Q</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

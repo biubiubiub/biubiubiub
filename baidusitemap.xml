@@ -4,16 +4,38 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/04/java/basics/array/</loc>
+    <lastmod>2016-08-04T09:17:28.000Z</lastmod>
+    <data>
+        <display>
+        <title>java基础知识——数组</title>
+        <pubTime>2016-08-04T06:47:47.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>基础知识</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/03/java/basics/comment-out/</loc>
-    <lastmod>2016-08-03T03:18:50.000Z</lastmod>
+    <lastmod>2016-08-04T04:30:18.000Z</lastmod>
     <data>
         <display>
         <title>java基础知识——使用注释</title>
         <pubTime>2016-08-03T02:15:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -33,9 +55,9 @@
         <title>java基础知识——运算符</title>
         <pubTime>2016-08-03T02:29:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -56,9 +78,9 @@
         <title>java基础知识——Java常量的应用</title>
         <pubTime>2016-08-02T02:21:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -78,9 +100,9 @@
         <title>Hello August</title>
         <pubTime>2016-08-01T02:35:00.000Z</pubTime>
         
-        <tag>Arduino</tag>
-         
         <tag>生活</tag>
+         
+        <tag>Arduino</tag>
          
         <tag>健身</tag>
          
@@ -106,9 +128,9 @@
         <title>java基础知识——数据类型转换</title>
         <pubTime>2016-08-02T02:02:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -128,9 +150,9 @@
         <title>java基础知识——变量</title>
         <pubTime>2016-08-01T03:57:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -150,9 +172,9 @@
         <title>java基础知识——数据类型</title>
         <pubTime>2016-08-01T05:34:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -172,9 +194,9 @@
         <title>java基础知识——关键字和标识符</title>
         <pubTime>2016-08-01T03:43:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -348,15 +370,15 @@
         <title>构造素数表</title>
         <pubTime>2016-07-23T07:55:49.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
          
-        <tag>素数</tag>
+        <tag>基础知识</tag>
          
         <tag>函数</tag>
          
         <tag>数组</tag>
+         
+        <tag>素数</tag>
          
          
            
@@ -376,9 +398,9 @@
         <title>C语言基础知识——数组</title>
         <pubTime>2016-07-22T12:18:49.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>数组</tag>
          
@@ -402,11 +424,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
+        <tag>数组</tag>
          
         <tag>素数</tag>
          
-        <tag>数组</tag>
+        <tag>题解</tag>
          
          
            
@@ -428,11 +450,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
+        <tag>函数</tag>
          
         <tag>素数</tag>
          
-        <tag>函数</tag>
+        <tag>题解</tag>
          
          
            
@@ -454,11 +476,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -480,11 +502,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -506,11 +528,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>函数</tag>
          
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -532,9 +554,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -554,9 +576,9 @@
         <title>整数的分解</title>
         <pubTime>2016-07-15T01:00:22.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>循环</tag>
          
@@ -578,9 +600,9 @@
         <title>C语言基础知识——循环</title>
         <pubTime>2016-07-14T13:16:49.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>循环</tag>
          
@@ -602,9 +624,9 @@
         <title>C语言基础知识——判断</title>
         <pubTime>2016-07-14T08:18:11.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>if语句</tag>
          
@@ -628,9 +650,9 @@
         <title>C语言基础知识——函数</title>
         <pubTime>2016-07-21T02:09:25.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>函数</tag>
          
@@ -652,9 +674,9 @@
         <title>C语言基础知识——循环控制</title>
         <pubTime>2016-07-16T03:19:06.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
         <tag>循环</tag>
          
@@ -678,9 +700,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -702,9 +724,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -726,9 +748,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>if语句</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -750,9 +772,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -774,9 +796,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -798,9 +820,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -822,9 +844,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -846,9 +868,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -870,9 +892,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -894,9 +916,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -917,9 +939,9 @@
         <title>第一个java程序——Hello World</title>
         <pubTime>2016-07-21T12:34:47.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>java</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -939,9 +961,9 @@
         <title>随机数</title>
         <pubTime>2016-07-15T02:28:04.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -961,9 +983,9 @@
         <title>代码风格之换行</title>
         <pubTime>2016-07-13T12:42:18.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -1027,9 +1049,9 @@
         <title>C语言基础知识——计算</title>
         <pubTime>2016-07-14T03:18:50.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
          
            
@@ -1049,9 +1071,9 @@
         <title>转换说明符</title>
         <pubTime>2016-07-13T07:14:44.000Z</pubTime>
         
-        <tag>基础知识</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>基础知识</tag>
          
          
            
