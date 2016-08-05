@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-04T09:17:28.000Z</updated>
+  <updated>2016-08-05T15:06:12.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,182 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>8月1日至8月5日计划总结</title>
+    <link href="http://yoursite.com/2016/08/05/life/plan8-5/"/>
+    <id>http://yoursite.com/2016/08/05/life/plan8-5/</id>
+    <published>2016-08-05T02:35:00.000Z</published>
+    <updated>2016-08-05T15:06:12.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;除8月3日晚因聚餐没有去健身，其余每天计划都已完成。&lt;br&gt;体重仍为66kg，没有超过1kg的变化。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;单词打卡4天，听力打卡1天，口语打卡1天。&lt;br&gt;计划完成的很不好，缺乏积极性，争取改善。&lt;br&gt;8月5日开始学习雅思网课。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;基础知识大致学了一遍，明天开始进阶学习。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;阅读了《小狗钱钱》，一本关于理财的入门书籍。&lt;br&gt;希望在接下来阅读关于基金入门的书籍。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;除8月3日晚因聚餐没有去健身，其余每天计划都已完成。&lt;br&gt;体重仍为66kg，没有超过1kg的变化。&lt;/p&gt;
+&lt;/
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java基础知识——方法</title>
+    <link href="http://yoursite.com/2016/08/05/java/basics/method/"/>
+    <id>http://yoursite.com/2016/08/05/java/basics/method/</id>
+    <published>2016-08-05T00:35:47.000Z</published>
+    <updated>2016-08-05T08:59:52.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;什么是方法？&quot;&gt;&lt;a href=&quot;#什么是方法？&quot; class=&quot;headerlink&quot; title=&quot;什么是方法？&quot;&gt;&lt;/a&gt;什么是方法？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot;&gt;&lt;a href=&quot;#所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot; class=&quot;headerlink&quot; title=&quot;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot;&gt;&lt;/a&gt;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;方法的定义语法&quot;&gt;&lt;a href=&quot;#方法的定义语法&quot; class=&quot;headerlink&quot; title=&quot;方法的定义语法&quot;&gt;&lt;/a&gt;方法的定义语法&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;访问修饰符 返回值类型 方法名(参数列表)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    方法体&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;其中&quot;&gt;&lt;a href=&quot;#其中&quot; class=&quot;headerlink&quot; title=&quot;其中&quot;&gt;&lt;/a&gt;其中&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用&lt;/p&gt;
+&lt;p&gt;2.返回值类型：方法返回值的类型，如果方法不返回任何值，则返回值类型指定为void；如果方法具有返回值，则需要指定返回值的类型，并且在方法体中使用return语句返回值&lt;/p&gt;
+&lt;p&gt;3.方法名：定义的方法的名字，必须使用合法的标识符&lt;/p&gt;
+&lt;p&gt;4.参数列表：传递给方法的参数列表，参数可以有多个，多个参数间以逗号隔开，每个参数由参数类型和参数名组成，以空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;根据方法是否带参、是否带返回值，可以将方法分为四类：&quot;&gt;&lt;a href=&quot;#根据方法是否带参、是否带返回值，可以将方法分为四类：&quot; class=&quot;headerlink&quot; title=&quot;根据方法是否带参、是否带返回值，可以将方法分为四类：&quot;&gt;&lt;/a&gt;根据方法是否带参、是否带返回值，可以将方法分为四类：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.无参无返回值方法&lt;/p&gt;
+&lt;p&gt;2.无参带返回值方法&lt;/p&gt;
+&lt;p&gt;3.带参无返回值方法&lt;/p&gt;
+&lt;p&gt;4.带参带返回值方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;例&quot;&gt;&lt;a href=&quot;#例&quot; class=&quot;headerlink&quot; title=&quot;例&quot;&gt;&lt;/a&gt;例&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//定义了一个方法名为 print 的方法，实现输出信息功能&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//在 main 方法中调用 print 方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        HelloWorld test=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        test.print();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;Java-中无参无返回值方法的使用&quot;&gt;&lt;a href=&quot;#Java-中无参无返回值方法的使用&quot; class=&quot;headerlink&quot; title=&quot;Java 中无参无返回值方法的使用&quot;&gt;&lt;/a&gt;Java 中无参无返回值方法的使用&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果方法不包含参数，且没有返回值，我们称为无参无返回值的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;方法的使用步骤：&quot;&gt;&lt;a href=&quot;#方法的使用步骤：&quot; class=&quot;headerlink&quot; title=&quot;方法的使用步骤：&quot;&gt;&lt;/a&gt;方法的使用步骤：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.定义方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;代码中 void 是返回值类型， show 是方法名，大括号中的是方法体&lt;/p&gt;
+&lt;p&gt;注意：&lt;br&gt;    1.方法体放在一对大括号中，实现特定的操作&lt;br&gt;    2.方法名主要在调用这个方法时使用，需要注意命名的规范，一般采用第一个单词首字母小写，其他单词首字母大写的形式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2.调用方法&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当需要调用方法执行某个操作时，可以先创建类的对象，然后通过  对象名.方法名();  来实现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 创建对象，对象名为hello&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        HelloWorld hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 通过对象名.方法名()的形式调用方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        hello.show();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 定义方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;welcome!&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;Java-中无参带返回值方法的使用&quot;&gt;&lt;a href=&quot;#Java-中无参带返回值方法的使用&quot; class=&quot;headerlink&quot; title=&quot;Java 中无参带返回值方法的使用&quot;&gt;&lt;/a&gt;Java 中无参带返回值方法的使用&lt;/h1&gt;&lt;h2 id=&quot;定义-1&quot;&gt;&lt;a href=&quot;#定义-1&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果方法不包含参数，但有返回值，我们称为无参带返回值的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;calcSum&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a=&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b=&lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum=a+b;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;上述代码中，定义了一个方法名为calSum，无参数，但返回值为int类型的方法，执行的操作为计算两数之和，并返回结果&lt;/p&gt;
+&lt;p&gt;调用带返回值的方法时需要注意，由于方法执行后会返回一个结果，因此在调用带返回值方法时一般都会接收其返回值并进行处理。&lt;/p&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.如果方法的返回值类型为void，则方法中不能使用return返回值&lt;br&gt;2.方法的返回值最多只能有一个，不能返回多个值&lt;br&gt;3.方法返回值的类型必须兼容，例如，如果返回值类型为int,则不能返回String型值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Java-中带参无返回值方法的使用&quot;&gt;&lt;a href=&quot;#Java-中带参无返回值方法的使用&quot; class=&quot;headerlink&quot; title=&quot;Java 中带参无返回值方法的使用&quot;&gt;&lt;/a&gt;Java 中带参无返回值方法的使用&lt;/h1&gt;&lt;h2 id=&quot;定义-2&quot;&gt;&lt;a href=&quot;#定义-2&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果方法包含参数，但没有返回值，我们称为带参无返回值的方法。&lt;/p&gt;
+&lt;p&gt;有时方法的执行需要依赖于某些条件，换句话说，要想通过方法完成特定的功能，需要为其提供额外的信息才行。&lt;/p&gt;
+&lt;p&gt;可以通过在方法中加入参数列表接收外部传入的数据信息，参数可以是任意的基本类型数据或引用类型数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;欢迎您，&quot;&lt;/span&gt; + name + &lt;span class=&quot;string&quot;&gt;&quot;!&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;上面的代码定义了一个show方法，带有一个参数name，实现输出欢迎消息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;对象名.方法名(实参&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;，实参&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;，.....，实参n)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;调用带参方法与调用无参方法的语法类似，但在调用时必须传入实际的参数值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;HelloWorld hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hello.show(&lt;span class=&quot;string&quot;&gt;&quot;nice!&quot;&lt;/span&gt;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;创建对象名为hello，调用带参方法时必须传入参数值，这里的参数值是“nice!”&lt;/p&gt;
+&lt;p&gt;把定义方法时的参数称为形参，目的是用来定义方法需要传入的参数的个数和类型；把调用方法时的参数称为实参，是传递给方法真正被处理的值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;注意：&quot;&gt;&lt;a href=&quot;#注意：&quot; class=&quot;headerlink&quot; title=&quot;注意：&quot;&gt;&lt;/a&gt;注意：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.调用带参方法时，必须保证实参的数量、类型、顺序与形参的一一对应&lt;br&gt;2.调用方法时，实参不需要指定数据类型&lt;br&gt;3.方法的参数可以是基本数据类型，如int、double等，也可以是引用数据类型，如String、数组等&lt;br&gt;4.当方法参数有多个时，多个参数间以逗号分隔&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Java-中带参带返回值方法的使用&quot;&gt;&lt;a href=&quot;#Java-中带参带返回值方法的使用&quot; class=&quot;headerlink&quot; title=&quot;Java 中带参带返回值方法的使用&quot;&gt;&lt;/a&gt;Java 中带参带返回值方法的使用&lt;/h1&gt;&lt;h2 id=&quot;定义-3&quot;&gt;&lt;a href=&quot;#定义-3&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果方法既包含参数，又带有返回值，我们称为带参带返回值的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//返回值为String类型，带有一个String类型的参数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; String &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;欢迎您，&quot;&lt;/span&gt; + name + &lt;span class=&quot;string&quot;&gt;&quot;!&quot;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//调用带参返回值的方法：&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;HelloWorld hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//将返回值保存在变量welcome中&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;String welcome=hello.show(&lt;span class=&quot;string&quot;&gt;&quot;nice&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;System.out.println(welcome);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;运行结果为&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;欢迎您，nice！&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;Java-中方法的重载&quot;&gt;&lt;a href=&quot;#Java-中方法的重载&quot; class=&quot;headerlink&quot; title=&quot;Java 中方法的重载&quot;&gt;&lt;/a&gt;Java 中方法的重载&lt;/h1&gt;&lt;h2 id=&quot;什么是方法的重载？&quot;&gt;&lt;a href=&quot;#什么是方法的重载？&quot; class=&quot;headerlink&quot; title=&quot;什么是方法的重载？&quot;&gt;&lt;/a&gt;什么是方法的重载？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果同一个类中包含了两个或两个以上方法名相同、方法参数的个数、顺序或类型不同的方法，则称为方法的重载，也可称该方法被重载了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 无参方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;welcome&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 重载show方法，一个字符串参数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;welcome:&quot;&lt;/span&gt; + name);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 重载show方法，两个参数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String name,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; age)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;welcome:&quot;&lt;/span&gt; + name);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;age:&quot;&lt;/span&gt; + age);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 重载show方法，两个参数顺序不同&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; age,String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;welcome2:&quot;&lt;/span&gt; + name);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;age2:&quot;&lt;/span&gt; + age);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;如何区分调用的是哪个重载方法？&quot;&gt;&lt;a href=&quot;#如何区分调用的是哪个重载方法？&quot; class=&quot;headerlink&quot; title=&quot;如何区分调用的是哪个重载方法？&quot;&gt;&lt;/a&gt;如何区分调用的是哪个重载方法？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;当调用被重载的方法时， Java 会根据参数的个数和类型来判断应该调用哪个重载方法，参数完全匹配的方法将被执行。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    HelloWorld hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    hello.show();&lt;span class=&quot;comment&quot;&gt;//调用无参的show方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    hello.show(&lt;span class=&quot;string&quot;&gt;&quot;tom&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//调用带有一个字符串参数的show方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    hello.show(&lt;span class=&quot;string&quot;&gt;&quot;jack&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//调用带有字符串参数和整形参数的show方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;运行结果：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;welcome&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;welcome:tom&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;welcome:jack&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;age:&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;判断方法重载的依据&quot;&gt;&lt;a href=&quot;#判断方法重载的依据&quot; class=&quot;headerlink&quot; title=&quot;判断方法重载的依据:&quot;&gt;&lt;/a&gt;判断方法重载的依据:&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.必须是在同一个类中&lt;br&gt;2.方法名相同&lt;br&gt;3.方法参数的个数、顺序或类型不同&lt;br&gt;4.与方法的修饰符或返回值没有关系&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是方法？&quot;&gt;&lt;a href=&quot;#什么是方法？&quot; class=&quot;headerlink&quot; title=&quot;什么是方法？&quot;&gt;&lt;/a&gt;什么是方法？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot;&gt;&lt;a href=&quot;#所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot; class=&quot;headerlink&quot; title=&quot;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&quot;&gt;&lt;/a&gt;所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;h1 id=&quot;方法的定义语法&quot;&gt;&lt;a href=&quot;#方法的定义语法&quot; class=&quot;headerlink&quot; title=&quot;方法的定义语法&quot;&gt;&lt;/a&gt;方法的定义语法&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;访问修饰符 返回值类型 方法名(参数列表)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    方法体&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;其中&quot;&gt;&lt;a href=&quot;#其中&quot; class=&quot;headerlink&quot; title=&quot;其中&quot;&gt;&lt;/a&gt;其中&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用&lt;/p&gt;
+&lt;p&gt;2.返回值类型：方法返回值的类型，如果方法不返回任何值，则返回值类型指定为void；如果方法具有返回值，则需要指定返回值的类型，并且在方法体中使用return语句返回值&lt;/p&gt;
+&lt;p&gt;3.方法名：定义的方法的名字，必须使用合法的标识符&lt;/p&gt;
+&lt;p&gt;4.参数列表：传递给方法的参数列表，参数可以有多个，多个参数间以逗号隔开，每个参数由参数类型和参数名组成，以空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;根据方法是否带参、是否带返回值，可以将方法分为四类：&quot;&gt;&lt;a href=&quot;#根据方法是否带参、是否带返回值，可以将方法分为四类：&quot; class=&quot;headerlink&quot; title=&quot;根据方法是否带参、是否带返回值，可以将方法分为四类：&quot;&gt;&lt;/a&gt;根据方法是否带参、是否带返回值，可以将方法分为四类：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.无参无返回值方法&lt;/p&gt;
+&lt;p&gt;2.无参带返回值方法&lt;/p&gt;
+&lt;p&gt;3.带参无返回值方法&lt;/p&gt;
+&lt;p&gt;4.带参带返回值方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;例&quot;&gt;&lt;a href=&quot;#例&quot; class=&quot;headerlink&quot; title=&quot;例&quot;&gt;&lt;/a&gt;例&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//定义了一个方法名为 print 的方法，实现输出信息功能&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//在 main 方法中调用 print 方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        HelloWorld test=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; HelloWorld();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        test.print();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础知识——数组</title>
@@ -461,7 +637,7 @@
     <link href="http://yoursite.com/2016/08/01/life/plan/"/>
     <id>http://yoursite.com/2016/08/01/life/plan/</id>
     <published>2016-08-01T02:35:00.000Z</published>
-    <updated>2016-08-03T01:40:32.000Z</updated>
+    <updated>2016-08-05T15:05:50.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;8月学习计划&quot;&gt;&lt;a href=&quot;#8月学习计划&quot; class=&quot;headerlink&quot; title=&quot;8月学习计划&quot;&gt;&lt;/a&gt;8月学习计划&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;http://biubiubiu.site/categories/C语言/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;C语言基础&lt;/a&gt;重新学习&lt;br&gt;学习&lt;a href=&quot;http://biubiubiu.site/categories/Arduino/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Arduino&lt;/a&gt;，尝试做平衡车或四轴飞行器&lt;br&gt;预习&lt;a href=&quot;http://biubiubiu.site/categories/java/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;java&lt;/a&gt;基础知识&lt;br&gt;单词、听力、口语日常打卡&lt;br&gt;读书&lt;/p&gt;
@@ -470,7 +646,7 @@
 &lt;h1 id=&quot;8月健身计划&quot;&gt;&lt;a href=&quot;#8月健身计划&quot; class=&quot;headerlink&quot; title=&quot;8月健身计划&quot;&gt;&lt;/a&gt;8月健身计划&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;热身&lt;br&gt;俯卧撑30个&lt;br&gt;杠铃弯举10kg＊15个&lt;br&gt;史密斯卧推20kg＊10个&lt;br&gt;引体向上力竭&lt;br&gt;俯卧撑25个&lt;br&gt;拉索夹胸12kg＊2＊10个&lt;br&gt;杠铃弯举10kg＊15个&lt;br&gt;引体向上力竭&lt;br&gt;俯卧撑20个&lt;br&gt;杠铃弯举10kg＊10个&lt;br&gt;史密斯卧推20kg＊8个&lt;br&gt;高位下拉32kg＊10&lt;br&gt;俯卧撑15个&lt;br&gt;仰卧起坐20个&lt;br&gt;史密斯卧推力竭&lt;br&gt;俯身划船20kg＊10个&lt;br&gt;杠铃弯举力竭&lt;br&gt;根据情况增加训练&lt;br&gt;拉伸&lt;br&gt;椭圆机150卡&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;a href=&quot;#每5天对计划的完成度进行总结&quot; class=&quot;headerlink&quot; title=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;/a&gt;每5天对计划的完成度进行总结&lt;/h1&gt;</content>
+&lt;h1 id=&quot;现66kg，目标增重到70kg&quot;&gt;&lt;a href=&quot;#现66kg，目标增重到70kg&quot; class=&quot;headerlink&quot; title=&quot;现66kg，目标增重到70kg&quot;&gt;&lt;/a&gt;现66kg，目标增重到70kg&lt;/h1&gt;&lt;h1 id=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;a href=&quot;#每5天对计划的完成度进行总结&quot; class=&quot;headerlink&quot; title=&quot;每5天对计划的完成度进行总结&quot;&gt;&lt;/a&gt;每5天对计划的完成度进行总结&lt;/h1&gt;</content>
     
     <summary type="html">
     
@@ -738,11 +914,11 @@
     
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
+      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
+    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
@@ -780,11 +956,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="素数" scheme="http://yoursite.com/tags/%E7%B4%A0%E6%95%B0/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -854,135 +1030,11 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>统计次数（数组）</title>
-    <link href="http://yoursite.com/2016/07/22/C%20/answers/count-array/"/>
-    <id>http://yoursite.com/2016/07/22/C /answers/count-array/</id>
-    <published>2016-07-22T13:05:23.000Z</published>
-    <updated>2016-07-23T06:39:27.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;统计各个数字出现的次数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;数量不确定的[0,9]范围内的整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;每个数字出现的次数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1 3 4 5 2 4 2 2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1出现了1次 2出现了3次 3出现了1次 4出现了2次 5出现了1次&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;可以输入 const int number = 10; 来确定数组的大小&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; number = &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count[number];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;number;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        count[i]=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(x!=&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        count[x]++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;a&amp;lt;number;a++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d出现了%d次\n&quot;&lt;/span&gt;,a,count[a]);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;统计各个数字出现的次数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;数量不确定的[0,9]范围内的整数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;每个数字出现的次数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1 3 4 5 2 4 2 2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1出现了1次 2出现了3次 3出现了1次 4出现了2次 5出现了1次&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>求平均数（数组）</title>
-    <link href="http://yoursite.com/2016/07/22/C%20/answers/averaging-array/"/>
-    <id>http://yoursite.com/2016/07/22/C /answers/averaging-array/</id>
-    <published>2016-07-22T12:45:23.000Z</published>
-    <updated>2016-07-23T05:45:47.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;多个正整数（不确定个数）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;这些正整数的平均数和大于平均数的数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1 2 3 －1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;平均数是2.000000 大于平均数的有：3&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;必须先记录每一个输入的数字,计算平均数之后,再检查记录下来的每一个数字,与平均数比较,决定是否输出&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; count=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; number[&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;];&lt;span class=&quot;comment&quot;&gt;//定义数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; average;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(x!=&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        number[count]=x;&lt;span class=&quot;comment&quot;&gt;//对数组中的元素赋值&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        sum += x;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        count++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;x);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(count&amp;gt;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        average=sum/count;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;平均数是%f\n&quot;&lt;/span&gt;,average);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;大于平均数的有：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;count;i++)&lt;span class=&quot;comment&quot;&gt;//遍历数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(number[i]&amp;gt;average)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d \n&quot;&lt;/span&gt;,number[i]);&lt;span class=&quot;comment&quot;&gt;//使用数组中的元素&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;计算用户输入的数字的平均数,并输出所有大于平均数的数。（输入-1时程序停止运行）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;多个正整数（不确定个数）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;这些正整数的平均数和大于平均数的数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1 2 3 －1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;平均数是2.000000 大于平均数的有：3&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   

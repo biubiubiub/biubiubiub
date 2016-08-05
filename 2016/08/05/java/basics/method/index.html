@@ -1,0 +1,753 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link href="/css/My.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/My.js"></script>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java,基础知识," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="什么是方法？
+所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。
+方法的定义语法123访问修饰符 返回值类型 方法名(参数列表)&amp;#123;    方法体&amp;#125;
+
+其中
+1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用
+2.返回值类型：方法返回值的类型，如果方法不返回任">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础知识——方法">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/java/basics/method/index.html">
+<meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="什么是方法？
+所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。
+方法的定义语法123访问修饰符 返回值类型 方法名(参数列表)&amp;#123;    方法体&amp;#125;
+
+其中
+1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用
+2.返回值类型：方法返回值的类型，如果方法不返回任">
+<meta property="og:updated_time" content="2016-08-05T08:59:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java基础知识——方法">
+<meta name="twitter:description" content="什么是方法？
+所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。
+方法的定义语法123访问修饰符 返回值类型 方法名(参数列表)&amp;#123;    方法体&amp;#125;
+
+其中
+1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用
+2.返回值类型：方法返回值的类型，如果方法不返回任">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/05/java/basics/method/"/>
+
+  <title> java基础知识——方法 | 当做成长 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">当做成长</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java基础知识——方法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-05T08:35:47+08:00" content="2016-08-05">
+              2016-08-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="什么是方法？"><a href="#什么是方法？" class="headerlink" title="什么是方法？"></a>什么是方法？</h1><blockquote>
+<h2 id="所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。"><a href="#所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。" class="headerlink" title="所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。"></a>所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。</h2></blockquote>
+<h1 id="方法的定义语法"><a href="#方法的定义语法" class="headerlink" title="方法的定义语法"></a>方法的定义语法</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">访问修饰符 返回值类型 方法名(参数列表)&#123;</div><div class="line">    方法体</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<h2 id="其中"><a href="#其中" class="headerlink" title="其中"></a>其中</h2><blockquote>
+<p>1.访问修饰符：方法允许被访问的权限范围，可以是public、protected、private甚至可以省略，其中public表示该方法可以被其他任何代码调用</p>
+<p>2.返回值类型：方法返回值的类型，如果方法不返回任何值，则返回值类型指定为void；如果方法具有返回值，则需要指定返回值的类型，并且在方法体中使用return语句返回值</p>
+<p>3.方法名：定义的方法的名字，必须使用合法的标识符</p>
+<p>4.参数列表：传递给方法的参数列表，参数可以有多个，多个参数间以逗号隔开，每个参数由参数类型和参数名组成，以空格隔开</p>
+</blockquote>
+<h2 id="根据方法是否带参、是否带返回值，可以将方法分为四类："><a href="#根据方法是否带参、是否带返回值，可以将方法分为四类：" class="headerlink" title="根据方法是否带参、是否带返回值，可以将方法分为四类："></a>根据方法是否带参、是否带返回值，可以将方法分为四类：</h2><blockquote>
+<p>1.无参无返回值方法</p>
+<p>2.无参带返回值方法</p>
+<p>3.带参无返回值方法</p>
+<p>4.带参带返回值方法</p>
+</blockquote>
+</blockquote>
+<h1 id="例"><a href="#例" class="headerlink" title="例"></a>例</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="comment">//定义了一个方法名为 print 的方法，实现输出信息功能</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"Hello World"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        </div><div class="line">        <span class="comment">//在 main 方法中调用 print 方法</span></div><div class="line">        HelloWorld test=<span class="keyword">new</span> HelloWorld();</div><div class="line">        test.print();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><a id="more"></a>
+<h1 id="Java-中无参无返回值方法的使用"><a href="#Java-中无参无返回值方法的使用" class="headerlink" title="Java 中无参无返回值方法的使用"></a>Java 中无参无返回值方法的使用</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>如果方法不包含参数，且没有返回值，我们称为无参无返回值的方法。</p>
+</blockquote>
+<h2 id="方法的使用步骤："><a href="#方法的使用步骤：" class="headerlink" title="方法的使用步骤："></a>方法的使用步骤：</h2><blockquote>
+<p>1.定义方法</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"Hello World!"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>代码中 void 是返回值类型， show 是方法名，大括号中的是方法体</p>
+<p>注意：<br>    1.方法体放在一对大括号中，实现特定的操作<br>    2.方法名主要在调用这个方法时使用，需要注意命名的规范，一般采用第一个单词首字母小写，其他单词首字母大写的形式</p>
+</blockquote>
+<p>2.调用方法</p>
+<blockquote>
+<p>当需要调用方法执行某个操作时，可以先创建类的对象，然后通过  对象名.方法名();  来实现</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        <span class="comment">// 创建对象，对象名为hello</span></div><div class="line">        HelloWorld hello = <span class="keyword">new</span> HelloWorld();</div><div class="line">        <span class="comment">// 通过对象名.方法名()的形式调用方法</span></div><div class="line">        hello.show();</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// 定义方法</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">        System.out.println(<span class="string">"welcome!"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="Java-中无参带返回值方法的使用"><a href="#Java-中无参带返回值方法的使用" class="headerlink" title="Java 中无参带返回值方法的使用"></a>Java 中无参带返回值方法的使用</h1><h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>如果方法不包含参数，但有返回值，我们称为无参带返回值的方法。</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calcSum</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> a=<span class="number">5</span>;</div><div class="line">    <span class="keyword">int</span> b=<span class="number">12</span>;</div><div class="line">    <span class="keyword">int</span> sum=a+b;</div><div class="line">    <span class="keyword">return</span> sum;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>上述代码中，定义了一个方法名为calSum，无参数，但返回值为int类型的方法，执行的操作为计算两数之和，并返回结果</p>
+<p>调用带返回值的方法时需要注意，由于方法执行后会返回一个结果，因此在调用带返回值方法时一般都会接收其返回值并进行处理。</p>
+<p>注意：</p>
+<blockquote>
+<p>1.如果方法的返回值类型为void，则方法中不能使用return返回值<br>2.方法的返回值最多只能有一个，不能返回多个值<br>3.方法返回值的类型必须兼容，例如，如果返回值类型为int,则不能返回String型值</p>
+</blockquote>
+</blockquote>
+<h1 id="Java-中带参无返回值方法的使用"><a href="#Java-中带参无返回值方法的使用" class="headerlink" title="Java 中带参无返回值方法的使用"></a>Java 中带参无返回值方法的使用</h1><h2 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>如果方法包含参数，但没有返回值，我们称为带参无返回值的方法。</p>
+<p>有时方法的执行需要依赖于某些条件，换句话说，要想通过方法完成特定的功能，需要为其提供额外的信息才行。</p>
+<p>可以通过在方法中加入参数列表接收外部传入的数据信息，参数可以是任意的基本类型数据或引用类型数据。</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"欢迎您，"</span> + name + <span class="string">"!"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>上面的代码定义了一个show方法，带有一个参数name，实现输出欢迎消息。</p>
+</blockquote>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对象名.方法名(实参<span class="number">1</span>，实参<span class="number">2</span>，.....，实参n)</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>调用带参方法与调用无参方法的语法类似，但在调用时必须传入实际的参数值</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">HelloWorld hello = <span class="keyword">new</span> HelloWorld();</div><div class="line">hello.show(<span class="string">"nice!"</span>);</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>创建对象名为hello，调用带参方法时必须传入参数值，这里的参数值是“nice!”</p>
+<p>把定义方法时的参数称为形参，目的是用来定义方法需要传入的参数的个数和类型；把调用方法时的参数称为实参，是传递给方法真正被处理的值。</p>
+</blockquote>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><blockquote>
+<p>1.调用带参方法时，必须保证实参的数量、类型、顺序与形参的一一对应<br>2.调用方法时，实参不需要指定数据类型<br>3.方法的参数可以是基本数据类型，如int、double等，也可以是引用数据类型，如String、数组等<br>4.当方法参数有多个时，多个参数间以逗号分隔</p>
+</blockquote>
+<h1 id="Java-中带参带返回值方法的使用"><a href="#Java-中带参带返回值方法的使用" class="headerlink" title="Java 中带参带返回值方法的使用"></a>Java 中带参带返回值方法的使用</h1><h2 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h2><blockquote>
+<p>如果方法既包含参数，又带有返回值，我们称为带参带返回值的方法。</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//返回值为String类型，带有一个String类型的参数</span></div><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">show</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="string">"欢迎您，"</span> + name + <span class="string">"!"</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//调用带参返回值的方法：</span></div><div class="line">HelloWorld hello = <span class="keyword">new</span> HelloWorld();</div><div class="line"><span class="comment">//将返回值保存在变量welcome中</span></div><div class="line">String welcome=hello.show(<span class="string">"nice"</span>);</div><div class="line">System.out.println(welcome);</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>运行结果为</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">欢迎您，nice！</div></pre></td></tr></table></figure>
+</code></pre><h1 id="Java-中方法的重载"><a href="#Java-中方法的重载" class="headerlink" title="Java 中方法的重载"></a>Java 中方法的重载</h1><h2 id="什么是方法的重载？"><a href="#什么是方法的重载？" class="headerlink" title="什么是方法的重载？"></a>什么是方法的重载？</h2><blockquote>
+<p>如果同一个类中包含了两个或两个以上方法名相同、方法参数的个数、顺序或类型不同的方法，则称为方法的重载，也可称该方法被重载了</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 无参方法</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"welcome"</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 重载show方法，一个字符串参数</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"welcome:"</span> + name);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 重载show方法，两个参数</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"welcome:"</span> + name);</div><div class="line">    System.out.println(<span class="string">"age:"</span> + age);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 重载show方法，两个参数顺序不同</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(<span class="keyword">int</span> age,String name)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"welcome2:"</span> + name);</div><div class="line">    System.out.println(<span class="string">"age2:"</span> + age);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="如何区分调用的是哪个重载方法？"><a href="#如何区分调用的是哪个重载方法？" class="headerlink" title="如何区分调用的是哪个重载方法？"></a>如何区分调用的是哪个重载方法？</h2><blockquote>
+<p>当调用被重载的方法时， Java 会根据参数的个数和类型来判断应该调用哪个重载方法，参数完全匹配的方法将被执行。</p>
+<p>例如：</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    HelloWorld hello = <span class="keyword">new</span> HelloWorld();</div><div class="line">    hello.show();<span class="comment">//调用无参的show方法</span></div><div class="line">    hello.show(<span class="string">"tom"</span>);<span class="comment">//调用带有一个字符串参数的show方法</span></div><div class="line">    hello.show(<span class="string">"jack"</span>,<span class="number">20</span>);<span class="comment">//调用带有字符串参数和整形参数的show方法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>运行结果：</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">welcome</div><div class="line">welcome:tom</div><div class="line">welcome:jack</div><div class="line">age:<span class="number">20</span></div></pre></td></tr></table></figure>
+</code></pre><h2 id="判断方法重载的依据"><a href="#判断方法重载的依据" class="headerlink" title="判断方法重载的依据:"></a>判断方法重载的依据:</h2><blockquote>
+<p>1.必须是在同一个类中<br>2.方法名相同<br>3.方法参数的个数、顺序或类型不同<br>4.与方法的修饰符或返回值没有关系</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/04/java/basics/array/" rel="next" title="java基础知识——数组">
+                <i class="fa fa-chevron-left"></i> java基础知识——数组
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/05/life/plan8-5/" rel="prev" title="8月1日至8月5日计划总结">
+                8月1日至8月5日计划总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Q" />
+          <p class="site-author-name" itemprop="name">Q</p>
+          <p class="site-description motion-element" itemprop="description">欢迎你来到我的博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/biubiubiub" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/biubiubiub/biubiubiub.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是方法？"><span class="nav-number">1.</span> <span class="nav-text">什么是方法？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。"><span class="nav-number">1.1.</span> <span class="nav-text">所谓方法，就是用来解决一类问题的代码的有序组合，是一个功能模块。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法的定义语法"><span class="nav-number">2.</span> <span class="nav-text">方法的定义语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#其中"><span class="nav-number">2.1.</span> <span class="nav-text">其中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据方法是否带参、是否带返回值，可以将方法分为四类："><span class="nav-number">2.2.</span> <span class="nav-text">根据方法是否带参、是否带返回值，可以将方法分为四类：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例"><span class="nav-number">3.</span> <span class="nav-text">例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-中无参无返回值方法的使用"><span class="nav-number">4.</span> <span class="nav-text">Java 中无参无返回值方法的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">4.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法的使用步骤："><span class="nav-number">4.2.</span> <span class="nav-text">方法的使用步骤：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-中无参带返回值方法的使用"><span class="nav-number">5.</span> <span class="nav-text">Java 中无参带返回值方法的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-1"><span class="nav-number">5.1.</span> <span class="nav-text">定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-中带参无返回值方法的使用"><span class="nav-number">6.</span> <span class="nav-text">Java 中带参无返回值方法的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-2"><span class="nav-number">6.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">6.2.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意："><span class="nav-number">6.3.</span> <span class="nav-text">注意：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-中带参带返回值方法的使用"><span class="nav-number">7.</span> <span class="nav-text">Java 中带参带返回值方法的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-3"><span class="nav-number">7.1.</span> <span class="nav-text">定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-中方法的重载"><span class="nav-number">8.</span> <span class="nav-text">Java 中方法的重载</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是方法的重载？"><span class="nav-number">8.1.</span> <span class="nav-text">什么是方法的重载？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何区分调用的是哪个重载方法？"><span class="nav-number">8.2.</span> <span class="nav-text">如何区分调用的是哪个重载方法？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断方法重载的依据"><span class="nav-number">8.3.</span> <span class="nav-text">判断方法重载的依据:</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Q</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
