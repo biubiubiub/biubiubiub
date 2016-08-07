@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
+    <lastmod>2016-08-06T02:17:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>题解格式</title>
+        <pubTime>2016-08-06T01:57:23.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/05/life/plan8-5/</loc>
     <lastmod>2016-08-05T15:06:12.000Z</lastmod>
     <data>
@@ -41,9 +63,9 @@
          
         <tag>健身</tag>
          
-        <tag>C语言</tag>
-         
         <tag>java</tag>
+         
+        <tag>C语言</tag>
          
          
            
@@ -420,11 +442,11 @@
          
         <tag>C语言</tag>
          
+        <tag>素数</tag>
+         
         <tag>函数</tag>
          
         <tag>数组</tag>
-         
-        <tag>素数</tag>
          
          
            
@@ -470,11 +492,11 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
+        <tag>题解</tag>
          
         <tag>素数</tag>
          
-        <tag>题解</tag>
+        <tag>数组</tag>
          
          
            
@@ -496,11 +518,11 @@
         
         <tag>C语言</tag>
          
-        <tag>函数</tag>
+        <tag>题解</tag>
          
         <tag>素数</tag>
          
-        <tag>题解</tag>
+        <tag>函数</tag>
          
          
            
@@ -522,11 +544,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>循环</tag>
          
         <tag>素数</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -548,11 +570,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>循环</tag>
          
         <tag>素数</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -574,11 +596,11 @@
         
         <tag>C语言</tag>
          
+        <tag>题解</tag>
+         
         <tag>函数</tag>
          
         <tag>数组</tag>
-         
-        <tag>题解</tag>
          
          
            
@@ -600,9 +622,9 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
-         
         <tag>题解</tag>
+         
+        <tag>数组</tag>
          
          
            
@@ -746,9 +768,9 @@
         
         <tag>C语言</tag>
          
-        <tag>数组</tag>
-         
         <tag>题解</tag>
+         
+        <tag>数组</tag>
          
          
            
@@ -770,9 +792,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -794,9 +816,9 @@
         
         <tag>C语言</tag>
          
-        <tag>if语句</tag>
-         
         <tag>题解</tag>
+         
+        <tag>if语句</tag>
          
          
            
@@ -818,9 +840,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -842,9 +864,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -866,9 +888,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -890,9 +912,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -914,9 +936,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -938,9 +960,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
@@ -962,9 +984,9 @@
         
         <tag>C语言</tag>
          
-        <tag>循环</tag>
-         
         <tag>题解</tag>
+         
+        <tag>循环</tag>
          
          
            
