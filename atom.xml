@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-07T03:16:22.000Z</updated>
+  <updated>2016-08-07T03:18:05.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/06/java/answers/0/"/>
     <id>http://yoursite.com/2016/08/06/java/answers/0/</id>
     <published>2016-08-06T01:57:23.000Z</published>
-    <updated>2016-08-07T03:16:22.000Z</updated>
+    <updated>2016-08-07T03:18:05.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -48,32 +48,7 @@
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;package hello;
-import java.util.Arrays;
-public class Hello {
-    //完成main方法
-    public static void main(String[] args) {
-        int[] scores ={89,-23,64,91,119,52,73};//成绩数组
-        System.out.println(&amp;quot;考试成绩的前三名为：&amp;quot;);
-        Hello hello = new Hello();//创建对象，对象名为hello
-        hello.showTop3(scores);//调用方法，传入成绩数组
-    }
-    //定义方法完成成绩排序并输出前三名的功能
-    public void showTop3(int[] scores){
-        Arrays.sort(scores);//使用Arrays.sort()方法实现数组排序
-        int num=0;//保存有效成绩的数量
-        for(int i = scores.length - 1;i &amp;gt;= 0;i--){//倒叙遍历数组中的每一个元素
-            if(scores[i]&amp;lt;0 || scores[i]&amp;gt;100){//判断成绩的有效性
-                continue;//如果成绩无效，则跳出本次循环，忽略此成绩
-            }
-            num++;//有效成绩数加1
-            if(num&amp;gt;3){//判断有效成绩的数量
-                break;//如果有效成绩数大于3.则结束循环，只输出成绩的前三名
-            }
-            System.out.println(scores[i]);//依次输出前三名成绩
-        }
-    }
-}
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; hello;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Arrays;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hello&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//完成main方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] scores =&amp;#123;&lt;span class=&quot;number&quot;&gt;89&lt;/span&gt;,-&lt;span class=&quot;number&quot;&gt;23&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;64&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;91&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;119&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;52&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;73&lt;/span&gt;&amp;#125;;&lt;span class=&quot;comment&quot;&gt;//成绩数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;考试成绩的前三名为：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Hello hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Hello();&lt;span class=&quot;comment&quot;&gt;//创建对象，对象名为hello&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        hello.showTop3(scores);&lt;span class=&quot;comment&quot;&gt;//调用方法，传入成绩数组&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//定义方法完成成绩排序并输出前三名的功能&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;showTop3&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] scores)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Arrays.sort(scores);&lt;span class=&quot;comment&quot;&gt;//使用Arrays.sort()方法实现数组排序&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; num=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//保存有效成绩的数量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = scores.length - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i &amp;gt;= &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i--)&amp;#123;&lt;span class=&quot;comment&quot;&gt;//倒叙遍历数组中的每一个元素&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(scores[i]&amp;lt;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; || scores[i]&amp;gt;&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;)&amp;#123;&lt;span class=&quot;comment&quot;&gt;//判断成绩的有效性&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;continue&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//如果成绩无效，则跳出本次循环，忽略此成绩&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            num++;&lt;span class=&quot;comment&quot;&gt;//有效成绩数加1&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(num&amp;gt;&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;)&amp;#123;&lt;span class=&quot;comment&quot;&gt;//判断有效成绩的数量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//如果有效成绩数大于3.则结束循环，只输出成绩的前三名&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(scores[i]);&lt;span class=&quot;comment&quot;&gt;//依次输出前三名成绩&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
