@@ -108,7 +108,7 @@ Input
 所有考试成绩。
 
 Out">
-<meta property="og:updated_time" content="2016-08-07T03:14:43.000Z">
+<meta property="og:updated_time" content="2016-08-07T03:16:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="输出考试成绩的前三名">
 <meta name="twitter:description" content="题目
@@ -366,7 +366,32 @@ Out">
 </blockquote>
 </blockquote>
 <a id="more"></a>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> hello;</div><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line">    <span class="comment">//完成main方法</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span>[] scores =&#123;<span class="number">89</span>,-<span class="number">23</span>,<span class="number">64</span>,<span class="number">91</span>,<span class="number">119</span>,<span class="number">52</span>,<span class="number">73</span>&#125;;<span class="comment">//成绩数组</span></div><div class="line">        System.out.println(<span class="string">"考试成绩的前三名为："</span>);</div><div class="line">        Hello hello = <span class="keyword">new</span> Hello();<span class="comment">//创建对象，对象名为hello</span></div><div class="line">        hello.showTop3(scores);<span class="comment">//调用方法，传入成绩数组</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">//定义方法完成成绩排序并输出前三名的功能</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showTop3</span><span class="params">(<span class="keyword">int</span>[] scores)</span></span>&#123;</div><div class="line">        Arrays.sort(scores);<span class="comment">//使用Arrays.sort()方法实现数组排序</span></div><div class="line">        <span class="keyword">int</span> num=<span class="number">0</span>;<span class="comment">//保存有效成绩的数量</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = scores.length - <span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)&#123;<span class="comment">//倒叙遍历数组中的每一个元素</span></div><div class="line">            <span class="keyword">if</span>(scores[i]&lt;<span class="number">0</span> || scores[i]&gt;<span class="number">100</span>)&#123;<span class="comment">//判断成绩的有效性</span></div><div class="line">                <span class="keyword">continue</span>;<span class="comment">//如果成绩无效，则跳出本次循环，忽略此成绩</span></div><div class="line">            &#125;</div><div class="line">            num++;<span class="comment">//有效成绩数加1</span></div><div class="line">            <span class="keyword">if</span>(num&gt;<span class="number">3</span>)&#123;<span class="comment">//判断有效成绩的数量</span></div><div class="line">                <span class="keyword">break</span>;<span class="comment">//如果有效成绩数大于3.则结束循环，只输出成绩的前三名</span></div><div class="line">            &#125;</div><div class="line">            System.out.println(scores[i]);<span class="comment">//依次输出前三名成绩</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code>package hello;
+import java.util.Arrays;
+public class Hello {
+    //完成main方法
+    public static void main(String[] args) {
+        int[] scores ={89,-23,64,91,119,52,73};//成绩数组
+        System.out.println(&quot;考试成绩的前三名为：&quot;);
+        Hello hello = new Hello();//创建对象，对象名为hello
+        hello.showTop3(scores);//调用方法，传入成绩数组
+    }
+    //定义方法完成成绩排序并输出前三名的功能
+    public void showTop3(int[] scores){
+        Arrays.sort(scores);//使用Arrays.sort()方法实现数组排序
+        int num=0;//保存有效成绩的数量
+        for(int i = scores.length - 1;i &gt;= 0;i--){//倒叙遍历数组中的每一个元素
+            if(scores[i]&lt;0 || scores[i]&gt;100){//判断成绩的有效性
+                continue;//如果成绩无效，则跳出本次循环，忽略此成绩
+            }
+            num++;//有效成绩数加1
+            if(num&gt;3){//判断有效成绩的数量
+                break;//如果有效成绩数大于3.则结束循环，只输出成绩的前三名
+            }
+            System.out.println(scores[i]);//依次输出前三名成绩
+        }
+    }
+}
 </code></pre>
       
     </div>
