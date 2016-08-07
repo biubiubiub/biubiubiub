@@ -4,11 +4,33 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
-    <lastmod>2016-08-06T02:17:06.000Z</lastmod>
+    <loc>http://yoursite.com/2016/08/04/java/basics/array/</loc>
+    <lastmod>2016-08-07T03:12:53.000Z</lastmod>
     <data>
         <display>
-        <title>题解格式</title>
+        <title>java基础知识——数组</title>
+        <pubTime>2016-08-04T06:47:47.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
+    <lastmod>2016-08-07T03:12:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>输出考试成绩的前三名</title>
         <pubTime>2016-08-06T01:57:23.000Z</pubTime>
         
         <tag>java</tag>
@@ -84,28 +106,6 @@
         <display>
         <title>java基础知识——方法</title>
         <pubTime>2016-08-05T00:35:47.000Z</pubTime>
-        
-        <tag>基础知识</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/04/java/basics/array/</loc>
-    <lastmod>2016-08-04T09:17:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>java基础知识——数组</title>
-        <pubTime>2016-08-04T06:47:47.000Z</pubTime>
         
         <tag>基础知识</tag>
          

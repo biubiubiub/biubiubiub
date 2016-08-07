@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-06T02:17:06.000Z</updated>
+  <updated>2016-08-07T03:12:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>题解格式</title>
+    <title>输出考试成绩的前三名</title>
     <link href="http://yoursite.com/2016/08/06/java/answers/0/"/>
     <id>http://yoursite.com/2016/08/06/java/answers/0/</id>
     <published>2016-08-06T01:57:23.000Z</published>
-    <updated>2016-08-06T02:17:06.000Z</updated>
+    <updated>2016-08-07T03:12:25.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
@@ -298,7 +298,7 @@ public class Hello {
     <link href="http://yoursite.com/2016/08/04/java/basics/array/"/>
     <id>http://yoursite.com/2016/08/04/java/basics/array/</id>
     <published>2016-08-04T06:47:47.000Z</published>
-    <updated>2016-08-04T09:17:28.000Z</updated>
+    <updated>2016-08-07T03:12:53.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;a href=&quot;#数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot; class=&quot;headerlink&quot; title=&quot;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&quot;&gt;&lt;/a&gt;数组可以理解为是一个巨大的“盒子”，里面可以按顺序存放多个类型相同的数据，比如可以定义int型的数组scores存储4名学生的成绩&lt;/h2&gt;&lt;/blockquote&gt;
