@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
+    <lastmod>2016-08-07T03:14:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>输出考试成绩的前三名</title>
+        <pubTime>2016-08-06T01:57:23.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/04/java/basics/array/</loc>
     <lastmod>2016-08-07T03:12:53.000Z</lastmod>
     <data>
@@ -19,28 +41,6 @@
            
              
               <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
-    <lastmod>2016-08-07T03:12:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>输出考试成绩的前三名</title>
-        <pubTime>2016-08-06T01:57:23.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>题解</tag>
-         
-         
-           
-             
-              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>
@@ -85,9 +85,9 @@
          
         <tag>健身</tag>
          
-        <tag>java</tag>
-         
         <tag>C语言</tag>
+         
+        <tag>java</tag>
          
          
            
