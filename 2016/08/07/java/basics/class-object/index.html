@@ -1,0 +1,750 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link href="/css/My.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/My.js"></script>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="基础知识,java," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="什么是对象？
+万物皆对象，客观存在的事物皆为对象
+什么是面向对象？
+人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。
+类
+类是模子，确定对象将会拥有的特征（属性）和行为（方法）。
+类的特点
+类是对象的类型具有相同属性和方法的一组对象的集合
+什么是对象的属性？
+属性——对象具有的各种特征每个对象的每个属性都拥有特定值
+什么是对象的方法？
+对象执">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础知识——类和对象">
+<meta property="og:url" content="http://yoursite.com/2016/08/07/java/basics/class-object/index.html">
+<meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="什么是对象？
+万物皆对象，客观存在的事物皆为对象
+什么是面向对象？
+人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。
+类
+类是模子，确定对象将会拥有的特征（属性）和行为（方法）。
+类的特点
+类是对象的类型具有相同属性和方法的一组对象的集合
+什么是对象的属性？
+属性——对象具有的各种特征每个对象的每个属性都拥有特定值
+什么是对象的方法？
+对象执">
+<meta property="og:updated_time" content="2016-08-09T08:34:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java基础知识——类和对象">
+<meta name="twitter:description" content="什么是对象？
+万物皆对象，客观存在的事物皆为对象
+什么是面向对象？
+人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。
+类
+类是模子，确定对象将会拥有的特征（属性）和行为（方法）。
+类的特点
+类是对象的类型具有相同属性和方法的一组对象的集合
+什么是对象的属性？
+属性——对象具有的各种特征每个对象的每个属性都拥有特定值
+什么是对象的方法？
+对象执">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/07/java/basics/class-object/"/>
+
+  <title> java基础知识——类和对象 | 当做成长 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">当做成长</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java基础知识——类和对象
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-07T14:47:47+08:00" content="2016-08-07">
+              2016-08-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="什么是对象？"><a href="#什么是对象？" class="headerlink" title="什么是对象？"></a>什么是对象？</h1><blockquote>
+<h2 id="万物皆对象，客观存在的事物皆为对象"><a href="#万物皆对象，客观存在的事物皆为对象" class="headerlink" title="万物皆对象，客观存在的事物皆为对象"></a>万物皆对象，客观存在的事物皆为对象</h2></blockquote>
+<h1 id="什么是面向对象？"><a href="#什么是面向对象？" class="headerlink" title="什么是面向对象？"></a>什么是面向对象？</h1><blockquote>
+<h2 id="人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。"><a href="#人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。" class="headerlink" title="人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。"></a>人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。</h2></blockquote>
+<h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><blockquote>
+<h2 id="类是模子，确定对象将会拥有的特征（属性）和行为（方法）。"><a href="#类是模子，确定对象将会拥有的特征（属性）和行为（方法）。" class="headerlink" title="类是模子，确定对象将会拥有的特征（属性）和行为（方法）。"></a>类是模子，确定对象将会拥有的特征（属性）和行为（方法）。</h2></blockquote>
+<h1 id="类的特点"><a href="#类的特点" class="headerlink" title="类的特点"></a>类的特点</h1><blockquote>
+<h2 id="类是对象的类型"><a href="#类是对象的类型" class="headerlink" title="类是对象的类型"></a>类是对象的类型</h2><h2 id="具有相同属性和方法的一组对象的集合"><a href="#具有相同属性和方法的一组对象的集合" class="headerlink" title="具有相同属性和方法的一组对象的集合"></a>具有相同属性和方法的一组对象的集合</h2></blockquote>
+<h1 id="什么是对象的属性？"><a href="#什么是对象的属性？" class="headerlink" title="什么是对象的属性？"></a>什么是对象的属性？</h1><blockquote>
+<h2 id="属性——对象具有的各种特征"><a href="#属性——对象具有的各种特征" class="headerlink" title="属性——对象具有的各种特征"></a>属性——对象具有的各种特征</h2><h2 id="每个对象的每个属性都拥有特定值"><a href="#每个对象的每个属性都拥有特定值" class="headerlink" title="每个对象的每个属性都拥有特定值"></a>每个对象的每个属性都拥有特定值</h2></blockquote>
+<h1 id="什么是对象的方法？"><a href="#什么是对象的方法？" class="headerlink" title="什么是对象的方法？"></a>什么是对象的方法？</h1><blockquote>
+<h2 id="对象执行的操作。"><a href="#对象执行的操作。" class="headerlink" title="对象执行的操作。"></a>对象执行的操作。</h2></blockquote>
+<h1 id="类和对象的关系"><a href="#类和对象的关系" class="headerlink" title="类和对象的关系"></a>类和对象的关系</h1><blockquote>
+<h2 id="类是抽象的概念，仅仅是模板"><a href="#类是抽象的概念，仅仅是模板" class="headerlink" title="类是抽象的概念，仅仅是模板"></a>类是抽象的概念，仅仅是模板</h2><h2 id="对象是一个能够看得到、摸得着的具体事物"><a href="#对象是一个能够看得到、摸得着的具体事物" class="headerlink" title="对象是一个能够看得到、摸得着的具体事物"></a>对象是一个能够看得到、摸得着的具体事物</h2></blockquote>
+<h1 id="类的重要性"><a href="#类的重要性" class="headerlink" title="类的重要性"></a>类的重要性</h1><blockquote>
+<h2 id="所有java程序都以类class为组织单元"><a href="#所有java程序都以类class为组织单元" class="headerlink" title="所有java程序都以类class为组织单元"></a>所有java程序都以类class为组织单元</h2></blockquote>
+<h1 id="定义类"><a href="#定义类" class="headerlink" title="定义类"></a>定义类</h1><blockquote>
+<h2 id="定义类的步骤"><a href="#定义类的步骤" class="headerlink" title="定义类的步骤"></a>定义类的步骤</h2><blockquote>
+<ol>
+<li>定义类名</li>
+<li>编写类的属性</li>
+<li>编写类的方法</li>
+</ol>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 类名</span>&#123;</div><div class="line">    <span class="comment">//定义属性部分（成员变量）</span></div><div class="line">    属性<span class="number">1</span>的类型 属性<span class="number">1</span>；</div><div class="line">    属性<span class="number">2</span>的类型 属性<span class="number">2</span>；</div><div class="line">    ....</div><div class="line">    属性n的类型 属性n；</div><div class="line">    <span class="comment">//定义方法部分</span></div><div class="line">    方法<span class="number">1</span>;</div><div class="line">    方法<span class="number">2</span>;</div><div class="line">    ....</div><div class="line">    方法m;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="对象的使用步骤"><a href="#对象的使用步骤" class="headerlink" title="对象的使用步骤"></a>对象的使用步骤</h1><blockquote>
+<ol>
+<li>创建对象</li>
+</ol>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">类名 对象名 = <span class="keyword">new</span> 类名();</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<ol>
+<li>使用对象<blockquote>
+<p>引用对象的属性：对象名.属性</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">phone.screen = <span class="number">5</span>; <span class="comment">//给screen赋值为5</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<blockquote>
+<p>引用对象的方法：对象名.方法</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">phone.sendMessage(); <span class="comment">//调用sendMessage()方法</span></div></pre></td></tr></table></figure>
+</code></pre><h1 id="成员变量和局部变量"><a href="#成员变量和局部变量" class="headerlink" title="成员变量和局部变量"></a>成员变量和局部变量</h1><blockquote>
+<h2 id="1-成员变量"><a href="#1-成员变量" class="headerlink" title="1.成员变量"></a>1.成员变量</h2><blockquote>
+<p>在类中定义，用来描述对象将要有什么。<br>可以被本类的所有方法使用，也可以在其他与当前类有关系的类中使用。</p>
+</blockquote>
+<h2 id="2-局部变量"><a href="#2-局部变量" class="headerlink" title="2.局部变量"></a>2.局部变量</h2><blockquote>
+<p>在类的方法中定义，在方法中临时保存数据。<br>只能在当前的方法中使用。</p>
+</blockquote>
+</blockquote>
+<h1 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h1><blockquote>
+<h2 id="作用域不同"><a href="#作用域不同" class="headerlink" title="作用域不同"></a>作用域不同</h2><blockquote>
+<p>局部变量的作用域仅限于定义它的方法。<br>成员变量的作用域在整个类内部都是可见的。</p>
+</blockquote>
+<h2 id="初始值不同"><a href="#初始值不同" class="headerlink" title="初始值不同"></a>初始值不同</h2><blockquote>
+<p>java会给成员变量一个初始值。<br>java不会给局部变量赋予初始值。</p>
+</blockquote>
+<h2 id="同名"><a href="#同名" class="headerlink" title="同名"></a>同名</h2><blockquote>
+<p>在同一个方法中，不允许有同名的局部变量。<br>在不同的方法中，可以有同名的局部变量。<br>两类变量同名时，局部变量具有更高的优先级。</p>
+</blockquote>
+</blockquote>
+<h1 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h1><blockquote>
+<ol>
+<li>使用 new + 构造方法 创建一个新的对象。</li>
+<li>构造方法是定义在java类中的一个用来初始化对象的方法。构造方法与类同名且没有返回值。</li>
+<li>当没有指定构造方法时，系统会自动添加无参的构造方法。</li>
+<li>当有指定构造方法，无论是有参、无参的构造方法，都不会自动添加无参的构造方法。</li>
+<li>构造方法的重载：方法名相同，但参数不同的多个方法，调用时会自动根据不同的参数选择相应的方法。</li>
+<li>构造方法不但可以给对象的属性赋值，还可以保证给对象的属性赋一个合理的值。</li>
+</ol>
+</blockquote>
+<h2 id="构造方法的语法格式"><a href="#构造方法的语法格式" class="headerlink" title="构造方法的语法格式"></a>构造方法的语法格式</h2><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> 构造方法名()&#123;</div><div class="line">    <span class="comment">//初始化代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>没有返回值类型<br>构造方法名与类名相同<br>可以指定参数</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/07/IELTS/Listening/0/" rel="next" title="IELTS--ListingⅠ">
+                <i class="fa fa-chevron-left"></i> IELTS--ListingⅠ
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Q" />
+          <p class="site-author-name" itemprop="name">Q</p>
+          <p class="site-description motion-element" itemprop="description">欢迎你来到我的博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/biubiubiub" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/biubiubiub/biubiubiub.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是对象？"><span class="nav-number">1.</span> <span class="nav-text">什么是对象？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#万物皆对象，客观存在的事物皆为对象"><span class="nav-number">1.1.</span> <span class="nav-text">万物皆对象，客观存在的事物皆为对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是面向对象？"><span class="nav-number">2.</span> <span class="nav-text">什么是面向对象？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。"><span class="nav-number">2.1.</span> <span class="nav-text">人更关注一个事物的具体信息。通过对各个对象的行为来实现对象之间的各种交互，协作从而完成一系列的事物关系。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类"><span class="nav-number">3.</span> <span class="nav-text">类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类是模子，确定对象将会拥有的特征（属性）和行为（方法）。"><span class="nav-number">3.1.</span> <span class="nav-text">类是模子，确定对象将会拥有的特征（属性）和行为（方法）。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类的特点"><span class="nav-number">4.</span> <span class="nav-text">类的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类是对象的类型"><span class="nav-number">4.1.</span> <span class="nav-text">类是对象的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#具有相同属性和方法的一组对象的集合"><span class="nav-number">4.2.</span> <span class="nav-text">具有相同属性和方法的一组对象的集合</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是对象的属性？"><span class="nav-number">5.</span> <span class="nav-text">什么是对象的属性？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性——对象具有的各种特征"><span class="nav-number">5.1.</span> <span class="nav-text">属性——对象具有的各种特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#每个对象的每个属性都拥有特定值"><span class="nav-number">5.2.</span> <span class="nav-text">每个对象的每个属性都拥有特定值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是对象的方法？"><span class="nav-number">6.</span> <span class="nav-text">什么是对象的方法？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对象执行的操作。"><span class="nav-number">6.1.</span> <span class="nav-text">对象执行的操作。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类和对象的关系"><span class="nav-number">7.</span> <span class="nav-text">类和对象的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类是抽象的概念，仅仅是模板"><span class="nav-number">7.1.</span> <span class="nav-text">类是抽象的概念，仅仅是模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象是一个能够看得到、摸得着的具体事物"><span class="nav-number">7.2.</span> <span class="nav-text">对象是一个能够看得到、摸得着的具体事物</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类的重要性"><span class="nav-number">8.</span> <span class="nav-text">类的重要性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#所有java程序都以类class为组织单元"><span class="nav-number">8.1.</span> <span class="nav-text">所有java程序都以类class为组织单元</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义类"><span class="nav-number">9.</span> <span class="nav-text">定义类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义类的步骤"><span class="nav-number">9.1.</span> <span class="nav-text">定义类的步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对象的使用步骤"><span class="nav-number">10.</span> <span class="nav-text">对象的使用步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#成员变量和局部变量"><span class="nav-number">11.</span> <span class="nav-text">成员变量和局部变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-成员变量"><span class="nav-number">11.1.</span> <span class="nav-text">1.成员变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-局部变量"><span class="nav-number">11.2.</span> <span class="nav-text">2.局部变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#成员变量和局部变量的区别"><span class="nav-number">12.</span> <span class="nav-text">成员变量和局部变量的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域不同"><span class="nav-number">12.1.</span> <span class="nav-text">作用域不同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始值不同"><span class="nav-number">12.2.</span> <span class="nav-text">初始值不同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同名"><span class="nav-number">12.3.</span> <span class="nav-text">同名</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构造方法"><span class="nav-number">13.</span> <span class="nav-text">构造方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#构造方法的语法格式"><span class="nav-number">13.1.</span> <span class="nav-text">构造方法的语法格式</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Q</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

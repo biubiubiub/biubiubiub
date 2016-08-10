@@ -262,6 +262,247 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/15/C /basics/11/" itemprop="url">
+                  随机数
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-15T10:28:04+08:00" content="2016-07-15">
+              2016-07-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h1><blockquote>
+<p>每次召唤rand()就得到一个随机的整数</p>
+<p>将随机得到的整数number%100的结果是[0,99]的一个整数</p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></div><div class="line"></span>&#123;</div><div class="line">   	srand(time(<span class="number">0</span>));<span class="comment">//为了使随机数更像是随机数，现在不理解</span></div><div class="line">   	<span class="keyword">int</span> a = rand();</div><div class="line">   	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a%<span class="number">100</span>);<span class="comment">//a%100得到的是[0,99]的整数</span></div><div class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/C /basics/11/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/15/C /answers/10/" itemprop="url">
+                  猜数游戏
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-15T09:41:00+08:00" content="2016-07-15">
+              2016-07-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>让计算机来想一个数,然后让用户来猜,用户每输一个数,就告诉它是大了还是小了,直到用户猜中为止,最后还要告诉用户它猜了多少次。</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
+<h2 id="因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。"><a href="#因为需要不断重复让用户猜-所以需要用到循环。核心重点是循环的条件。" class="headerlink" title="因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。"></a>因为需要不断重复让用户猜,所以需要用到循环。核心重点是循环的条件。</h2><h2 id="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"><a href="#要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环" class="headerlink" title="要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环"></a>要用do-while循环，因为无论怎样至少要猜一次，必须要执行一次循环</h2>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/15/C /answers/10/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/15/C /answers/9/" itemprop="url">
                   数的逆序
                 </a>
@@ -1250,295 +1491,11 @@ else
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/13/C /basics/1/" itemprop="url">
-                  转换说明符
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-13T15:14:44+08:00" content="2016-07-13">
-              2016-07-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/C语言/" itemprop="url" rel="index">
-                    <span itemprop="name">C语言</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <table>
-<thead>
-<tr>
-<th>转换说明符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>%c</td>
-<td>字符</td>
-</tr>
-<tr>
-<td>%s</td>
-<td>字符串</td>
-</tr>
-<tr>
-<td>%d</td>
-<td>有符号十进制整数</td>
-</tr>
-<tr>
-<td>%i</td>
-<td>有符号十进制整数</td>
-</tr>
-<tr>
-<td>%o</td>
-<td>八进制整数</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>十六进制整数</td>
-</tr>
-<tr>
-<td>%u</td>
-<td>无符号十进制整数</td>
-</tr>
-<tr>
-<td>%p</td>
-<td>指针</td>
-</tr>
-<tr>
-<td>%f</td>
-<td>浮点数</td>
-</tr>
-<tr>
-<td>%e</td>
-<td>浮点数指数形式</td>
-</tr>
-<tr>
-<td>%g</td>
-<td>浮点数不显示无意义的零</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/13/C /basics/1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/12/life/0/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-12T17:30:00+08:00" content="2016-07-12">
-              2016-07-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。"><a href="#这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello-World吧。" class="headerlink" title="这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。"></a>这个博客是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义。在这里写一些事情记录自己的生活与学习过程，标题理应是Hello World吧。</h2><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=26196652&auto=0&height=66"></iframe><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/12/life/0/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1579,7 +1536,7 @@ else
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">50</span>
+              <span class="site-state-item-count">52</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
