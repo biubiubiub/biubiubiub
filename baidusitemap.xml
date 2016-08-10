@@ -4,20 +4,16 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/01/life/plan/</loc>
-    <lastmod>2016-08-10T15:20:19.000Z</lastmod>
+    <loc>http://yoursite.com/2016/08/10/life/plan8-10/</loc>
+    <lastmod>2016-08-10T15:22:24.000Z</lastmod>
     <data>
         <display>
-        <title>Hello August</title>
-        <pubTime>2016-08-01T02:35:00.000Z</pubTime>
+        <title>8月6日至8月10日计划总结</title>
+        <pubTime>2016-08-10T15:10:00.000Z</pubTime>
         
-        <tag>Arduino</tag>
-         
         <tag>生活</tag>
          
         <tag>健身</tag>
-         
-        <tag>C语言</tag>
          
         <tag>java</tag>
          
@@ -32,18 +28,22 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/05/life/plan8-10/</loc>
-    <lastmod>2016-08-10T15:20:15.000Z</lastmod>
+    <loc>http://yoursite.com/2016/08/01/life/plan/</loc>
+    <lastmod>2016-08-10T15:20:19.000Z</lastmod>
     <data>
         <display>
-        <title>8月6日至8月10日计划总结</title>
-        <pubTime>2016-08-05T15:10:00.000Z</pubTime>
+        <title>Hello August</title>
+        <pubTime>2016-08-01T02:35:00.000Z</pubTime>
         
+        <tag>Arduino</tag>
+         
         <tag>生活</tag>
          
         <tag>健身</tag>
          
         <tag>java</tag>
+         
+        <tag>C语言</tag>
          
          
            
