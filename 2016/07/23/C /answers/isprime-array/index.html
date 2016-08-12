@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="C语言,题解,素数,数组," />
+  <meta name="keywords" content="C语言,数组,素数,题解," />
 
 
 
@@ -106,7 +106,7 @@ Description
 
 题解
 方案一：从2到x-1测试是否可以整除，循环要走n-1遍方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍方案四：判断能否被已知的且小于x的素数整除 ——&amp;gt;构造素数">
-<meta property="og:updated_time" content="2016-07-23T07:54:12.000Z">
+<meta property="og:updated_time" content="2016-08-12T00:54:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="判断素数（数组）">
 <meta name="twitter:description" content="题目
@@ -345,7 +345,7 @@ Description
 <h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
 <h2 id="方案一：从2到x-1测试是否可以整除，循环要走n-1遍"><a href="#方案一：从2到x-1测试是否可以整除，循环要走n-1遍" class="headerlink" title="方案一：从2到x-1测试是否可以整除，循环要走n-1遍"></a>方案一：从2到x-1测试是否可以整除，循环要走n-1遍</h2><h2 id="方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍"><a href="#方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍" class="headerlink" title="方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍"></a>方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍</h2><h2 id="方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍"><a href="#方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍" class="headerlink" title="方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍"></a>方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍</h2><h2 id="方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表"><a href="#方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表" class="headerlink" title="方案四：判断能否被已知的且小于x的素数整除 ——&gt;构造素数表"></a>方案四：判断能否被已知的且小于x的素数整除 ——&gt;<a href="http://biubiubiu.site/2016/07/23/C%20/basics/prime-table/" target="_blank" rel="external">构造素数表</a></h2></blockquote>
 <a id="more"></a> 
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
+
       
     </div>
 
@@ -369,11 +369,11 @@ Description
           
             <a href="/tags/C语言/" rel="tag">#C语言</a>
           
-            <a href="/tags/题解/" rel="tag">#题解</a>
+            <a href="/tags/数组/" rel="tag">#数组</a>
           
             <a href="/tags/素数/" rel="tag">#素数</a>
           
-            <a href="/tags/数组/" rel="tag">#数组</a>
+            <a href="/tags/题解/" rel="tag">#题解</a>
           
         </div>
       
@@ -533,7 +533,7 @@ Description
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方案一：从2到x-1测试是否可以整除，循环要走n-1遍"><span class="nav-number">2.1.</span> <span class="nav-text">方案一：从2到x-1测试是否可以整除，循环要走n-1遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍"><span class="nav-number">2.2.</span> <span class="nav-text">方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍"><span class="nav-number">2.3.</span> <span class="nav-text">方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表"><span class="nav-number">2.4.</span> <span class="nav-text">方案四：判断能否被已知的且小于x的素数整除 ——>构造素数表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方案一：从2到x-1测试是否可以整除，循环要走n-1遍"><span class="nav-number">2.1.</span> <span class="nav-text">方案一：从2到x-1测试是否可以整除，循环要走n-1遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走-n-3-2-1遍"><span class="nav-number">2.2.</span> <span class="nav-text">方案二：除了2以外所有的偶数都不是素数，去掉偶数后，从3到x-1，每次加2，循环要走(n-3)/2+1遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案三：无需最后走到x-1，到sqrt-x-就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt-x-遍"><span class="nav-number">2.3.</span> <span class="nav-text">方案三：无需最后走到x-1，到sqrt(x)就够了，因为一个数如果可以开方，它一定不是素数，循环要走sqrt(x)遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案四：判断能否被已知的且小于x的素数整除-——-gt-构造素数表"><span class="nav-number">2.4.</span> <span class="nav-text">方案四：判断能否被已知的且小于x的素数整除 ——>构造素数表</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

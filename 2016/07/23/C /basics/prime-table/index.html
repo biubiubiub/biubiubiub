@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="基础知识,C语言,素数,函数,数组," />
+  <meta name="keywords" content="基础知识,C语言,函数,数组,素数," />
 
 
 
@@ -120,7 +120,7 @@
 令x=2
 如果x是素数,则对于(i=2;x  i &amp;lt; n;i++)令prime[i  x]=0
 令x++,如果x">
-<meta property="og:updated_time" content="2016-07-23T08:15:34.000Z">
+<meta property="og:updated_time" content="2016-08-12T00:55:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="构造素数表">
 <meta name="twitter:description" content="算法和伪代码
@@ -375,7 +375,8 @@
 </ol>
 </blockquote>
 </blockquote>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">const</span> <span class="keyword">int</span> maxNumber = <span class="number">25</span>;</div><div class="line">    <span class="keyword">int</span> isPrime[maxNumber];</div><div class="line">    <span class="keyword">int</span> i;</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;maxNumber;i++)</div><div class="line">    &#123;</div><div class="line">        isPrime[i]=<span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//for test 输出表格</span></div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\t"</span>);</div><div class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;maxNumber;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\t"</span>,i);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    <span class="keyword">for</span>(x=<span class="number">2</span>;x&lt;maxNumber;x++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(isPrime[x]==<span class="number">1</span>)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(i=<span class="number">2</span>;i*x&lt;maxNumber;i++)</div><div class="line">            &#123;</div><div class="line">                isPrime[i*x]=<span class="number">0</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\t"</span>,x);</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;maxNumber;i++)</div><div class="line">        &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%d\t"</span>,isPrime[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    <span class="comment">//for test</span></div><div class="line">    <span class="keyword">for</span>(x=<span class="number">2</span>;x&lt;maxNumber;x++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(isPrime[x]==<span class="number">1</span>)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(i=<span class="number">2</span>;i*x&lt;maxNumber;i++)</div><div class="line">            &#123;</div><div class="line">                isPrime[i*x] = <span class="number">0</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;maxNumber;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(isPrime[i])</div><div class="line">        &#123;</div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%d\t"</span>,i);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
       
     </div>
 
@@ -401,11 +402,11 @@
           
             <a href="/tags/C语言/" rel="tag">#C语言</a>
           
-            <a href="/tags/素数/" rel="tag">#素数</a>
-          
             <a href="/tags/函数/" rel="tag">#函数</a>
           
             <a href="/tags/数组/" rel="tag">#数组</a>
+          
+            <a href="/tags/素数/" rel="tag">#素数</a>
           
         </div>
       

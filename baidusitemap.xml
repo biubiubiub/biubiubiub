@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/07/23/C%20/basics/prime-table/</loc>
+    <lastmod>2016-08-12T00:55:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>构造素数表</title>
+        <pubTime>2016-07-23T07:55:49.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>C语言</tag>
+         
+        <tag>函数</tag>
+         
+        <tag>数组</tag>
+         
+        <tag>素数</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/23/C%20/answers/isprime-array/</loc>
+    <lastmod>2016-08-12T00:54:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>判断素数（数组）</title>
+        <pubTime>2016-07-23T07:20:23.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>数组</tag>
+         
+        <tag>素数</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/10/life/plan8-10/</loc>
     <lastmod>2016-08-10T15:22:24.000Z</lastmod>
     <data>
@@ -503,34 +557,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/23/C%20/basics/prime-table/</loc>
-    <lastmod>2016-07-23T08:15:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>构造素数表</title>
-        <pubTime>2016-07-23T07:55:49.000Z</pubTime>
-        
-        <tag>基础知识</tag>
-         
-        <tag>C语言</tag>
-         
-        <tag>素数</tag>
-         
-        <tag>函数</tag>
-         
-        <tag>数组</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/07/22/C%20/basics/array/</loc>
     <lastmod>2016-07-23T07:54:14.000Z</lastmod>
     <data>
@@ -555,32 +581,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/07/23/C%20/answers/isprime-array/</loc>
-    <lastmod>2016-07-23T07:54:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>判断素数（数组）</title>
-        <pubTime>2016-07-23T07:20:23.000Z</pubTime>
-        
-        <tag>C语言</tag>
-         
-        <tag>题解</tag>
-         
-        <tag>素数</tag>
-         
-        <tag>数组</tag>
-         
-         
-           
-             
-              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/07/22/C%20/answers/23/</loc>
     <lastmod>2016-07-23T07:21:08.000Z</lastmod>
     <data>
@@ -590,11 +590,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
+        <tag>函数</tag>
          
         <tag>素数</tag>
          
-        <tag>函数</tag>
+        <tag>题解</tag>
          
          
            
@@ -616,11 +616,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -642,11 +642,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -668,11 +668,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>函数</tag>
          
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -694,9 +694,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -840,9 +840,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -864,9 +864,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -888,9 +888,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>if语句</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -912,9 +912,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -936,9 +936,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -960,9 +960,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -984,9 +984,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1008,9 +1008,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1032,9 +1032,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1056,9 +1056,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
