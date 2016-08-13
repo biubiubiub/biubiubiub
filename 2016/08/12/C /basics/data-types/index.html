@@ -1,0 +1,821 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link href="/css/My.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/My.js"></script>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="基础知识,C语言," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="C语言的类型
+整数
+
+char、short、int、long、long long
+
+
+浮点数
+
+float、double、long double
+
+
+逻辑
+
+bool
+
+
+指针自定义类型
+
+类型有何不同
+类型名称：int、long、double输入输出时的格式化：%d、%ld、%lf所表达的数的范围：char &amp;lt; short &amp;lt; int &amp;lt; float &amp;lt; double内存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据类型">
+<meta property="og:url" content="http://yoursite.com/2016/08/12/C /basics/data-types/index.html">
+<meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="C语言的类型
+整数
+
+char、short、int、long、long long
+
+
+浮点数
+
+float、double、long double
+
+
+逻辑
+
+bool
+
+
+指针自定义类型
+
+类型有何不同
+类型名称：int、long、double输入输出时的格式化：%d、%ld、%lf所表达的数的范围：char &amp;lt; short &amp;lt; int &amp;lt; float &amp;lt; double内存">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E6%95%B4%E6%95%B0%E8%B6%8A%E7%95%8C.png">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA.png">
+<meta property="og:image" content="http://oab0hmzob.bkt.clouddn.com/%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95.png">
+<meta property="og:updated_time" content="2016-08-13T07:47:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据类型">
+<meta name="twitter:description" content="C语言的类型
+整数
+
+char、short、int、long、long long
+
+
+浮点数
+
+float、double、long double
+
+
+逻辑
+
+bool
+
+
+指针自定义类型
+
+类型有何不同
+类型名称：int、long、double输入输出时的格式化：%d、%ld、%lf所表达的数的范围：char &amp;lt; short &amp;lt; int &amp;lt; float &amp;lt; double内存">
+<meta name="twitter:image" content="http://oab0hmzob.bkt.clouddn.com/%E6%95%B4%E6%95%B0%E8%B6%8A%E7%95%8C.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/12/C /basics/data-types/"/>
+
+  <title> 数据类型 | 当做成长 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">当做成长</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                数据类型
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-12T15:14:44+08:00" content="2016-08-12">
+              2016-08-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="C语言的类型"><a href="#C语言的类型" class="headerlink" title="C语言的类型"></a>C语言的类型</h1><blockquote>
+<h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><blockquote>
+<ul>
+<li>char、short、int、long、long long</li>
+</ul>
+</blockquote>
+<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><blockquote>
+<ul>
+<li>float、double、long double</li>
+</ul>
+</blockquote>
+<h2 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h2><blockquote>
+<ul>
+<li>bool</li>
+</ul>
+</blockquote>
+<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><h2 id="自定义类型"><a href="#自定义类型" class="headerlink" title="自定义类型"></a>自定义类型</h2></blockquote>
+<p><br></p>
+<h1 id="类型有何不同"><a href="#类型有何不同" class="headerlink" title="类型有何不同"></a>类型有何不同</h1><blockquote>
+<p>类型名称：int、long、double<br>输入输出时的格式化：%d、%ld、%lf<br>所表达的数的范围：char &lt; short &lt; int &lt; float &lt; double<br>内存中所占据的大小：1个字节到16个字节<br>内存中的表达形式：二进制数（补码）、编码</p>
+</blockquote>
+<p><br></p>
+<h1 id="工具sizeof"><a href="#工具sizeof" class="headerlink" title="工具sizeof"></a>工具sizeof</h1><blockquote>
+<p>是一个运算符，给出某个类型或变量在内存中所占的字节数<br>sizeof(int)算出类型的字节<br>sizeof(i)算出变量的字节<br>是静态运算符，它的结果在编译时刻就决定了<br>不要在sizeof的括号里做运算，这些运算是不会运行的。如sizeof(a++),括号里a++是不会运行的</p>
+</blockquote>
+<p><br></p>
+<a id="more"></a>
+<h1 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h1><blockquote>
+<p>char: 1字节（8比特）<br>short: 2字节<br>int: 取决于编译器或CPU<br>long: 取决于编译器或CPU<br>long long: 8字节</p>
+</blockquote>
+<h1 id="整数的内部表达"><a href="#整数的内部表达" class="headerlink" title="整数的内部表达"></a>整数的内部表达</h1><blockquote>
+<h2 id="计算机内部一切都是二进制"><a href="#计算机内部一切都是二进制" class="headerlink" title="计算机内部一切都是二进制"></a>计算机内部一切都是二进制</h2><blockquote>
+<p>18  —-&gt;  00010010<br>0   —-&gt;  00000000<br>-18 —-&gt;  ?</p>
+</blockquote>
+</blockquote>
+<h1 id="二进制负数"><a href="#二进制负数" class="headerlink" title="二进制负数"></a>二进制负数</h1><blockquote>
+<h2 id="1字节（8比特）可以表达的数："><a href="#1字节（8比特）可以表达的数：" class="headerlink" title="1字节（8比特）可以表达的数："></a>1字节（8比特）可以表达的数：</h2><blockquote>
+<p>00000000～11111111（0～255）</p>
+<h2 id="三种方案"><a href="#三种方案" class="headerlink" title="三种方案"></a>三种方案</h2><ol>
+<li>仿照十进制，有一个特殊的标志表示负数</li>
+<li>取中间的数为0，如1000000表示0，比它小的是负数，比它大的是正数</li>
+<li>补码</li>
+</ol>
+</blockquote>
+</blockquote>
+<h1 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h1><blockquote>
+<h2 id="考虑-1，想让-1-1-0。如何能做到？"><a href="#考虑-1，想让-1-1-0。如何能做到？" class="headerlink" title="考虑-1，想让-1 + 1 = 0。如何能做到？"></a>考虑-1，想让-1 + 1 = 0。如何能做到？</h2><blockquote>
+<p>0  —-&gt;  00000000<br>1  —-&gt;  00000001<br>11111111 + 00000001  —-&gt;  100000000(第9位会被舍去)<br>-1       +        1  —-&gt;  0</p>
+</blockquote>
+<h2 id="因为-0-1-—-gt-1-，-所以-，-1"><a href="#因为-0-1-—-gt-1-，-所以-，-1" class="headerlink" title="因为 0 - 1 —-&gt; -1 ， 所以 ，-1 ="></a>因为 0 - 1 —-&gt; -1 ， 所以 ，-1 =</h2><blockquote>
+<p>(1)00000000 - 00000001 —-&gt; 11111111<br>11111111被当作纯二进制看待时，是255，被当做补码看待时，是-1</p>
+</blockquote>
+<h2 id="同理，对于-a，其补码就是0-a，实际是2-n-a，n是这种类型的位数"><a href="#同理，对于-a，其补码就是0-a，实际是2-n-a，n是这种类型的位数" class="headerlink" title="同理，对于-a，其补码就是0-a，实际是2^n-a，n是这种类型的位数"></a>同理，对于-a，其补码就是0-a，实际是2^n-a，n是这种类型的位数</h2><h2 id="在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”"><a href="#在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”" class="headerlink" title="在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”"></a>在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”</h2></blockquote>
+<h1 id="数的范围"><a href="#数的范围" class="headerlink" title="数的范围"></a>数的范围</h1><blockquote>
+<p>对于一个字节（8位），可以表达的是：</p>
+<blockquote>
+<p>00000000～11111111<br>其中<br>00000000 —-&gt; 0<br>11111111～10000000 —-&gt; -1～ -128<br>00000001～01111111 —-&gt; 1～127</p>
+</blockquote>
+</blockquote>
+<h1 id="unsigned"><a href="#unsigned" class="headerlink" title="unsigned"></a>unsigned</h1><blockquote>
+<p>表示该数不以补码的形式来表示负数，没有负数部分，只有0和正数部分<br>如果一个字面量常数想要表达是unsigned，可以在后面加u或U</p>
+<blockquote>
+<p>如255U<br>用l或L表示long(long)<br>unsigned的初衷并非扩展数能够表达的范围，而是为了做纯二进制运算，主要是为了移位</p>
+</blockquote>
+</blockquote>
+<h1 id="整数越界"><a href="#整数越界" class="headerlink" title="整数越界"></a>整数越界</h1><blockquote>
+<p>整数是以纯二进制方式进行计算的，所以：</p>
+<blockquote>
+<p>11111111 + 1 —-&gt; 100000000 —-&gt; 0<br>01111111 + 1 —-&gt; 10000000 —-&gt; -128<br>10000000 - 1 —-&gt; 01111111 —-&gt; 127<br><img src="http://oab0hmzob.bkt.clouddn.com/%E6%95%B4%E6%95%B0%E8%B6%8A%E7%95%8C.png" alt="整数越界"></p>
+</blockquote>
+</blockquote>
+<h1 id="8进制和16进制"><a href="#8进制和16进制" class="headerlink" title="8进制和16进制"></a>8进制和16进制</h1><blockquote>
+<p>一个以0开始的数字字面量是8进制<br>一个以0x开始的数字字面量是16进制<br>%o用于8进制，%x用于16进制<br>8进制和16进制只是如何把数字表达为字符串，与内部如何表达数字无关<br>16进制很适合表达二进制数据，因为4位二进制正好是一个16进制位<br>8进制的一位数字正好表达3位二进制</p>
+<blockquote>
+<p>因为早起计算机的字长是12的倍数，而非8</p>
+</blockquote>
+</blockquote>
+<h1 id="选择整数类型"><a href="#选择整数类型" class="headerlink" title="选择整数类型"></a>选择整数类型</h1><blockquote>
+<h2 id="为什么整数类型要有那么多种？"><a href="#为什么整数类型要有那么多种？" class="headerlink" title="为什么整数类型要有那么多种？"></a>为什么整数类型要有那么多种？</h2><blockquote>
+<p>为了准确表达内存，做底层程序的需要</p>
+</blockquote>
+<h2 id="没有特殊需要，就选择int"><a href="#没有特殊需要，就选择int" class="headerlink" title="没有特殊需要，就选择int"></a>没有特殊需要，就选择int</h2><blockquote>
+<p>现在的CPU的字长普遍是32位或64位，一次内存读写就是一个int，一次计算也是一个int，选择更短的类型不会更快，甚至可能更慢<br>现代的编译器一般会设计内存对齐，所以更短的类型实际在内存中有可能也占据一个int的大小</p>
+</blockquote>
+<h2 id="unsigned与否只是输出的不同，内部计算是一样的"><a href="#unsigned与否只是输出的不同，内部计算是一样的" class="headerlink" title="unsigned与否只是输出的不同，内部计算是一样的"></a>unsigned与否只是输出的不同，内部计算是一样的</h2></blockquote>
+<h1 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B.png" alt="浮点类型"></p>
+<h1 id="浮点数的输入输出"><a href="#浮点数的输入输出" class="headerlink" title="浮点数的输入输出"></a>浮点数的输入输出</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA.png" alt="浮点数的输入输出"></p>
+<blockquote>
+<p>%e 是用科学计数法输出</p>
+</blockquote>
+<h1 id="科学计数法"><a href="#科学计数法" class="headerlink" title="科学计数法"></a>科学计数法</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95.png" alt="科学计数法"></p>
+<h1 id="输出精度"><a href="#输出精度" class="headerlink" title="输出精度"></a>输出精度</h1><blockquote>
+<p>在%和f之间加上.n可以指定输出小数点后几位，这样的输出是做四舍五入的</p>
+<blockquote>
+<p>printf(“%.3f\n”,-0.0049);<br>printf(“%.30f\n”,-0.0049);<br>printf(“%.3f\n”,-0.00049);</p>
+</blockquote>
+</blockquote>
+<h1 id="浮点数的范围与精度"><a href="#浮点数的范围与精度" class="headerlink" title="浮点数的范围与精度"></a>浮点数的范围与精度</h1><h2 id="超过范围的浮点数"><a href="#超过范围的浮点数" class="headerlink" title="超过范围的浮点数"></a>超过范围的浮点数</h2><blockquote>
+<p>printf输出inf表示超过范围的浮点数：±∞<br>printf输出nan表示不存在的浮点数</p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%f\n"</span>,<span class="number">12.0</span>/<span class="number">0.0</span>);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%f\n"</span>,<span class="number">-12.0</span>/<span class="number">0.0</span>);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%f\n"</span>,<span class="number">0.0</span>/<span class="number">0.0</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><p>输出结果：</p>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">inf</div><div class="line">-inf</div><div class="line">nan</div></pre></td></tr></table></figure>
+</code></pre><h2 id="浮点数运算是没有精度的"><a href="#浮点数运算是没有精度的" class="headerlink" title="浮点数运算是没有精度的"></a>浮点数运算是没有精度的</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">float</span> a,b,c;</div><div class="line">a = <span class="number">1.345f</span>;</div><div class="line">b = <span class="number">1.123f</span>;</div><div class="line">c = a + b;</div><div class="line"><span class="keyword">if</span> (c == <span class="number">2.468</span>)</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"相等\n"</span>);</div><div class="line"><span class="keyword">else</span></div><div class="line">    <span class="built_in">printf</span>(<span class="string">"不相等。c=%.10f,或%f\n"</span>,c,c);</div></pre></td></tr></table></figure>
+</code></pre><p>输出结果：</p>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">不相等。c=<span class="number">2.4679999352</span>,或<span class="number">2.468000</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>为什么数字后面要带f？</p>
+<blockquote>
+<p>带小数点的字面量是double而非float<br>float需要用f或F后缀来表明身份</p>
+</blockquote>
+</blockquote>
+<h2 id="浮点数的内部表达"><a href="#浮点数的内部表达" class="headerlink" title="浮点数的内部表达"></a>浮点数的内部表达</h2><blockquote>
+<p>浮点数在计算时是由专门的硬件部件实现的<br>计算double和float所用的部件是一样的</p>
+</blockquote>
+<h2 id="选择浮点类型"><a href="#选择浮点类型" class="headerlink" title="选择浮点类型"></a>选择浮点类型</h2><blockquote>
+<p>如果没有特殊需要，只使用double<br>现代CPU能直接对double做硬件运算，性能不会比float差，在64位的机器上，数据存储的速度也不会比float慢</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
+          
+            <a href="/tags/C语言/" rel="tag">#C语言</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/12/C /answers/tic-tac-toe/" rel="next" title="tic-tac-toe游戏（二维数组）">
+                <i class="fa fa-chevron-left"></i> tic-tac-toe游戏（二维数组）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/13/body-building/preparation/" rel="prev" title="健身相关知识">
+                健身相关知识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Q" />
+          <p class="site-author-name" itemprop="name">Q</p>
+          <p class="site-description motion-element" itemprop="description">欢迎你来到我的博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">57</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/biubiubiub" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/biubiubiub/biubiubiub.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C语言的类型"><span class="nav-number">1.</span> <span class="nav-text">C语言的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整数"><span class="nav-number">1.1.</span> <span class="nav-text">整数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点数"><span class="nav-number">1.2.</span> <span class="nav-text">浮点数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑"><span class="nav-number">1.3.</span> <span class="nav-text">逻辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针"><span class="nav-number">1.4.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义类型"><span class="nav-number">1.5.</span> <span class="nav-text">自定义类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型有何不同"><span class="nav-number">2.</span> <span class="nav-text">类型有何不同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#工具sizeof"><span class="nav-number">3.</span> <span class="nav-text">工具sizeof</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整数类型"><span class="nav-number">4.</span> <span class="nav-text">整数类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整数的内部表达"><span class="nav-number">5.</span> <span class="nav-text">整数的内部表达</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机内部一切都是二进制"><span class="nav-number">5.1.</span> <span class="nav-text">计算机内部一切都是二进制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二进制负数"><span class="nav-number">6.</span> <span class="nav-text">二进制负数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1字节（8比特）可以表达的数："><span class="nav-number">6.1.</span> <span class="nav-text">1字节（8比特）可以表达的数：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三种方案"><span class="nav-number">6.2.</span> <span class="nav-text">三种方案</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补码"><span class="nav-number">7.</span> <span class="nav-text">补码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#考虑-1，想让-1-1-0。如何能做到？"><span class="nav-number">7.1.</span> <span class="nav-text">考虑-1，想让-1 + 1 = 0。如何能做到？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#因为-0-1-—-gt-1-，-所以-，-1"><span class="nav-number">7.2.</span> <span class="nav-text">因为 0 - 1 —-> -1 ， 所以 ，-1 =</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同理，对于-a，其补码就是0-a，实际是2-n-a，n是这种类型的位数"><span class="nav-number">7.3.</span> <span class="nav-text">同理，对于-a，其补码就是0-a，实际是2^n-a，n是这种类型的位数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”"><span class="nav-number">7.4.</span> <span class="nav-text">在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数的范围"><span class="nav-number">8.</span> <span class="nav-text">数的范围</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#unsigned"><span class="nav-number">9.</span> <span class="nav-text">unsigned</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整数越界"><span class="nav-number">10.</span> <span class="nav-text">整数越界</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8进制和16进制"><span class="nav-number">11.</span> <span class="nav-text">8进制和16进制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择整数类型"><span class="nav-number">12.</span> <span class="nav-text">选择整数类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么整数类型要有那么多种？"><span class="nav-number">12.1.</span> <span class="nav-text">为什么整数类型要有那么多种？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#没有特殊需要，就选择int"><span class="nav-number">12.2.</span> <span class="nav-text">没有特殊需要，就选择int</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#unsigned与否只是输出的不同，内部计算是一样的"><span class="nav-number">12.3.</span> <span class="nav-text">unsigned与否只是输出的不同，内部计算是一样的</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮点类型"><span class="nav-number">13.</span> <span class="nav-text">浮点类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮点数的输入输出"><span class="nav-number">14.</span> <span class="nav-text">浮点数的输入输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#科学计数法"><span class="nav-number">15.</span> <span class="nav-text">科学计数法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#输出精度"><span class="nav-number">16.</span> <span class="nav-text">输出精度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮点数的范围与精度"><span class="nav-number">17.</span> <span class="nav-text">浮点数的范围与精度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#超过范围的浮点数"><span class="nav-number">17.1.</span> <span class="nav-text">超过范围的浮点数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点数运算是没有精度的"><span class="nav-number">17.2.</span> <span class="nav-text">浮点数运算是没有精度的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点数的内部表达"><span class="nav-number">17.3.</span> <span class="nav-text">浮点数的内部表达</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择浮点类型"><span class="nav-number">17.4.</span> <span class="nav-text">选择浮点类型</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Q</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
