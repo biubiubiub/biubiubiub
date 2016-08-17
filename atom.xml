@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-17T08:18:46.000Z</updated>
+  <updated>2016-08-17T08:51:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>补剂</title>
+    <title>健身知识——补剂</title>
     <link href="http://yoursite.com/2016/08/17/body-building/tonic/"/>
     <id>http://yoursite.com/2016/08/17/body-building/tonic/</id>
     <published>2016-08-17T04:01:04.000Z</published>
-    <updated>2016-08-17T08:18:46.000Z</updated>
+    <updated>2016-08-17T08:51:54.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;蛋白粉&quot;&gt;&lt;a href=&quot;#蛋白粉&quot; class=&quot;headerlink&quot; title=&quot;蛋白粉&quot;&gt;&lt;/a&gt;蛋白粉&lt;/h1&gt;&lt;h2 id=&quot;蛋白粉，是什么？&quot;&gt;&lt;a href=&quot;#蛋白粉，是什么？&quot; class=&quot;headerlink&quot; title=&quot;蛋白粉，是什么？&quot;&gt;&lt;/a&gt;蛋白粉，是什么？&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;蛋白粉，简单说就是以蛋白质为主要成分的粉剂。&lt;/p&gt;
@@ -295,11 +295,11 @@
   </entry>
   
   <entry>
-    <title>饮食</title>
+    <title>健身知识——饮食</title>
     <link href="http://yoursite.com/2016/08/17/body-building/diet/"/>
     <id>http://yoursite.com/2016/08/17/body-building/diet/</id>
     <published>2016-08-17T03:25:04.000Z</published>
-    <updated>2016-08-17T04:00:12.000Z</updated>
+    <updated>2016-08-17T09:05:29.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;训前怎么吃？&quot;&gt;&lt;a href=&quot;#训前怎么吃？&quot; class=&quot;headerlink&quot; title=&quot;训前怎么吃？&quot;&gt;&lt;/a&gt;训前怎么吃？&lt;/h1&gt;&lt;h2 id=&quot;训前看营养标签&quot;&gt;&lt;a href=&quot;#训前看营养标签&quot; class=&quot;headerlink&quot; title=&quot;训前看营养标签&quot;&gt;&lt;/a&gt;训前看营养标签&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;重点&lt;/p&gt;
@@ -330,6 +330,7 @@
 &lt;h2 id=&quot;如何从营养标签判断GI高低？&quot;&gt;&lt;a href=&quot;#如何从营养标签判断GI高低？&quot; class=&quot;headerlink&quot; title=&quot;如何从营养标签判断GI高低？&quot;&gt;&lt;/a&gt;如何从营养标签判断GI高低？&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;配料表前几项没有白砂糖或蔗糖的，总体的GI值就比较低。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;训前低脂肪，训练效果更好&quot;&gt;&lt;a href=&quot;#训前低脂肪，训练效果更好&quot; class=&quot;headerlink&quot; title=&quot;训前低脂肪，训练效果更好&quot;&gt;&lt;/a&gt;训前低脂肪，训练效果更好&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;训练前后摄入脂肪，会明显抑制生长激素的分泌，影响你的训练效果和身体的恢复。&lt;/p&gt;
 &lt;p&gt;所以为训练效果好，训练前后，一定要避免摄入脂肪。&lt;/p&gt;
@@ -378,7 +379,35 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;训前怎么吃？&quot;&gt;&lt;a href=&quot;#训前怎么吃？&quot; class=&quot;headerlink&quot; title=&quot;训前怎么吃？&quot;&gt;&lt;/a&gt;训前怎么吃？&lt;/h1&gt;&lt;h2 id=&quot;训前看营养标签&quot;&gt;&lt;a href=&quot;#训前看营养标签&quot; class=&quot;headerlink&quot; ti
+      &lt;h1 id=&quot;训前怎么吃？&quot;&gt;&lt;a href=&quot;#训前怎么吃？&quot; class=&quot;headerlink&quot; title=&quot;训前怎么吃？&quot;&gt;&lt;/a&gt;训前怎么吃？&lt;/h1&gt;&lt;h2 id=&quot;训前看营养标签&quot;&gt;&lt;a href=&quot;#训前看营养标签&quot; class=&quot;headerlink&quot; title=&quot;训前看营养标签&quot;&gt;&lt;/a&gt;训前看营养标签&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;重点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;主要看脂肪含量，越低越好；&lt;/li&gt;
+&lt;li&gt;看配料表中有没有添加糖，没有最佳。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;训前吃什么，得看训练目的是什么&quot;&gt;&lt;a href=&quot;#训前吃什么，得看训练目的是什么&quot; class=&quot;headerlink&quot; title=&quot;训前吃什么，得看训练目的是什么&quot;&gt;&lt;/a&gt;训前吃什么，得看训练目的是什么&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;极限减脂&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为极限减脂，建议训前空腹不吃，让身体更好地消耗脂肪。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;减脂塑形or增肌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一般的减脂塑形或增肌，训练前2小时可以适当进食，保证能源供给，训练状态也更好。&lt;br&gt;另外，想要训练效果好，训前2小时，建议以低GI值、低脂肪含量食物为主&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;训前低GI，燃脂高、更轻松&quot;&gt;&lt;a href=&quot;#训前低GI，燃脂高、更轻松&quot; class=&quot;headerlink&quot; title=&quot;训前低GI，燃脂高、更轻松&quot;&gt;&lt;/a&gt;训前低GI，燃脂高、更轻松&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;研究发现，训前吃低GI食物，可以提高燃脂率，让身体更好地燃脂。&lt;br&gt;训前吃低GI食物也更有助于提高运动耐力，让你训练时感觉更轻松。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;如何从营养标签判断GI高低？&quot;&gt;&lt;a href=&quot;#如何从营养标签判断GI高低？&quot; class=&quot;headerlink&quot; title=&quot;如何从营养标签判断GI高低？&quot;&gt;&lt;/a&gt;如何从营养标签判断GI高低？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;配料表前几项没有白砂糖或蔗糖的，总体的GI值就比较低。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -400,11 +429,11 @@
   </entry>
   
   <entry>
-    <title>有氧运动</title>
+    <title>健身知识——有氧运动</title>
     <link href="http://yoursite.com/2016/08/17/body-building/running/"/>
     <id>http://yoursite.com/2016/08/17/body-building/running/</id>
     <published>2016-08-17T02:30:04.000Z</published>
-    <updated>2016-08-17T03:25:37.000Z</updated>
+    <updated>2016-08-17T08:51:35.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;跑步&quot;&gt;&lt;a href=&quot;#跑步&quot; class=&quot;headerlink&quot; title=&quot;跑步&quot;&gt;&lt;/a&gt;跑步&lt;/h1&gt;&lt;h2 id=&quot;户外跑-vs-室内跑步机&quot;&gt;&lt;a href=&quot;#户外跑-vs-室内跑步机&quot; class=&quot;headerlink&quot; title=&quot;户外跑 vs 室内跑步机&quot;&gt;&lt;/a&gt;户外跑 vs 室内跑步机&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%AE%A4%E5%86%85%E4%B8%8E%E6%88%B7%E5%A4%96%E7%9A%84%E8%83%BD%E8%80%97%E5%AF%B9%E6%AF%94.jpg&quot; alt=&quot;户外跑与室内跑的对比&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -544,11 +573,11 @@
   </entry>
   
   <entry>
-    <title>腹部训练</title>
+    <title>健身知识——腹部训练</title>
     <link href="http://yoursite.com/2016/08/16/body-building/stomach-muscles/"/>
     <id>http://yoursite.com/2016/08/16/body-building/stomach-muscles/</id>
     <published>2016-08-16T14:50:04.000Z</published>
-    <updated>2016-08-17T02:27:41.000Z</updated>
+    <updated>2016-08-17T08:51:49.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;a href=&quot;#腹直肌上部最优：悬腿卷腹&quot; class=&quot;headerlink&quot; title=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/a&gt;腹直肌上部最优：悬腿卷腹&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E4%B8%8A%E9%83%A8%E6%9C%80%E4%BC%98%EF%BC%9A%E6%82%AC%E8%85%BF%E5%8D%B7%E8%85%B9.gif&quot; alt=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
@@ -643,11 +672,11 @@
   </entry>
   
   <entry>
-    <title>手臂训练</title>
+    <title>健身知识——手臂训练</title>
     <link href="http://yoursite.com/2016/08/16/body-building/arm-muscles/"/>
     <id>http://yoursite.com/2016/08/16/body-building/arm-muscles/</id>
     <published>2016-08-16T09:06:04.000Z</published>
-    <updated>2016-08-16T09:43:06.000Z</updated>
+    <updated>2016-08-17T09:04:58.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;肱二头肌&quot;&gt;&lt;a href=&quot;#肱二头肌&quot; class=&quot;headerlink&quot; title=&quot;肱二头肌&quot;&gt;&lt;/a&gt;肱二头肌&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;肱二头肌分为长头和短头：长头负责手臂内旋和外展，短头则负责前倾和内收。&lt;br&gt;长头一般决定了你的手臂从外侧看，是否强壮&lt;br&gt;短头则决定了，你的肱二头肌从内侧看，是否霸道。&lt;br&gt;两个头一起决定了你的肱二头肌整体是否饱满、有力度。&lt;/p&gt;
@@ -659,6 +688,7 @@
 &lt;h3 id=&quot;不同手型的弯举特点&quot;&gt;&lt;a href=&quot;#不同手型的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手型的弯举特点&quot;&gt;&lt;/a&gt;不同手型的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;反手弯举：综合刺激肱二头肌长短头，更适合一般训练者；&lt;br&gt;锤式弯举：更针对肱二头肌长头，对于想要更好塑造形状者，可以在反手弯举训练后，加1-2组锤式弯举着重塑形。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;握距的影响&quot;&gt;&lt;a href=&quot;#握距的影响&quot; class=&quot;headerlink&quot; title=&quot;握距的影响&quot;&gt;&lt;/a&gt;握距的影响&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8F%A1%E8%B7%9D%E7%9A%84%E5%BD%B1%E5%93%8D.jpg&quot; alt=&quot;握距的影响&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;不同手间距的弯举特点&quot;&gt;&lt;a href=&quot;#不同手间距的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手间距的弯举特点&quot;&gt;&lt;/a&gt;不同手间距的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;宽距弯举：对肱二头肌激活水平稍高，但容易伤到手腕；&lt;br&gt;窄距弯举：会降低肱二头肌的激活水平，并且将负荷加载在肱肌上；&lt;br&gt;肩宽弯举：综合来看最安全有效的弯举动作，更适合一般训练者。&lt;/p&gt;
@@ -745,7 +775,15 @@
     <summary type="html">
     
       &lt;h1 id=&quot;肱二头肌&quot;&gt;&lt;a href=&quot;#肱二头肌&quot; class=&quot;headerlink&quot; title=&quot;肱二头肌&quot;&gt;&lt;/a&gt;肱二头肌&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;肱二头肌分为长头和短头：长头负责手臂内旋和外展，短头则负责前倾和内收。&lt;br&gt;长头一般决定了你的手
+&lt;p&gt;肱二头肌分为长头和短头：长头负责手臂内旋和外展，短头则负责前倾和内收。&lt;br&gt;长头一般决定了你的手臂从外侧看，是否强壮&lt;br&gt;短头则决定了，你的肱二头肌从内侧看，是否霸道。&lt;br&gt;两个头一起决定了你的肱二头肌整体是否饱满、有力度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;不同的弯举动作&quot;&gt;&lt;a href=&quot;#不同的弯举动作&quot; class=&quot;headerlink&quot; title=&quot;不同的弯举动作&quot;&gt;&lt;/a&gt;不同的弯举动作&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;弯举动作是训练肱二头肌的最佳方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;a href=&quot;#宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot; class=&quot;headerlink&quot; title=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;/a&gt;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%BC%AF%E4%B8%BE%E5%8A%A8%E4%BD%9C.jpg&quot; alt=&quot;不同的弯举动作&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;不同手型的弯举特点&quot;&gt;&lt;a href=&quot;#不同手型的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手型的弯举特点&quot;&gt;&lt;/a&gt;不同手型的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;反手弯举：综合刺激肱二头肌长短头，更适合一般训练者；&lt;br&gt;锤式弯举：更针对肱二头肌长头，对于想要更好塑造形状者，可以在反手弯举训练后，加1-2组锤式弯举着重塑形。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -765,11 +803,11 @@
   </entry>
   
   <entry>
-    <title>肩部训练</title>
+    <title>健身知识——肩部训练</title>
     <link href="http://yoursite.com/2016/08/16/body-building/shoulder-muscle/"/>
     <id>http://yoursite.com/2016/08/16/body-building/shoulder-muscle/</id>
     <published>2016-08-16T01:32:04.000Z</published>
-    <updated>2016-08-16T09:05:16.000Z</updated>
+    <updated>2016-08-17T08:51:41.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;三角肌三束的视觉效果&quot;&gt;&lt;a href=&quot;#三角肌三束的视觉效果&quot; class=&quot;headerlink&quot; title=&quot;三角肌三束的视觉效果&quot;&gt;&lt;/a&gt;三角肌三束的视觉效果&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;前束：保证肩部整体从前侧看起来宽阔霸道；&lt;br&gt;中束：作为身体宽度的最外围，决定着你身形整体的开阔程度和是否溜肩；&lt;br&gt;后束：体态仪姿的关键。&lt;/p&gt;
@@ -941,11 +979,47 @@
   </entry>
   
   <entry>
-    <title>腿部训练</title>
+    <title>8月11日至8月15日计划总结</title>
+    <link href="http://yoursite.com/2016/08/15/life/plan8-15/"/>
+    <id>http://yoursite.com/2016/08/15/life/plan8-15/</id>
+    <published>2016-08-15T15:10:00.000Z</published>
+    <updated>2016-08-17T09:07:14.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个周体重上涨1.5kg达到69kg。&lt;br&gt;系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。&lt;br&gt;备跑，准备烟台国际马拉松比赛。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;坚持背单词。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;无。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个周体重上涨1.5kg达到69kg。&lt;br&gt;系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。&lt;br&gt;备跑
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>健身知识——腿部训练</title>
     <link href="http://yoursite.com/2016/08/15/body-building/leg-muscles/"/>
     <id>http://yoursite.com/2016/08/15/body-building/leg-muscles/</id>
     <published>2016-08-15T07:55:04.000Z</published>
-    <updated>2016-08-15T08:50:03.000Z</updated>
+    <updated>2016-08-17T08:51:19.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;瘦小腿&quot;&gt;&lt;a href=&quot;#瘦小腿&quot; class=&quot;headerlink&quot; title=&quot;瘦小腿&quot;&gt;&lt;/a&gt;瘦小腿&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;让腓肠肌和比目鱼肌在发展程度上取得平衡，并且紧实小腿，整体的视觉效果就会有一个明显的提拉。&lt;br&gt;从侧面看还会有淡淡的层次和阴影，视觉上特别显瘦。&lt;/p&gt;
@@ -1130,11 +1204,11 @@
   </entry>
   
   <entry>
-    <title>臀部训练</title>
+    <title>健身知识——臀部训练</title>
     <link href="http://yoursite.com/2016/08/15/body-building/buttocks/"/>
     <id>http://yoursite.com/2016/08/15/body-building/buttocks/</id>
     <published>2016-08-15T01:32:04.000Z</published>
-    <updated>2016-08-16T08:26:46.000Z</updated>
+    <updated>2016-08-17T08:50:56.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;热身&quot;&gt;&lt;a href=&quot;#热身&quot; class=&quot;headerlink&quot; title=&quot;热身&quot;&gt;&lt;/a&gt;热身&lt;/h1&gt;&lt;h2 id=&quot;半蹲侧向行走&quot;&gt;&lt;a href=&quot;#半蹲侧向行走&quot; class=&quot;headerlink&quot; title=&quot;半蹲侧向行走&quot;&gt;&lt;/a&gt;半蹲侧向行走&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;在北京市体育科研研究所的一项研究中发现，此动作可以大幅提升臀部肌群在之后运动中的募集程度。&lt;br&gt;经过此项运动热身，中枢神经控制下臀肌主动发力的肌电水水平大幅提升。&lt;br&gt;半蹲是臀部肌群发力的最佳角度。而侧向行走则是臀中肌等肌群的主要运动方式。&lt;br&gt;该动作正是通过合理的发力姿势与运动方式激活了臀部肌群。&lt;/p&gt;
@@ -1587,11 +1661,11 @@
   </entry>
   
   <entry>
-    <title>背部训练</title>
+    <title>健身知识——背部训练</title>
     <link href="http://yoursite.com/2016/08/13/body-building/dorsal-muscles/"/>
     <id>http://yoursite.com/2016/08/13/body-building/dorsal-muscles/</id>
     <published>2016-08-13T15:32:04.000Z</published>
-    <updated>2016-08-15T07:49:47.000Z</updated>
+    <updated>2016-08-17T08:51:12.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;a href=&quot;#背阔肌的最佳训练动作之一：高位下拉&quot; class=&quot;headerlink&quot; title=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;/a&gt;背阔肌的最佳训练动作之一：高位下拉&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;高位下拉，最大的特点是安全、高效、适用性广&lt;/p&gt;
@@ -2091,11 +2165,11 @@
   </entry>
   
   <entry>
-    <title>胸部训练</title>
+    <title>健身知识——胸部训练</title>
     <link href="http://yoursite.com/2016/08/13/body-building/pectoral/"/>
     <id>http://yoursite.com/2016/08/13/body-building/pectoral/</id>
     <published>2016-08-13T07:53:04.000Z</published>
-    <updated>2016-08-15T01:40:15.000Z</updated>
+    <updated>2016-08-17T08:51:28.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;a href=&quot;#不同胸部训练动作的肌电水平&quot; class=&quot;headerlink&quot; title=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;/a&gt;不同胸部训练动作的肌电水平&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E8%83%B8%E9%83%A8%E8%AE%AD%E7%BB%83%E5%8A%A8%E4%BD%9C%E7%9A%84%E8%82%8C%E7%94%B5%E6%B0%B4%E5%B9%B3.png&quot; alt=&quot;胸部训练&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;训练动作&quot;&gt;&lt;a href=&quot;#训练动作&quot; class=&quot;headerlink&quot; title=&quot;训练动作&quot;&gt;&lt;/a&gt;训练动作&lt;/h1&gt;&lt;h2 id=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;a href=&quot;#胸部之最佳综合基础动作——杠铃卧推&quot; class=&quot;headerlink&quot; title=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;/a&gt;胸部之最佳综合基础动作——杠铃卧推&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%9D%A0%E9%93%83%E5%8D%A7%E6%8E%A8.gif&quot; alt=&quot;杠铃卧推&quot;&gt;&lt;/p&gt;
@@ -2557,43 +2631,6 @@
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>8月6日至8月10日计划总结</title>
-    <link href="http://yoursite.com/2016/08/10/life/plan8-15/"/>
-    <id>http://yoursite.com/2016/08/10/life/plan8-15/</id>
-    <published>2016-08-10T15:10:00.000Z</published>
-    <updated>2016-08-16T08:24:11.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个周体重上涨1.5kg达到69kg。&lt;br&gt;系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;坚持背单词。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;无。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个周体重上涨1.5kg达到69kg。&lt;br&gt;系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。&lt;/p&gt;
-&lt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
