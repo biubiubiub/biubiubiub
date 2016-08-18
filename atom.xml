@@ -1006,9 +1006,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
@@ -2413,7 +2413,7 @@
     <link href="http://yoursite.com/2016/08/12/C%20/basics/data-types/"/>
     <id>http://yoursite.com/2016/08/12/C /basics/data-types/</id>
     <published>2016-08-12T07:14:44.000Z</published>
-    <updated>2016-08-13T16:55:26.000Z</updated>
+    <updated>2016-08-18T16:58:07.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;C语言的类型&quot;&gt;&lt;a href=&quot;#C语言的类型&quot; class=&quot;headerlink&quot; title=&quot;C语言的类型&quot;&gt;&lt;/a&gt;C语言的类型&lt;/h1&gt;&lt;blockquote&gt;
 &lt;h2 id=&quot;整数&quot;&gt;&lt;a href=&quot;#整数&quot; class=&quot;headerlink&quot; title=&quot;整数&quot;&gt;&lt;/a&gt;整数&lt;/h2&gt;&lt;blockquote&gt;
@@ -2532,6 +2532,98 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;选择浮点类型&quot;&gt;&lt;a href=&quot;#选择浮点类型&quot; class=&quot;headerlink&quot; title=&quot;选择浮点类型&quot;&gt;&lt;/a&gt;选择浮点类型&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;如果没有特殊需要，只使用double&lt;br&gt;现代CPU能直接对double做硬件运算，性能不会比float差，在64位的机器上，数据存储的速度也不会比float慢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;字符类型&quot;&gt;&lt;a href=&quot;#字符类型&quot; class=&quot;headerlink&quot; title=&quot;字符类型&quot;&gt;&lt;/a&gt;字符类型&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;char 是一种整数，也是一种特殊的类型：字符。&lt;/p&gt;
+&lt;p&gt;这是因为&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;用单引号表示的字符字面量：’a’ ， ‘1’&lt;/li&gt;
+&lt;li&gt;“也是一个字符&lt;/li&gt;
+&lt;li&gt;printf 和 scanf 里用 %c 来输入输出字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;字符的输入输出&quot;&gt;&lt;a href=&quot;#字符的输入输出&quot; class=&quot;headerlink&quot; title=&quot;字符的输入输出&quot;&gt;&lt;/a&gt;字符的输入输出&lt;/h2&gt;&lt;h3 id=&quot;如何输入’1’这个字符给char-c？&quot;&gt;&lt;a href=&quot;#如何输入’1’这个字符给char-c？&quot; class=&quot;headerlink&quot; title=&quot;如何输入’1’这个字符给char c？&quot;&gt;&lt;/a&gt;如何输入’1’这个字符给char c？&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;scanf(“%c”,&amp;amp;c); —&amp;gt; 1&lt;br&gt;scanf(“%d”,&amp;amp;i);c=i; —&amp;gt; 49&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; c;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%c&quot;&lt;/span&gt;,&amp;amp;c);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=%d\n&quot;&lt;/span&gt;,c);&lt;span class=&quot;comment&quot;&gt;//将c以整数形式输出&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=&#39;%c&#39;\n&quot;&lt;/span&gt;,c);&lt;span class=&quot;comment&quot;&gt;//将c以字符形式输出&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输入1&lt;br&gt;输出为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;c=&lt;span class=&quot;number&quot;&gt;49&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;c=&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一个49的各自表述&quot;&gt;&lt;a href=&quot;#一个49的各自表述&quot; class=&quot;headerlink&quot; title=&quot;一个49的各自表述&quot;&gt;&lt;/a&gt;一个49的各自表述&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;‘1’的ASCII编码是49，所以当c==49时，它代表’1’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;49&lt;/span&gt;==&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;OK\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;OK&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;混合输入&quot;&gt;&lt;a href=&quot;#混合输入&quot; class=&quot;headerlink&quot; title=&quot;混合输入&quot;&gt;&lt;/a&gt;混合输入&lt;/h3&gt;&lt;h4 id=&quot;有何不同？&quot;&gt;&lt;a href=&quot;#有何不同？&quot; class=&quot;headerlink&quot; title=&quot;有何不同？&quot;&gt;&lt;/a&gt;有何不同？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;scanf(“%d %c”,&amp;amp;i,&amp;amp;c);&lt;br&gt;scanf(“%d%c”,&amp;amp;i,&amp;amp;c);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;字符计算&quot;&gt;&lt;a href=&quot;#字符计算&quot; class=&quot;headerlink&quot; title=&quot;字符计算&quot;&gt;&lt;/a&gt;字符计算&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; c = &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    c++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=%c\n&quot;&lt;/span&gt;,c);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;一个字符加一个数字会得到ASCII码表中那个数之后的字符&lt;br&gt;两个字符的减，得到它们在表中的距离&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;大小写转换&quot;&gt;&lt;a href=&quot;#大小写转换&quot; class=&quot;headerlink&quot; title=&quot;大小写转换&quot;&gt;&lt;/a&gt;大小写转换&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;字母在ASCII表中是顺序排列的&lt;br&gt;大写字母和小写字母是分开排列的，并不在一起&lt;br&gt;‘a’-‘A’可以得到两段之间的距离，于是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a + ‘a’ - ‘A’ 可以把一个大写字母变成小写字母&lt;br&gt;a + ‘A’ - ‘a’ 可以把一个小写字母变成大写字母&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;逃逸字符&quot;&gt;&lt;a href=&quot;#逃逸字符&quot; class=&quot;headerlink&quot; title=&quot;逃逸字符&quot;&gt;&lt;/a&gt;逃逸字符&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;用来表达无法印出来的控制字符或者特殊字符，它由一个反斜杠“\”开头，后面跟上另一个字符，这两个字符合起来，组成了一个字符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-18%20%E4%B8%8B%E5%8D%883.26.22.png&quot; alt=&quot;逃逸字符&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;制表位&quot;&gt;&lt;a href=&quot;#制表位&quot; class=&quot;headerlink&quot; title=&quot;制表位&quot;&gt;&lt;/a&gt;制表位&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;每行的固定位置&lt;br&gt;一个\t使得输出从下一个制表位开始&lt;br&gt;用\t才能使得上下两行对齐&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;回车换行&quot;&gt;&lt;a href=&quot;#回车换行&quot; class=&quot;headerlink&quot; title=&quot;回车换行&quot;&gt;&lt;/a&gt;回车换行&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;源自打字机动作&lt;br&gt;回车与换行是不同的动作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;类型转换&quot;&gt;&lt;a href=&quot;#类型转换&quot; class=&quot;headerlink&quot; title=&quot;类型转换&quot;&gt;&lt;/a&gt;类型转换&lt;/h1&gt;&lt;h2 id=&quot;自动类型转换&quot;&gt;&lt;a href=&quot;#自动类型转换&quot; class=&quot;headerlink&quot; title=&quot;自动类型转换&quot;&gt;&lt;/a&gt;自动类型转换&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;当运算符的两边出现不一致的类型时，会自动转换成较大的类型&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大的意思是能表达的数的范围更大&lt;/p&gt;
+&lt;p&gt;char &amp;lt; short &amp;lt; int &amp;lt; long &amp;lt; long long &lt;/p&gt;
+&lt;p&gt;int &amp;lt; float &amp;lt; double&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于printf，任何小于 int 的类型会被转换成 int ； float 会被转换成double&lt;/p&gt;
+&lt;p&gt;但是scanf不会，要输入short，需要%hd&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;强制类型转换&quot;&gt;&lt;a href=&quot;#强制类型转换&quot; class=&quot;headerlink&quot; title=&quot;强制类型转换&quot;&gt;&lt;/a&gt;强制类型转换&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;要把一个量强制转换成另一个类型（通常是较小的类型），需要  (类型)值&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;比如 (int)10.2 是把 10.2 转化成 int 型， (short)32 是把 32 转化成 short&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意安全性，小的变量不总能表示大的变量&lt;/p&gt;
+&lt;p&gt;强制类型转换的优先级高于四则运算&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;逻辑类型&quot;&gt;&lt;a href=&quot;#逻辑类型&quot; class=&quot;headerlink&quot; title=&quot;逻辑类型&quot;&gt;&lt;/a&gt;逻辑类型&lt;/h1&gt;&lt;h2 id=&quot;bool&quot;&gt;&lt;a href=&quot;#bool&quot; class=&quot;headerlink&quot; title=&quot;bool&quot;&gt;&lt;/a&gt;bool&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt; #include&lt;stdbool.h&gt;&lt;br&gt;之后就可以使用bool和true、false&lt;/stdbool.h&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;逻辑运算&quot;&gt;&lt;a href=&quot;#逻辑运算&quot; class=&quot;headerlink&quot; title=&quot;逻辑运算&quot;&gt;&lt;/a&gt;逻辑运算&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;逻辑运算是对逻辑量进行的运算，结果只有0或1&lt;br&gt;逻辑量是关系运算或逻辑运算的结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-19%20%E4%B8%8A%E5%8D%8812.12.00.png&quot; alt=&quot;逻辑类型&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;如何判断一个字符c是否是大写字母？&quot;&gt;&lt;a href=&quot;#如何判断一个字符c是否是大写字母？&quot; class=&quot;headerlink&quot; title=&quot;如何判断一个字符c是否是大写字母？&quot;&gt;&lt;/a&gt;如何判断一个字符c是否是大写字母？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;c &amp;gt;= ‘A’ &amp;amp;&amp;amp; c &amp;lt;= ‘Z’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;优先级&quot;&gt;&lt;a href=&quot;#优先级&quot; class=&quot;headerlink&quot; title=&quot;优先级&quot;&gt;&lt;/a&gt;优先级&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;! &amp;gt; &amp;amp;&amp;amp; &amp;gt; ||&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;短路&quot;&gt;&lt;a href=&quot;#短路&quot; class=&quot;headerlink&quot; title=&quot;短路&quot;&gt;&lt;/a&gt;短路&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;逻辑运算是自左向右进行的，如果左边的结果已经能够决定运算了，就不会做右边的运算&lt;/p&gt;
+&lt;p&gt;对于&amp;amp;&amp;amp;，左边是false时就不做右边了&lt;br&gt;对于||，左边是true时就不做右边了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;条件运算符&quot;&gt;&lt;a href=&quot;#条件运算符&quot; class=&quot;headerlink&quot; title=&quot;条件运算符&quot;&gt;&lt;/a&gt;条件运算符&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;如 count = (count &amp;gt; 20) ? count - 10 : count + 10;&lt;br&gt;条件 ？ 条件满足时的值 ： 条件不满足时的值&lt;/p&gt;
+&lt;p&gt;条件运算符的优先级高于赋值运算符，但是低于其他运算符&lt;/p&gt;
+&lt;p&gt;条件运算符是自右向左结合的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;逗号运算&quot;&gt;&lt;a href=&quot;#逗号运算&quot; class=&quot;headerlink&quot; title=&quot;逗号运算&quot;&gt;&lt;/a&gt;逗号运算&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;逗号用来连接两个表达式，并以其右边的表达式的值作为它的结果。&lt;br&gt;逗号的优先级是所有的运算符中最低的，所以它两边的表达式会先计算。&lt;br&gt;逗号的组合关系是自左向右，所以左边的表达式会先计算，而右边的表达式的值就留下来作为逗号运算的结果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;在for中使用&quot;&gt;&lt;a href=&quot;#在for中使用&quot; class=&quot;headerlink&quot; title=&quot;在for中使用&quot;&gt;&lt;/a&gt;在for中使用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;for(i=o,j=10;i &amp;lt; j ;i++,j–)&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -2665,9 +2757,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
@@ -3071,9 +3163,9 @@ AND/OR：
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     

@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/12/C%20/basics/data-types/</loc>
+    <lastmod>2016-08-18T16:58:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>C语言基础知识——数据类型</title>
+        <pubTime>2016-08-12T07:14:44.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>C语言</tag>
+         
+         
+           
+             
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/15/life/plan8-15/</loc>
     <lastmod>2016-08-17T09:07:14.000Z</lastmod>
     <data>
@@ -11,9 +33,9 @@
         <title>8月11日至8月15日计划总结</title>
         <pubTime>2016-08-15T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>java</tag>
          
@@ -323,9 +345,9 @@
         <title>8月6日至8月10日计划总结</title>
         <pubTime>2016-08-10T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>java</tag>
          
@@ -353,28 +375,6 @@
            
              
               <breadCrumb title="健身" url="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/12/C%20/basics/data-types/</loc>
-    <lastmod>2016-08-13T16:55:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>C语言基础知识——数据类型</title>
-        <pubTime>2016-08-12T07:14:44.000Z</pubTime>
-        
-        <tag>基础知识</tag>
-         
-        <tag>C语言</tag>
-         
-         
-           
-             
-              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
@@ -461,11 +461,11 @@
          
         <tag>C语言</tag>
          
-        <tag>素数</tag>
-         
         <tag>函数</tag>
          
         <tag>数组</tag>
+         
+        <tag>素数</tag>
          
          
            
@@ -489,9 +489,9 @@
          
         <tag>题解</tag>
          
-        <tag>素数</tag>
-         
         <tag>数组</tag>
+         
+        <tag>素数</tag>
          
          
            
@@ -513,13 +513,13 @@
         
         <tag>Arduino</tag>
          
-        <tag>健身</tag>
-         
         <tag>生活</tag>
          
-        <tag>java</tag>
+        <tag>健身</tag>
          
         <tag>C语言</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -539,9 +539,9 @@
         <title>8月1日至8月5日计划总结</title>
         <pubTime>2016-08-05T02:35:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>java</tag>
          
@@ -968,9 +968,9 @@
          
         <tag>题解</tag>
          
-        <tag>素数</tag>
-         
         <tag>函数</tag>
+         
+        <tag>素数</tag>
          
          
            
