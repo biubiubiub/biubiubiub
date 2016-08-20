@@ -4,12 +4,58 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/12/C%20/basics/data-types/</loc>
-    <lastmod>2016-08-18T16:58:07.000Z</lastmod>
+    <loc>http://yoursite.com/2016/08/20/life/plan8-20/</loc>
+    <lastmod>2016-08-20T15:28:48.000Z</lastmod>
     <data>
         <display>
-        <title>C语言基础知识——数据类型</title>
-        <pubTime>2016-08-12T07:14:44.000Z</pubTime>
+        <title>8月16日至8月20日计划总结</title>
+        <pubTime>2016-08-20T15:10:00.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>C语言</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/08/15/life/plan8-15/</loc>
+    <lastmod>2016-08-20T15:19:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>8月11日至8月15日计划总结</title>
+        <pubTime>2016-08-15T15:10:00.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+        <tag>健身</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/08/12/C%20/basics/pointer/</loc>
+    <lastmod>2016-08-20T15:12:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>C语言基础知识——指针</title>
+        <pubTime>2016-08-12T03:14:44.000Z</pubTime>
         
         <tag>基础知识</tag>
          
@@ -26,23 +72,21 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/15/life/plan8-15/</loc>
-    <lastmod>2016-08-17T09:07:14.000Z</lastmod>
+    <loc>http://yoursite.com/2016/08/12/C%20/basics/data-types/</loc>
+    <lastmod>2016-08-18T16:58:07.000Z</lastmod>
     <data>
         <display>
-        <title>8月11日至8月15日计划总结</title>
-        <pubTime>2016-08-15T15:10:00.000Z</pubTime>
+        <title>C语言基础知识——数据类型</title>
+        <pubTime>2016-08-12T07:14:44.000Z</pubTime>
         
-        <tag>生活</tag>
+        <tag>基础知识</tag>
          
-        <tag>健身</tag>
-         
-        <tag>java</tag>
+        <tag>C语言</tag>
          
          
            
              
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
@@ -487,11 +531,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -966,11 +1010,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>函数</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -992,11 +1036,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1018,11 +1062,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
          
         <tag>素数</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1044,11 +1088,11 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>函数</tag>
          
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1070,9 +1114,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1216,9 +1260,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>数组</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1240,9 +1284,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1264,9 +1308,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>if语句</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1288,9 +1332,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1312,9 +1356,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1336,9 +1380,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1360,9 +1404,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1384,9 +1428,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1408,9 +1452,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            
@@ -1432,9 +1476,9 @@
         
         <tag>C语言</tag>
          
-        <tag>题解</tag>
-         
         <tag>循环</tag>
+         
+        <tag>题解</tag>
          
          
            

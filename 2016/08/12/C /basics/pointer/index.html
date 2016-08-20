@@ -1,0 +1,857 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link href="/css/My.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/My.js"></script>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="基础知识,C语言," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="当做成长" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="取地址运算运算符&amp;amp;
+scanf(“%d”,&amp;amp;i);里的&amp;amp;
+获得变量的地址，它的操作数必须是变量
+
+int i ; printf(“%x”,&amp;amp;i);
+
+地址的大小是否与 int 相同取决于编辑器
+
+int i ; printf(“%p”,&amp;amp;i);
+
+
+&amp;amp;不能取的地址
+&amp;amp; 不能对没有地址的东西取地址
+
+&amp;amp;(a+b)?&amp;amp;(a++)?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言基础知识——指针">
+<meta property="og:url" content="http://yoursite.com/2016/08/12/C /basics/pointer/index.html">
+<meta property="og:site_name" content="当做成长">
+<meta property="og:description" content="取地址运算运算符&amp;amp;
+scanf(“%d”,&amp;amp;i);里的&amp;amp;
+获得变量的地址，它的操作数必须是变量
+
+int i ; printf(“%x”,&amp;amp;i);
+
+地址的大小是否与 int 相同取决于编辑器
+
+int i ; printf(“%p”,&amp;amp;i);
+
+
+&amp;amp;不能取的地址
+&amp;amp; 不能对没有地址的东西取地址
+
+&amp;amp;(a+b)?&amp;amp;(a++)?">
+<meta property="og:updated_time" content="2016-08-20T15:12:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C语言基础知识——指针">
+<meta name="twitter:description" content="取地址运算运算符&amp;amp;
+scanf(“%d”,&amp;amp;i);里的&amp;amp;
+获得变量的地址，它的操作数必须是变量
+
+int i ; printf(“%x”,&amp;amp;i);
+
+地址的大小是否与 int 相同取决于编辑器
+
+int i ; printf(“%p”,&amp;amp;i);
+
+
+&amp;amp;不能取的地址
+&amp;amp; 不能对没有地址的东西取地址
+
+&amp;amp;(a+b)?&amp;amp;(a++)?">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/12/C /basics/pointer/"/>
+
+  <title> C语言基础知识——指针 | 当做成长 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">当做成长</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                C语言基础知识——指针
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-12T11:14:44+08:00" content="2016-08-12">
+              2016-08-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="取地址运算"><a href="#取地址运算" class="headerlink" title="取地址运算"></a>取地址运算</h1><h2 id="运算符-amp"><a href="#运算符-amp" class="headerlink" title="运算符&amp;"></a>运算符&amp;</h2><blockquote>
+<p>scanf(“%d”,&amp;i);里的&amp;</p>
+<p>获得变量的地址，它的操作数必须是变量</p>
+<blockquote>
+<p>int i ; printf(“%x”,&amp;i);</p>
+</blockquote>
+<p>地址的大小是否与 int 相同取决于编辑器</p>
+<blockquote>
+<p>int i ; printf(“%p”,&amp;i);</p>
+</blockquote>
+</blockquote>
+<h2 id="amp-不能取的地址"><a href="#amp-不能取的地址" class="headerlink" title="&amp;不能取的地址"></a>&amp;不能取的地址</h2><blockquote>
+<p>&amp; 不能对没有地址的东西取地址</p>
+<blockquote>
+<p>&amp;(a+b)?<br>&amp;(a++)?<br>&amp;(++a)?</p>
+</blockquote>
+</blockquote>
+<h2 id="相邻的数组单元差值是4"><a href="#相邻的数组单元差值是4" class="headerlink" title="相邻的数组单元差值是4"></a>相邻的数组单元差值是4</h2><a id="more"></a>
+<h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><blockquote>
+<p>指针类型的变量就是保存地址的变量</p>
+<blockquote>
+<p>int i;<br>int *p = &amp;i ;<br>p指向i意思是p里面的值是i变量的地址</p>
+<p>int<em> p,q;<br>int </em>p,q;<br>*可以靠近 int ，也可以靠近p，意思是一样的</p>
+</blockquote>
+</blockquote>
+<h2 id="指针变量"><a href="#指针变量" class="headerlink" title="指针变量"></a>指针变量</h2><blockquote>
+<p>变量的值是内存的地址</p>
+<blockquote>
+<p>普通变量的值是实际的值<br>指针变量的值是具有实际值的变量的地址</p>
+</blockquote>
+</blockquote>
+<h2 id="作为参数的指针"><a href="#作为参数的指针" class="headerlink" title="作为参数的指针"></a>作为参数的指针</h2><blockquote>
+<p>void f(int *p)<br>在被调用的时候得到了某个变量的地址：</p>
+<blockquote>
+<p>int i = 0; f(&amp;i);</p>
+</blockquote>
+<p>在函数里面可以通过这个指针访问外面的这个i</p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> *p)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> i = <span class="number">6</span>;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"&amp;i = %p\n"</span>,&amp;i);</div><div class="line">    f(&amp;i);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> *p)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">" p = %p\n"</span>,p);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="访问地址上的变量"><a href="#访问地址上的变量" class="headerlink" title="访问地址上的变量"></a>访问地址上的变量</h2><blockquote>
+<p>*是一个单目运算符，用来访问指针的值所表示的地址上的变量<br>可以做右值也可以做左值</p>
+<blockquote>
+<p>int k = <em>p;
+</em>p = k + 1;</p>
+</blockquote>
+</blockquote>
+<h2 id="左值为什么叫做左值？"><a href="#左值为什么叫做左值？" class="headerlink" title="左值为什么叫做左值？"></a>左值为什么叫做左值？</h2><blockquote>
+<p>是因为出现在赋值号左边的不是变量，而是值，是表达式计算的结果</p>
+<blockquote>
+<p>a[0] = 2;<br>*p = 3;</p>
+</blockquote>
+<p>是特殊的值，所以叫做左值</p>
+</blockquote>
+<h1 id="指针的使用"><a href="#指针的使用" class="headerlink" title="指针的使用"></a>指针的使用</h1><h2 id="指针应用场景一"><a href="#指针应用场景一" class="headerlink" title="指针应用场景一"></a>指针应用场景一</h2><h3 id="交换两个变量的值"><a href="#交换两个变量的值" class="headerlink" title="交换两个变量的值"></a>交换两个变量的值</h3><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *pa,<span class="keyword">int</span> *pb)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</div><div class="line">    <span class="keyword">int</span> b = <span class="number">6</span>;</div><div class="line">    swap(&amp;a,&amp;b);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"a = %d\n"</span>,a);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"b = %d\n"</span>,b);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *pa,<span class="keyword">int</span> *pb)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> t = *pa;</div><div class="line">    *pa = *pb;</div><div class="line">    *pb = t;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="指针应用场景二"><a href="#指针应用场景二" class="headerlink" title="指针应用场景二"></a>指针应用场景二</h2><blockquote>
+<p>函数返回多个值，某些值就只能通过指针返回。</p>
+<blockquote>
+<p>传入的参数实际上是需要保存带回的结果的变量。</p>
+</blockquote>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">minmax</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> length,<span class="keyword">int</span> *min,<span class="keyword">int</span> *max)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> a[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>&#125;;</div><div class="line">    <span class="keyword">int</span> min,max;</div><div class="line">    minmax(a,<span class="keyword">sizeof</span>(a)/<span class="keyword">sizeof</span>(a[<span class="number">0</span>]),&amp;min,&amp;max);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"min=%d,max=%d\n"</span>,min,max);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">minmax</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> length,<span class="keyword">int</span> *min,<span class="keyword">int</span> *max)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> i;</div><div class="line">    *min = *max = a[<span class="number">0</span>];</div><div class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;length;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span> (a[i]&lt; *min)</div><div class="line">        &#123;</div><div class="line">            *min = a[i];</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (a[i]&gt; *max)</div><div class="line">        &#123;</div><div class="line">            *max = a[i];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>函数返回运算的状态，结果通过指针返回<br>常用的套路是让函数返回特殊的不属于有效范围内的值来表示出错</p>
+<blockquote>
+<p>-1 或 0 （在文件操作会看到大量的例子）</p>
+</blockquote>
+<p>但是当任何数值都是有效的可能结果时，就得分开返回了</p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> *result)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> a,b;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;a,&amp;b);</div><div class="line">    <span class="keyword">int</span> c;</div><div class="line">    <span class="keyword">if</span> (divide(a,b,&amp;c)==<span class="number">1</span>)</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d/%d=%d\n"</span>,a,b,c);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"不能运算!\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> *result)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> ret=<span class="number">1</span>;</div><div class="line">    <span class="keyword">if</span> (b==<span class="number">0</span>)</div><div class="line">    &#123;</div><div class="line">        ret=<span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        *result = a/b;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ret;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="指针最常见的错误"><a href="#指针最常见的错误" class="headerlink" title="指针最常见的错误"></a>指针最常见的错误</h2><blockquote>
+<p>定义了指针变量，还没有指向任何变量，就开始使用指针</p>
+</blockquote>
+<h1 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h1><h2 id="传入函数的数组成了什么？"><a href="#传入函数的数组成了什么？" class="headerlink" title="传入函数的数组成了什么？"></a>传入函数的数组成了什么？</h2><blockquote>
+<p>函数参数表中的数组实际上是指针</p>
+<blockquote>
+<p>sizeof(a) == sizeof(int*)<br>但是可以用数组的运算符[]进行运算</p>
+</blockquote>
+</blockquote>
+<h2 id="数组参数"><a href="#数组参数" class="headerlink" title="数组参数"></a>数组参数</h2><blockquote>
+<p>以下四种函数原型是等价的：</p>
+<blockquote>
+<p>int sum(int <em>ar,int n);<br>int sum(int </em>,int);<br>int sum(int ar[],int n);<br>int sum(int [],int );</p>
+</blockquote>
+</blockquote>
+<h2 id="数组变量是特殊的指针"><a href="#数组变量是特殊的指针" class="headerlink" title="数组变量是特殊的指针"></a>数组变量是特殊的指针</h2><blockquote>
+<p>数组变量本身表达地址，所以</p>
+<blockquote>
+<p>int a[10];int *p=a;//无需用&amp;取地址<br>但是数组的单元表达的是变量，需要用&amp;取地址<br>a == &amp;a[0]</p>
+</blockquote>
+<p>[]运算符可以对数组做，也可以对指针做</p>
+<blockquote>
+<p>p[0]等价于a[0]</p>
+</blockquote>
+<p>*运算符可以对指针做，也可以对数组做</p>
+<blockquote>
+<p>*a = 25;</p>
+</blockquote>
+<p>数组变量是const的指针，所以不能被赋值</p>
+<blockquote>
+<p>int a[] 等价于 int *const a= </p>
+</blockquote>
+</blockquote>
+<h1 id="指针与const"><a href="#指针与const" class="headerlink" title="指针与const"></a>指针与const</h1><h2 id="指针是const"><a href="#指针是const" class="headerlink" title="指针是const"></a>指针是const</h2><blockquote>
+<p>表示一旦得到了某个变量的地址，不能再指向其他变量</p>
+<blockquote>
+<p>int <em>const q = &amp;i ; //q是const
+</em>q = 26;//OK<br>q++;//ERROR</p>
+</blockquote>
+</blockquote>
+<h2 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h2><blockquote>
+<p>总是可以把一个非const的值转换成const的 </p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>* x)</span></span>;</div><div class="line"><span class="keyword">int</span> a = <span class="number">15</span>;</div><div class="line">f(&amp;a);<span class="comment">//ok</span></div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> b = a;</div><div class="line">f(&amp;b);<span class="comment">//ok</span></div><div class="line">b = a + <span class="number">1</span>;<span class="comment">//ERROR!</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>当要传递的参数的类型比地址大的时候，这是常用的手段；<br>既能用比较少的字节数传递值给参数，又能避免函数对外面的变量的修改。</p>
+</blockquote>
+<h2 id="const-数组"><a href="#const-数组" class="headerlink" title="const 数组"></a>const 数组</h2><blockquote>
+<p>const int a[]={1,2,3,4,5,6,};<br>数组变量已经是const的指针了，这里的const表明数组的每个单元都是const int<br>所以必须通过初始化进行赋值</p>
+</blockquote>
+<h2 id="保护数组值"><a href="#保护数组值" class="headerlink" title="保护数组值"></a>保护数组值</h2><blockquote>
+<p>因为把数组传入函数时传递的是地址，所以那个函数内部可以修改数组的值<br>为了保护数组不被函数破坏，可以设置参数为const</p>
+<blockquote>
+<p>int sum(const int a[],int length);</p>
+</blockquote>
+</blockquote>
+<h1 id="指针运算"><a href="#指针运算" class="headerlink" title="指针运算"></a>指针运算</h1><h2 id="指针加1"><a href="#指针加1" class="headerlink" title="指针加1"></a>指针加1</h2><blockquote>
+<p>给一个指针加1表示让指针指向下一个变量</p>
+<blockquote>
+<p>int a[10];<br>int <em>p = a;
+</em>(p+1) —&gt; a[1]</p>
+</blockquote>
+<p>如果指针不是指向一片连续分配的空间，如数组，则这种运算没有意义</p>
+</blockquote>
+<h2 id="两个指针相减"><a href="#两个指针相减" class="headerlink" title="两个指针相减"></a>两个指针相减</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> a[]=&#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">9</span>,&#125;;</div><div class="line">    <span class="keyword">int</span> *p=&amp;a[<span class="number">0</span>];</div><div class="line">    <span class="keyword">int</span> *p1=&amp;a[<span class="number">3</span>];</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"p1-p=%d\n"</span>,p1-p);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="p"><a href="#p" class="headerlink" title="*p++"></a>*p++</h2><blockquote>
+<p>++比<em>的优先级高，所以不用写成 </em>(p++)<br>取出p所指的那个数据来，做完要做的事之后顺便把p移到下一个位置去<br>*常用于数组类的连续空间操作<br>在某些CPU上，这可以直接被翻译成一条汇编指令</p>
+</blockquote>
+<h2 id="指针比较"><a href="#指针比较" class="headerlink" title="指针比较"></a>指针比较</h2><blockquote>
+<p>&lt;,&lt;=,==,&gt;,&gt;=,!= 都可以对指针做<br>比较它们在内存中的地址<br>数组中的单元的地址肯定是线性递增排列的</p>
+</blockquote>
+<h2 id="0地址"><a href="#0地址" class="headerlink" title="0地址"></a>0地址</h2><blockquote>
+<p>内存中有0地址，但是0地址通常是个不能随便碰的地址<br>所以指针不应该具有0值<br>因此可以0地址来表示特殊的事情</p>
+<blockquote>
+<p>返回的指针是无效的<br>指针没有被真正初始化（先初始化为0）</p>
+</blockquote>
+<p>NULL是一个预定定义的符号，表示0地址</p>
+<blockquote>
+<p>有的编译器不能用0来表示0地址</p>
+</blockquote>
+</blockquote>
+<h2 id="指针的类型"><a href="#指针的类型" class="headerlink" title="指针的类型"></a>指针的类型</h2><blockquote>
+<p>无论指向什么类型，所有的指针的大小都是一样的，因为都是地址<br>但是指向不同类型的指针是不能直接互相赋值的<br>这是为了避免用错指针</p>
+</blockquote>
+<h2 id="指针的类型转换"><a href="#指针的类型转换" class="headerlink" title="指针的类型转换"></a>指针的类型转换</h2><blockquote>
+<p>void* 表示不知道指向什么东西的指针</p>
+<blockquote>
+<p>计算时与char*相同(但不相通)</p>
+</blockquote>
+<p>指针也可以转换类型</p>
+<blockquote>
+<p>int <em>p = &amp;i ; void </em>q = (void * )p;</p>
+</blockquote>
+<p>这并没有改变p所指的变量的类型，而是让后人用不同的眼光通过p看它所指的变量</p>
+</blockquote>
+<h2 id="用指针来做什么"><a href="#用指针来做什么" class="headerlink" title="用指针来做什么"></a>用指针来做什么</h2><blockquote>
+<p>需要传入较大的数据时用作参数<br>传入数组后对数组做操作<br>函数返回不止一个结果</p>
+<blockquote>
+<p>需要用函数来修改不止一个变量</p>
+</blockquote>
+<p>动态申请的内存</p>
+</blockquote>
+<h1 id="动态内存分配"><a href="#动态内存分配" class="headerlink" title="动态内存分配"></a>动态内存分配</h1><blockquote>
+<p>如果输入数据时，先告诉个数，然后再输入，要记录每个数据<br>C99可以用变量做数组定义的大小，C99之前用动态内存分配<br>int <em>a = (int </em>)malloc(n * sizeof(int));</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
+          
+            <a href="/tags/C语言/" rel="tag">#C语言</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/12/C /answers/tic-tac-toe/" rel="next" title="tic-tac-toe游戏（二维数组）">
+                <i class="fa fa-chevron-left"></i> tic-tac-toe游戏（二维数组）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/12/C /basics/data-types/" rel="prev" title="C语言基础知识——数据类型">
+                C语言基础知识——数据类型 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Q" />
+          <p class="site-author-name" itemprop="name">Q</p>
+          <p class="site-description motion-element" itemprop="description">欢迎你来到我的博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">68</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">58</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/biubiubiub" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/biubiubiub/biubiubiub.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#取地址运算"><span class="nav-number">1.</span> <span class="nav-text">取地址运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符-amp"><span class="nav-number">1.1.</span> <span class="nav-text">运算符&</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#amp-不能取的地址"><span class="nav-number">1.2.</span> <span class="nav-text">&不能取的地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相邻的数组单元差值是4"><span class="nav-number">1.3.</span> <span class="nav-text">相邻的数组单元差值是4</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针"><span class="nav-number">2.</span> <span class="nav-text">指针</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针变量"><span class="nav-number">2.1.</span> <span class="nav-text">指针变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为参数的指针"><span class="nav-number">2.2.</span> <span class="nav-text">作为参数的指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问地址上的变量"><span class="nav-number">2.3.</span> <span class="nav-text">访问地址上的变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#左值为什么叫做左值？"><span class="nav-number">2.4.</span> <span class="nav-text">左值为什么叫做左值？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针的使用"><span class="nav-number">3.</span> <span class="nav-text">指针的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景一"><span class="nav-number">3.1.</span> <span class="nav-text">指针应用场景一</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交换两个变量的值"><span class="nav-number">3.1.1.</span> <span class="nav-text">交换两个变量的值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景二"><span class="nav-number">3.2.</span> <span class="nav-text">指针应用场景二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针最常见的错误"><span class="nav-number">3.3.</span> <span class="nav-text">指针最常见的错误</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与数组"><span class="nav-number">4.</span> <span class="nav-text">指针与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传入函数的数组成了什么？"><span class="nav-number">4.1.</span> <span class="nav-text">传入函数的数组成了什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组参数"><span class="nav-number">4.2.</span> <span class="nav-text">数组参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量是特殊的指针"><span class="nav-number">4.3.</span> <span class="nav-text">数组变量是特殊的指针</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与const"><span class="nav-number">5.</span> <span class="nav-text">指针与const</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针是const"><span class="nav-number">5.1.</span> <span class="nav-text">指针是const</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转换"><span class="nav-number">5.2.</span> <span class="nav-text">转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const-数组"><span class="nav-number">5.3.</span> <span class="nav-text">const 数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保护数组值"><span class="nav-number">5.4.</span> <span class="nav-text">保护数组值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针运算"><span class="nav-number">6.</span> <span class="nav-text">指针运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针加1"><span class="nav-number">6.1.</span> <span class="nav-text">指针加1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两个指针相减"><span class="nav-number">6.2.</span> <span class="nav-text">两个指针相减</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#p"><span class="nav-number">6.3.</span> <span class="nav-text">*p++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针比较"><span class="nav-number">6.4.</span> <span class="nav-text">指针比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0地址"><span class="nav-number">6.5.</span> <span class="nav-text">0地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型"><span class="nav-number">6.6.</span> <span class="nav-text">指针的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型转换"><span class="nav-number">6.7.</span> <span class="nav-text">指针的类型转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用指针来做什么"><span class="nav-number">6.8.</span> <span class="nav-text">用指针来做什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动态内存分配"><span class="nav-number">7.</span> <span class="nav-text">动态内存分配</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Q</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
