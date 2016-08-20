@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="基础知识,C语言," />
+  <meta name="keywords" content="C语言,基础知识," />
 
 
 
@@ -105,7 +105,7 @@ int i ; printf(“%p”,&amp;amp;i);
 &amp;amp;(a+b)?&amp;amp;(a++)?">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言基础知识——指针">
-<meta property="og:url" content="http://yoursite.com/2016/08/12/C /basics/pointer/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/08/20/C /basics/pointer/index.html">
 <meta property="og:site_name" content="当做成长">
 <meta property="og:description" content="取地址运算运算符&amp;amp;
 scanf(“%d”,&amp;amp;i);里的&amp;amp;
@@ -122,7 +122,7 @@ int i ; printf(“%p”,&amp;amp;i);
 &amp;amp; 不能对没有地址的东西取地址
 
 &amp;amp;(a+b)?&amp;amp;(a++)?">
-<meta property="og:updated_time" content="2016-08-20T15:12:21.000Z">
+<meta property="og:updated_time" content="2016-08-20T15:56:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言基础知识——指针">
 <meta name="twitter:description" content="取地址运算运算符&amp;amp;
@@ -160,7 +160,7 @@ int i ; printf(“%p”,&amp;amp;i);
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/12/C /basics/pointer/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/20/C /basics/pointer/"/>
 
   <title> C语言基础知识——指针 | 当做成长 </title>
 </head>
@@ -314,8 +314,8 @@ int i ; printf(“%p”,&amp;amp;i);
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-12T11:14:44+08:00" content="2016-08-12">
-              2016-08-12
+            <time itemprop="dateCreated" datetime="2016-08-20T11:14:44+08:00" content="2016-08-20">
+              2016-08-20
             </time>
           </span>
 
@@ -535,6 +535,19 @@ int i ; printf(“%p”,&amp;amp;i);
 <h1 id="动态内存分配"><a href="#动态内存分配" class="headerlink" title="动态内存分配"></a>动态内存分配</h1><blockquote>
 <p>如果输入数据时，先告诉个数，然后再输入，要记录每个数据<br>C99可以用变量做数组定义的大小，C99之前用动态内存分配<br>int <em>a = (int </em>)malloc(n * sizeof(int));</p>
 </blockquote>
+<h2 id="malloc"><a href="#malloc" class="headerlink" title="malloc"></a>malloc</h2><blockquote>
+<p>include<stdlib.h><br>void<em> malloc(size_t size);<br>向malloc申请的空间的大小是以字节为单位的<br>返回的结果是void</em>，需要类型转换为自己需要的类型</stdlib.h></p>
+</blockquote>
+<h2 id="free"><a href="#free" class="headerlink" title="free()"></a>free()</h2><blockquote>
+<p>与malloc配套的函数<br>把申请来的空间返还给系统<br>申请过的空间，最终都应该要还<br>只能还申请来的空间的首地址</p>
+</blockquote>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><blockquote>
+<p>申请了没free ——&gt; 长时间运行内存逐渐下降</p>
+<blockquote>
+<p>新手：忘了<br>老手：找不到合适的free的时机</p>
+</blockquote>
+<p>free过了再free<br>地址变过了，直接去free</p>
+</blockquote>
 
       
     </div>
@@ -557,9 +570,9 @@ int i ; printf(“%p”,&amp;amp;i);
       
         <div class="post-tags">
           
-            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
-          
             <a href="/tags/C语言/" rel="tag">#C语言</a>
+          
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
           
         </div>
       
@@ -568,16 +581,16 @@ int i ; printf(“%p”,&amp;amp;i);
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/12/C /answers/tic-tac-toe/" rel="next" title="tic-tac-toe游戏（二维数组）">
-                <i class="fa fa-chevron-left"></i> tic-tac-toe游戏（二维数组）
+              <a href="/2016/08/17/body-building/tonic/" rel="next" title="健身知识——补剂">
+                <i class="fa fa-chevron-left"></i> 健身知识——补剂
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/12/C /basics/data-types/" rel="prev" title="C语言基础知识——数据类型">
-                C语言基础知识——数据类型 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/20/life/plan8-20/" rel="prev" title="8月16日至8月20日计划总结">
+                8月16日至8月20日计划总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -719,7 +732,7 @@ int i ; printf(“%p”,&amp;amp;i);
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#取地址运算"><span class="nav-number">1.</span> <span class="nav-text">取地址运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符-amp"><span class="nav-number">1.1.</span> <span class="nav-text">运算符&</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#amp-不能取的地址"><span class="nav-number">1.2.</span> <span class="nav-text">&不能取的地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相邻的数组单元差值是4"><span class="nav-number">1.3.</span> <span class="nav-text">相邻的数组单元差值是4</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针"><span class="nav-number">2.</span> <span class="nav-text">指针</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针变量"><span class="nav-number">2.1.</span> <span class="nav-text">指针变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为参数的指针"><span class="nav-number">2.2.</span> <span class="nav-text">作为参数的指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问地址上的变量"><span class="nav-number">2.3.</span> <span class="nav-text">访问地址上的变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#左值为什么叫做左值？"><span class="nav-number">2.4.</span> <span class="nav-text">左值为什么叫做左值？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针的使用"><span class="nav-number">3.</span> <span class="nav-text">指针的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景一"><span class="nav-number">3.1.</span> <span class="nav-text">指针应用场景一</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交换两个变量的值"><span class="nav-number">3.1.1.</span> <span class="nav-text">交换两个变量的值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景二"><span class="nav-number">3.2.</span> <span class="nav-text">指针应用场景二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针最常见的错误"><span class="nav-number">3.3.</span> <span class="nav-text">指针最常见的错误</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与数组"><span class="nav-number">4.</span> <span class="nav-text">指针与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传入函数的数组成了什么？"><span class="nav-number">4.1.</span> <span class="nav-text">传入函数的数组成了什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组参数"><span class="nav-number">4.2.</span> <span class="nav-text">数组参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量是特殊的指针"><span class="nav-number">4.3.</span> <span class="nav-text">数组变量是特殊的指针</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与const"><span class="nav-number">5.</span> <span class="nav-text">指针与const</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针是const"><span class="nav-number">5.1.</span> <span class="nav-text">指针是const</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转换"><span class="nav-number">5.2.</span> <span class="nav-text">转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const-数组"><span class="nav-number">5.3.</span> <span class="nav-text">const 数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保护数组值"><span class="nav-number">5.4.</span> <span class="nav-text">保护数组值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针运算"><span class="nav-number">6.</span> <span class="nav-text">指针运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针加1"><span class="nav-number">6.1.</span> <span class="nav-text">指针加1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两个指针相减"><span class="nav-number">6.2.</span> <span class="nav-text">两个指针相减</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#p"><span class="nav-number">6.3.</span> <span class="nav-text">*p++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针比较"><span class="nav-number">6.4.</span> <span class="nav-text">指针比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0地址"><span class="nav-number">6.5.</span> <span class="nav-text">0地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型"><span class="nav-number">6.6.</span> <span class="nav-text">指针的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型转换"><span class="nav-number">6.7.</span> <span class="nav-text">指针的类型转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用指针来做什么"><span class="nav-number">6.8.</span> <span class="nav-text">用指针来做什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动态内存分配"><span class="nav-number">7.</span> <span class="nav-text">动态内存分配</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#取地址运算"><span class="nav-number">1.</span> <span class="nav-text">取地址运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符-amp"><span class="nav-number">1.1.</span> <span class="nav-text">运算符&</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#amp-不能取的地址"><span class="nav-number">1.2.</span> <span class="nav-text">&不能取的地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相邻的数组单元差值是4"><span class="nav-number">1.3.</span> <span class="nav-text">相邻的数组单元差值是4</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针"><span class="nav-number">2.</span> <span class="nav-text">指针</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针变量"><span class="nav-number">2.1.</span> <span class="nav-text">指针变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为参数的指针"><span class="nav-number">2.2.</span> <span class="nav-text">作为参数的指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问地址上的变量"><span class="nav-number">2.3.</span> <span class="nav-text">访问地址上的变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#左值为什么叫做左值？"><span class="nav-number">2.4.</span> <span class="nav-text">左值为什么叫做左值？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针的使用"><span class="nav-number">3.</span> <span class="nav-text">指针的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景一"><span class="nav-number">3.1.</span> <span class="nav-text">指针应用场景一</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交换两个变量的值"><span class="nav-number">3.1.1.</span> <span class="nav-text">交换两个变量的值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针应用场景二"><span class="nav-number">3.2.</span> <span class="nav-text">指针应用场景二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针最常见的错误"><span class="nav-number">3.3.</span> <span class="nav-text">指针最常见的错误</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与数组"><span class="nav-number">4.</span> <span class="nav-text">指针与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传入函数的数组成了什么？"><span class="nav-number">4.1.</span> <span class="nav-text">传入函数的数组成了什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组参数"><span class="nav-number">4.2.</span> <span class="nav-text">数组参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量是特殊的指针"><span class="nav-number">4.3.</span> <span class="nav-text">数组变量是特殊的指针</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针与const"><span class="nav-number">5.</span> <span class="nav-text">指针与const</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针是const"><span class="nav-number">5.1.</span> <span class="nav-text">指针是const</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转换"><span class="nav-number">5.2.</span> <span class="nav-text">转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const-数组"><span class="nav-number">5.3.</span> <span class="nav-text">const 数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保护数组值"><span class="nav-number">5.4.</span> <span class="nav-text">保护数组值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指针运算"><span class="nav-number">6.</span> <span class="nav-text">指针运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指针加1"><span class="nav-number">6.1.</span> <span class="nav-text">指针加1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两个指针相减"><span class="nav-number">6.2.</span> <span class="nav-text">两个指针相减</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#p"><span class="nav-number">6.3.</span> <span class="nav-text">*p++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针比较"><span class="nav-number">6.4.</span> <span class="nav-text">指针比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0地址"><span class="nav-number">6.5.</span> <span class="nav-text">0地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型"><span class="nav-number">6.6.</span> <span class="nav-text">指针的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针的类型转换"><span class="nav-number">6.7.</span> <span class="nav-text">指针的类型转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用指针来做什么"><span class="nav-number">6.8.</span> <span class="nav-text">用指针来做什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动态内存分配"><span class="nav-number">7.</span> <span class="nav-text">动态内存分配</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#malloc"><span class="nav-number">7.1.</span> <span class="nav-text">malloc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#free"><span class="nav-number">7.2.</span> <span class="nav-text">free()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">7.3.</span> <span class="nav-text">常见问题</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
