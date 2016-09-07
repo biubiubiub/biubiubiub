@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-22T15:50:53.000Z</updated>
+  <updated>2016-08-31T14:38:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>8月21日至8月31日计划总结</title>
+    <link href="http://yoursite.com/2016/08/31/life/plan8-30/"/>
+    <id>http://yoursite.com/2016/08/31/life/plan8-30/</id>
+    <published>2016-08-31T15:10:00.000Z</published>
+    <updated>2016-08-31T14:38:54.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;达到了70kg，结果还挺满意的，嘿嘿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;《富爸爸穷爸爸》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;这十天在玩，无法静心学习，追了灌篮高手，补了一些护肤知识。&lt;br&gt;终于要开学了，明天就是九月了，新学期，加油。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;达到了70kg，结果还挺满意的，嘿嘿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;《富爸爸穷爸爸》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;这十天在玩，无法静心学习，追了灌篮高手，补了一些护肤知识。&lt;br&gt;终于要开学了，明天就是九月了，新学期，加油。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言基础知识——字符串</title>
@@ -118,9 +160,9 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -196,9 +238,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="库" scheme="http://yoursite.com/tags/%E5%BA%93/"/>
     
@@ -490,9 +532,9 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -3137,9 +3179,9 @@
       <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -3199,45 +3241,6 @@
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>8月6日至8月10日计划总结</title>
-    <link href="http://yoursite.com/2016/08/10/life/plan8-10/"/>
-    <id>http://yoursite.com/2016/08/10/life/plan8-10/</id>
-    <published>2016-08-10T15:10:00.000Z</published>
-    <updated>2016-08-16T08:23:16.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个周体重上涨1.5kg达到67.5kg了，继续加油。&lt;br&gt;开始倾向于对冲组的练习。&lt;br&gt;手腕因杠铃压迫出现疼痛，肱二头肌的练习可能要暂缓了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;学习了雅思听力和口语方面的知识。&lt;br&gt;坚持背单词。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;学习了很少一部分知识，《Thinking in java》看了大约五分之一。&lt;br&gt;学习积极性不高。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;看完了《王二的经济学故事》，书中用通俗易懂的故事解释生活中的经济现象，易于阅读。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个周体重上涨1.5kg达到67.5kg了，继续加油。&lt;br&gt;开始倾向于对冲组的练习。&lt;br&gt;手腕因杠铃压迫出现疼
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
