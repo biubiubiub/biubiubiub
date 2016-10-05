@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://yoursite.com/2016/10/05/java/answers/NationalFlag/</loc>
-    <lastmod>2016-10-05T07:02:15.000Z</lastmod>
+    <lastmod>2016-10-05T07:05:15.000Z</lastmod>
     <data>
         <display>
-        <title>用代码来画一个国旗</title>
+        <title>国庆节 用代码来画一个国旗</title>
         <pubTime>2016-10-05T06:56:23.000Z</pubTime>
         
         <tag>java</tag>
@@ -25,7 +25,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/09/29/java/answers/3class-4students/</loc>
-    <lastmod>2016-09-29T00:43:25.000Z</lastmod>
+    <lastmod>2016-10-05T07:04:56.000Z</lastmod>
     <data>
         <display>
         <title>计算班级平均分</title>
@@ -765,9 +765,9 @@
          
         <tag>生活</tag>
          
-        <tag>C语言</tag>
-         
         <tag>java</tag>
+         
+        <tag>C语言</tag>
          
          
            
