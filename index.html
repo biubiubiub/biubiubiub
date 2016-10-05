@@ -262,6 +262,699 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/05/java/answers/NationalFlag/" itemprop="url">
+                  用代码来画一个国旗
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-05T14:56:23+08:00" content="2016-10-05">
+              2016-10-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code>```java
+import java.awt.RenderingHints;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.GeneralPath;
+
+import javax.swing.JFrame;
+
+public class NationalFlag extends JFrame {
+    private int width = 288,height = width/3*2;  
+    private double maxR = 0.15, minR = 0.05;  
+    private double maxX = 0.50, maxY = 0.50;  
+    private double[] minX = {0.75, 0.85, 0.85, 0.75};  
+    private double[] minY = {0.35, 0.45, 0.60, 0.70};  
+
+    public NationalFlag() {
+        setTitle(&quot;国旗&quot;);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+
+    @Override
+    public void paint(java.awt.Graphics graphics) {
+        super.paint(graphics);
+        java.awt.Graphics2D g = (java.awt.Graphics2D)graphics;
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        //棋面
+        g.setColor(java.awt.Color.red);
+        g.fillRect(50, 50, width, height);
+
+        g.setColor(java.awt.Color.yellow);
+        //画大星星
+        double ox = height*maxX, oy = height*maxY;
+        g.fill(createPentacle(ox,oy,height*maxR,-Math.PI/2));  
+
+        //画小星星
+        for(int idx =0;idx &lt; 4;idx ++){  
+            double sx = minX[idx]*height, sy = minY[idx]*height;  
+            double theta = Math.atan2(oy-sy,ox-sx);  
+            g.fill(createPentacle(sx,sy,height*minR,theta));  
+        }  
+    }
+
+    /**
+    * 创建一个五角星形状. 该五角星的中心坐标为(sx,sy),中心到顶点的距离为radius,其中某个顶点与中心的连线的偏移角度为theta(弧度)
+    * 
+    * @return pentacle 一个☆
+    */
+    public static java.awt.Shape createPentacle(double sx, double sy, double radius,double theta) {
+        final double arc = Math.PI / 5;
+        final double rad = Math.sin(Math.PI / 10) / Math.sin(3 * Math.PI / 10);
+        GeneralPath path = new GeneralPath();
+        path.moveTo(1, 0);
+        for (int idx = 0; idx &lt; 5; idx++) {
+            path.lineTo(rad * Math.cos((1 + 2 * idx) * arc),rad * Math.sin((1 + 2 * idx) * arc));
+            path.lineTo(Math.cos(2 * (idx + 1) * arc),Math.sin(2 * (idx + 1) * arc));
+        }
+        path.closePath();
+        AffineTransform atf = AffineTransform.getScaleInstance(radius, radius);
+        atf.translate(sx / radius, sy / radius);
+        atf.rotate(theta);
+        return atf.createTransformedShape(path);
+    }
+
+    public static void main(String[] args) {
+        NationalFlag flag = new NationalFlag();
+        flag.setBounds(100, 100, 400, 400);
+        flag.setVisible(true);
+    }
+}
+```java
+</code></pre><h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/NationalFlag.png" alt="国旗"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/29/java/answers/3class-4students/" itemprop="url">
+                  计算班级平均分
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-29T08:37:23+08:00" content="2016-09-29">
+              2016-09-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>计算三个班级各四个学生的平均分。</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>三个班级里每个学生的成绩。</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>各个班级的平均分。</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>1 2 3 4</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>2.5</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>使用循环的嵌套，第一层循环是班级，第二层循环是班级里学生的成绩。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MOOC_3class_4score</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> stuNum = <span class="number">4</span>;</div><div class="line">        <span class="keyword">int</span> classNum = <span class="number">3</span>;</div><div class="line">        <span class="keyword">int</span> i = <span class="number">0</span> ;</div><div class="line">        <span class="keyword">int</span> j = <span class="number">0</span> ;</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        </div><div class="line">        <span class="keyword">for</span>(i = <span class="number">1</span> ; i &lt;=classNum; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">double</span> sum = <span class="number">0</span>;</div><div class="line">            System.out.println(<span class="string">"***请输入第"</span>+i+<span class="string">"个班级的成绩***"</span>);</div><div class="line">            <span class="keyword">for</span>(j = <span class="number">1</span> ; j &lt;=stuNum ; j++)</div><div class="line">            &#123;</div><div class="line">                System.out.print(<span class="string">"请输入第"</span>+j+<span class="string">"个成员的成绩："</span>);</div><div class="line">                <span class="keyword">int</span> score = in.nextInt();</div><div class="line">                sum = sum + score;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">double</span> avg = sum / stuNum;</div><div class="line">            System.out.println(<span class="string">"第"</span>+i+<span class="string">"个班级的平均分是："</span>+ avg);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/17/java/basics/scanner/" itemprop="url">
+                  java基础知识——Scanner的使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-17T15:18:47+08:00" content="2016-09-17">
+              2016-09-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.println(<span class="string">"Echo:"</span>+in.nextLine());</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>nextLine是读一整行<br>nextInt是读一个整数</p>
+</blockquote>
+<h1 id="找零钱（一）"><a href="#找零钱（一）" class="headerlink" title="找零钱（一）"></a>找零钱（一）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"100-"</span>+price+<span class="string">"="</span>+(<span class="number">100</span>-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="找零钱（二）"><a href="#找零钱（二）" class="headerlink" title="找零钱（二）"></a>找零钱（二）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.print(<span class="string">"请输入票面："</span>);</div><div class="line">        <span class="keyword">int</span> amount = in.nextInt();</div><div class="line">        System.out.print(<span class="string">"请输入金额："</span>);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"请找零钱："</span>+amount+<span class="string">"-"</span>+price+<span class="string">"="</span>+(amount-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>Scanner可以使用多次 读取多个数据</p>
+<p>定义常量 final int amount = 100; 常量不能再被赋值</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/07/C /answers/polynomial/" itemprop="url">
+                  多项式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-07T21:05:23+08:00" content="2016-09-07">
+              2016-09-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>写程序计算给定多项式在给定点x处的值</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><p>&gt;</p>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><p>&gt;</p>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><p>&gt;</p>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/07/C /answers/PrintN/" itemprop="url">
+                  PrintN
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-07T20:30:23+08:00" content="2016-09-07">
+              2016-09-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>写程序实现一个函数PrintN，使得传入一个正整数为N的参数后，能顺序打印从1到N的全部正整数。</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+<p>一个正整数N</p>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><blockquote>
+<p>顺序从1到N</p>
+</blockquote>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><blockquote>
+<p>10</p>
+</blockquote>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><blockquote>
+<p>1 2 3 4 5 6 7 8 9 10</p>
+</blockquote>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><blockquote>
+<p>递归的方法占用很多的空间，如输入1000000，递归方法无法运行。<br>解决问题方法的效率跟空间的利用效率有关。</p>
+</blockquote>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="递归方法"><a href="#递归方法" class="headerlink" title="递归方法"></a>递归方法</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> N;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;N);</div><div class="line">    PrintN(N);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(N)</div><div class="line">    &#123;</div><div class="line">        PrintN(N<span class="number">-1</span>);</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,N);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="循环方法"><a href="#循环方法" class="headerlink" title="循环方法"></a>循环方法</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> N;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;N);</div><div class="line">    PrintN(N);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=N; i++) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,i);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/31/life/plan8-30/" itemprop="url">
                   8月21日至8月31日计划总结
                 </a>
@@ -858,671 +1551,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/20/C /basics/pointer/" itemprop="url">
-                  C语言基础知识——指针
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-20T11:14:44+08:00" content="2016-08-20">
-              2016-08-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/C语言/" itemprop="url" rel="index">
-                    <span itemprop="name">C语言</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="取地址运算"><a href="#取地址运算" class="headerlink" title="取地址运算"></a>取地址运算</h1><h2 id="运算符-amp"><a href="#运算符-amp" class="headerlink" title="运算符&amp;"></a>运算符&amp;</h2><blockquote>
-<p>scanf(“%d”,&amp;i);里的&amp;</p>
-<p>获得变量的地址，它的操作数必须是变量</p>
-<blockquote>
-<p>int i ; printf(“%x”,&amp;i);</p>
-</blockquote>
-<p>地址的大小是否与 int 相同取决于编辑器</p>
-<blockquote>
-<p>int i ; printf(“%p”,&amp;i);</p>
-</blockquote>
-</blockquote>
-<h2 id="amp-不能取的地址"><a href="#amp-不能取的地址" class="headerlink" title="&amp;不能取的地址"></a>&amp;不能取的地址</h2><blockquote>
-<p>&amp; 不能对没有地址的东西取地址</p>
-<blockquote>
-<p>&amp;(a+b)?<br>&amp;(a++)?<br>&amp;(++a)?</p>
-</blockquote>
-</blockquote>
-<h2 id="相邻的数组单元差值是4"><a href="#相邻的数组单元差值是4" class="headerlink" title="相邻的数组单元差值是4"></a>相邻的数组单元差值是4</h2>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/20/C /basics/pointer/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/17/body-building/tonic/" itemprop="url">
-                  健身知识——补剂
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-17T12:01:04+08:00" content="2016-08-17">
-              2016-08-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/健身/" itemprop="url" rel="index">
-                    <span itemprop="name">健身</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="蛋白粉"><a href="#蛋白粉" class="headerlink" title="蛋白粉"></a>蛋白粉</h1><h2 id="蛋白粉，是什么？"><a href="#蛋白粉，是什么？" class="headerlink" title="蛋白粉，是什么？"></a>蛋白粉，是什么？</h2><blockquote>
-<p>蛋白粉，简单说就是以蛋白质为主要成分的粉剂。</p>
-<p>一般通过将各种食物中的蛋白质提取、分离而来，常见的有大豆蛋白粉、缓释蛋白粉、牛肉蛋白粉等等。<br>当然，还有应该是大家接触最多的乳清蛋白粉。</p>
-<p>由于蛋白粉的主要成分就只是蛋白质，所以它并不是什么能跳过正确运动、直接变壮的神药；当然它也很安全，并非类固醇那种激素类会伤身害体。</p>
-<p>蛋白粉，某种程度上算是一种作用和副作用都没那么明显的补剂。</p>
-</blockquote>
-<h2 id="蛋白粉，是必须的吗？"><a href="#蛋白粉，是必须的吗？" class="headerlink" title="蛋白粉，是必须的吗？"></a>蛋白粉，是必须的吗？</h2><blockquote>
-<p>事实上，健身中，蛋白粉并不是非吃不可。但是，蛋白粉的很多优点却让它成为最重要的健身补剂。</p>
-</blockquote>
-<h3 id="优点一：更高纯度，更好消化吸收"><a href="#优点一：更高纯度，更好消化吸收" class="headerlink" title="优点一：更高纯度，更好消化吸收"></a>优点一：更高纯度，更好消化吸收</h3><blockquote>
-<p>蛋白粉经过提纯和精制，相对其他高蛋白食物（比如肉、蛋、豆类），蛋白质含量更高、脂肪和纤维等其他杂质更少，可以更快地被身体消化吸收。</p>
-</blockquote>
-<h3 id="优点二：更好的配比，对健身更有效"><a href="#优点二：更好的配比，对健身更有效" class="headerlink" title="优点二：更好的配比，对健身更有效"></a>优点二：更好的配比，对健身更有效</h3><blockquote>
-<p>从氨基酸配比来看，蛋白粉中的氨基酸配比也更接近人体所需。</p>
-<p>拿乳清蛋白粉来说，其中的各种必需氨基酸含量就比一般食物高出很多，尤其是其中的支链氨基酸，更是对健身有很大帮助。</p>
-<blockquote>
-<p>支链氨基酸</p>
-<ul>
-<li>运动中可以帮助人体抗疲劳，抗肌肉分解。</li>
-<li>对于增肌，有效防止了运动中的肌肉分解；</li>
-<li>对于减脂，更多肌肉也是日常高卡路里消耗的保证（肌肉一天消耗的热量是脂肪的好几倍）</li>
-</ul>
-</blockquote>
-</blockquote>
-<h3 id="优点三：更低热量、更高性价比、更方便！"><a href="#优点三：更低热量、更高性价比、更方便！" class="headerlink" title="优点三：更低热量、更高性价比、更方便！"></a>优点三：更低热量、更高性价比、更方便！</h3><blockquote>
-<p>从另一个角度来看，提供等量蛋白质的情况下，蛋白粉的热量更低，价格也更便宜。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/17/body-building/tonic/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/17/body-building/diet/" itemprop="url">
-                  健身知识——饮食
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-17T11:25:04+08:00" content="2016-08-17">
-              2016-08-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/健身/" itemprop="url" rel="index">
-                    <span itemprop="name">健身</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="训前怎么吃？"><a href="#训前怎么吃？" class="headerlink" title="训前怎么吃？"></a>训前怎么吃？</h1><h2 id="训前看营养标签"><a href="#训前看营养标签" class="headerlink" title="训前看营养标签"></a>训前看营养标签</h2><blockquote>
-<p>重点</p>
-<blockquote>
-<ol>
-<li>主要看脂肪含量，越低越好；</li>
-<li>看配料表中有没有添加糖，没有最佳。</li>
-</ol>
-</blockquote>
-</blockquote>
-<h2 id="训前吃什么，得看训练目的是什么"><a href="#训前吃什么，得看训练目的是什么" class="headerlink" title="训前吃什么，得看训练目的是什么"></a>训前吃什么，得看训练目的是什么</h2><blockquote>
-<ol>
-<li>极限减脂</li>
-</ol>
-<blockquote>
-<p>为极限减脂，建议训前空腹不吃，让身体更好地消耗脂肪。</p>
-</blockquote>
-<ol>
-<li>减脂塑形or增肌</li>
-</ol>
-<blockquote>
-<p>一般的减脂塑形或增肌，训练前2小时可以适当进食，保证能源供给，训练状态也更好。<br>另外，想要训练效果好，训前2小时，建议以低GI值、低脂肪含量食物为主</p>
-</blockquote>
-</blockquote>
-<h2 id="训前低GI，燃脂高、更轻松"><a href="#训前低GI，燃脂高、更轻松" class="headerlink" title="训前低GI，燃脂高、更轻松"></a>训前低GI，燃脂高、更轻松</h2><blockquote>
-<p>研究发现，训前吃低GI食物，可以提高燃脂率，让身体更好地燃脂。<br>训前吃低GI食物也更有助于提高运动耐力，让你训练时感觉更轻松。</p>
-</blockquote>
-<h2 id="如何从营养标签判断GI高低？"><a href="#如何从营养标签判断GI高低？" class="headerlink" title="如何从营养标签判断GI高低？"></a>如何从营养标签判断GI高低？</h2><blockquote>
-<p>配料表前几项没有白砂糖或蔗糖的，总体的GI值就比较低。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/17/body-building/diet/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/17/body-building/running/" itemprop="url">
-                  健身知识——有氧运动
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-17T10:30:04+08:00" content="2016-08-17">
-              2016-08-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/健身/" itemprop="url" rel="index">
-                    <span itemprop="name">健身</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="跑步"><a href="#跑步" class="headerlink" title="跑步"></a>跑步</h1><h2 id="户外跑-vs-室内跑步机"><a href="#户外跑-vs-室内跑步机" class="headerlink" title="户外跑 vs 室内跑步机"></a>户外跑 vs 室内跑步机</h2><p><img src="http://oab0hmzob.bkt.clouddn.com/%E5%AE%A4%E5%86%85%E4%B8%8E%E6%88%B7%E5%A4%96%E7%9A%84%E8%83%BD%E8%80%97%E5%AF%B9%E6%AF%94.jpg" alt="户外跑与室内跑的对比"></p>
-<blockquote>
-<p>无坡度情况下，在低速跑走时（4.8km/h与6.4km/h），跑步机的能耗要大于户外跑。<br>而当跑步速度加快时，户外跑的能耗就要高于机跑了，以后速度越快，能耗差也越高。</p>
-<p>有研究发现，让大家“自选速度”来决定步速与发力程度时，户外跑的能耗一般也都会高于在跑步机上跑步。</p>
-<p>户外跑的燃脂能力更高，可能是因为需要完全靠自身肌肉发力做功，也和户外阻力大，需要消耗更多能量前进有关。</p>
-<p>当然，跑步机上跑也不是一无是处。跑步机可以通过调整坡度来增加能量消耗，同时还可以保护跑步者最关心的关节和膝盖，缓解户外跑不可避免的巨大冲击问题。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/17/body-building/running/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/16/body-building/stomach-muscles/" itemprop="url">
-                  健身知识——腹部训练
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-16T22:50:04+08:00" content="2016-08-16">
-              2016-08-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/健身/" itemprop="url" rel="index">
-                    <span itemprop="name">健身</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="腹直肌上部最优：悬腿卷腹"><a href="#腹直肌上部最优：悬腿卷腹" class="headerlink" title="腹直肌上部最优：悬腿卷腹"></a>腹直肌上部最优：悬腿卷腹</h1><p><img src="http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E4%B8%8A%E9%83%A8%E6%9C%80%E4%BC%98%EF%BC%9A%E6%82%AC%E8%85%BF%E5%8D%B7%E8%85%B9.gif" alt="腹直肌上部最优：悬腿卷腹"></p>
-<h2 id="动作描述"><a href="#动作描述" class="headerlink" title="动作描述"></a>动作描述</h2><blockquote>
-<ol>
-<li>仰卧平躺于地面，膝盖弯曲，双手置于头部或耳朵两边；</li>
-<li>腹肌发力，拉动双腿和上半身向内收缩去贴腹部；</li>
-<li>缓慢还原，回到初始位置。</li>
-</ol>
-</blockquote>
-<h2 id="动作要点"><a href="#动作要点" class="headerlink" title="动作要点"></a>动作要点</h2><blockquote>
-<ol>
-<li>手部不要发力，以免拉伤颈部肌肉，除了置于头部两侧，双手也可以置于体侧、交叉至胸前，或者上举；</li>
-<li>动作过程中，采用屈膝和双脚不固定的姿势，对腹肌的训练效果更好。</li>
-</ol>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/16/body-building/stomach-muscles/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1568,7 +1596,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">72</span>
+              <span class="site-state-item-count">77</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1585,7 +1613,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">59</span>
+                <span class="site-state-item-count">60</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

@@ -4,6 +4,118 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/10/05/java/answers/NationalFlag/</loc>
+    <lastmod>2016-10-05T07:00:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>用代码来画一个国旗</title>
+        <pubTime>2016-10-05T06:56:23.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/09/29/java/answers/3class-4students/</loc>
+    <lastmod>2016-09-29T00:43:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>计算班级平均分</title>
+        <pubTime>2016-09-29T00:37:23.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>题解</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/09/17/java/basics/scanner/</loc>
+    <lastmod>2016-09-17T07:58:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>java基础知识——Scanner的使用</title>
+        <pubTime>2016-09-17T07:18:47.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/09/07/C%20/answers/polynomial/</loc>
+    <lastmod>2016-09-08T13:21:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>多项式</title>
+        <pubTime>2016-09-07T13:05:23.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+        <tag>数据结构</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/09/07/C%20/answers/PrintN/</loc>
+    <lastmod>2016-09-07T13:05:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>PrintN</title>
+        <pubTime>2016-09-07T12:30:23.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>题解</tag>
+         
+        <tag>数据结构</tag>
+         
+         
+           
+             
+              <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/31/life/plan8-30/</loc>
     <lastmod>2016-09-07T12:08:45.000Z</lastmod>
     <data>
@@ -11,9 +123,9 @@
         <title>8月21日至8月31日计划总结</title>
         <pubTime>2016-08-31T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
          
            
@@ -125,9 +237,9 @@
         <title>8月16日至8月20日计划总结</title>
         <pubTime>2016-08-20T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>C语言</tag>
          
@@ -149,9 +261,9 @@
         <title>8月11日至8月15日计划总结</title>
         <pubTime>2016-08-15T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
          
            
@@ -481,9 +593,9 @@
         <title>8月6日至8月10日计划总结</title>
         <pubTime>2016-08-10T15:10:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>java</tag>
          
@@ -649,13 +761,13 @@
         
         <tag>Arduino</tag>
          
-        <tag>健身</tag>
-         
         <tag>生活</tag>
          
-        <tag>C语言</tag>
+        <tag>健身</tag>
          
         <tag>java</tag>
+         
+        <tag>C语言</tag>
          
          
            
@@ -675,9 +787,9 @@
         <title>8月1日至8月5日计划总结</title>
         <pubTime>2016-08-05T02:35:00.000Z</pubTime>
         
-        <tag>健身</tag>
-         
         <tag>生活</tag>
+         
+        <tag>健身</tag>
          
         <tag>java</tag>
          

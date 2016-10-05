@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-07T12:08:45.000Z</updated>
+  <updated>2016-10-05T07:00:30.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,266 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用代码来画一个国旗</title>
+    <link href="http://yoursite.com/2016/10/05/java/answers/NationalFlag/"/>
+    <id>http://yoursite.com/2016/10/05/java/answers/NationalFlag/</id>
+    <published>2016-10-05T06:56:23.000Z</published>
+    <updated>2016-10-05T07:00:30.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;```java
+import java.awt.RenderingHints;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.GeneralPath;
+
+import javax.swing.JFrame;
+
+public class NationalFlag extends JFrame {
+    private int width = 288,height = width/3*2;  
+    private double maxR = 0.15, minR = 0.05;  
+    private double maxX = 0.50, maxY = 0.50;  
+    private double[] minX = {0.75, 0.85, 0.85, 0.75};  
+    private double[] minY = {0.35, 0.45, 0.60, 0.70};  
+
+    public NationalFlag() {
+        setTitle(&amp;quot;国旗&amp;quot;);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+
+    @Override
+    public void paint(java.awt.Graphics graphics) {
+        super.paint(graphics);
+        java.awt.Graphics2D g = (java.awt.Graphics2D)graphics;
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        //棋面
+        g.setColor(java.awt.Color.red);
+        g.fillRect(50, 50, width, height);
+
+        g.setColor(java.awt.Color.yellow);
+        //画大星星
+        double ox = height*maxX, oy = height*maxY;
+        g.fill(createPentacle(ox,oy,height*maxR,-Math.PI/2));  
+
+        //画小星星
+        for(int idx =0;idx &amp;lt; 4;idx ++){  
+            double sx = minX[idx]*height, sy = minY[idx]*height;  
+            double theta = Math.atan2(oy-sy,ox-sx);  
+            g.fill(createPentacle(sx,sy,height*minR,theta));  
+        }  
+    }
+
+    /**
+    * 创建一个五角星形状. 该五角星的中心坐标为(sx,sy),中心到顶点的距离为radius,其中某个顶点与中心的连线的偏移角度为theta(弧度)
+    * 
+    * @return pentacle 一个☆
+    */
+    public static java.awt.Shape createPentacle(double sx, double sy, double radius,double theta) {
+        final double arc = Math.PI / 5;
+        final double rad = Math.sin(Math.PI / 10) / Math.sin(3 * Math.PI / 10);
+        GeneralPath path = new GeneralPath();
+        path.moveTo(1, 0);
+        for (int idx = 0; idx &amp;lt; 5; idx++) {
+            path.lineTo(rad * Math.cos((1 + 2 * idx) * arc),rad * Math.sin((1 + 2 * idx) * arc));
+            path.lineTo(Math.cos(2 * (idx + 1) * arc),Math.sin(2 * (idx + 1) * arc));
+        }
+        path.closePath();
+        AffineTransform atf = AffineTransform.getScaleInstance(radius, radius);
+        atf.translate(sx / radius, sy / radius);
+        atf.rotate(theta);
+        return atf.createTransformedShape(path);
+    }
+
+    public static void main(String[] args) {
+        NationalFlag flag = new NationalFlag();
+        flag.setBounds(100, 100, 400, 400);
+        flag.setVisible(true);
+    }
+}
+```java
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;运行结果&quot;&gt;&lt;a href=&quot;#运行结果&quot; class=&quot;headerlink&quot; title=&quot;运行结果&quot;&gt;&lt;/a&gt;运行结果&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/NationalFlag.png&quot; alt=&quot;国旗&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;```java
+import java.awt.RenderingHints;
+import java.awt.geom.A
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算班级平均分</title>
+    <link href="http://yoursite.com/2016/09/29/java/answers/3class-4students/"/>
+    <id>http://yoursite.com/2016/09/29/java/answers/3class-4students/</id>
+    <published>2016-09-29T00:37:23.000Z</published>
+    <updated>2016-09-29T00:43:25.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;计算三个班级各四个学生的平均分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;三个班级里每个学生的成绩。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;各个班级的平均分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1 2 3 4&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;2.5&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;使用循环的嵌套，第一层循环是班级，第二层循环是班级里学生的成绩。&lt;/p&gt;
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Scanner;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MOOC_3class_4score&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; stuNum = &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; classNum = &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Scanner in = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Scanner(System.in);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ; i &amp;lt;=classNum; i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; sum = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;***请输入第&quot;&lt;/span&gt;+i+&lt;span class=&quot;string&quot;&gt;&quot;个班级的成绩***&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(j = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ; j &amp;lt;=stuNum ; j++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                System.out.print(&lt;span class=&quot;string&quot;&gt;&quot;请输入第&quot;&lt;/span&gt;+j+&lt;span class=&quot;string&quot;&gt;&quot;个成员的成绩：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; score = in.nextInt();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                sum = sum + score;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; avg = sum / stuNum;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;第&quot;&lt;/span&gt;+i+&lt;span class=&quot;string&quot;&gt;&quot;个班级的平均分是：&quot;&lt;/span&gt;+ avg);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java基础知识——Scanner的使用</title>
+    <link href="http://yoursite.com/2016/09/17/java/basics/scanner/"/>
+    <id>http://yoursite.com/2016/09/17/java/basics/scanner/</id>
+    <published>2016-09-17T07:18:47.000Z</published>
+    <updated>2016-09-17T07:58:55.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;echo&quot;&gt;&lt;a href=&quot;#echo&quot; class=&quot;headerlink&quot; title=&quot;echo&quot;&gt;&lt;/a&gt;echo&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; HDOJ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Scanner;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hello&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Scanner in = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Scanner(System.in);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Echo:&quot;&lt;/span&gt;+in.nextLine());&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;nextLine是读一整行&lt;br&gt;nextInt是读一个整数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;找零钱（一）&quot;&gt;&lt;a href=&quot;#找零钱（一）&quot; class=&quot;headerlink&quot; title=&quot;找零钱（一）&quot;&gt;&lt;/a&gt;找零钱（一）&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; HDOJ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Scanner;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hello&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;您好&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Scanner in = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Scanner(System.in);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; price = in.nextInt();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;100-&quot;&lt;/span&gt;+price+&lt;span class=&quot;string&quot;&gt;&quot;=&quot;&lt;/span&gt;+(&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;-price));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;找零钱（二）&quot;&gt;&lt;a href=&quot;#找零钱（二）&quot; class=&quot;headerlink&quot; title=&quot;找零钱（二）&quot;&gt;&lt;/a&gt;找零钱（二）&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; HDOJ;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.Scanner;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Hello&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;您好&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Scanner in = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Scanner(System.in);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.print(&lt;span class=&quot;string&quot;&gt;&quot;请输入票面：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; amount = in.nextInt();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.print(&lt;span class=&quot;string&quot;&gt;&quot;请输入金额：&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; price = in.nextInt();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;请找零钱：&quot;&lt;/span&gt;+amount+&lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;+price+&lt;span class=&quot;string&quot;&gt;&quot;=&quot;&lt;/span&gt;+(amount-price));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;Scanner可以使用多次 读取多个数据&lt;/p&gt;
+&lt;p&gt;定义常量 final int amount = 100; 常量不能再被赋值&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;echo&quot;&gt;&lt;a href=&quot;#echo&quot; class=&quot;headerlink&quot; title=&quot;echo&quot;&gt;&lt;/a&gt;echo&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多项式</title>
+    <link href="http://yoursite.com/2016/09/07/C%20/answers/polynomial/"/>
+    <id>http://yoursite.com/2016/09/07/C /answers/polynomial/</id>
+    <published>2016-09-07T13:05:23.000Z</published>
+    <updated>2016-09-08T13:21:34.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;写程序计算给定多项式在给定点x处的值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PrintN</title>
+    <link href="http://yoursite.com/2016/09/07/C%20/answers/PrintN/"/>
+    <id>http://yoursite.com/2016/09/07/C /answers/PrintN/</id>
+    <published>2016-09-07T12:30:23.000Z</published>
+    <updated>2016-09-07T13:05:41.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;写程序实现一个函数PrintN，使得传入一个正整数为N的参数后，能顺序打印从1到N的全部正整数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;一个正整数N&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;顺序从1到N&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;10&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1 2 3 4 5 6 7 8 9 10&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;递归的方法占用很多的空间，如输入1000000，递归方法无法运行。&lt;br&gt;解决问题方法的效率跟空间的利用效率有关。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;h2 id=&quot;递归方法&quot;&gt;&lt;a href=&quot;#递归方法&quot; class=&quot;headerlink&quot; title=&quot;递归方法&quot;&gt;&lt;/a&gt;递归方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;PrintN&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;N);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    PrintN(N);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;PrintN&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(N)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        PrintN(N&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,N);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;循环方法&quot;&gt;&lt;a href=&quot;#循环方法&quot; class=&quot;headerlink&quot; title=&quot;循环方法&quot;&gt;&lt;/a&gt;循环方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;PrintN&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;N);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    PrintN(N);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;PrintN&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i&amp;lt;=N; i++) &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,i);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>8月21日至8月31日计划总结</title>
@@ -51,9 +311,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
   </entry>
   
@@ -302,9 +562,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
@@ -1526,9 +1786,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
     
   </entry>
   
@@ -2175,1072 +2435,6 @@
       <category term="臀大肌" scheme="http://yoursite.com/tags/%E8%87%80%E5%A4%A7%E8%82%8C/"/>
     
       <category term="臀中肌" scheme="http://yoursite.com/tags/%E8%87%80%E4%B8%AD%E8%82%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身知识——背部训练</title>
-    <link href="http://yoursite.com/2016/08/13/body-building/dorsal-muscles/"/>
-    <id>http://yoursite.com/2016/08/13/body-building/dorsal-muscles/</id>
-    <published>2016-08-13T15:32:04.000Z</published>
-    <updated>2016-08-17T08:51:12.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;a href=&quot;#背阔肌的最佳训练动作之一：高位下拉&quot; class=&quot;headerlink&quot; title=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;/a&gt;背阔肌的最佳训练动作之一：高位下拉&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;高位下拉，最大的特点是安全、高效、适用性广&lt;/p&gt;
-&lt;p&gt;不同高位下拉对背阔肌的刺激排序:反手窄距高位下拉＞颈后高位下拉＞反弓颈前高位下拉＞直背颈前高位下拉&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89%E5%AF%B9%E8%83%8C%E9%98%94%E8%82%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E6%BF%80%E6%B4%BB%E6%B0%B4%E5%B9%B3.png&quot; alt=&quot;高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;No-1-反手窄距高位下拉&quot;&gt;&lt;a href=&quot;#No-1-反手窄距高位下拉&quot; class=&quot;headerlink&quot; title=&quot;No.1 反手窄距高位下拉&quot;&gt;&lt;/a&gt;No.1 反手窄距高位下拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E7%AA%84%E8%B7%9D%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89.gif&quot; alt=&quot;反手窄距高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面朝坐姿器械，双腿放在固定海绵下，双手窄握，掌心向内反握握柄，背部反弓；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动双肘下拉握柄至最低点，感受背部收紧，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;下拉过程中主要靠背部发力，不要用胳膊的力气下拉；&lt;/li&gt;
-&lt;li&gt;动作过程中感受背部的持续收缩与紧张，动作顶端注意顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手引体向上就是一个很好的动作，不仅能让背阔肌更好地发力，而且还可以很好地训练到肱二头肌&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;No-2-颈后高位下拉&quot;&gt;&lt;a href=&quot;#No-2-颈后高位下拉&quot; class=&quot;headerlink&quot; title=&quot;No.2 颈后高位下拉&quot;&gt;&lt;/a&gt;No.2 颈后高位下拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%A2%88%E5%90%8E%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89.jpg&quot; alt=&quot;颈后高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-1&quot;&gt;&lt;a href=&quot;#动作描述-1&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面朝坐姿器械，双腿放在固定海绵下，双手宽握距正握住握柄，背部挺直；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动双肘下拉握柄至颈后，感受背部收紧，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-1&quot;&gt;&lt;a href=&quot;#动作要点-1&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中集中意念在背阔肌，感受背部的持续收缩与紧张，动作顶端顶峰收缩；&lt;/li&gt;
-&lt;li&gt;颈后高位下拉对肩关节压力较大，建议不要太大重量，动作过程中肩部一旦有异样就停止。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;No-3-反弓颈前高位下拉&quot;&gt;&lt;a href=&quot;#No-3-反弓颈前高位下拉&quot; class=&quot;headerlink&quot; title=&quot;No.3 反弓颈前高位下拉&quot;&gt;&lt;/a&gt;No.3 反弓颈前高位下拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E5%BC%93%E9%A2%88%E5%89%8D%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89.gif&quot; alt=&quot;反弓颈前高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-2&quot;&gt;&lt;a href=&quot;#动作描述-2&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面朝坐姿器械，双腿放在固定海绵下,双手宽距正握住手柄，背部保持反弓；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动双肘下拉握柄至最低点，感受背部收紧，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-2&quot;&gt;&lt;a href=&quot;#动作要点-2&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;动作过程中保持背部反弓，感受背阔肌发力，不要借用身体重力完成动作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;No-4-直背颈前高位下拉&quot;&gt;&lt;a href=&quot;#No-4-直背颈前高位下拉&quot; class=&quot;headerlink&quot; title=&quot;No.4 直背颈前高位下拉&quot;&gt;&lt;/a&gt;No.4 直背颈前高位下拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%9B%B4%E8%83%8C%E9%A2%88%E5%89%8D%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89.gif&quot; alt=&quot;直背颈前高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-3&quot;&gt;&lt;a href=&quot;#动作描述-3&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面朝坐姿器械，双腿放在固定海绵下，双手宽握距正握住握柄，背部保持挺直；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动双肘下拉握柄至最低点，感受背部收紧，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-3&quot;&gt;&lt;a href=&quot;#动作要点-3&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;动作过程中感受背阔肌发力，动作顶端顶峰收缩。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-1&quot;&gt;&lt;a href=&quot;#PS-1&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;直背高位下拉，虽然对背阔肌的刺激程度不算太高，不过它对上背肌群和斜方肌下部的刺激则更有效。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;引体向上&quot;&gt;&lt;a href=&quot;#引体向上&quot; class=&quot;headerlink&quot; title=&quot;引体向上&quot;&gt;&lt;/a&gt;引体向上&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A%E6%9C%80%E4%BC%98%E5%8A%A8%E4%BD%9C%E6%8E%92%E8%A1%8C%E6%A6%9C.png&quot; alt=&quot;引体向上&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不同引体向上对背阔肌的刺激排序:颈后宽距引体向上＞反手宽距引体向上＞正手宽距引体向上＞正手窄距引体向上&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;颈后宽距引体向上&quot;&gt;&lt;a href=&quot;#颈后宽距引体向上&quot; class=&quot;headerlink&quot; title=&quot;颈后宽距引体向上&quot;&gt;&lt;/a&gt;颈后宽距引体向上&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%A2%88%E5%90%8E%E5%AE%BD%E8%B7%9D%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A.gif&quot; alt=&quot;颈后宽距引体向上&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-4&quot;&gt;&lt;a href=&quot;#动作描述-4&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手宽握，掌心向前正握横杆，身体自然下垂，背阔肌充分伸长；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动身体向上拉起，至横杆接近或触及颈后，静止1-2秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢下降还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-4&quot;&gt;&lt;a href=&quot;#动作要点-4&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中不要借力摆动身体，一旦肩部有异样立即停止；&lt;/li&gt;
-&lt;li&gt;动作过程中感受背部的持续收缩与紧张，动作顶端注意顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-2&quot;&gt;&lt;a href=&quot;#PS-2&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;颈后宽距引体向上是对背阔肌最佳的激活动作。&lt;br&gt;容易损伤肩关节，训练过程中肩部有异样就立即停止&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;反手宽距引体向上&quot;&gt;&lt;a href=&quot;#反手宽距引体向上&quot; class=&quot;headerlink&quot; title=&quot;反手宽距引体向上&quot;&gt;&lt;/a&gt;反手宽距引体向上&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E5%AE%BD%E8%B7%9D%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A.gif&quot; alt=&quot;反手宽距引体向上&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-5&quot;&gt;&lt;a href=&quot;#动作描述-5&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手宽握，掌心朝向身体反握横杆，身体自然下垂，背阔肌充分伸长；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动身体向上拉起，至动作最高点，胸部与横杆接近，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢下降还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-5&quot;&gt;&lt;a href=&quot;#动作要点-5&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;反手动作，手间距离不用太宽，略宽于肩甚至与肩同宽都可以，对背阔肌刺激更好；&lt;/li&gt;
-&lt;li&gt;动作过程中不要借力摆动身体，身体可略微前倾；&lt;/li&gt;
-&lt;li&gt;动作过程中集中意念在背阔肌，感受背部的持续收缩与紧张，动作顶端顶峰收缩；&lt;/li&gt;
-&lt;li&gt;可以通过在腰上挂铃片增加负重。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-3&quot;&gt;&lt;a href=&quot;#PS-3&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手宽距引体向上是对背阔肌刺激效果第二高的动作，然而，这个动作并不是通过“限制”上背肌群的发力角度来增强背阔肌训练效果的。&lt;br&gt;反手引体向上是因为能让背阔肌更好地发力，所以训练效果好。&lt;br&gt;此外，反手引体向上还能很好地训练到肱二头肌，这是一个针对上半身肌群的综合最佳动作&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A%E4%B8%AD%E7%9A%84%E8%82%B1%E4%BA%8C%E5%A4%B4%E8%82%8C.png&quot; alt=&quot;引体向上中的肱二头肌&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;正手宽距引体向上&quot;&gt;&lt;a href=&quot;#正手宽距引体向上&quot; class=&quot;headerlink&quot; title=&quot;正手宽距引体向上&quot;&gt;&lt;/a&gt;正手宽距引体向上&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E6%89%8B%E5%AE%BD%E8%B7%9D%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A.gif&quot; alt=&quot;正手宽距引体向上&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-6&quot;&gt;&lt;a href=&quot;#动作描述-6&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手宽握，掌心向外正握横杆，身体自然下垂，背阔肌充分伸长；&lt;/li&gt;
-&lt;li&gt;保持背部反弓，背阔肌发力收缩，带动身体向上拉起，至动作最高点胸部与横杆接近，静止1-2秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢下降还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-6&quot;&gt;&lt;a href=&quot;#动作要点-6&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程保持背部反弓，身体可略微前倾，不要借力摆动身体，尽量避免胳膊发力；&lt;/li&gt;
-&lt;li&gt;动作过程中集中意念在背阔肌，感受背部的持续收缩与紧张，动作顶端顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-4&quot;&gt;&lt;a href=&quot;#PS-4&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;正手宽距更加考验上背肌群的发力，同时，它对三角肌后束的训练效果更强。&lt;br&gt;不过要记住，背一定要反弓，拉至胸口，这样对背阔肌的训练效果更好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E8%82%8C.png&quot; alt=&quot;引体向上中的三角肌&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;正手窄距引体向上&quot;&gt;&lt;a href=&quot;#正手窄距引体向上&quot; class=&quot;headerlink&quot; title=&quot;正手窄距引体向上&quot;&gt;&lt;/a&gt;正手窄距引体向上&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E6%89%8B%E7%AA%84%E8%B7%9D%E5%BC%95%E4%BD%93%E5%90%91%E4%B8%8A.gif&quot; alt=&quot;正手窄距引体向上&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-7&quot;&gt;&lt;a href=&quot;#动作描述-7&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手与肩同宽，掌心向外正握横杆，身体自然下垂，背阔肌充分伸长；&lt;/li&gt;
-&lt;li&gt;保持背部反弓，背阔肌发力收缩，带动身体向上拉起，至动作最高点胸部与横杆接近，静止1-2秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢下降还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-7&quot;&gt;&lt;a href=&quot;#动作要点-7&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持背部反弓，不要借力摆动身体，手臂放松，避免胳膊发力；&lt;/li&gt;
-&lt;li&gt;集中意念在背阔肌，感受背部的持续收缩与紧张，动作顶端顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-5&quot;&gt;&lt;a href=&quot;#PS-5&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;正手窄距是最容易做的引体向上动作。&lt;br&gt;在动作过程中保持背部反弓，能完成更多的引体向上个数。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;如何找到背部训练的感觉？&quot;&gt;&lt;a href=&quot;#如何找到背部训练的感觉？&quot; class=&quot;headerlink&quot; title=&quot;如何找到背部训练的感觉？&quot;&gt;&lt;/a&gt;如何找到背部训练的感觉？&lt;/h1&gt;&lt;h2 id=&quot;一个比较常见的问题是：训练时背肌没有训练充分，没什么感觉，胳膊和小臂倒是很疼。&quot;&gt;&lt;a href=&quot;#一个比较常见的问题是：训练时背肌没有训练充分，没什么感觉，胳膊和小臂倒是很疼。&quot; class=&quot;headerlink&quot; title=&quot;一个比较常见的问题是：训练时背肌没有训练充分，没什么感觉，胳膊和小臂倒是很疼。&quot;&gt;&lt;/a&gt;一个比较常见的问题是：训练时背肌没有训练充分，没什么感觉，胳膊和小臂倒是很疼。&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;解决的方法:比如背部要反弓、念动一致、增加握距、反握抓杠,另外，还需要顶峰收缩&lt;/p&gt;
-&lt;p&gt;顶峰收缩的意思是，在训练动作的顶峰（比如夹胸到最后，引体向上到最后），停住不动2-3秒，保持肌肉一直静力收缩。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;另一个常遇到的背部训练问题是：引体向上和高位下拉动作中，手指和小臂常常比起背部先力竭。&quot;&gt;&lt;a href=&quot;#另一个常遇到的背部训练问题是：引体向上和高位下拉动作中，手指和小臂常常比起背部先力竭。&quot; class=&quot;headerlink&quot; title=&quot;另一个常遇到的背部训练问题是：引体向上和高位下拉动作中，手指和小臂常常比起背部先力竭。&quot;&gt;&lt;/a&gt;另一个常遇到的背部训练问题是：引体向上和高位下拉动作中，手指和小臂常常比起背部先力竭。&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;解决的方法：四指抓握，或使用握力带。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;杠铃划船&quot;&gt;&lt;a href=&quot;#杠铃划船&quot; class=&quot;headerlink&quot; title=&quot;杠铃划船&quot;&gt;&lt;/a&gt;杠铃划船&lt;/h1&gt;&lt;h2 id=&quot;反手杠铃划船&quot;&gt;&lt;a href=&quot;#反手杠铃划船&quot; class=&quot;headerlink&quot; title=&quot;反手杠铃划船&quot;&gt;&lt;/a&gt;反手杠铃划船&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E6%9D%A0%E9%93%83%E5%88%92%E8%88%B9.gif&quot; alt=&quot;反手杠铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;起始姿势&quot;&gt;&lt;a href=&quot;#起始姿势&quot; class=&quot;headerlink&quot; title=&quot;起始姿势&quot;&gt;&lt;/a&gt;起始姿势&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E6%9D%A0%E9%93%83%E5%88%92%E8%88%B9%E7%9A%84%E8%B5%B7%E5%A7%8B%E5%A7%BF%E5%8A%BF.png&quot; alt=&quot;反手起始姿势&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-8&quot;&gt;&lt;a href=&quot;#动作描述-8&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;腰腹收紧，背部挺直，上半身俯身与地面平行，双手持杠铃自然下垂，掌心向上，膝关节微曲；&lt;/li&gt;
-&lt;li&gt;保持上身不动，双臂沿体侧上拉杠铃至最高点，停顿1-2秒，感受背部肌群的顶峰收缩，缓慢放下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-8&quot;&gt;&lt;a href=&quot;#动作要点-8&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰腹收紧，背部挺直，目视前方；&lt;/li&gt;
-&lt;li&gt;向上拉起杠铃时肘部尽可能贴近躯干。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;###动作特点&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;反手杠铃划船同样是刺激背阔肌的高效动作之一，可以在雕塑背阔肌整体形态的同时，更好地加强背阔肌泵感，让你的训练更加有效。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;正手杠铃划船&quot;&gt;&lt;a href=&quot;#正手杠铃划船&quot; class=&quot;headerlink&quot; title=&quot;正手杠铃划船&quot;&gt;&lt;/a&gt;正手杠铃划船&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E6%89%8B%E6%9D%A0%E9%93%83%E5%88%92%E8%88%B9%20.gif&quot; alt=&quot;正手杠铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;起始姿势-1&quot;&gt;&lt;a href=&quot;#起始姿势-1&quot; class=&quot;headerlink&quot; title=&quot;起始姿势&quot;&gt;&lt;/a&gt;起始姿势&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E6%89%8B%E6%9D%A0%E9%93%83%E5%88%92%E8%88%B9%E8%B5%B7%E5%A7%8B%E5%A7%BF%E5%8A%BF.png&quot; alt=&quot;正手起始姿势&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-9&quot;&gt;&lt;a href=&quot;#动作描述-9&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;腰腹收紧，背部挺直，上半身俯身与地面平行，双手持杠铃自然下垂，掌心向后，膝关节微曲；&lt;/li&gt;
-&lt;li&gt;保持上身不动，双臂沿体侧上拉杠铃至最高点，停顿1-2秒，感受背部肌群的顶峰收缩，缓慢放下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-9&quot;&gt;&lt;a href=&quot;#动作要点-9&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰腹收紧，背部挺直，目视前方；&lt;/li&gt;
-&lt;li&gt;向上拉起杠铃时肘部尽可能贴近躯干。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点&quot;&gt;&lt;a href=&quot;#动作特点&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;正手杠铃划船，除了可以有效刺激背阔肌外，还可以训练到上背部的其它几个肌群，让你的背部在整体都能得到比较好的训练。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;正手杠铃划船，并非练背？&quot;&gt;&lt;a href=&quot;#正手杠铃划船，并非练背？&quot; class=&quot;headerlink&quot; title=&quot;正手杠铃划船，并非练背？&quot;&gt;&lt;/a&gt;正手杠铃划船，并非练背？&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%88%92%E8%88%B9%E5%8A%A8%E4%BD%9C%E5%AF%B9%E4%BA%8E%E6%96%9C%E6%96%B9%E8%82%8C%E7%9A%84%E6%BF%80%E6%B4%BB%E6%B0%B4%E5%B9%B3.jpg&quot; alt=&quot;划船姿势对斜方肌&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;正手杠铃划船，虽然是一个背部的经典动作，但是正经来说，它却并不是一个练“背”的动作，确切的说，它不是一个专项的背阔肌训练动作。标准的正手杠铃划船，更加针对斜方肌中下部。&lt;br&gt;正手杠铃划船重点中的重点，并不在于你把杠铃用手臂拉起来的那一下，而是在于你背部肩胛肌群夹紧、收缩的过程。&lt;br&gt;所以在训练正手杠铃划船时，要保证你的上半身前倾，尽量与地面平行，让手臂垂直于地面，这样可以将你的发力肌群，从斜方肌上部，调整到斜方肌中下部分。&lt;br&gt;另外，由于正手划船需要上半身前倾，尽量平行于地面，所以不建议采用太大的训练重量，否则会对下背肌群造成不小压力，训练后会觉得腰很痛，也更容易在训练中受伤。&lt;br&gt;在正手杠铃划船动作中，双手握距最好略宽于肩，大概1.25-1.5倍肩宽的样子&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;反手杠铃划船，高效背阔肌训练&quot;&gt;&lt;a href=&quot;#反手杠铃划船，高效背阔肌训练&quot; class=&quot;headerlink&quot; title=&quot;反手杠铃划船，高效背阔肌训练&quot;&gt;&lt;/a&gt;反手杠铃划船，高效背阔肌训练&lt;/h2&gt;&lt;h3 id=&quot;耶茨反手杠铃划船&quot;&gt;&lt;a href=&quot;#耶茨反手杠铃划船&quot; class=&quot;headerlink&quot; title=&quot;耶茨反手杠铃划船&quot;&gt;&lt;/a&gt;耶茨反手杠铃划船&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%80%B6%E8%8C%A8%E5%8F%8D%E6%89%8B%E6%9D%A0%E9%93%83%E5%88%92%E8%88%B9.gif&quot; alt=&quot;耶茨反手杠铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-10&quot;&gt;&lt;a href=&quot;#动作描述-10&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;两脚自然站立，上半身前倾与地面成60-70度夹角、掌心向前反握杠铃，手间距略窄于肩宽，膝盖微曲；&lt;/li&gt;
-&lt;li&gt;背部肌群发力，上提杠铃至腰部，感受背肌紧张，停顿2－3秒；&lt;/li&gt;
-&lt;li&gt;缓慢下放，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-1&quot;&gt;&lt;a href=&quot;#动作特点-1&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;首先，上面已经提到过，“反手”动作更适合背阔肌发力，所以反手的杠铃划船，本身对背阔肌就可以有很好的刺激水平&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-6&quot;&gt;&lt;a href=&quot;#PS-6&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;与传统讲究上半身平行于地面的杠铃划船不同，耶茨的反手杠铃划船，最大的区别在于上半身与地面角度很小，采用半蹲姿势，上半身更直，这样可以大大减小腰背压力，也可以采用更大的训练重量来刺激背阔肌&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;哑铃划船&quot;&gt;&lt;a href=&quot;#哑铃划船&quot; class=&quot;headerlink&quot; title=&quot;哑铃划船&quot;&gt;&lt;/a&gt;哑铃划船&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;建议重量:背阔肌是超有力的肌群，所以哑铃选择最好稍重一些。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;反手哑铃划船&quot;&gt;&lt;a href=&quot;#反手哑铃划船&quot; class=&quot;headerlink&quot; title=&quot;反手哑铃划船&quot;&gt;&lt;/a&gt;反手哑铃划船&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E5%93%91%E9%93%83%E5%88%92%E8%88%B9.gif&quot; alt=&quot;反手哑铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-11&quot;&gt;&lt;a href=&quot;#动作描述-11&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;腰腹收紧，背部挺直，上半身俯身与地面平行，双手持哑铃自然下垂，掌心向上，膝关节微曲；&lt;/li&gt;
-&lt;li&gt;保持上身不动，双臂沿体侧上拉哑铃至最高点，停顿1-2秒，感受背部肌群的顶峰收缩，缓慢放下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-10&quot;&gt;&lt;a href=&quot;#动作要点-10&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰腹收紧，背部挺直，目视前方；&lt;/li&gt;
-&lt;li&gt;向上拉起哑铃时肘部尽可能贴近躯干。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-7&quot;&gt;&lt;a href=&quot;#PS-7&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手哑铃划船是对于背阔肌训练最为高效的一个划船动作。&lt;br&gt;但是要记住，在整个划船运动的过程中，双肘一定要夹紧躯干，肘尖不要外扩，而是内夹。&lt;br&gt;否则压力就会向上背转移。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;单手对握哑铃划船&quot;&gt;&lt;a href=&quot;#单手对握哑铃划船&quot; class=&quot;headerlink&quot; title=&quot;单手对握哑铃划船&quot;&gt;&lt;/a&gt;单手对握哑铃划船&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8D%95%E6%89%8B%E5%AF%B9%E6%8F%A1%E5%93%91%E9%93%83%E5%88%92%E8%88%B9.gif&quot; alt=&quot;单手对握哑铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-12&quot;&gt;&lt;a href=&quot;#动作描述-12&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;单脚跪在凳子上，同侧手撑在凳子上起稳定作用，另一只手对握住哑铃，腰腹收紧，背部挺直，半身与地面平行；&lt;/li&gt;
-&lt;li&gt;沿腰部外侧上拉哑铃，直至手肘超过躯干，顶峰收缩，停顿一秒，再缓缓放下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-11&quot;&gt;&lt;a href=&quot;#动作要点-11&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;训练中，要感受大臂的屈伸，而不是单纯的把哑铃提起来，整个大臂贴住身体运动；&lt;/li&gt;
-&lt;li&gt;哑铃在运动最顶端，接近腰，在此位置停2-3秒左右，做顶峰收缩；&lt;/li&gt;
-&lt;li&gt;肘尖可以稍稍朝向身子内侧一点，整体运动轨迹会更加正确。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-8&quot;&gt;&lt;a href=&quot;#PS-8&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;单手动作一般选择对握，因为对握是最能兼顾背阔肌训练和上背肌群的握法&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;正手哑铃划船&quot;&gt;&lt;a href=&quot;#正手哑铃划船&quot; class=&quot;headerlink&quot; title=&quot;正手哑铃划船&quot;&gt;&lt;/a&gt;正手哑铃划船&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%AD%A3%E6%89%8B%E5%93%91%E9%93%83%E5%88%92%E8%88%B9.gif&quot; alt=&quot;正手哑铃划船&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-13&quot;&gt;&lt;a href=&quot;#动作描述-13&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;腰腹收紧，背部挺直，上半身俯身与地面平行，双手持哑铃自然下垂，掌心向后，膝关节微曲；&lt;/li&gt;
-&lt;li&gt;保持上身不动，双臂向体侧上拉哑铃至最高点，停顿1-2秒，感受背部肌群的顶峰收缩，缓慢放下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-12&quot;&gt;&lt;a href=&quot;#动作要点-12&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰腹收紧，背部挺直，目视前方；&lt;/li&gt;
-&lt;li&gt;向上拉起哑铃时肘部尽可能贴近躯干。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-9&quot;&gt;&lt;a href=&quot;#PS-9&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;正手哑铃划船虽然对背阔肌的刺激效果对比上述两项比较有限，但是对上背几个肌群（三角肌后束、肩袖四肌）的训练效果却是上述两个动作比不上的。&lt;br&gt;而上背肌群训练对于预防圆肩等身姿问题都有很好的效果。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;划船动作的要点&quot;&gt;&lt;a href=&quot;#划船动作的要点&quot; class=&quot;headerlink&quot; title=&quot;划船动作的要点&quot;&gt;&lt;/a&gt;划船动作的要点&lt;/h1&gt;&lt;h2 id=&quot;更高效地训练背部：顶峰收缩&quot;&gt;&lt;a href=&quot;#更高效地训练背部：顶峰收缩&quot; class=&quot;headerlink&quot; title=&quot;更高效地训练背部：顶峰收缩&quot;&gt;&lt;/a&gt;更高效地训练背部：顶峰收缩&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;顶峰收缩是背肌训练最有效的武器，菲尔西斯就曾称他的背肌训练秘笈是“挤压与静止”。&lt;br&gt;顶峰收缩可以保证背肌的充分训练，包括让背部深层的肌群得到训练点。&lt;br&gt;所以在划船动作中，大臂一定要向后夹，感受肩胛骨的靠近、收缩和挤压，同时保证这个状态2-3秒，保证背阔肌的高效激活。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;下背肌群&quot;&gt;&lt;a href=&quot;#下背肌群&quot; class=&quot;headerlink&quot; title=&quot;下背肌群&quot;&gt;&lt;/a&gt;下背肌群&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;下背肌群，一般被认为包括几个大肌群，如竖脊肌、骶棘肌、多裂肌等。&lt;br&gt;他们在一个大项中可以被称为椎旁肌（顾名思义，是脊椎旁边的肌群）。&lt;br&gt;下背肌群的主要作用多为后伸脊柱（让上身挺直）或者维持脊柱的稳定。&lt;br&gt;所以，下背肌群决定了身姿是否挺拔、优雅。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;站姿直背体前屈&quot;&gt;&lt;a href=&quot;#站姿直背体前屈&quot; class=&quot;headerlink&quot; title=&quot;站姿直背体前屈&quot;&gt;&lt;/a&gt;站姿直背体前屈&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%AB%99%E5%A7%BF%E7%9B%B4%E8%83%8C%E4%BD%93%E5%89%8D%E5%B1%88.gif&quot; alt=&quot;站姿直背体前屈&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-14&quot;&gt;&lt;a href=&quot;#动作描述-14&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;自然站直，双脚打开与肩同宽，双手置于脑后，膝盖微曲；&lt;/li&gt;
-&lt;li&gt;保持上半身挺直反弓，同时身体前倾，至上肢与地面平行，臀部稍向后，感受下背部紧张，顶峰收缩2-3秒；&lt;/li&gt;
-&lt;li&gt;大腿后侧股二头肌发力，缓缓站直身姿，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-13&quot;&gt;&lt;a href=&quot;#动作要点-13&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;身体前倾时一定要保持背部挺直；&lt;/li&gt;
-&lt;li&gt;双脚与肩同宽即可，越宽腘绳肌参与越多，越窄下背竖脊肌参与越多。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-2&quot;&gt;&lt;a href=&quot;#动作特点-2&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;站姿直背体前屈是锻炼下背部竖脊肌和大腿后侧腘绳肌的有效动作。&lt;br&gt;当用站姿直背体前屈练下背肌群时，一定要记得双脚间距不要过宽，才可以有效训练到竖脊肌。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小燕飞&quot;&gt;&lt;a href=&quot;#小燕飞&quot; class=&quot;headerlink&quot; title=&quot;小燕飞&quot;&gt;&lt;/a&gt;小燕飞&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B0%8F%E7%87%95%E9%A3%9E.gif&quot; alt=&quot;小燕飞&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-15&quot;&gt;&lt;a href=&quot;#动作描述-15&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;趴在垫子上，手臂紧贴身体；&lt;/li&gt;
-&lt;li&gt;同时向上抬起双手双脚，至最高点停顿2-3秒，尽可能地拉伸身体；&lt;/li&gt;
-&lt;li&gt;缓缓恢复至起始动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-14&quot;&gt;&lt;a href=&quot;#动作要点-14&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中感受背部肌肉的收紧。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;十字挺身&quot;&gt;&lt;a href=&quot;#十字挺身&quot; class=&quot;headerlink&quot; title=&quot;十字挺身&quot;&gt;&lt;/a&gt;十字挺身&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8D%81%E5%AD%97%E6%8C%BA%E8%BA%AB.gif&quot; alt=&quot;十字挺身&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-16&quot;&gt;&lt;a href=&quot;#动作描述-16&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;俯卧在垫子上；&lt;/li&gt;
-&lt;li&gt;左腿和右臂同时向上抬起，感受下背部的收缩拉紧，坚持2-3秒；&lt;/li&gt;
-&lt;li&gt;放下左腿和右臂，换右腿和左臂，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-15&quot;&gt;&lt;a href=&quot;#动作要点-15&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;动作过程中保持腰背挺直，核心收紧。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-3&quot;&gt;&lt;a href=&quot;#动作特点-3&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;十字挺身是很有效的下背部肌群锻炼动作，可以很好地找到竖脊肌的训练感觉，而且徒手就可以完成，居家训练，对挺拔身姿、防止闪腰都很有效&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;山羊挺身&quot;&gt;&lt;a href=&quot;#山羊挺身&quot; class=&quot;headerlink&quot; title=&quot;山羊挺身&quot;&gt;&lt;/a&gt;山羊挺身&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B1%B1%E7%BE%8A%E6%8C%BA%E8%BA%AB.gif&quot; alt=&quot;山羊挺身&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-17&quot;&gt;&lt;a href=&quot;#动作描述-17&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;俯卧在罗马椅上，脚跟固定于挡板上，髋部位于支撑垫上，双臂在头两侧伸直；&lt;/li&gt;
-&lt;li&gt;保持腰背挺直，以髋部为中心上身前倾至最低点，顶峰收缩2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢还原，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-16&quot;&gt;&lt;a href=&quot;#动作要点-16&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰背挺直，切勿含胸驼背；&lt;/li&gt;
-&lt;li&gt;上半身前屈时慢一些，防止腰背部肌肉拉伤；&lt;/li&gt;
-&lt;li&gt;动作过程中可以微微旋转，更有效地刺激背部深层肌群。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-4&quot;&gt;&lt;a href=&quot;#动作特点-4&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;山羊挺身是健身房最常见的下背部肌群训练动作，强度不大，也很安全，一般人都可以训练得很好。&lt;br&gt;而且山羊挺身的活动范围比十字挺身上更大，训练的肌群也更全面。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;直腿杠铃硬拉&quot;&gt;&lt;a href=&quot;#直腿杠铃硬拉&quot; class=&quot;headerlink&quot; title=&quot;直腿杠铃硬拉&quot;&gt;&lt;/a&gt;直腿杠铃硬拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%9B%B4%E8%85%BF%E6%9D%A0%E9%93%83%E7%A1%AC%E6%8B%89.gif&quot; alt=&quot;直腿杠铃硬拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-18&quot;&gt;&lt;a href=&quot;#动作描述-18&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手握杠铃，手间距稍宽于肩，手臂完全伸直，双脚与肩同宽或稍窄，膝关节微屈；&lt;/li&gt;
-&lt;li&gt;保持腰背绷直，上半身前倾，杠铃沿着小腿正面下落，至上半身与地面平行，顶峰收缩2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢起身，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-17&quot;&gt;&lt;a href=&quot;#动作要点-17&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作全程保持腰背绷紧，上半身紧张的状态，切勿圆肩和弓背。&lt;/li&gt;
-&lt;li&gt;动作过程中手臂始终自然垂直，避免手臂发力。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-5&quot;&gt;&lt;a href=&quot;#动作特点-5&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;直腿杠铃硬拉是下背部的进阶动作，所以一开始建议采用的重要要小，循序渐进，以免受伤。&lt;br&gt;同时，这个动作可以有效锻炼和拉伸大腿后侧的腘绳肌，也可以作为腘绳肌群的PNF拉伸训练。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;三个动作挺拔身姿&quot;&gt;&lt;a href=&quot;#三个动作挺拔身姿&quot; class=&quot;headerlink&quot; title=&quot;三个动作挺拔身姿&quot;&gt;&lt;/a&gt;三个动作挺拔身姿&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;竖脊肌的生理作用是让脊柱后伸，所以要想锻炼它，一定要从这个方面入手。&lt;br&gt;另外，由于身体结构和力矩的关系，训练时的支撑位置也对竖脊肌的训练效果有很大影响。&lt;br&gt;如何区分近支点远支点？简单说，把支点放在腿那里是远支点，放的离躯干近则是近支点。&lt;br&gt;远支撑对竖脊肌的激活效果更好&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%BF%9C%E8%BF%91%E6%94%AF%E7%82%B9.jpg&quot; alt=&quot;支撑点&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-十字挺身&quot;&gt;&lt;a href=&quot;#1-十字挺身&quot; class=&quot;headerlink&quot; title=&quot;1.十字挺身&quot;&gt;&lt;/a&gt;1.十字挺身&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8D%81%E5%AD%97%E6%8C%BA%E8%BA%AB.gif&quot; alt=&quot;十字挺身&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作详解：&quot;&gt;&lt;a href=&quot;#动作详解：&quot; class=&quot;headerlink&quot; title=&quot;动作详解：&quot;&gt;&lt;/a&gt;动作详解：&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;俯卧趴在地上，两手向前伸直；&lt;/li&gt;
-&lt;li&gt;左腿和右臂同时向上抬起，直到感觉下背部收缩拉紧，静待三秒；&lt;/li&gt;
-&lt;li&gt;放下左腿和右臂，换右腿和左臂。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;2-直腿臀桥&quot;&gt;&lt;a href=&quot;#2-直腿臀桥&quot; class=&quot;headerlink&quot; title=&quot;2.直腿臀桥&quot;&gt;&lt;/a&gt;2.直腿臀桥&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%9B%B4%E8%85%BF%E8%87%80%E6%A1%A5.gif&quot; alt=&quot;直腿臀桥&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作详解&quot;&gt;&lt;a href=&quot;#动作详解&quot; class=&quot;headerlink&quot; title=&quot;动作详解&quot;&gt;&lt;/a&gt;动作详解&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;仰躺在瑜伽垫或地板上，手放在身体两侧，双脚搭在椅子上，双腿挺直；&lt;/li&gt;
-&lt;li&gt;臀部向上顶起，使身体呈一条直线，静待三秒；&lt;/li&gt;
-&lt;li&gt;回到起始姿势，进行下一个。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-18&quot;&gt;&lt;a href=&quot;#动作要点-18&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;如果用椅子感受不到下背部发力的感觉，也可以用瑜伽球代替，双脚抬更高一些会更容易感受到该动作对下背部的刺激；&lt;/li&gt;
-&lt;li&gt;如果你已经能找到感觉，那么普通的座椅就OK了。若有不适，也不用强迫自己进行更大的动作，给脊椎增加太大的压力。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-10&quot;&gt;&lt;a href=&quot;#PS-10&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;直腿臀桥则是远支撑，对下背部肌群的训练效果几乎高了一倍，当然是一个训练下背的好动作&lt;br&gt;如果一开始找不到感觉，可以在最顶峰的时候停住，想着下背部的收缩，默念3秒，可以更好的找到感觉&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;3-罗马椅挺身&quot;&gt;&lt;a href=&quot;#3-罗马椅挺身&quot; class=&quot;headerlink&quot; title=&quot;3.罗马椅挺身&quot;&gt;&lt;/a&gt;3.罗马椅挺身&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%BD%97%E9%A9%AC%E6%A4%85%E6%8C%BA%E8%BA%AB.gif&quot; alt=&quot;罗马椅挺身&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作详解-1&quot;&gt;&lt;a href=&quot;#动作详解-1&quot; class=&quot;headerlink&quot; title=&quot;动作详解&quot;&gt;&lt;/a&gt;动作详解&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;调整好罗马椅的高度，将脚固定好，斜趴在罗马椅上，双手怀抱与胸前，上体前屈，腰部反弓；&lt;/li&gt;
-&lt;li&gt;借助腰部的力量挺起腰部，使身体呈一条直线，保持1-3秒；&lt;/li&gt;
-&lt;li&gt;回到起始动作，继续下一个。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-19&quot;&gt;&lt;a href=&quot;#动作要点-19&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;在开始动作前根据自己的身高调整好罗马椅，以椅子端点刚好到胯部为标准；&lt;/li&gt;
-&lt;li&gt;动作过程中保持大腿和腰部的绷紧，双腿和腰部都要挺直；&lt;/li&gt;
-&lt;li&gt;头微微后仰，更容易找到脊柱的感觉。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS-11&quot;&gt;&lt;a href=&quot;#PS-11&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;罗马椅是健身房最常见的器械，是专门用来训练下背部肌群的。&lt;br&gt;这个动作强度不大，也很安全，一般人都可以训练得很好。&lt;br&gt;而且罗马椅的活动范围比上面两个动作都大，训练的肌群更全面。&lt;br&gt;想要改善自己的身姿，让身型更挺拔，每周进行两到三次竖脊肌的训练，一个月左右就能有所调整。&lt;br&gt;之后再进行常规背部和核心肌群的训练，就能让脊椎恢复到健康的形态了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;斜方肌群——背部厚度和身姿优美的关键&quot;&gt;&lt;a href=&quot;#斜方肌群——背部厚度和身姿优美的关键&quot; class=&quot;headerlink&quot; title=&quot;斜方肌群——背部厚度和身姿优美的关键&quot;&gt;&lt;/a&gt;斜方肌群——背部厚度和身姿优美的关键&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;如果说背阔肌决定了背部的宽阔，那么斜方肌群就决定了背部的厚度。&lt;br&gt;斜方肌群纵向从颈部一直延伸到胸椎的下部，横向则连接着肩胛骨。其一些深层肌群则连接了肩胛骨和脊柱。&lt;br&gt;对于大多数关注体型体态的人来说，斜方肌下面的深层肌群，主要指的是菱形肌，菱形肌非常重要，它影响着高低肩、探颈等身姿矫正问题。不过由于菱形肌并不会单独活动，所以它更多的是与斜方肌一起协作运动，因此在这里就把它与斜方肌的训练放在一起。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;斜方肌最佳训练动作&quot;&gt;&lt;a href=&quot;#斜方肌最佳训练动作&quot; class=&quot;headerlink&quot; title=&quot;斜方肌最佳训练动作&quot;&gt;&lt;/a&gt;斜方肌最佳训练动作&lt;/h2&gt;&lt;h3 id=&quot;斜方肌上部&quot;&gt;&lt;a href=&quot;#斜方肌上部&quot; class=&quot;headerlink&quot; title=&quot;斜方肌上部&quot;&gt;&lt;/a&gt;斜方肌上部&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;让人看起来有力、霸道，一般人练习需有度，不然容易练成溜肩&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;哑铃耸肩&lt;/li&gt;
-&lt;li&gt;杠铃耸肩&lt;/li&gt;
-&lt;li&gt;杠铃窄握前平举&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;斜方肌中部&quot;&gt;&lt;a href=&quot;#斜方肌中部&quot; class=&quot;headerlink&quot; title=&quot;斜方肌中部&quot;&gt;&lt;/a&gt;斜方肌中部&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;决定了背部的厚度和整体视觉，可以同时纠正探颈、翼状肩胛等身姿问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;器械反向飞鸟（内旋）&lt;/li&gt;
-&lt;li&gt;哑铃反向飞鸟（内旋）&lt;/li&gt;
-&lt;li&gt;杠铃俯身划船&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;斜方肌下部&quot;&gt;&lt;a href=&quot;#斜方肌下部&quot; class=&quot;headerlink&quot; title=&quot;斜方肌下部&quot;&gt;&lt;/a&gt;斜方肌下部&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;决定了背部厚度，以及高低肩、脊柱侧弯等身姿问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;器械反向飞鸟（外旋）&lt;/li&gt;
-&lt;li&gt;哑铃反向飞鸟（外旋）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;哑铃反向飞鸟内旋&quot;&gt;&lt;a href=&quot;#哑铃反向飞鸟内旋&quot; class=&quot;headerlink&quot; title=&quot;哑铃反向飞鸟内旋&quot;&gt;&lt;/a&gt;哑铃反向飞鸟内旋&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%93%91%E9%93%83%E5%8F%8D%E5%90%91%E9%A3%9E%E9%B8%9F%E5%86%85%E6%97%8B.gif&quot; alt=&quot;哑铃反向飞鸟内旋&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-19&quot;&gt;&lt;a href=&quot;#动作描述-19&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手握住哑铃，掌心向下，手臂自然下垂，双脚打开比肩略宽，膝盖微曲，上半身前倾，保持腰腹收紧，背部挺直；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，打开双臂至最高点，感受背部肌群的紧张，停顿2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢还原，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点-20&quot;&gt;&lt;a href=&quot;#动作要点-20&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰背挺直，核心收紧状态；&lt;/li&gt;
-&lt;li&gt;打开双臂时，肘关节不要锁死，肘部微微弯曲。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作特点-6&quot;&gt;&lt;a href=&quot;#动作特点-6&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E5%8A%A8%E4%BD%9C%E5%AF%B9%E6%96%9C%E6%96%B9%E8%82%8C%E4%B8%AD%E9%83%A8%E8%AE%AD%E7%BB%83%E6%95%88%E6%9E%9C%E7%9A%84%E5%BD%B1%E5%93%8D.jpg&quot; alt=&quot;哑铃反向飞鸟&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;从图中可以看出，哑铃反向飞鸟内旋，对斜方肌中部有很好的刺激效果。&lt;br&gt;其效果甚至比需要在健身房训练的杠铃俯身划船和站姿高位划船还要好，是高效的居家经典斜方肌训练动作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;哑铃反向飞鸟外旋&quot;&gt;&lt;a href=&quot;#哑铃反向飞鸟外旋&quot; class=&quot;headerlink&quot; title=&quot;哑铃反向飞鸟外旋&quot;&gt;&lt;/a&gt;哑铃反向飞鸟外旋&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%93%91%E9%93%83%E5%8F%8D%E5%90%91%E9%A3%9E%E9%B8%9F%E5%A4%96%E6%97%8B.gif&quot; alt=&quot;哑铃反向飞鸟外旋&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-20&quot;&gt;&lt;a href=&quot;#动作描述-20&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双手握住哑铃，掌心向上，手臂自然下垂，双脚打开比肩略宽，膝盖微曲，上半身前倾，保持腰腹收紧，背部挺直；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，打开双臂至最高点，感受背部肌群的紧张，停顿2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢还原，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点-21&quot;&gt;&lt;a href=&quot;#动作要点-21&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持腰背挺直，核心收紧状态；&lt;/li&gt;
-&lt;li&gt;打开双臂时，肘关节不要锁死，肘部微微弯曲。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作特点-7&quot;&gt;&lt;a href=&quot;#动作特点-7&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E5%8A%A8%E4%BD%9C%E5%AF%B9%E6%96%9C%E6%96%B9%E8%82%8C%E4%B8%8B%E9%83%A8%E8%AE%AD%E7%BB%83%E6%95%88%E6%9E%9C%E7%9A%84%E5%BD%B1%E5%93%8D.jpg&quot; alt=&quot;哑铃反向飞鸟（外旋）&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;哑铃反向飞鸟外旋是锻炼斜方肌下部的有效动作，可以很好地刺激到斜方肌下部。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;外旋和内旋的区别&quot;&gt;&lt;a href=&quot;#外旋和内旋的区别&quot; class=&quot;headerlink&quot; title=&quot;外旋和内旋的区别&quot;&gt;&lt;/a&gt;外旋和内旋的区别&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%86%85%E6%97%8B%E5%A4%96%E6%97%8B%E7%9A%84%E5%8C%BA%E5%88%AB.jpg&quot; alt=&quot;内旋和外旋的区别&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;a href=&quot;#背阔肌的最佳训练动作之一：高位下拉&quot; class=&quot;headerlink&quot; title=&quot;背阔肌的最佳训练动作之一：高位下拉&quot;&gt;&lt;/a&gt;背阔肌的最佳训练动作之一：高位下拉&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;高位下拉，最大的特点是安全、高效、适用性广&lt;/p&gt;
-&lt;p&gt;不同高位下拉对背阔肌的刺激排序:反手窄距高位下拉＞颈后高位下拉＞反弓颈前高位下拉＞直背颈前高位下拉&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89%E5%AF%B9%E8%83%8C%E9%98%94%E8%82%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E6%BF%80%E6%B4%BB%E6%B0%B4%E5%B9%B3.png&quot; alt=&quot;高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;No-1-反手窄距高位下拉&quot;&gt;&lt;a href=&quot;#No-1-反手窄距高位下拉&quot; class=&quot;headerlink&quot; title=&quot;No.1 反手窄距高位下拉&quot;&gt;&lt;/a&gt;No.1 反手窄距高位下拉&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E6%89%8B%E7%AA%84%E8%B7%9D%E9%AB%98%E4%BD%8D%E4%B8%8B%E6%8B%89.gif&quot; alt=&quot;反手窄距高位下拉&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面朝坐姿器械，双腿放在固定海绵下，双手窄握，掌心向内反握握柄，背部反弓；&lt;/li&gt;
-&lt;li&gt;背阔肌发力收缩，带动双肘下拉握柄至最低点，感受背部收紧，静止2-3秒；&lt;/li&gt;
-&lt;li&gt;控制背肌力量，缓慢还原，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;下拉过程中主要靠背部发力，不要用胳膊的力气下拉；&lt;/li&gt;
-&lt;li&gt;动作过程中感受背部的持续收缩与紧张，动作顶端注意顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手引体向上就是一个很好的动作，不仅能让背阔肌更好地发力，而且还可以很好地训练到肱二头肌&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="健身" scheme="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="肌肉" scheme="http://yoursite.com/tags/%E8%82%8C%E8%82%89/"/>
-    
-      <category term="背部" scheme="http://yoursite.com/tags/%E8%83%8C%E9%83%A8/"/>
-    
-      <category term="背阔肌" scheme="http://yoursite.com/tags/%E8%83%8C%E9%98%94%E8%82%8C/"/>
-    
-      <category term="斜方肌" scheme="http://yoursite.com/tags/%E6%96%9C%E6%96%B9%E8%82%8C/"/>
-    
-      <category term="三角肌" scheme="http://yoursite.com/tags/%E4%B8%89%E8%A7%92%E8%82%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身知识——胸部训练</title>
-    <link href="http://yoursite.com/2016/08/13/body-building/pectoral/"/>
-    <id>http://yoursite.com/2016/08/13/body-building/pectoral/</id>
-    <published>2016-08-13T07:53:04.000Z</published>
-    <updated>2016-08-17T08:51:28.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;a href=&quot;#不同胸部训练动作的肌电水平&quot; class=&quot;headerlink&quot; title=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;/a&gt;不同胸部训练动作的肌电水平&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E8%83%B8%E9%83%A8%E8%AE%AD%E7%BB%83%E5%8A%A8%E4%BD%9C%E7%9A%84%E8%82%8C%E7%94%B5%E6%B0%B4%E5%B9%B3.png&quot; alt=&quot;胸部训练&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;训练动作&quot;&gt;&lt;a href=&quot;#训练动作&quot; class=&quot;headerlink&quot; title=&quot;训练动作&quot;&gt;&lt;/a&gt;训练动作&lt;/h1&gt;&lt;h2 id=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;a href=&quot;#胸部之最佳综合基础动作——杠铃卧推&quot; class=&quot;headerlink&quot; title=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;/a&gt;胸部之最佳综合基础动作——杠铃卧推&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%9D%A0%E9%93%83%E5%8D%A7%E6%8E%A8.gif&quot; alt=&quot;杠铃卧推&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;躺在健身凳上，双手与肩同宽握住杠铃；&lt;/li&gt;
-&lt;li&gt;从胸部上方起始，胸部肌肉发力将杠铃推至锁骨上方，顶峰收缩1-2秒；&lt;/li&gt;
-&lt;li&gt;缓慢放下至距离胸部1-2cm处，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中感受胸肌发力，不要借助胳膊力量向上推；&lt;/li&gt;
-&lt;li&gt;动作顶端保持肘关节微屈，不要锁死关节；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;初级替代动作：坐姿器械卧推&quot;&gt;&lt;a href=&quot;#初级替代动作：坐姿器械卧推&quot; class=&quot;headerlink&quot; title=&quot;初级替代动作：坐姿器械卧推&quot;&gt;&lt;/a&gt;初级替代动作：坐姿器械卧推&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;胸部之初学者最佳动作——蝴蝶机夹胸&quot;&gt;&lt;a href=&quot;#胸部之初学者最佳动作——蝴蝶机夹胸&quot; class=&quot;headerlink&quot; title=&quot;胸部之初学者最佳动作——蝴蝶机夹胸&quot;&gt;&lt;/a&gt;胸部之初学者最佳动作——蝴蝶机夹胸&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%9D%B4%E8%9D%B6%E6%9C%BA%E5%A4%B9%E8%83%B8.gif&quot; alt=&quot;蝴蝶机夹胸&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-1&quot;&gt;&lt;a href=&quot;#动作描述-1&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;坐在器械上，双手握住握柄，保持肘关节微曲，大臂与地面平行，挺胸抬头，腰腹收紧；&lt;/li&gt;
-&lt;li&gt;胸部发力夹起，至动作最高点，停顿2-3秒，充分挤压胸大肌；&lt;/li&gt;
-&lt;li&gt;缓缓归位，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-1&quot;&gt;&lt;a href=&quot;#动作要点-1&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程全程控制速度，避免受伤；&lt;/li&gt;
-&lt;li&gt;动作过程中肘关节保持向后和外侧，而不是向下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;蝴蝶机夹胸的最大好处&quot;&gt;&lt;a href=&quot;#蝴蝶机夹胸的最大好处&quot; class=&quot;headerlink&quot; title=&quot;蝴蝶机夹胸的最大好处&quot;&gt;&lt;/a&gt;蝴蝶机夹胸的最大好处&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;不仅激活水平高、安全，而且对胸部的本体感受很强&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;胸部之最佳精确制导动作——拉索夹胸&quot;&gt;&lt;a href=&quot;#胸部之最佳精确制导动作——拉索夹胸&quot; class=&quot;headerlink&quot; title=&quot;胸部之最佳精确制导动作——拉索夹胸&quot;&gt;&lt;/a&gt;胸部之最佳精确制导动作——拉索夹胸&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8B%89%E7%B4%A2%E5%A4%B9%E8%83%B8.gif&quot; alt=&quot;拉索夹胸&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-2&quot;&gt;&lt;a href=&quot;#动作描述-2&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;双脚前后分开站立，膝盖微弯，双手握住滑轮拉索的握柄，上半身微微前倾；&lt;/li&gt;
-&lt;li&gt;胸部发力，双手向前聚拢，止于胸部前方，坚持1-2秒；&lt;/li&gt;
-&lt;li&gt;缓缓张开双臂，在略高于肩部的位置停住，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-2&quot;&gt;&lt;a href=&quot;#动作要点-2&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;注意调整好适合自己的力量，不要过重；&lt;/li&gt;
-&lt;li&gt;双手张开时要缓，有控制地打开身体，动作过程中借助下肢的力量稳定身体。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;如何找到练胸的感觉？&quot;&gt;&lt;a href=&quot;#如何找到练胸的感觉？&quot; class=&quot;headerlink&quot; title=&quot;如何找到练胸的感觉？&quot;&gt;&lt;/a&gt;如何找到练胸的感觉？&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;联系胸肌最重要的一个要点就是——大臂移动，向内夹，活动肩关节水平内收。&lt;br&gt;胸部训练重点在大臂的夹，不在小臂的伸. 所以我们要限制小臂的动作、专注大臂的内收，想象胸部的收缩。&lt;br&gt;要先采用一些孤立的胸部训练手段，首先训练起胸肌的力量和训练的感觉。比如拉索夹胸、哑铃卧推等。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;胸肌拉伸&quot;&gt;&lt;a href=&quot;#胸肌拉伸&quot; class=&quot;headerlink&quot; title=&quot;胸肌拉伸&quot;&gt;&lt;/a&gt;胸肌拉伸&lt;/h1&gt;&lt;h2 id=&quot;蝴蝶机夹胸PNF拉伸&quot;&gt;&lt;a href=&quot;#蝴蝶机夹胸PNF拉伸&quot; class=&quot;headerlink&quot; title=&quot;蝴蝶机夹胸PNF拉伸&quot;&gt;&lt;/a&gt;蝴蝶机夹胸PNF拉伸&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%9D%B4%E8%9D%B6%E6%9C%BA%E5%A4%B9%E8%83%B8%E6%8B%89%E4%BC%B8.gif&quot; alt=&quot;蝴蝶机夹胸拉伸&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-3&quot;&gt;&lt;a href=&quot;#动作描述-3&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;调整好重量，坐在器械座位上，双手握住握柄，抬头挺胸收腹，借用胸肌力量拉动握柄在胸前聚拢，完成一个蝴蝶机夹胸动作；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢打开握柄，至肘部打开与肩处于同一平面时停住，感受胸肌的拉伸，轻微振颤或保持静止5-10秒，直至胸部有酸胀感；&lt;/li&gt;
-&lt;li&gt;胸肌主动发力，缓慢夹起，建议时间4-6秒。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-3&quot;&gt;&lt;a href=&quot;#动作要点-3&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作底端可以采用轻微振颤或静力保持，感受胸肌的充分拉伸；&lt;/li&gt;
-&lt;li&gt;不建议负重过重，以免受伤。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;胸部单侧PNF拉伸&quot;&gt;&lt;a href=&quot;#胸部单侧PNF拉伸&quot; class=&quot;headerlink&quot; title=&quot;胸部单侧PNF拉伸&quot;&gt;&lt;/a&gt;胸部单侧PNF拉伸&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%83%B8%E9%83%A8%E5%8D%95%E4%BE%A7%E6%8B%89%E4%BC%B8.gif&quot; alt=&quot;胸部单侧拉伸&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-4&quot;&gt;&lt;a href=&quot;#动作描述-4&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;面向墙站立，一只手掌抵住墙，腿蹬地，缓缓转动身体，使得大臂与身体角度改变，拉伸胸大肌；&lt;/li&gt;
-&lt;li&gt;动作最底端，保持10-15秒，感受目标肌群拉伸至有酸胀感；&lt;/li&gt;
-&lt;li&gt;胸肌主动发力推墙，缓慢回到初始姿势，建议时间4-6秒。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;a href=&quot;#不同胸部训练动作的肌电水平&quot; class=&quot;headerlink&quot; title=&quot;不同胸部训练动作的肌电水平&quot;&gt;&lt;/a&gt;不同胸部训练动作的肌电水平&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E8%83%B8%E9%83%A8%E8%AE%AD%E7%BB%83%E5%8A%A8%E4%BD%9C%E7%9A%84%E8%82%8C%E7%94%B5%E6%B0%B4%E5%B9%B3.png&quot; alt=&quot;胸部训练&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;训练动作&quot;&gt;&lt;a href=&quot;#训练动作&quot; class=&quot;headerlink&quot; title=&quot;训练动作&quot;&gt;&lt;/a&gt;训练动作&lt;/h1&gt;&lt;h2 id=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;a href=&quot;#胸部之最佳综合基础动作——杠铃卧推&quot; class=&quot;headerlink&quot; title=&quot;胸部之最佳综合基础动作——杠铃卧推&quot;&gt;&lt;/a&gt;胸部之最佳综合基础动作——杠铃卧推&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%9D%A0%E9%93%83%E5%8D%A7%E6%8E%A8.gif&quot; alt=&quot;杠铃卧推&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;躺在健身凳上，双手与肩同宽握住杠铃；&lt;/li&gt;
-&lt;li&gt;从胸部上方起始，胸部肌肉发力将杠铃推至锁骨上方，顶峰收缩1-2秒；&lt;/li&gt;
-&lt;li&gt;缓慢放下至距离胸部1-2cm处，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中感受胸肌发力，不要借助胳膊力量向上推；&lt;/li&gt;
-&lt;li&gt;动作顶端保持肘关节微屈，不要锁死关节；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;初级替代动作：坐姿器械卧推&quot;&gt;&lt;a href=&quot;#初级替代动作：坐姿器械卧推&quot; class=&quot;headerlink&quot; title=&quot;初级替代动作：坐姿器械卧推&quot;&gt;&lt;/a&gt;初级替代动作：坐姿器械卧推&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="健身" scheme="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="肌肉" scheme="http://yoursite.com/tags/%E8%82%8C%E8%82%89/"/>
-    
-      <category term="胸部" scheme="http://yoursite.com/tags/%E8%83%B8%E9%83%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身相关知识</title>
-    <link href="http://yoursite.com/2016/08/13/body-building/preparation/"/>
-    <id>http://yoursite.com/2016/08/13/body-building/preparation/</id>
-    <published>2016-08-13T07:30:04.000Z</published>
-    <updated>2016-08-15T08:09:50.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;健身最为有效的时间&quot;&gt;&lt;a href=&quot;#健身最为有效的时间&quot; class=&quot;headerlink&quot; title=&quot;健身最为有效的时间&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=206584594&amp;amp;idx=1&amp;amp;sn=2045deb2f5c98a3da55bd20e72e9debb#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;健身最为有效的时间&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;下午4点到6点左右进行健身最为合适&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;训练组数&quot;&gt;&lt;a href=&quot;#训练组数&quot; class=&quot;headerlink&quot; title=&quot;训练组数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=200441070&amp;amp;idx=1&amp;amp;sn=a66cd389015784457874bac185cf5c1e#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;训练组数&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;健身组数的决定，是来自训练的目的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;以肌肉体积增长为目的&quot;&gt;&lt;a href=&quot;#以肌肉体积增长为目的&quot; class=&quot;headerlink&quot; title=&quot;以肌肉体积增长为目的&quot;&gt;&lt;/a&gt;以肌肉体积增长为目的&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果健身的目的是肌肉体积增长，也就是长些肌肉塑形。&lt;br&gt;那么他的公式是（训练重量&lt;em&gt;训练次数&lt;/em&gt;训练组数）&lt;br&gt;通过一系列科学的推导，最后发现，最有利于肌肉增长的安排是：训练重量（80%max）&lt;em&gt;训练次数（8-12个）&lt;/em&gt;训练动作组数（4-8组）&lt;br&gt;由于80%12RM已经是动作的极限，所以我们尽量在训练重量中采取80%极限的负重。&lt;br&gt;这也就是为什么大多数人做的都是10个一组，每个动作3组。每次4-8个动作。这就是现代健美的韦德体系。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;以力量增长为目的&quot;&gt;&lt;a href=&quot;#以力量增长为目的&quot; class=&quot;headerlink&quot; title=&quot;以力量增长为目的&quot;&gt;&lt;/a&gt;以力量增长为目的&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果目的是力量增长，决定的因素是训练重量。&lt;br&gt;比如举重选手或力量举选手，他们就常常采用80-100%max的重量做1-5个来训练。（一开始做热身，后面会中小重量练习技术细节。）&lt;br&gt;也就是力量增长的最佳安排一般是80-100%max1-5RM.有时只做1-3个动作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;组间休息&quot;&gt;&lt;a href=&quot;#组间休息&quot; class=&quot;headerlink&quot; title=&quot;组间休息&quot;&gt;&lt;/a&gt;组间休息&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一般来讲，一组12RM的动作在60s左右（视动作而言），组间休息30-90s是最佳肌肉体积增长间隔&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;训练速度&quot;&gt;&lt;a href=&quot;#训练速度&quot; class=&quot;headerlink&quot; title=&quot;训练速度&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=200451106&amp;amp;idx=1&amp;amp;sn=fe1759fc21c6369155e67fb48c811d6c&amp;amp;scene=1#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;训练速度&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;如果是健身塑形训练，追求的是形态维度的美感和无氧力量耐力：&lt;br&gt;采取向心收缩时间长的运动方式，离心收缩则可采用中等速率。&lt;br&gt;简单讲，就是举起来（向心收缩）的时候要慢，落下去（离心收缩）的时候普通速度，有控制就好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;健身计划&quot;&gt;&lt;a href=&quot;#健身计划&quot; class=&quot;headerlink&quot; title=&quot;健身计划&quot;&gt;&lt;/a&gt;健身计划&lt;/h1&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;10分钟热身&lt;/li&gt;
-&lt;li&gt;专项力量训练&lt;/li&gt;
-&lt;li&gt;腹肌和核心力量训练&lt;/li&gt;
-&lt;li&gt;HIT训练（10～30分钟）&lt;/li&gt;
-&lt;li&gt;拉伸10分钟（重要！！！）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;HIT训练&quot;&gt;&lt;a href=&quot;#HIT训练&quot; class=&quot;headerlink&quot; title=&quot;HIT训练&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/19684185&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HIT训练&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;跑步机计划：半分钟快跑，半分钟慢跑，然后一分钟快跑，一分钟慢跑，然后再半分钟快跑，半分钟慢跑。&lt;br&gt;快跑慢跑的速度自己掌握，我认为快跑用最快速度的80%以上，慢跑用最大速度的50%比较合理。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;大小肌肉群&quot;&gt;&lt;a href=&quot;#大小肌肉群&quot; class=&quot;headerlink&quot; title=&quot;大小肌肉群&quot;&gt;&lt;/a&gt;大小肌肉群&lt;/h1&gt;&lt;h2 id=&quot;大肌肉群：胸、背、腿&quot;&gt;&lt;a href=&quot;#大肌肉群：胸、背、腿&quot; class=&quot;headerlink&quot; title=&quot;大肌肉群：胸、背、腿&quot;&gt;&lt;/a&gt;大肌肉群：胸、背、腿&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;大肌肉群建议一周锻炼一次。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;小肌肉群：肩、二头肌、三头肌、小臂、小腿、腹肌&quot;&gt;&lt;a href=&quot;#小肌肉群：肩、二头肌、三头肌、小臂、小腿、腹肌&quot; class=&quot;headerlink&quot; title=&quot;小肌肉群：肩、二头肌、三头肌、小臂、小腿、腹肌&quot;&gt;&lt;/a&gt;小肌肉群：肩、二头肌、三头肌、小臂、小腿、腹肌&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;小肌肉群可以一周安排两次。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;耐受肌肉群：小腿、小臂肌群&quot;&gt;&lt;a href=&quot;#耐受肌肉群：小腿、小臂肌群&quot; class=&quot;headerlink&quot; title=&quot;耐受肌肉群：小腿、小臂肌群&quot;&gt;&lt;/a&gt;耐受肌肉群：小腿、小臂肌群&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;耐受肌群可以一周安排三次。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;对冲组的训练&quot;&gt;&lt;a href=&quot;#对冲组的训练&quot; class=&quot;headerlink&quot; title=&quot;对冲组的训练&quot;&gt;&lt;/a&gt;对冲组的训练&lt;/h1&gt;&lt;h2 id=&quot;什么是对冲组？&quot;&gt;&lt;a href=&quot;#什么是对冲组？&quot; class=&quot;headerlink&quot; title=&quot;什么是对冲组？&quot;&gt;&lt;/a&gt;什么是对冲组？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;对冲组（Compound set），又叫复合组。对冲组由两个训练功能相反肌群（比如胸肌肌群和背阔肌肌群）的训练动作组成，并以腹侧肌群为前，背侧肌群为后的方式安排。两个动作依次完成规定数量（两个动作间无休息）算作一个对冲组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;对冲组的优势&quot;&gt;&lt;a href=&quot;#对冲组的优势&quot; class=&quot;headerlink&quot; title=&quot;对冲组的优势&quot;&gt;&lt;/a&gt;对冲组的优势&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;对冲组的优势在于，把两群功能相反的肌肉放在一起训练，能够在做后一个动作的同时拉伸到前一个动作训练的肌肉，减少训练后的肌肉粘连和保持肌肉的活性。与此同时，在训练时身体较长时间处于一个输出功的状态，增加了心血管的工作量，进而提高了心肺功能。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;几种对冲组训练安排&quot;&gt;&lt;a href=&quot;#几种对冲组训练安排&quot; class=&quot;headerlink&quot; title=&quot;几种对冲组训练安排&quot;&gt;&lt;/a&gt;几种对冲组训练安排&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;卧推+引体向上/卧推+坐姿划船&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这是一个非常对应的对冲训练。&lt;br&gt;卧推主要训练我们的胸大肌、肱三头肌和三角肌前束。&lt;br&gt;引体向上/坐姿划船主要训练我们的背阔肌、肱二头肌和三角肌后束。&lt;br&gt;这个对冲组能够有效地训练我们的上身腹侧和背侧的肌肉群。&lt;br&gt;两个动作每组都是75%最大重量做8-15次，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;绳索夹胸+绳索下拉&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;绳索夹胸主要训练我们的胸大肌、肱二头肌和三角肌前束。&lt;br&gt;绳索下拉主要训练我们的背阔肌、肱三头肌和三角肌后束。&lt;br&gt;这个对冲组能够有效地训练我们的上身腹侧和背侧的肌肉群。&lt;br&gt;两个动作每组都是75%最大重量做8-15次，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;两头起+超人&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两头起训练我们的腹部肌肉群。&lt;br&gt;超人训练我们的竖脊肌等下背部肌肉群和臀部肌肉群。&lt;br&gt;这个对冲组是训练核心部分力量的良好方法。&lt;br&gt;两个动作每组各做15-20个，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;卷腹+悬吊抬腿&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这不算一个严格意义上的对冲组，但是也算是两组功能各异的肌肉群的对冲练习。&lt;br&gt;卷腹训练我们腹直肌和腹内外斜肌的上部。&lt;br&gt;仰卧抬腿训练腹直肌和腹内外斜肌的下部。&lt;br&gt;对于大强度腹肌训练是一个非常好的训练组合。&lt;br&gt;两个动作每组各做15-20个，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;器械伸腿+器械屈腿&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这是两个器械的训练我们的股四头肌和腘绳肌，属于腿部训练的对冲组。&lt;br&gt;能够有效训练腿部整体的力量。&lt;br&gt;两个动作每组都是75%最大重量做8-15次，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;肱二头肌弯举+颈后臂屈伸&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个动作分别能够刺激我们的肱二头肌和肱三头肌，这也是手臂超级组的组成动作之一。&lt;br&gt;两个动作每组都是85%最大重量做6-12次，做3-4组。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;运动时穿紧身衣的好处&quot;&gt;&lt;a href=&quot;#运动时穿紧身衣的好处&quot; class=&quot;headerlink&quot; title=&quot;运动时穿紧身衣的好处&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=209361662&amp;amp;idx=1&amp;amp;sn=630e5f09b5dcb5c99f20681fbc6ebced#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;运动时穿紧身衣的好处&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;加速血液循环和乳酸代谢，减少乳酸堆积&lt;/li&gt;
-&lt;li&gt;加快降温排汗过程，维持体温&lt;/li&gt;
-&lt;li&gt;增加肌肉运动的本体感觉&lt;/li&gt;
-&lt;li&gt;减少软组织振动和受伤几率&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;念动合一&quot;&gt;&lt;a href=&quot;#念动合一&quot; class=&quot;headerlink&quot; title=&quot;念动合一&quot;&gt;&lt;/a&gt;念动合一&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;运动时一定要稳心定神，专注于自己每一个动作，每一个肌肉的收缩。&lt;br&gt;这不仅是一种哲学或者玄学。而切切实实是训练高效针对的秘籍。&lt;br&gt;健身，本来就是身与心的修行。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;健身最为有效的时间&quot;&gt;&lt;a href=&quot;#健身最为有效的时间&quot; class=&quot;headerlink&quot; title=&quot;健身最为有效的时间&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=206584594&amp;amp;idx=1&amp;amp;sn=2045deb2f5c98a3da55bd20e72e9debb#rd&quot;&gt;健身最为有效的时间&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;下午4点到6点左右进行健身最为合适&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;训练组数&quot;&gt;&lt;a href=&quot;#训练组数&quot; class=&quot;headerlink&quot; title=&quot;训练组数&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA5NjQwMTQxOA==&amp;amp;mid=200441070&amp;amp;idx=1&amp;amp;sn=a66cd389015784457874bac185cf5c1e#rd&quot;&gt;训练组数&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;健身组数的决定，是来自训练的目的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;以肌肉体积增长为目的&quot;&gt;&lt;a href=&quot;#以肌肉体积增长为目的&quot; class=&quot;headerlink&quot; title=&quot;以肌肉体积增长为目的&quot;&gt;&lt;/a&gt;以肌肉体积增长为目的&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果健身的目的是肌肉体积增长，也就是长些肌肉塑形。&lt;br&gt;那么他的公式是（训练重量&lt;em&gt;训练次数&lt;/em&gt;训练组数）&lt;br&gt;通过一系列科学的推导，最后发现，最有利于肌肉增长的安排是：训练重量（80%max）&lt;em&gt;训练次数（8-12个）&lt;/em&gt;训练动作组数（4-8组）&lt;br&gt;由于80%12RM已经是动作的极限，所以我们尽量在训练重量中采取80%极限的负重。&lt;br&gt;这也就是为什么大多数人做的都是10个一组，每个动作3组。每次4-8个动作。这就是现代健美的韦德体系。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;以力量增长为目的&quot;&gt;&lt;a href=&quot;#以力量增长为目的&quot; class=&quot;headerlink&quot; title=&quot;以力量增长为目的&quot;&gt;&lt;/a&gt;以力量增长为目的&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果目的是力量增长，决定的因素是训练重量。&lt;br&gt;比如举重选手或力量举选手，他们就常常采用80-100%max的重量做1-5个来训练。（一开始做热身，后面会中小重量练习技术细节。）&lt;br&gt;也就是力量增长的最佳安排一般是80-100%max1-5RM.有时只做1-3个动作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;组间休息&quot;&gt;&lt;a href=&quot;#组间休息&quot; class=&quot;headerlink&quot; title=&quot;组间休息&quot;&gt;&lt;/a&gt;组间休息&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一般来讲，一组12RM的动作在60s左右（视动作而言），组间休息30-90s是最佳肌肉体积增长间隔&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="健身" scheme="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言基础知识——数据类型</title>
-    <link href="http://yoursite.com/2016/08/12/C%20/basics/data-types/"/>
-    <id>http://yoursite.com/2016/08/12/C /basics/data-types/</id>
-    <published>2016-08-12T07:14:44.000Z</published>
-    <updated>2016-08-18T16:58:07.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;C语言的类型&quot;&gt;&lt;a href=&quot;#C语言的类型&quot; class=&quot;headerlink&quot; title=&quot;C语言的类型&quot;&gt;&lt;/a&gt;C语言的类型&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;整数&quot;&gt;&lt;a href=&quot;#整数&quot; class=&quot;headerlink&quot; title=&quot;整数&quot;&gt;&lt;/a&gt;整数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;char、short、int、long、long long&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;浮点数&quot;&gt;&lt;a href=&quot;#浮点数&quot; class=&quot;headerlink&quot; title=&quot;浮点数&quot;&gt;&lt;/a&gt;浮点数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;float、double、long double&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;逻辑&quot;&gt;&lt;a href=&quot;#逻辑&quot; class=&quot;headerlink&quot; title=&quot;逻辑&quot;&gt;&lt;/a&gt;逻辑&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;bool&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;指针&quot;&gt;&lt;a href=&quot;#指针&quot; class=&quot;headerlink&quot; title=&quot;指针&quot;&gt;&lt;/a&gt;指针&lt;/h2&gt;&lt;h2 id=&quot;自定义类型&quot;&gt;&lt;a href=&quot;#自定义类型&quot; class=&quot;headerlink&quot; title=&quot;自定义类型&quot;&gt;&lt;/a&gt;自定义类型&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;类型有何不同&quot;&gt;&lt;a href=&quot;#类型有何不同&quot; class=&quot;headerlink&quot; title=&quot;类型有何不同&quot;&gt;&lt;/a&gt;类型有何不同&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;类型名称：int、long、double&lt;br&gt;输入输出时的格式化：%d、%ld、%lf&lt;br&gt;所表达的数的范围：char &amp;lt; short &amp;lt; int &amp;lt; float &amp;lt; double&lt;br&gt;内存中所占据的大小：1个字节到16个字节&lt;br&gt;内存中的表达形式：二进制数（补码）、编码&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;工具sizeof&quot;&gt;&lt;a href=&quot;#工具sizeof&quot; class=&quot;headerlink&quot; title=&quot;工具sizeof&quot;&gt;&lt;/a&gt;工具sizeof&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;是一个运算符，给出某个类型或变量在内存中所占的字节数&lt;br&gt;sizeof(int)算出类型的字节&lt;br&gt;sizeof(i)算出变量的字节&lt;br&gt;是静态运算符，它的结果在编译时刻就决定了&lt;br&gt;不要在sizeof的括号里做运算，这些运算是不会运行的。如sizeof(a++),括号里a++是不会运行的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;整数类型&quot;&gt;&lt;a href=&quot;#整数类型&quot; class=&quot;headerlink&quot; title=&quot;整数类型&quot;&gt;&lt;/a&gt;整数类型&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;char: 1字节（8比特）&lt;br&gt;short: 2字节&lt;br&gt;int: 取决于编译器或CPU&lt;br&gt;long: 取决于编译器或CPU&lt;br&gt;long long: 8字节&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;整数的内部表达&quot;&gt;&lt;a href=&quot;#整数的内部表达&quot; class=&quot;headerlink&quot; title=&quot;整数的内部表达&quot;&gt;&lt;/a&gt;整数的内部表达&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;计算机内部一切都是二进制&quot;&gt;&lt;a href=&quot;#计算机内部一切都是二进制&quot; class=&quot;headerlink&quot; title=&quot;计算机内部一切都是二进制&quot;&gt;&lt;/a&gt;计算机内部一切都是二进制&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;18  —-&amp;gt;  00010010&lt;br&gt;0   —-&amp;gt;  00000000&lt;br&gt;-18 —-&amp;gt;  ?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;二进制负数&quot;&gt;&lt;a href=&quot;#二进制负数&quot; class=&quot;headerlink&quot; title=&quot;二进制负数&quot;&gt;&lt;/a&gt;二进制负数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;1字节（8比特）可以表达的数：&quot;&gt;&lt;a href=&quot;#1字节（8比特）可以表达的数：&quot; class=&quot;headerlink&quot; title=&quot;1字节（8比特）可以表达的数：&quot;&gt;&lt;/a&gt;1字节（8比特）可以表达的数：&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;00000000～11111111（0～255）&lt;/p&gt;
-&lt;h2 id=&quot;三种方案&quot;&gt;&lt;a href=&quot;#三种方案&quot; class=&quot;headerlink&quot; title=&quot;三种方案&quot;&gt;&lt;/a&gt;三种方案&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;仿照十进制，有一个特殊的标志表示负数&lt;/li&gt;
-&lt;li&gt;取中间的数为0，如1000000表示0，比它小的是负数，比它大的是正数&lt;/li&gt;
-&lt;li&gt;补码&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;补码&quot;&gt;&lt;a href=&quot;#补码&quot; class=&quot;headerlink&quot; title=&quot;补码&quot;&gt;&lt;/a&gt;补码&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;考虑-1，想让-1-1-0。如何能做到？&quot;&gt;&lt;a href=&quot;#考虑-1，想让-1-1-0。如何能做到？&quot; class=&quot;headerlink&quot; title=&quot;考虑-1，想让-1 + 1 = 0。如何能做到？&quot;&gt;&lt;/a&gt;考虑-1，想让-1 + 1 = 0。如何能做到？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;0  —-&amp;gt;  00000000&lt;br&gt;1  —-&amp;gt;  00000001&lt;br&gt;11111111 + 00000001  —-&amp;gt;  100000000(第9位会被舍去)&lt;br&gt;-1       +        1  —-&amp;gt;  0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;因为-0-1-—-gt-1-，-所以-，-1&quot;&gt;&lt;a href=&quot;#因为-0-1-—-gt-1-，-所以-，-1&quot; class=&quot;headerlink&quot; title=&quot;因为 0 - 1 —-&amp;gt; -1 ， 所以 ，-1 =&quot;&gt;&lt;/a&gt;因为 0 - 1 —-&amp;gt; -1 ， 所以 ，-1 =&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;(1)00000000 - 00000001 —-&amp;gt; 11111111&lt;br&gt;11111111被当作纯二进制看待时，是255，被当做补码看待时，是-1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;同理，对于-a，其补码就是0-a，实际是2-n-a，n是这种类型的位数&quot;&gt;&lt;a href=&quot;#同理，对于-a，其补码就是0-a，实际是2-n-a，n是这种类型的位数&quot; class=&quot;headerlink&quot; title=&quot;同理，对于-a，其补码就是0-a，实际是2^n-a，n是这种类型的位数&quot;&gt;&lt;/a&gt;同理，对于-a，其补码就是0-a，实际是2^n-a，n是这种类型的位数&lt;/h2&gt;&lt;h2 id=&quot;在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”&quot;&gt;&lt;a href=&quot;#在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”&quot; class=&quot;headerlink&quot; title=&quot;在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”&quot;&gt;&lt;/a&gt;在计算机内部，补码的意义就是拿补码和原码可以加出一个溢出的“零”&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;h1 id=&quot;数的范围&quot;&gt;&lt;a href=&quot;#数的范围&quot; class=&quot;headerlink&quot; title=&quot;数的范围&quot;&gt;&lt;/a&gt;数的范围&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;对于一个字节（8位），可以表达的是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;00000000～11111111&lt;br&gt;其中&lt;br&gt;00000000 —-&amp;gt; 0&lt;br&gt;11111111～10000000 —-&amp;gt; -1～ -128&lt;br&gt;00000001～01111111 —-&amp;gt; 1～127&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;unsigned&quot;&gt;&lt;a href=&quot;#unsigned&quot; class=&quot;headerlink&quot; title=&quot;unsigned&quot;&gt;&lt;/a&gt;unsigned&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;表示该数不以补码的形式来表示负数，没有负数部分，只有0和正数部分&lt;br&gt;如果一个字面量常数想要表达是unsigned，可以在后面加u或U&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如255U&lt;br&gt;用l或L表示long(long)&lt;br&gt;unsigned的初衷并非扩展数能够表达的范围，而是为了做纯二进制运算，主要是为了移位&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;整数越界&quot;&gt;&lt;a href=&quot;#整数越界&quot; class=&quot;headerlink&quot; title=&quot;整数越界&quot;&gt;&lt;/a&gt;整数越界&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;整数是以纯二进制方式进行计算的，所以：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;11111111 + 1 —-&amp;gt; 100000000 —-&amp;gt; 0&lt;br&gt;01111111 + 1 —-&amp;gt; 10000000 —-&amp;gt; -128&lt;br&gt;10000000 - 1 —-&amp;gt; 01111111 —-&amp;gt; 127&lt;br&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%95%B4%E6%95%B0%E8%B6%8A%E7%95%8C.png&quot; alt=&quot;整数越界&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;8进制和16进制&quot;&gt;&lt;a href=&quot;#8进制和16进制&quot; class=&quot;headerlink&quot; title=&quot;8进制和16进制&quot;&gt;&lt;/a&gt;8进制和16进制&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一个以0开始的数字字面量是8进制&lt;br&gt;一个以0x开始的数字字面量是16进制&lt;br&gt;%o用于8进制，%x用于16进制&lt;br&gt;8进制和16进制只是如何把数字表达为字符串，与内部如何表达数字无关&lt;br&gt;16进制很适合表达二进制数据，因为4位二进制正好是一个16进制位&lt;br&gt;8进制的一位数字正好表达3位二进制&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因为早起计算机的字长是12的倍数，而非8&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;选择整数类型&quot;&gt;&lt;a href=&quot;#选择整数类型&quot; class=&quot;headerlink&quot; title=&quot;选择整数类型&quot;&gt;&lt;/a&gt;选择整数类型&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;为什么整数类型要有那么多种？&quot;&gt;&lt;a href=&quot;#为什么整数类型要有那么多种？&quot; class=&quot;headerlink&quot; title=&quot;为什么整数类型要有那么多种？&quot;&gt;&lt;/a&gt;为什么整数类型要有那么多种？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;为了准确表达内存，做底层程序的需要&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;没有特殊需要，就选择int&quot;&gt;&lt;a href=&quot;#没有特殊需要，就选择int&quot; class=&quot;headerlink&quot; title=&quot;没有特殊需要，就选择int&quot;&gt;&lt;/a&gt;没有特殊需要，就选择int&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;现在的CPU的字长普遍是32位或64位，一次内存读写就是一个int，一次计算也是一个int，选择更短的类型不会更快，甚至可能更慢&lt;br&gt;现代的编译器一般会设计内存对齐，所以更短的类型实际在内存中有可能也占据一个int的大小&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;unsigned与否只是输出的不同，内部计算是一样的&quot;&gt;&lt;a href=&quot;#unsigned与否只是输出的不同，内部计算是一样的&quot; class=&quot;headerlink&quot; title=&quot;unsigned与否只是输出的不同，内部计算是一样的&quot;&gt;&lt;/a&gt;unsigned与否只是输出的不同，内部计算是一样的&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;h1 id=&quot;浮点类型&quot;&gt;&lt;a href=&quot;#浮点类型&quot; class=&quot;headerlink&quot; title=&quot;浮点类型&quot;&gt;&lt;/a&gt;浮点类型&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B.png&quot; alt=&quot;浮点类型&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;浮点数的输入输出&quot;&gt;&lt;a href=&quot;#浮点数的输入输出&quot; class=&quot;headerlink&quot; title=&quot;浮点数的输入输出&quot;&gt;&lt;/a&gt;浮点数的输入输出&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%B5%AE%E7%82%B9%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA.png&quot; alt=&quot;浮点数的输入输出&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;%e 是用科学计数法输出&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;科学计数法&quot;&gt;&lt;a href=&quot;#科学计数法&quot; class=&quot;headerlink&quot; title=&quot;科学计数法&quot;&gt;&lt;/a&gt;科学计数法&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95.png&quot; alt=&quot;科学计数法&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;输出精度&quot;&gt;&lt;a href=&quot;#输出精度&quot; class=&quot;headerlink&quot; title=&quot;输出精度&quot;&gt;&lt;/a&gt;输出精度&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;在%和f之间加上.n可以指定输出小数点后几位，这样的输出是做四舍五入的&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;printf(“%.3f\n”,-0.0049);&lt;br&gt;printf(“%.30f\n”,-0.0049);&lt;br&gt;printf(“%.3f\n”,-0.00049);&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;浮点数的范围与精度&quot;&gt;&lt;a href=&quot;#浮点数的范围与精度&quot; class=&quot;headerlink&quot; title=&quot;浮点数的范围与精度&quot;&gt;&lt;/a&gt;浮点数的范围与精度&lt;/h1&gt;&lt;h2 id=&quot;超过范围的浮点数&quot;&gt;&lt;a href=&quot;#超过范围的浮点数&quot; class=&quot;headerlink&quot; title=&quot;超过范围的浮点数&quot;&gt;&lt;/a&gt;超过范围的浮点数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;printf输出inf表示超过范围的浮点数：±∞&lt;br&gt;printf输出nan表示不存在的浮点数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%f\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;12.0&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%f\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;-12.0&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%f\n&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;/&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;inf&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;-inf&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;nan&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;浮点数运算是没有精度的&quot;&gt;&lt;a href=&quot;#浮点数运算是没有精度的&quot; class=&quot;headerlink&quot; title=&quot;浮点数运算是没有精度的&quot;&gt;&lt;/a&gt;浮点数运算是没有精度的&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; a,b,c;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;a = &lt;span class=&quot;number&quot;&gt;1.345f&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;b = &lt;span class=&quot;number&quot;&gt;1.123f&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;c = a + b;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (c == &lt;span class=&quot;number&quot;&gt;2.468&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;相等\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;不相等。c=%.10f,或%f\n&quot;&lt;/span&gt;,c,c);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;不相等。c=&lt;span class=&quot;number&quot;&gt;2.4679999352&lt;/span&gt;,或&lt;span class=&quot;number&quot;&gt;2.468000&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;为什么数字后面要带f？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;带小数点的字面量是double而非float&lt;br&gt;float需要用f或F后缀来表明身份&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;浮点数的内部表达&quot;&gt;&lt;a href=&quot;#浮点数的内部表达&quot; class=&quot;headerlink&quot; title=&quot;浮点数的内部表达&quot;&gt;&lt;/a&gt;浮点数的内部表达&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;浮点数在计算时是由专门的硬件部件实现的&lt;br&gt;计算double和float所用的部件是一样的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;选择浮点类型&quot;&gt;&lt;a href=&quot;#选择浮点类型&quot; class=&quot;headerlink&quot; title=&quot;选择浮点类型&quot;&gt;&lt;/a&gt;选择浮点类型&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果没有特殊需要，只使用double&lt;br&gt;现代CPU能直接对double做硬件运算，性能不会比float差，在64位的机器上，数据存储的速度也不会比float慢&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;字符类型&quot;&gt;&lt;a href=&quot;#字符类型&quot; class=&quot;headerlink&quot; title=&quot;字符类型&quot;&gt;&lt;/a&gt;字符类型&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;char 是一种整数，也是一种特殊的类型：字符。&lt;/p&gt;
-&lt;p&gt;这是因为&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;用单引号表示的字符字面量：’a’ ， ‘1’&lt;/li&gt;
-&lt;li&gt;“也是一个字符&lt;/li&gt;
-&lt;li&gt;printf 和 scanf 里用 %c 来输入输出字符&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;字符的输入输出&quot;&gt;&lt;a href=&quot;#字符的输入输出&quot; class=&quot;headerlink&quot; title=&quot;字符的输入输出&quot;&gt;&lt;/a&gt;字符的输入输出&lt;/h2&gt;&lt;h3 id=&quot;如何输入’1’这个字符给char-c？&quot;&gt;&lt;a href=&quot;#如何输入’1’这个字符给char-c？&quot; class=&quot;headerlink&quot; title=&quot;如何输入’1’这个字符给char c？&quot;&gt;&lt;/a&gt;如何输入’1’这个字符给char c？&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;scanf(“%c”,&amp;amp;c); —&amp;gt; 1&lt;br&gt;scanf(“%d”,&amp;amp;i);c=i; —&amp;gt; 49&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; c;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%c&quot;&lt;/span&gt;,&amp;amp;c);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=%d\n&quot;&lt;/span&gt;,c);&lt;span class=&quot;comment&quot;&gt;//将c以整数形式输出&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=&#39;%c&#39;\n&quot;&lt;/span&gt;,c);&lt;span class=&quot;comment&quot;&gt;//将c以字符形式输出&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输入1&lt;br&gt;输出为&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;c=&lt;span class=&quot;number&quot;&gt;49&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;c=&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一个49的各自表述&quot;&gt;&lt;a href=&quot;#一个49的各自表述&quot; class=&quot;headerlink&quot; title=&quot;一个49的各自表述&quot;&gt;&lt;/a&gt;一个49的各自表述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;‘1’的ASCII编码是49，所以当c==49时，它代表’1’&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;49&lt;/span&gt;==&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;OK\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;OK&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;混合输入&quot;&gt;&lt;a href=&quot;#混合输入&quot; class=&quot;headerlink&quot; title=&quot;混合输入&quot;&gt;&lt;/a&gt;混合输入&lt;/h3&gt;&lt;h4 id=&quot;有何不同？&quot;&gt;&lt;a href=&quot;#有何不同？&quot; class=&quot;headerlink&quot; title=&quot;有何不同？&quot;&gt;&lt;/a&gt;有何不同？&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;scanf(“%d %c”,&amp;amp;i,&amp;amp;c);&lt;br&gt;scanf(“%d%c”,&amp;amp;i,&amp;amp;c);&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;字符计算&quot;&gt;&lt;a href=&quot;#字符计算&quot; class=&quot;headerlink&quot; title=&quot;字符计算&quot;&gt;&lt;/a&gt;字符计算&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; c = &lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    c++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;c=%c\n&quot;&lt;/span&gt;,c);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;一个字符加一个数字会得到ASCII码表中那个数之后的字符&lt;br&gt;两个字符的减，得到它们在表中的距离&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;大小写转换&quot;&gt;&lt;a href=&quot;#大小写转换&quot; class=&quot;headerlink&quot; title=&quot;大小写转换&quot;&gt;&lt;/a&gt;大小写转换&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;字母在ASCII表中是顺序排列的&lt;br&gt;大写字母和小写字母是分开排列的，并不在一起&lt;br&gt;‘a’-‘A’可以得到两段之间的距离，于是&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;a + ‘a’ - ‘A’ 可以把一个大写字母变成小写字母&lt;br&gt;a + ‘A’ - ‘a’ 可以把一个小写字母变成大写字母&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;逃逸字符&quot;&gt;&lt;a href=&quot;#逃逸字符&quot; class=&quot;headerlink&quot; title=&quot;逃逸字符&quot;&gt;&lt;/a&gt;逃逸字符&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;用来表达无法印出来的控制字符或者特殊字符，它由一个反斜杠“\”开头，后面跟上另一个字符，这两个字符合起来，组成了一个字符&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-18%20%E4%B8%8B%E5%8D%883.26.22.png&quot; alt=&quot;逃逸字符&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;制表位&quot;&gt;&lt;a href=&quot;#制表位&quot; class=&quot;headerlink&quot; title=&quot;制表位&quot;&gt;&lt;/a&gt;制表位&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;每行的固定位置&lt;br&gt;一个\t使得输出从下一个制表位开始&lt;br&gt;用\t才能使得上下两行对齐&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;回车换行&quot;&gt;&lt;a href=&quot;#回车换行&quot; class=&quot;headerlink&quot; title=&quot;回车换行&quot;&gt;&lt;/a&gt;回车换行&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;源自打字机动作&lt;br&gt;回车与换行是不同的动作&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;类型转换&quot;&gt;&lt;a href=&quot;#类型转换&quot; class=&quot;headerlink&quot; title=&quot;类型转换&quot;&gt;&lt;/a&gt;类型转换&lt;/h1&gt;&lt;h2 id=&quot;自动类型转换&quot;&gt;&lt;a href=&quot;#自动类型转换&quot; class=&quot;headerlink&quot; title=&quot;自动类型转换&quot;&gt;&lt;/a&gt;自动类型转换&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;当运算符的两边出现不一致的类型时，会自动转换成较大的类型&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;大的意思是能表达的数的范围更大&lt;/p&gt;
-&lt;p&gt;char &amp;lt; short &amp;lt; int &amp;lt; long &amp;lt; long long &lt;/p&gt;
-&lt;p&gt;int &amp;lt; float &amp;lt; double&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;对于printf，任何小于 int 的类型会被转换成 int ； float 会被转换成double&lt;/p&gt;
-&lt;p&gt;但是scanf不会，要输入short，需要%hd&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;强制类型转换&quot;&gt;&lt;a href=&quot;#强制类型转换&quot; class=&quot;headerlink&quot; title=&quot;强制类型转换&quot;&gt;&lt;/a&gt;强制类型转换&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;要把一个量强制转换成另一个类型（通常是较小的类型），需要  (类型)值&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;比如 (int)10.2 是把 10.2 转化成 int 型， (short)32 是把 32 转化成 short&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;注意安全性，小的变量不总能表示大的变量&lt;/p&gt;
-&lt;p&gt;强制类型转换的优先级高于四则运算&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;逻辑类型&quot;&gt;&lt;a href=&quot;#逻辑类型&quot; class=&quot;headerlink&quot; title=&quot;逻辑类型&quot;&gt;&lt;/a&gt;逻辑类型&lt;/h1&gt;&lt;h2 id=&quot;bool&quot;&gt;&lt;a href=&quot;#bool&quot; class=&quot;headerlink&quot; title=&quot;bool&quot;&gt;&lt;/a&gt;bool&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt; #include&lt;stdbool.h&gt;&lt;br&gt;之后就可以使用bool和true、false&lt;/stdbool.h&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;逻辑运算&quot;&gt;&lt;a href=&quot;#逻辑运算&quot; class=&quot;headerlink&quot; title=&quot;逻辑运算&quot;&gt;&lt;/a&gt;逻辑运算&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;逻辑运算是对逻辑量进行的运算，结果只有0或1&lt;br&gt;逻辑量是关系运算或逻辑运算的结果&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-19%20%E4%B8%8A%E5%8D%8812.12.00.png&quot; alt=&quot;逻辑类型&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;如何判断一个字符c是否是大写字母？&quot;&gt;&lt;a href=&quot;#如何判断一个字符c是否是大写字母？&quot; class=&quot;headerlink&quot; title=&quot;如何判断一个字符c是否是大写字母？&quot;&gt;&lt;/a&gt;如何判断一个字符c是否是大写字母？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;c &amp;gt;= ‘A’ &amp;amp;&amp;amp; c &amp;lt;= ‘Z’&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;优先级&quot;&gt;&lt;a href=&quot;#优先级&quot; class=&quot;headerlink&quot; title=&quot;优先级&quot;&gt;&lt;/a&gt;优先级&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;! &amp;gt; &amp;amp;&amp;amp; &amp;gt; ||&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;短路&quot;&gt;&lt;a href=&quot;#短路&quot; class=&quot;headerlink&quot; title=&quot;短路&quot;&gt;&lt;/a&gt;短路&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;逻辑运算是自左向右进行的，如果左边的结果已经能够决定运算了，就不会做右边的运算&lt;/p&gt;
-&lt;p&gt;对于&amp;amp;&amp;amp;，左边是false时就不做右边了&lt;br&gt;对于||，左边是true时就不做右边了&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;条件运算符&quot;&gt;&lt;a href=&quot;#条件运算符&quot; class=&quot;headerlink&quot; title=&quot;条件运算符&quot;&gt;&lt;/a&gt;条件运算符&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;如 count = (count &amp;gt; 20) ? count - 10 : count + 10;&lt;br&gt;条件 ？ 条件满足时的值 ： 条件不满足时的值&lt;/p&gt;
-&lt;p&gt;条件运算符的优先级高于赋值运算符，但是低于其他运算符&lt;/p&gt;
-&lt;p&gt;条件运算符是自右向左结合的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;逗号运算&quot;&gt;&lt;a href=&quot;#逗号运算&quot; class=&quot;headerlink&quot; title=&quot;逗号运算&quot;&gt;&lt;/a&gt;逗号运算&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;逗号用来连接两个表达式，并以其右边的表达式的值作为它的结果。&lt;br&gt;逗号的优先级是所有的运算符中最低的，所以它两边的表达式会先计算。&lt;br&gt;逗号的组合关系是自左向右，所以左边的表达式会先计算，而右边的表达式的值就留下来作为逗号运算的结果。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;在for中使用&quot;&gt;&lt;a href=&quot;#在for中使用&quot; class=&quot;headerlink&quot; title=&quot;在for中使用&quot;&gt;&lt;/a&gt;在for中使用&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;for(i=o,j=10;i &amp;lt; j ;i++,j–)&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;C语言的类型&quot;&gt;&lt;a href=&quot;#C语言的类型&quot; class=&quot;headerlink&quot; title=&quot;C语言的类型&quot;&gt;&lt;/a&gt;C语言的类型&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;整数&quot;&gt;&lt;a href=&quot;#整数&quot; class=&quot;headerlink&quot; title=&quot;整数&quot;&gt;&lt;/a&gt;整数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;char、short、int、long、long long&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;浮点数&quot;&gt;&lt;a href=&quot;#浮点数&quot; class=&quot;headerlink&quot; title=&quot;浮点数&quot;&gt;&lt;/a&gt;浮点数&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;float、double、long double&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;逻辑&quot;&gt;&lt;a href=&quot;#逻辑&quot; class=&quot;headerlink&quot; title=&quot;逻辑&quot;&gt;&lt;/a&gt;逻辑&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;bool&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;指针&quot;&gt;&lt;a href=&quot;#指针&quot; class=&quot;headerlink&quot; title=&quot;指针&quot;&gt;&lt;/a&gt;指针&lt;/h2&gt;&lt;h2 id=&quot;自定义类型&quot;&gt;&lt;a href=&quot;#自定义类型&quot; class=&quot;headerlink&quot; title=&quot;自定义类型&quot;&gt;&lt;/a&gt;自定义类型&lt;/h2&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;类型有何不同&quot;&gt;&lt;a href=&quot;#类型有何不同&quot; class=&quot;headerlink&quot; title=&quot;类型有何不同&quot;&gt;&lt;/a&gt;类型有何不同&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;类型名称：int、long、double&lt;br&gt;输入输出时的格式化：%d、%ld、%lf&lt;br&gt;所表达的数的范围：char &amp;lt; short &amp;lt; int &amp;lt; float &amp;lt; double&lt;br&gt;内存中所占据的大小：1个字节到16个字节&lt;br&gt;内存中的表达形式：二进制数（补码）、编码&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;工具sizeof&quot;&gt;&lt;a href=&quot;#工具sizeof&quot; class=&quot;headerlink&quot; title=&quot;工具sizeof&quot;&gt;&lt;/a&gt;工具sizeof&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;是一个运算符，给出某个类型或变量在内存中所占的字节数&lt;br&gt;sizeof(int)算出类型的字节&lt;br&gt;sizeof(i)算出变量的字节&lt;br&gt;是静态运算符，它的结果在编译时刻就决定了&lt;br&gt;不要在sizeof的括号里做运算，这些运算是不会运行的。如sizeof(a++),括号里a++是不会运行的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="C语言" scheme="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tic-tac-toe游戏（二维数组）</title>
-    <link href="http://yoursite.com/2016/08/12/C%20/answers/tic-tac-toe/"/>
-    <id>http://yoursite.com/2016/08/12/C /answers/tic-tac-toe/</id>
-    <published>2016-08-12T00:57:23.000Z</published>
-    <updated>2016-08-13T02:03:33.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;读入一个3X3的矩阵，矩阵中的数字1表示该位置上有一个X，为0表示为O。程序判断这个矩阵中是否有获胜的一方，输出表示获胜一方的字符X或O，或输出无人获胜。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%BA%95%E5%AD%97%E6%A3%8B.jpg&quot; alt=&quot;井字棋&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;一个3X3的矩阵。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;获胜一方的字符X或O，或输出无人获胜。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;可以学到如何用二维数组对行、列、对角线做遍历&lt;/p&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;32&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;33&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;34&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;35&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;36&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;37&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;38&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;39&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;40&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;41&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;42&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;43&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;44&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;45&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;46&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;47&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;48&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;49&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;50&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;51&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;52&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;53&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;54&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;55&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;56&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;57&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;58&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;59&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;60&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;61&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;62&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;63&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;64&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;65&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;66&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;67&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;68&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;69&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;70&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;71&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;72&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;73&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;74&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;75&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;76&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;77&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;78&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;79&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;80&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;81&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;82&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;83&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;84&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;85&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;86&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;87&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;88&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;89&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;90&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;91&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;92&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;93&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;94&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;95&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;96&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;97&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;98&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;99&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;100&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;101&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;102&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;103&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;104&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;105&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;106&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;107&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;108&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;109&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;110&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;111&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;112&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;113&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;114&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;115&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;116&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;117&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;118&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;119&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;120&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;121&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;122&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;123&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;124&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; size = &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; board[size][size];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i,j;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; numofX;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; numofO;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; result = &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//-1:没人赢 1:X赢 0:O赢&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//读入矩阵&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;size;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;size;j++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;board[i][j]);&lt;span class=&quot;comment&quot;&gt;//数组名[下标]就是表示一个变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//检查行&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;size &amp;amp;&amp;amp; result == &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        numofO = numofX = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;size;j++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(board[i][j] == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                numofX ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                numofO ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofO == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            result = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (numofX == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            result = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//检查列&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;size &amp;amp;&amp;amp; result == &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        numofO = numofX = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;size;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(board[i][j] == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                numofX ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                numofO ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofO == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            result = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofX == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            result = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//检查正对角线&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    numofO = numofX = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;size;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(board[i][i] == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            numofX ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            numofO ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofO == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        result = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofX == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        result = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//检查反对角线&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    numofO = numofX = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;size;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(board[i][size-i&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;]==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            numofX ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            numofO ++;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofO == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        result = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(numofX == size)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        result = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//输出结果&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(result == &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;没有人获胜\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(result == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;X获胜\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(result == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;O获胜\n&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
-&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;读入一个3X3的矩阵，矩阵中的数字1表示该位置上有一个X，为0表示为O。程序判断这个矩阵中是否有获胜的一方，输出表示获胜一方的字符X或O，或输出无人获胜。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%BA%95%E5%AD%97%E6%A3%8B.jpg&quot; alt=&quot;井字棋&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;一个3X3的矩阵。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;获胜一方的字符X或O，或输出无人获胜。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
