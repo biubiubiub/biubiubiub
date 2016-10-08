@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-06T09:41:22.000Z</updated>
+  <updated>2016-10-07T10:21:33.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,277 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java基础知识——封装</title>
+    <link href="http://yoursite.com/2016/10/07/java/basics/Encapsulation/"/>
+    <id>http://yoursite.com/2016/10/07/java/basics/Encapsulation/</id>
+    <published>2016-10-07T07:54:47.000Z</published>
+    <updated>2016-10-07T10:21:33.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;面向对象的三大特性&quot;&gt;&lt;a href=&quot;#面向对象的三大特性&quot; class=&quot;headerlink&quot; title=&quot;面向对象的三大特性&quot;&gt;&lt;/a&gt;面向对象的三大特性&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;封装、继承、多态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将该类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;好处&quot;&gt;&lt;a href=&quot;#好处&quot; class=&quot;headerlink&quot; title=&quot;好处&quot;&gt;&lt;/a&gt;好处&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;只能通过规定的方法访问数据&lt;/li&gt;
+&lt;li&gt;隐藏类的实例细节，方便修改和实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;封装的实现步骤&quot;&gt;&lt;a href=&quot;#封装的实现步骤&quot; class=&quot;headerlink&quot; title=&quot;封装的实现步骤&quot;&gt;&lt;/a&gt;封装的实现步骤&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;修改属性的可见性，设为private&lt;/li&gt;
+&lt;li&gt;创建getter／setter方法，用于属性的读写&lt;/li&gt;
+&lt;li&gt;在getter／setter方法中加入属性控制语句，对属性值的合法性进行判断&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;java中的包&quot;&gt;&lt;a href=&quot;#java中的包&quot; class=&quot;headerlink&quot; title=&quot;java中的包&quot;&gt;&lt;/a&gt;java中的包&lt;/h1&gt;&lt;h2 id=&quot;包的作用&quot;&gt;&lt;a href=&quot;#包的作用&quot; class=&quot;headerlink&quot; title=&quot;包的作用&quot;&gt;&lt;/a&gt;包的作用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;管理java文件&lt;/li&gt;
+&lt;li&gt;解决同名文件冲突&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;定义包：-package-包名&quot;&gt;&lt;a href=&quot;#定义包：-package-包名&quot; class=&quot;headerlink&quot; title=&quot;定义包： package 包名&quot;&gt;&lt;/a&gt;定义包： package 包名&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;必须放在java源程序的第一行&lt;/li&gt;
+&lt;li&gt;包名间可以使用”.”号隔开，如：com.imooc.MyClass&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;系统中的包&quot;&gt;&lt;a href=&quot;#系统中的包&quot; class=&quot;headerlink&quot; title=&quot;系统中的包&quot;&gt;&lt;/a&gt;系统中的包&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;java.(功能).(类)&lt;/li&gt;
+&lt;li&gt;java.lang.(类) 包含java语言基础的类&lt;/li&gt;
+&lt;li&gt;java.util.(类) 包含java语言中各种工具类&lt;/li&gt;
+&lt;li&gt;java.io.(类) 包含输入、输出相关功能的类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;包的使用&quot;&gt;&lt;a href=&quot;#包的使用&quot; class=&quot;headerlink&quot; title=&quot;包的使用&quot;&gt;&lt;/a&gt;包的使用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;可以通过import关键字，在某个文件中使用其他文件中的类。如 import com.imooc.music.MyClass&lt;/li&gt;
+&lt;li&gt;java中，包的命名规范是全小写字母拼写&lt;/li&gt;
+&lt;li&gt;使用的时候不但可以加载某个包下所有的文件，如 com.imooc.&lt;em&gt; ，也可以加载某个具体子包下的所有文件，如 com.imooc.music.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;java中的访问修饰符&quot;&gt;&lt;a href=&quot;#java中的访问修饰符&quot; class=&quot;headerlink&quot; title=&quot;java中的访问修饰符&quot;&gt;&lt;/a&gt;java中的访问修饰符&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Telephone&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; screen = &lt;span class=&quot;number&quot;&gt;5.0f&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//屏幕尺寸&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; ifloat cpu = &lt;span class=&quot;number&quot;&gt;1.4f&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//Cpu工作频率&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; ifloat men = &lt;span class=&quot;number&quot;&gt;2.0f&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//内存容量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getScreen&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; screen;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;setScreen&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; new Screen)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    screen = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Screen;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//其他getter/setter方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;访问修饰符可以修饰属性和方法的访问范围&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;可被访问的范围：&quot;&gt;&lt;a href=&quot;#可被访问的范围：&quot; class=&quot;headerlink&quot; title=&quot;可被访问的范围：&quot;&gt;&lt;/a&gt;可被访问的范围：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;private：本类&lt;br&gt;默认：本类、同包&lt;br&gt;protected：本类、同包、子类&lt;br&gt;public：本类、同包、子类、其他&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;java中的this关键字&quot;&gt;&lt;a href=&quot;#java中的this关键字&quot; class=&quot;headerlink&quot; title=&quot;java中的this关键字&quot;&gt;&lt;/a&gt;java中的this关键字&lt;/h1&gt;&lt;h2 id=&quot;this关键字代表当前对象&quot;&gt;&lt;a href=&quot;#this关键字代表当前对象&quot; class=&quot;headerlink&quot; title=&quot;this关键字代表当前对象&quot;&gt;&lt;/a&gt;this关键字代表当前对象&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;this.属性 表示操作当前对象的属性&lt;br&gt;this.方法 表示调用当前对象的方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;封装对象的属性的时候，经常会使用this关键字&quot;&gt;&lt;a href=&quot;#封装对象的属性的时候，经常会使用this关键字&quot; class=&quot;headerlink&quot; title=&quot;封装对象的属性的时候，经常会使用this关键字&quot;&gt;&lt;/a&gt;封装对象的属性的时候，经常会使用this关键字&lt;/h2&gt;&lt;h1 id=&quot;java中的内部类&quot;&gt;&lt;a href=&quot;#java中的内部类&quot; class=&quot;headerlink&quot; title=&quot;java中的内部类&quot;&gt;&lt;/a&gt;java中的内部类&lt;/h1&gt;&lt;h2 id=&quot;什么是java中的内部类？&quot;&gt;&lt;a href=&quot;#什么是java中的内部类？&quot; class=&quot;headerlink&quot; title=&quot;什么是java中的内部类？&quot;&gt;&lt;/a&gt;什么是java中的内部类？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;内部类就是定义在另外一个类里面的类。与之对应，包含内部类的类称为外部类。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;为什么要将一个类定义在另一个类里面？&quot;&gt;&lt;a href=&quot;#为什么要将一个类定义在另一个类里面？&quot; class=&quot;headerlink&quot; title=&quot;为什么要将一个类定义在另一个类里面？&quot;&gt;&lt;/a&gt;为什么要将一个类定义在另一个类里面？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;内部类的主要作用如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类&lt;/li&gt;
+&lt;li&gt;内部类的方法可以直接访问外部类的所有数据，包括私有的数据&lt;/li&gt;
+&lt;li&gt;内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;内部类有几种？&quot;&gt;&lt;a href=&quot;#内部类有几种？&quot; class=&quot;headerlink&quot; title=&quot;内部类有几种？&quot;&gt;&lt;/a&gt;内部类有几种？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;成员内部类、静态内部类、方法内部类、匿名内部类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//外部类iMooc2_5&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;iMooc2_5&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//内部类Inner，类Inner在类iMooc2_5的内部&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Inner&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//内部类的方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Welcome!&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建外部类对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        iMooc2_5 hello = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; iMooc2_5();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建内部类对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Inner i = hello.new Inner();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//调用内部类对象的方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        i.show();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;java中的成员内部类&quot;&gt;&lt;a href=&quot;#java中的成员内部类&quot; class=&quot;headerlink&quot; title=&quot;java中的成员内部类&quot;&gt;&lt;/a&gt;java中的成员内部类&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;内部类中最常见的就是成员内部类，也称为普通内部类。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;iMooc2_6&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;99&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//外部类的私有属性&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//内部类Inner&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Inner&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//内部类的成员属性&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问外部类中的a:&quot;&lt;/span&gt; + a);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问内部类中的b:&quot;&lt;/span&gt; + b);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//测试成员内部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        iMooc2_6 o = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; iMooc2_6();&lt;span class=&quot;comment&quot;&gt;//创建外部类对象，对象名为o&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        Inner i = o.new Inner();&lt;span class=&quot;comment&quot;&gt;//使用外部类对象创建内部类对象，对象名为i&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        i.test();&lt;span class=&quot;comment&quot;&gt;//调用内部类对象的test方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;成员内部类的使用方法&quot;&gt;&lt;a href=&quot;#成员内部类的使用方法&quot; class=&quot;headerlink&quot; title=&quot;成员内部类的使用方法&quot;&gt;&lt;/a&gt;成员内部类的使用方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Inner类定义在Outer类的内部，相当于Outer类的一个成员变量的位置，Inner类可以使用任意访问控制符，如 public、protected、private等&lt;/li&gt;
+&lt;li&gt;Inner类中定义的test()方法可以直接访问Outer类中的数据，而不受访问控制符的影响，如直接访问Outer类中的私有属性a&lt;/li&gt;
+&lt;li&gt;定义了成员内部类后，必须使用外部类对象来创建内部类对象，而不能直接去new一个内部类对象，即：内部类 对象名 = 外部类对象.new 内部类();&lt;/li&gt;
+&lt;li&gt;编译上面的程序后，会发现产生了两个 .class 文件，其中一个是内部类的.class文件，即成员内部类的.class文件总是这样：外部类名$内部类名.class&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;外部类是不能直接使用内部类的成员和方法的，可以先创建内部类的对象，然后通过内部类的对象来访问其成员变量和方法。&lt;/li&gt;
+&lt;li&gt;如果外部类和内部类具有相同的成员变量或方法，内部类默认访问自己的成员变量或方法，如果要访问外部类的成员变量，可以使用this关键字&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;一个例子&quot;&gt;&lt;a href=&quot;#一个例子&quot; class=&quot;headerlink&quot; title=&quot;一个例子&quot;&gt;&lt;/a&gt;一个例子&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//外部类Outer&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Outer&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//外部类中的成员属性b&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//内部类Inner&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Inner&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//内部类的成员属性b&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问外部类中的b：&quot;&lt;/span&gt; + Outer.&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.b);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问内部类中的b：&quot;&lt;/span&gt; + b);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;java中的静态内部类&quot;&gt;&lt;a href=&quot;#java中的静态内部类&quot; class=&quot;headerlink&quot; title=&quot;java中的静态内部类&quot;&gt;&lt;/a&gt;java中的静态内部类&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;静态内部类是static修饰的内部类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;静态内部类的特点&quot;&gt;&lt;a href=&quot;#静态内部类的特点&quot; class=&quot;headerlink&quot; title=&quot;静态内部类的特点&quot;&gt;&lt;/a&gt;静态内部类的特点&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;静态内部类不能直接访问外部类的非静态成员，但可以通过 new 外部类().成员 的方式访问&lt;/li&gt;
+&lt;li&gt;如果外部类的静态成员与内部类的成员名称相同，可通过“类名.静态成员”访问外部类的静态成员；如果外部类的静态成员与内部类的成员名称不相同，则可通过“成员名”直接调用外部类的静态成员&lt;/li&gt;
+&lt;li&gt;创建静态内部类的对象时，不需要外部类的对象，可以直接创建 内部类 对象名 = new 内部类();&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//外部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;iMooc2_7&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;99&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//外部类的私有变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//外部类的静态变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//静态内部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;SInner&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//内部类的变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问外部类中的b：&quot;&lt;/span&gt; + iMooc2_7.b);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问内部类中的b：&quot;&lt;/span&gt; + b);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//测试静态内部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        SInner si = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; SInner();&lt;span class=&quot;comment&quot;&gt;//直接创建内部类的对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        si.test();&lt;span class=&quot;comment&quot;&gt;//调用test方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;java中的方法内部类&quot;&gt;&lt;a href=&quot;#java中的方法内部类&quot; class=&quot;headerlink&quot; title=&quot;java中的方法内部类&quot;&gt;&lt;/a&gt;java中的方法内部类&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;方法内部类就是内部类定义在外部类的方法中，方法内部类只在该方法的内部可见，即只在该方法内可以使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//外部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;iMooc2_8&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//外部类中的方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//常量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;13&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//方法内部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MInner&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; c = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//内部类中的变量&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问外部类的方法中的常量a：&quot;&lt;/span&gt; + a);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;访问内部类中的变量c：&quot;&lt;/span&gt; + c);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        MInner mi = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; MInner();&lt;span class=&quot;comment&quot;&gt;//创建方法内部类的对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        mi.print();&lt;span class=&quot;comment&quot;&gt;//调用内部类的方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//测试方法内部类&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        iMooc2_8 mo = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; iMooc2_8();&lt;span class=&quot;comment&quot;&gt;//创建外部类的对象&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        mo.show();&lt;span class=&quot;comment&quot;&gt;//调用外部类的方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;PS-1&quot;&gt;&lt;a href=&quot;#PS-1&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;由于方法内部类不能在外部类的方法以外的地方使用，因此方法内部类不能使用访问控制符和static修饰符。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;面向对象的三大特性&quot;&gt;&lt;a href=&quot;#面向对象的三大特性&quot; class=&quot;headerlink&quot; title=&quot;面向对象的三大特性&quot;&gt;&lt;/a&gt;面向对象的三大特性&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;封装、继承、多态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将该类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;好处&quot;&gt;&lt;a href=&quot;#好处&quot; class=&quot;headerlink&quot; title=&quot;好处&quot;&gt;&lt;/a&gt;好处&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;只能通过规定的方法访问数据&lt;/li&gt;
+&lt;li&gt;隐藏类的实例细节，方便修改和实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;封装的实现步骤&quot;&gt;&lt;a href=&quot;#封装的实现步骤&quot; class=&quot;headerlink&quot; title=&quot;封装的实现步骤&quot;&gt;&lt;/a&gt;封装的实现步骤&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;修改属性的可见性，设为private&lt;/li&gt;
+&lt;li&gt;创建getter／setter方法，用于属性的读写&lt;/li&gt;
+&lt;li&gt;在getter／setter方法中加入属性控制语句，对属性值的合法性进行判断&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&quot;java中的包&quot;&gt;&lt;a href=&quot;#java中的包&quot; class=&quot;headerlink&quot; title=&quot;java中的包&quot;&gt;&lt;/a&gt;java中的包&lt;/h1&gt;&lt;h2 id=&quot;包的作用&quot;&gt;&lt;a href=&quot;#包的作用&quot; class=&quot;headerlink&quot; title=&quot;包的作用&quot;&gt;&lt;/a&gt;包的作用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;管理java文件&lt;/li&gt;
+&lt;li&gt;解决同名文件冲突&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;定义包：-package-包名&quot;&gt;&lt;a href=&quot;#定义包：-package-包名&quot; class=&quot;headerlink&quot; title=&quot;定义包： package 包名&quot;&gt;&lt;/a&gt;定义包： package 包名&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;必须放在java源程序的第一行&lt;/li&gt;
+&lt;li&gt;包名间可以使用”.”号隔开，如：com.imooc.MyClass&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;系统中的包&quot;&gt;&lt;a href=&quot;#系统中的包&quot; class=&quot;headerlink&quot; title=&quot;系统中的包&quot;&gt;&lt;/a&gt;系统中的包&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;java.(功能).(类)&lt;/li&gt;
+&lt;li&gt;java.lang.(类) 包含java语言基础的类&lt;/li&gt;
+&lt;li&gt;java.util.(类) 包含java语言中各种工具类&lt;/li&gt;
+&lt;li&gt;java.io.(类) 包含输入、输出相关功能的类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;包的使用&quot;&gt;&lt;a href=&quot;#包的使用&quot; class=&quot;headerlink&quot; title=&quot;包的使用&quot;&gt;&lt;/a&gt;包的使用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;可以通过import关键字，在某个文件中使用其他文件中的类。如 import com.imooc.music.MyClass&lt;/li&gt;
+&lt;li&gt;java中，包的命名规范是全小写字母拼写&lt;/li&gt;
+&lt;li&gt;使用的时候不但可以加载某个包下所有的文件，如 com.imooc.&lt;em&gt; ，也可以加载某个具体子包下的所有文件，如 com.imooc.music.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="封装" scheme="http://yoursite.com/tags/%E5%B0%81%E8%A3%85/"/>
+    
+      <category term="包" scheme="http://yoursite.com/tags/%E5%8C%85/"/>
+    
+      <category term="类" scheme="http://yoursite.com/tags/%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法——排序</title>
+    <link href="http://yoursite.com/2016/10/07/C%20/answers/sort/"/>
+    <id>http://yoursite.com/2016/10/07/C /answers/sort/</id>
+    <published>2016-10-07T02:14:23.000Z</published>
+    <updated>2016-10-07T02:36:32.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;输入n个0～1000之间的整数，将它们从大到小排序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Input&quot;&gt;&lt;a href=&quot;#Input&quot; class=&quot;headerlink&quot; title=&quot;Input&quot;&gt;&lt;/a&gt;Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;数的个数和所有的数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Output&quot;&gt;&lt;a href=&quot;#Output&quot; class=&quot;headerlink&quot; title=&quot;Output&quot;&gt;&lt;/a&gt;Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;从大到小排列的整数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Input&quot;&gt;&lt;a href=&quot;#Sample-Input&quot; class=&quot;headerlink&quot; title=&quot;Sample Input&quot;&gt;&lt;/a&gt;Sample Input&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;10&lt;br&gt;8 100 50 22 15 6 1 1000 999 0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Sample-Output&quot;&gt;&lt;a href=&quot;#Sample-Output&quot; class=&quot;headerlink&quot; title=&quot;Sample Output&quot;&gt;&lt;/a&gt;Sample Output&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1000 999&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;最快最简单的排序——桶排序&quot;&gt;&lt;a href=&quot;#最快最简单的排序——桶排序&quot; class=&quot;headerlink&quot; title=&quot;最快最简单的排序——桶排序&quot;&gt;&lt;/a&gt;最快最简单的排序——桶排序&lt;/h1&gt;&lt;h2 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h2&gt;&lt;p&gt;使用桶排序，如果需要对数据范围在0～1000的整数进行排序，我们需要1001个桶，来表示0～1000之间每一个数出现的次数。&lt;br&gt;另外，此处的“桶”的作用就是标记。&lt;br&gt;初始化一维数组，每一个桶就是数组中的一个元素加1&lt;/p&gt;
+&lt;h2 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt; &lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; num,k,i,j;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;num);&lt;span class=&quot;comment&quot;&gt;//输入数的个数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[&lt;span class=&quot;number&quot;&gt;1001&lt;/span&gt;];&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;&lt;span class=&quot;number&quot;&gt;1001&lt;/span&gt;;i++)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        a[i]=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;num;i++)&lt;span class=&quot;comment&quot;&gt;//循环读入n个数，进行桶排序&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;,&amp;amp;k);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        a[k]++;&lt;span class=&quot;comment&quot;&gt;//进行计数&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(i=&lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;;i&amp;gt;=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i--)&lt;span class=&quot;comment&quot;&gt;//从1000由大到小进行检索&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(j=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;j&amp;lt;=a[i];j++)&lt;span class=&quot;comment&quot;&gt;//如果a[i]&amp;gt;=1，则输出这个i的值&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d &quot;&lt;/span&gt;,i);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;邻居好说话——冒泡排序&quot;&gt;&lt;a href=&quot;#邻居好说话——冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;邻居好说话——冒泡排序&quot;&gt;&lt;/a&gt;邻居好说话——冒泡排序&lt;/h1&gt;&lt;h2 id=&quot;题解-1&quot;&gt;&lt;a href=&quot;#题解-1&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h2&gt;&lt;p&gt;如果有n个数进行排序，只需将n-1个数归位，也就是说要进行n-1趟操作。而“每一趟”都需要从第1位开始进行相邻两个数的比较，将较小的一个数放在后面，比较完毕后向后挪一位继续比较下面两个相邻数的大小，重复此步骤，直到最后一个尚未归位的数，已经归位的数则无需再进行比较&lt;/p&gt;
+&lt;h2 id=&quot;代码-1&quot;&gt;&lt;a href=&quot;#代码-1&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlin
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序" scheme="http://yoursite.com/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础知识——静态变量、静态方法、静态初始化块</title>
@@ -518,9 +789,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
       <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -705,9 +976,9 @@
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="库" scheme="http://yoursite.com/tags/%E5%BA%93/"/>
     
@@ -769,9 +1040,9 @@
       <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
       <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
       <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
@@ -1559,236 +1830,6 @@
       <category term="椭圆机" scheme="http://yoursite.com/tags/%E6%A4%AD%E5%9C%86%E6%9C%BA/"/>
     
       <category term="登山机" scheme="http://yoursite.com/tags/%E7%99%BB%E5%B1%B1%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身知识——腹部训练</title>
-    <link href="http://yoursite.com/2016/08/16/body-building/stomach-muscles/"/>
-    <id>http://yoursite.com/2016/08/16/body-building/stomach-muscles/</id>
-    <published>2016-08-16T14:50:04.000Z</published>
-    <updated>2016-08-17T08:51:49.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;a href=&quot;#腹直肌上部最优：悬腿卷腹&quot; class=&quot;headerlink&quot; title=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/a&gt;腹直肌上部最优：悬腿卷腹&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E4%B8%8A%E9%83%A8%E6%9C%80%E4%BC%98%EF%BC%9A%E6%82%AC%E8%85%BF%E5%8D%B7%E8%85%B9.gif&quot; alt=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;仰卧平躺于地面，膝盖弯曲，双手置于头部或耳朵两边；&lt;/li&gt;
-&lt;li&gt;腹肌发力，拉动双腿和上半身向内收缩去贴腹部；&lt;/li&gt;
-&lt;li&gt;缓慢还原，回到初始位置。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;手部不要发力，以免拉伤颈部肌肉，除了置于头部两侧，双手也可以置于体侧、交叉至胸前，或者上举；&lt;/li&gt;
-&lt;li&gt;动作过程中，采用屈膝和双脚不固定的姿势，对腹肌的训练效果更好。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;腹直肌下部最优：垂悬举腿&quot;&gt;&lt;a href=&quot;#腹直肌下部最优：垂悬举腿&quot; class=&quot;headerlink&quot; title=&quot;腹直肌下部最优：垂悬举腿&quot;&gt;&lt;/a&gt;腹直肌下部最优：垂悬举腿&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E4%B8%8B%E9%83%A8%E6%9C%80%E4%BC%98%EF%BC%9A%E5%9E%82%E6%82%AC%E4%B8%BE%E8%85%BF.gif&quot; alt=&quot;腹直肌下部最优：垂悬举腿&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-1&quot;&gt;&lt;a href=&quot;#动作描述-1&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;掌心向前正握杠柄，身体自然垂直，两脚并拢，脚尖朝地；&lt;/li&gt;
-&lt;li&gt;收缩腹肌，带动双脚向上抬起至大腿与地面平行，感受腹肌的持续紧张，保持2-3秒；&lt;/li&gt;
-&lt;li&gt;控制腹肌发力，缓慢还原，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点-1&quot;&gt;&lt;a href=&quot;#动作要点-1&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持躯干稳定，不要用惯性摇晃着举腿；&lt;/li&gt;
-&lt;li&gt;动作过程感受腹肌下部的发力，最高点抬至大腿与地面平行即可；&lt;/li&gt;
-&lt;li&gt;初学者可以采用屈膝姿势，对腹肌下部刺激较小，较容易完成。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;腹直肌下部替补动作：反向卷腹&quot;&gt;&lt;a href=&quot;#腹直肌下部替补动作：反向卷腹&quot; class=&quot;headerlink&quot; title=&quot;腹直肌下部替补动作：反向卷腹&quot;&gt;&lt;/a&gt;腹直肌下部替补动作：反向卷腹&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%8F%8D%E5%90%91%E5%8D%B7%E8%85%B9.gif&quot; alt=&quot;反向卷腹&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-2&quot;&gt;&lt;a href=&quot;#动作描述-2&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;仰卧开始，可以直腿，也可以微曲腿，双手放在脑后，力量不足时可以选择双手抓住健身凳或床沿支撑；&lt;/li&gt;
-&lt;li&gt;使用腹肌的力量卷曲身体，慢慢将大腿拉近身体，下腰背部微微离开地面，上背部尽量保持在地面，力量不足时可以微微离开；&lt;/li&gt;
-&lt;li&gt;缓慢放下，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点-2&quot;&gt;&lt;a href=&quot;#动作要点-2&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;重点不是大腿的运动，而是腹肌带动躯干的卷曲；&lt;/li&gt;
-&lt;li&gt;控制腹肌发力，缓慢下放，对腹肌刺激更强。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;腹直肌整体最优：空中单车&quot;&gt;&lt;a href=&quot;#腹直肌整体最优：空中单车&quot; class=&quot;headerlink&quot; title=&quot;腹直肌整体最优：空中单车&quot;&gt;&lt;/a&gt;腹直肌整体最优：空中单车&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E6%95%B4%E4%BD%93%E6%9C%80%E4%BC%98%EF%BC%9A%E7%A9%BA%E4%B8%AD%E5%8D%95%E8%BD%A6.gif&quot; alt=&quot;腹直肌整体最优：空中单车&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-3&quot;&gt;&lt;a href=&quot;#动作描述-3&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;仰卧平躺，双手轻扶头部或至于耳朵两侧，双脚屈膝悬空；&lt;/li&gt;
-&lt;li&gt;腹肌发力，带动上背部卷起，同时双脚交替在空中做蹬自行车动作，尽量用肘部去碰另一侧膝盖；&lt;/li&gt;
-&lt;li&gt;感受腹肌发力，两脚交替进行。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点-3&quot;&gt;&lt;a href=&quot;#动作要点-3&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程着重感受腹部的卷缩；&lt;/li&gt;
-&lt;li&gt;手部不要发力，以免拉伸颈部肌肉。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;a href=&quot;#腹直肌上部最优：悬腿卷腹&quot; class=&quot;headerlink&quot; title=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/a&gt;腹直肌上部最优：悬腿卷腹&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E8%85%B9%E7%9B%B4%E8%82%8C%E4%B8%8A%E9%83%A8%E6%9C%80%E4%BC%98%EF%BC%9A%E6%82%AC%E8%85%BF%E5%8D%B7%E8%85%B9.gif&quot; alt=&quot;腹直肌上部最优：悬腿卷腹&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;仰卧平躺于地面，膝盖弯曲，双手置于头部或耳朵两边；&lt;/li&gt;
-&lt;li&gt;腹肌发力，拉动双腿和上半身向内收缩去贴腹部；&lt;/li&gt;
-&lt;li&gt;缓慢还原，回到初始位置。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;手部不要发力，以免拉伤颈部肌肉，除了置于头部两侧，双手也可以置于体侧、交叉至胸前，或者上举；&lt;/li&gt;
-&lt;li&gt;动作过程中，采用屈膝和双脚不固定的姿势，对腹肌的训练效果更好。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="健身" scheme="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="肌肉" scheme="http://yoursite.com/tags/%E8%82%8C%E8%82%89/"/>
-    
-      <category term="腹部" scheme="http://yoursite.com/tags/%E8%85%B9%E9%83%A8/"/>
-    
-      <category term="腹直肌" scheme="http://yoursite.com/tags/%E8%85%B9%E7%9B%B4%E8%82%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身知识——手臂训练</title>
-    <link href="http://yoursite.com/2016/08/16/body-building/arm-muscles/"/>
-    <id>http://yoursite.com/2016/08/16/body-building/arm-muscles/</id>
-    <published>2016-08-16T09:06:04.000Z</published>
-    <updated>2016-08-17T09:04:58.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;肱二头肌&quot;&gt;&lt;a href=&quot;#肱二头肌&quot; class=&quot;headerlink&quot; title=&quot;肱二头肌&quot;&gt;&lt;/a&gt;肱二头肌&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;肱二头肌分为长头和短头：长头负责手臂内旋和外展，短头则负责前倾和内收。&lt;br&gt;长头一般决定了你的手臂从外侧看，是否强壮&lt;br&gt;短头则决定了，你的肱二头肌从内侧看，是否霸道。&lt;br&gt;两个头一起决定了你的肱二头肌整体是否饱满、有力度。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;不同的弯举动作&quot;&gt;&lt;a href=&quot;#不同的弯举动作&quot; class=&quot;headerlink&quot; title=&quot;不同的弯举动作&quot;&gt;&lt;/a&gt;不同的弯举动作&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;弯举动作是训练肱二头肌的最佳方式。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;a href=&quot;#宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot; class=&quot;headerlink&quot; title=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;/a&gt;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%BC%AF%E4%B8%BE%E5%8A%A8%E4%BD%9C.jpg&quot; alt=&quot;不同的弯举动作&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;不同手型的弯举特点&quot;&gt;&lt;a href=&quot;#不同手型的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手型的弯举特点&quot;&gt;&lt;/a&gt;不同手型的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手弯举：综合刺激肱二头肌长短头，更适合一般训练者；&lt;br&gt;锤式弯举：更针对肱二头肌长头，对于想要更好塑造形状者，可以在反手弯举训练后，加1-2组锤式弯举着重塑形。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;握距的影响&quot;&gt;&lt;a href=&quot;#握距的影响&quot; class=&quot;headerlink&quot; title=&quot;握距的影响&quot;&gt;&lt;/a&gt;握距的影响&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8F%A1%E8%B7%9D%E7%9A%84%E5%BD%B1%E5%93%8D.jpg&quot; alt=&quot;握距的影响&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;不同手间距的弯举特点&quot;&gt;&lt;a href=&quot;#不同手间距的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手间距的弯举特点&quot;&gt;&lt;/a&gt;不同手间距的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;宽距弯举：对肱二头肌激活水平稍高，但容易伤到手腕；&lt;br&gt;窄距弯举：会降低肱二头肌的激活水平，并且将负荷加载在肱肌上；&lt;br&gt;肩宽弯举：综合来看最安全有效的弯举动作，更适合一般训练者。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;训练次数&quot;&gt;&lt;a href=&quot;#训练次数&quot; class=&quot;headerlink&quot; title=&quot;训练次数&quot;&gt;&lt;/a&gt;训练次数&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;肱二头肌的训练，一般建议放在背部训练日，或者是单独给一天手臂训练日，和肱三头肌一起训练比较合适。&lt;br&gt;每周可以训练2-3次，每次训练间隔1-2天，让目标肌群充分地休息，更好地刺激和帮助肱二头肌生长。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;三大高效弯举动作&quot;&gt;&lt;a href=&quot;#三大高效弯举动作&quot; class=&quot;headerlink&quot; title=&quot;三大高效弯举动作&quot;&gt;&lt;/a&gt;三大高效弯举动作&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E5%8A%A8%E4%BD%9C%E5%AF%B9%E8%82%B1%E4%BA%8C%E5%A4%B4%E8%82%8C%E7%9A%84%E6%BF%80%E6%B4%BB%E6%B0%B4%E5%B9%B3.jpg&quot; alt=&quot;不同动作对肱二头肌的激活水平&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;哑铃集中弯举&quot;&gt;&lt;a href=&quot;#哑铃集中弯举&quot; class=&quot;headerlink&quot; title=&quot;哑铃集中弯举&quot;&gt;&lt;/a&gt;哑铃集中弯举&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%93%91%E9%93%83%E9%9B%86%E4%B8%AD%E5%BC%AF%E4%B8%BE.gif&quot; alt=&quot;哑铃集中弯举&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述&quot;&gt;&lt;a href=&quot;#动作描述&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;坐在凳上，掌心向内单手持哑铃，持哑铃侧将肘部贴近同侧大腿内测，上半身略微前倾；&lt;/li&gt;
-&lt;li&gt;收缩二头肌，前臂向上举至最高点，挤压肌肉并保持顶峰收缩2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢下放，重复动作。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点&quot;&gt;&lt;a href=&quot;#动作要点&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中，注意爆发力和顶峰收缩，不要使用爆发力；&lt;/li&gt;
-&lt;li&gt;动作期间，保证手背和小臂在一条直线上，不要屈腕。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点&quot;&gt;&lt;a href=&quot;#动作特点&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;肱二头肌的生理作用，是让前臂向上臂靠拢、同时屈肩屈肘。&lt;br&gt;另外，由于肱二头肌长头下压肱骨，所以还可以起到稳定肩关节，避免肩部受伤的作用。&lt;br&gt;各种弯举是训练肱二头肌的经典动作，因为弯举本身就是将前臂向上臂靠拢，完全符合肱二头的生理特点，所以自然有很好的训练效果。&lt;br&gt;而不同的弯举根据器械、角度和细节不同，训练效果也各有不同。&lt;br&gt;肱二头肌分长头和短头，在收缩时，这两头的运动轨迹并不是直上直下的。&lt;br&gt;有研究发现，掌心侧向身体，前臂内旋的弯举动作，更适合肱二头肌的发力角度，有着相对更高的肌电水平。&lt;br&gt;哑铃集中弯举的移动角度更适合肱二头肌发力，当然激活水平也最高。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;拉索弯举&quot;&gt;&lt;a href=&quot;#拉索弯举&quot; class=&quot;headerlink&quot; title=&quot;拉索弯举&quot;&gt;&lt;/a&gt;拉索弯举&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8B%89%E7%B4%A2%E5%BC%AF%E4%B8%BE.gif&quot; alt=&quot;拉索弯举&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-1&quot;&gt;&lt;a href=&quot;#动作描述-1&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;身体直立，双脚打开与肩同宽，膝盖微弯，腰背挺直；&lt;/li&gt;
-&lt;li&gt;手持握柄，保持大臂紧贴身体，肱二头肌发力向上举起小臂至动作最高点；&lt;/li&gt;
-&lt;li&gt;动作顶端挤压肱二头肌，顶峰收缩2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢下放，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-1&quot;&gt;&lt;a href=&quot;#动作要点-1&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中保持大臂不动，避免借力；&lt;/li&gt;
-&lt;li&gt;动作过程控制肌肉发力，注意顶峰收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-1&quot;&gt;&lt;a href=&quot;#动作特点-1&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;拉索弯举过程中，拉索提供的阻力方向，一直都垂直于肱二头肌的发力方向，所以拉索弯举最大的特点就是，可以始终有效刺激二头。&lt;br&gt;此外，还有一个很好的地方，体现在顶峰收缩中，拉索这种重力可以持续为肱二头肌提供刺激。&lt;br&gt;如果哑铃举到最高处，重力其实都压在了小臂上，对大臂训练毫无用处；&lt;br&gt;而拉索弯举动作中，全程都可以刺激肱二头肌，所以一定要注意顶峰收缩。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;顶峰收缩&quot;&gt;&lt;a href=&quot;#顶峰收缩&quot; class=&quot;headerlink&quot; title=&quot;顶峰收缩&quot;&gt;&lt;/a&gt;顶峰收缩&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;在动作的最高点暂停2-4秒，延长肌肉的发力。&lt;br&gt;注意不要锁定关节，维持训练重量一直压在目标肌群上。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;杠铃弯举&quot;&gt;&lt;a href=&quot;#杠铃弯举&quot; class=&quot;headerlink&quot; title=&quot;杠铃弯举&quot;&gt;&lt;/a&gt;杠铃弯举&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%9D%A0%E9%93%83%E5%BC%AF%E4%B8%BE.gif&quot; alt=&quot;杠铃弯举&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;动作描述-2&quot;&gt;&lt;a href=&quot;#动作描述-2&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;身体自然站立，膝盖微微弯曲，大臂紧挨身体两侧，双臂自然下垂，掌心向外握住杠铃；&lt;/li&gt;
-&lt;li&gt;肱二头肌发力，向上举起杠铃至最高点，动作顶端停顿2-3秒；&lt;/li&gt;
-&lt;li&gt;控制肌肉发力，缓慢下放杠铃，重复。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作要点-2&quot;&gt;&lt;a href=&quot;#动作要点-2&quot; class=&quot;headerlink&quot; title=&quot;动作要点&quot;&gt;&lt;/a&gt;动作要点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;动作过程中，注意爆发力和顶峰收缩，不要使用爆发力；&lt;/li&gt;
-&lt;li&gt;杠铃下落到最低端时，切忌关节锁死，避免受伤。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;动作特点-2&quot;&gt;&lt;a href=&quot;#动作特点-2&quot; class=&quot;headerlink&quot; title=&quot;动作特点&quot;&gt;&lt;/a&gt;动作特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;杠铃弯举，最大的特点是使用重量最大，相应刺激也越大。&lt;br&gt;要知道，力量训练中，大重量刺激是促进肌肉增长的主要方式。&lt;br&gt;另外，更大的重量，也可以促进神经连接和发力的集合，更有助于综合提升力量和技术水平。&lt;br&gt;所以杠铃弯举对二头及附属肌群的最大限度增长，最为有利。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;一定要注意，手臂的训练，一定要找到泵感。&lt;br&gt;因为手臂日常就一直在活动，所以只是普通的训练，并没有好效果。&lt;br&gt;使用中等重量，多次数，短间歇的训练可以更好地刺激肌群，达到充血和泵感&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;肱三头肌&quot;&gt;&lt;a href=&quot;#肱三头肌&quot; class=&quot;headerlink&quot; title=&quot;肱三头肌&quot;&gt;&lt;/a&gt;肱三头肌&lt;/h1&gt;&lt;h1 id=&quot;颈后臂屈伸&quot;&gt;&lt;a href=&quot;#颈后臂屈伸&quot; class=&quot;headerlink&quot; title=&quot;颈后臂屈伸&quot;&gt;&lt;/a&gt;颈后臂屈伸&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E9%A2%88%E5%90%8E%E8%87%82%E5%B1%88%E4%BC%B8.gif&quot; alt=&quot;颈后臂屈伸&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;动作描述-3&quot;&gt;&lt;a href=&quot;#动作描述-3&quot; class=&quot;headerlink&quot; title=&quot;动作描述&quot;&gt;&lt;/a&gt;动作描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;手持重物、置于脑后。哑铃、水瓶、弹力带都可以。重量一定要轻，此动作重在雕塑形态，不宜重量太大。肘关节容易受伤;&lt;/li&gt;
-&lt;li&gt;在动作最低点的时候，要感觉到大臂后面是被拉伸的。这个拉伸感，是颈后臂屈伸作为雕塑手臂的入门动作，优于其他动作的原因。拉伸，本来就是可以使肌肉的力量和形态得到很好增长的&lt;/li&gt;
-&lt;li&gt;缓缓把重物上抬，直至手臂接近伸直。注意！是接近伸直。但其实到最后，肘关节是不锁定的（如图示）。如果你最后把肘关节完全伸直了。肌肉不会得到充分的训练。相反，重力会施加在关节与软骨上，潜在可能会有一点损伤。&lt;/li&gt;
-&lt;li&gt;最后，把重物缓缓下放，一定要轻柔和缓慢。因为肘关节韧带是比较容易受伤的一个部位。所以如果过快的动作，很容易导致冲击力损伤肘关节。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;何时练？&quot;&gt;&lt;a href=&quot;#何时练？&quot; class=&quot;headerlink&quot; title=&quot;何时练？&quot;&gt;&lt;/a&gt;何时练？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;颈后臂屈伸是小肌群的雕塑训练，最好放到大肌群训练以后。&lt;br&gt;比如练完胸部、臀部的动作，再做颈后臂屈伸会好一些。&lt;br&gt;或者如果没有事情的时候，单独拿来训练也是可以的。&lt;br&gt;所以最佳的训练时间是大肌群训练后，核心肌群和有氧训练前。&lt;br&gt;对手臂增肌需求强烈的男性（巨臂计划的），请将这个动作和肱二头肌的训练动作交替进行。&lt;br&gt;因为肱三头肌和肱二头肌互为主动肌和拮抗肌。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;练几次、几组？&quot;&gt;&lt;a href=&quot;#练几次、几组？&quot; class=&quot;headerlink&quot; title=&quot;练几次、几组？&quot;&gt;&lt;/a&gt;练几次、几组？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;最好先做一组轻重量的热身，因为该动作不热身，很可能会让肘关节收到损伤。&lt;br&gt;女性可以用空手稍快速度的进行热身。在热身后，然后再做2-4组、8-12次的正式组。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;肱二头肌&quot;&gt;&lt;a href=&quot;#肱二头肌&quot; class=&quot;headerlink&quot; title=&quot;肱二头肌&quot;&gt;&lt;/a&gt;肱二头肌&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;肱二头肌分为长头和短头：长头负责手臂内旋和外展，短头则负责前倾和内收。&lt;br&gt;长头一般决定了你的手臂从外侧看，是否强壮&lt;br&gt;短头则决定了，你的肱二头肌从内侧看，是否霸道。&lt;br&gt;两个头一起决定了你的肱二头肌整体是否饱满、有力度。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;不同的弯举动作&quot;&gt;&lt;a href=&quot;#不同的弯举动作&quot; class=&quot;headerlink&quot; title=&quot;不同的弯举动作&quot;&gt;&lt;/a&gt;不同的弯举动作&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;弯举动作是训练肱二头肌的最佳方式。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;a href=&quot;#宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot; class=&quot;headerlink&quot; title=&quot;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&quot;&gt;&lt;/a&gt;宽握、窄握、反手、正手、锤式、交替锤式，哪种弯举动作好？&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%BC%AF%E4%B8%BE%E5%8A%A8%E4%BD%9C.jpg&quot; alt=&quot;不同的弯举动作&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;不同手型的弯举特点&quot;&gt;&lt;a href=&quot;#不同手型的弯举特点&quot; class=&quot;headerlink&quot; title=&quot;不同手型的弯举特点&quot;&gt;&lt;/a&gt;不同手型的弯举特点&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;反手弯举：综合刺激肱二头肌长短头，更适合一般训练者；&lt;br&gt;锤式弯举：更针对肱二头肌长头，对于想要更好塑造形状者，可以在反手弯举训练后，加1-2组锤式弯举着重塑形。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="健身" scheme="http://yoursite.com/categories/%E5%81%A5%E8%BA%AB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="手臂" scheme="http://yoursite.com/tags/%E6%89%8B%E8%87%82/"/>
-    
-      <category term="肱二头肌" scheme="http://yoursite.com/tags/%E8%82%B1%E4%BA%8C%E5%A4%B4%E8%82%8C/"/>
-    
-      <category term="肱三头肌" scheme="http://yoursite.com/tags/%E8%82%B1%E4%B8%89%E5%A4%B4%E8%82%8C/"/>
-    
-      <category term="肌肉" scheme="http://yoursite.com/tags/%E8%82%8C%E8%82%89/"/>
     
   </entry>
   
