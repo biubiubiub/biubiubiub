@@ -262,6 +262,328 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/12/java/basics/Polymorphism/" itemprop="url">
+                  java基础知识——多态
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-12T08:39:47+08:00" content="2016-10-12">
+              2016-10-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="什么是多态？"><a href="#什么是多态？" class="headerlink" title="什么是多态？"></a>什么是多态？</h1><blockquote>
+<p>对象具有多种形态，分为引用多态和方法多态</p>
+</blockquote>
+<h1 id="引用多态"><a href="#引用多态" class="headerlink" title="引用多态"></a>引用多态</h1><blockquote>
+<p>父类的引用可以指向本类的对象<br>父类的引用可以指向子类的对象</p>
+</blockquote>
+<h1 id="方法多态"><a href="#方法多态" class="headerlink" title="方法多态"></a>方法多态</h1><blockquote>
+<p>创建本类对象时，调用的方法为本类方法<br>创建子类对象时，调用的方法为子类重写的方法或者继承的方法</p>
+</blockquote>
+<h1 id="多态中的引用类型转换"><a href="#多态中的引用类型转换" class="headerlink" title="多态中的引用类型转换"></a>多态中的引用类型转换</h1><blockquote>
+<ol>
+<li>向上类型转换（隐式／自动类型转换），是小类型到大类型的转换</li>
+<li>向下类型转换(强制类型转换)，是大类型到小类型的转换</li>
+<li>instanceof运算符，来解决引用对象的类型，避免类型转换的安全性问题</li>
+</ol>
+</blockquote>
+<h1 id="java中的抽象类"><a href="#java中的抽象类" class="headerlink" title="java中的抽象类"></a>java中的抽象类</h1><h2 id="语法定义"><a href="#语法定义" class="headerlink" title="语法定义"></a>语法定义</h2><blockquote>
+<p>抽象类前使用abstract关键字修饰，则该类为抽象类</p>
+</blockquote>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><blockquote>
+<p>a.在某些情况下，某个父类只是知道其子类应该包含怎样的方法，但无法准确知道这些子类如何实现这些方法。</p>
+<p>b.从多个具有相同特征的类中抽象出一个抽象类，以这个抽象类作为子类的模板，从而避免了子类设计的随意性。</p>
+</blockquote>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><blockquote>
+<p>限制规定子类必须实现某些方法，但不关注实现细节</p>
+</blockquote>
+<h2 id="使用规则"><a href="#使用规则" class="headerlink" title="使用规则"></a>使用规则</h2><blockquote>
+<p>a.abstract定义抽象类<br>b.abstract定义抽象方法，只有声明，不需要实现<br>c.包含抽象方法的类是抽象类<br>d.抽象类中可以包含普通的方法，也可以没有抽象方法<br>e.抽象类不能直接创建，可以定义引用变量</p>
+</blockquote>
+<h2 id="抽象方法"><a href="#抽象方法" class="headerlink" title="抽象方法"></a>抽象方法</h2><blockquote>
+<p>抽象方法没有方法体以分号结束</p>
+</blockquote>
+<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="接口概念"><a href="#接口概念" class="headerlink" title="接口概念"></a>接口概念</h2><blockquote>
+<p>接口可以理解为一种特殊的类，由全局变量和公共的抽象方法所组成。</p>
+<p>类是一种具体实现体，而接口定义了某一批类所需要遵守的规范，接口不关心这些类的内部数据，也不关心这些类里方法的实现细节，它只规定这些类里必须提供某些方法。</p>
+</blockquote>
+<h2 id="接口定义"><a href="#接口定义" class="headerlink" title="接口定义"></a>接口定义</h2><blockquote>
+<p>和类定义不同，定义接口不再使用class关键字，而是使用interface关键字</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/11/java/basics/extends/" itemprop="url">
+                  java基础知识——继承
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-11T08:34:47+08:00" content="2016-10-11">
+              2016-10-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="继承的概念"><a href="#继承的概念" class="headerlink" title="继承的概念"></a>继承的概念</h1><blockquote>
+<p>继承是类与类的一种关系，是一种“is a”的关系</p>
+<p>如 狗是动物，狗类是动物类的子类或派生类，动物类是狗类的父类或基类</p>
+<p>java中的继承是单继承，也就是说，一个类只有一个父类</p>
+</blockquote>
+<h1 id="继承的优点"><a href="#继承的优点" class="headerlink" title="继承的优点"></a>继承的优点</h1><blockquote>
+<p>子类拥有父类的所有属性和方法，但是父类的属性和方法不能是private</p>
+<p>子类可以实现父类代码的复用</p>
+</blockquote>
+<h1 id="继承的语法规则"><a href="#继承的语法规则" class="headerlink" title="继承的语法规则"></a>继承的语法规则</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> 子类 <span class="keyword">extends</span> 父类</span></div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>例如</p>
+</blockquote>
+<pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</div><div class="line">    ···</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="方法的重写"><a href="#方法的重写" class="headerlink" title="方法的重写"></a>方法的重写</h1><blockquote>
+<p>什么是方法的重写：如果子类对继承父类的方法不满意，是可以重写父类继承的方法的，当调用方法时会优先调用子类的方法。</p>
+</blockquote>
+<h1 id="语法规则"><a href="#语法规则" class="headerlink" title="语法规则"></a>语法规则</h1><blockquote>
+<p>a.返回值类型<br>b.方法名<br>c.参数类型及个数<br>都要与父类继承的方法相同，才叫方法的重写</p>
+</blockquote>
+<h1 id="使用继承这个特性时，程序是如何执行的？"><a href="#使用继承这个特性时，程序是如何执行的？" class="headerlink" title="使用继承这个特性时，程序是如何执行的？"></a>使用继承这个特性时，程序是如何执行的？</h1><blockquote>
+<p>继承的初始化顺序</p>
+<blockquote>
+<ol>
+<li>初始化父类再初始子类</li>
+<li>先执行初始化对象中的属性，再执行构造方法中的初始化</li>
+</ol>
+<p>即 先执行父类对象的属性初始化，再执行父类对象的构造方法，然后执行子类对象的属性初始化，再执行子类对象的构造方法</p>
+</blockquote>
+</blockquote>
+<h1 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h1><blockquote>
+<p>使用final关键字做标示有“最终的”含义，不可修改，不可变化<br>final可以修饰类、方法、属性和变量<br>final修饰类，则该类不允许被继承<br>final修饰方法，则该方法不允许被覆盖（重写）<br>final修饰属性，则该类的属性不会进行隐式的初始化（类的初始化属性必须有值）或在构造方法中赋值（但只能选其一）<br>final修饰变量，则该变量的值只能赋一次值，即变为常量</p>
+</blockquote>
+<h1 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h1><blockquote>
+<p>在对象的内部使用，可以代表父类对象</p>
+</blockquote>
+<h2 id="访问父类的的对象"><a href="#访问父类的的对象" class="headerlink" title="访问父类的的对象"></a>访问父类的的对象</h2><blockquote>
+<p>如super.age 调用父类的age属性</p>
+</blockquote>
+<h2 id="访问父类的方法"><a href="#访问父类的方法" class="headerlink" title="访问父类的方法"></a>访问父类的方法</h2><blockquote>
+<p>如super.eat() 调用父类的eat方法</p>
+</blockquote>
+<h2 id="super的应用"><a href="#super的应用" class="headerlink" title="super的应用"></a>super的应用</h2><blockquote>
+<p>子类的构造的过程中必须调用其父类的构造方法</p>
+<p>如果子类的构造方法中没有显示调用父类的构造方法，则系统系默认调用父类无参的构造方法</p>
+<p>如果显示的调用构造方法，必须在子类的构造方法的第一行</p>
+<p>如果子类构造方法中既没有显示调用父类的构造方法，则父类又没有无参的构造方法，则编译出错</p>
+</blockquote>
+<h1 id="Object-类"><a href="#Object-类" class="headerlink" title="Object 类"></a>Object 类</h1><blockquote>
+<p>object类是所有类的父类，如果一个类没有使用extends关键字明确标识继承另外一个类，那么这个类默认继承object类</p>
+<p>object类中的方法，适合所有子类</p>
+</blockquote>
+<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><blockquote>
+<p>在Object类里面定义toString()方法的时候返回的对象的哈希code码(对象的地址字符串)</p>
+<p>可以通过重写toString()方法表示出对象的属性</p>
+</blockquote>
+<h2 id="equals-方法"><a href="#equals-方法" class="headerlink" title="equals()方法"></a>equals()方法</h2><blockquote>
+<p>比较的是对象的引用是否指向同一块内存地址</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/07/java/basics/Encapsulation/" itemprop="url">
                   java基础知识——封装
                 </a>
@@ -1316,255 +1638,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/17/java/basics/scanner/" itemprop="url">
-                  java基础知识——Scanner的使用
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-17T15:18:47+08:00" content="2016-09-17">
-              2016-09-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.println(<span class="string">"Echo:"</span>+in.nextLine());</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><blockquote>
-<p>nextLine是读一整行<br>nextInt是读一个整数</p>
-</blockquote>
-<h1 id="找零钱（一）"><a href="#找零钱（一）" class="headerlink" title="找零钱（一）"></a>找零钱（一）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"100-"</span>+price+<span class="string">"="</span>+(<span class="number">100</span>-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h1 id="找零钱（二）"><a href="#找零钱（二）" class="headerlink" title="找零钱（二）"></a>找零钱（二）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.print(<span class="string">"请输入票面："</span>);</div><div class="line">        <span class="keyword">int</span> amount = in.nextInt();</div><div class="line">        System.out.print(<span class="string">"请输入金额："</span>);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"请找零钱："</span>+amount+<span class="string">"-"</span>+price+<span class="string">"="</span>+(amount-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><blockquote>
-<p>Scanner可以使用多次 读取多个数据</p>
-<p>定义常量 final int amount = 100; 常量不能再被赋值</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/07/C /answers/polynomial/" itemprop="url">
-                  多项式
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-07T21:05:23+08:00" content="2016-09-07">
-              2016-09-07
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/题解/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>写程序计算给定多项式在给定点x处的值</p>
-</blockquote>
-<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
-</blockquote>
-<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><p>&gt;</p>
-<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><p>&gt;</p>
-<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><p>&gt;</p>
-</blockquote>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1605,7 +1683,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">83</span>
+              <span class="site-state-item-count">78</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1613,7 +1691,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1622,7 +1700,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-count">65</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1686,7 +1764,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

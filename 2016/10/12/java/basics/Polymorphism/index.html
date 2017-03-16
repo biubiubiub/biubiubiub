@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="健身,生活," />
+  <meta name="keywords" content="基础知识,java,多态,面向对象," />
 
 
 
@@ -88,28 +88,55 @@
 
 
 
-<meta name="description" content="健身
-一个周体重上涨1.5kg达到69kg。系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。备跑，准备烟台国际马拉松比赛。
+<meta name="description" content="什么是多态？
+对象具有多种形态，分为引用多态和方法多态
 
-英语
-坚持背单词。">
+引用多态
+父类的引用可以指向本类的对象父类的引用可以指向子类的对象
+
+方法多态
+创建本类对象时，调用的方法为本类方法创建子类对象时，调用的方法为子类重写的方法或者继承的方法
+
+多态中的引用类型转换
+
+向上类型转换（隐式／自动类型转换），是小类型到大类型的转换
+向下类型转换(强制类型转换)，是大类型到小类型的转换
+instanceof运算符，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="8月11日至8月15日计划总结">
-<meta property="og:url" content="http://yoursite.com/2016/08/15/life/plan8-15/index.html">
+<meta property="og:title" content="java基础知识——多态">
+<meta property="og:url" content="http://yoursite.com/2016/10/12/java/basics/Polymorphism/index.html">
 <meta property="og:site_name" content="当做成长">
-<meta property="og:description" content="健身
-一个周体重上涨1.5kg达到69kg。系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。备跑，准备烟台国际马拉松比赛。
+<meta property="og:description" content="什么是多态？
+对象具有多种形态，分为引用多态和方法多态
 
-英语
-坚持背单词。">
-<meta property="og:updated_time" content="2016-08-20T15:19:05.000Z">
+引用多态
+父类的引用可以指向本类的对象父类的引用可以指向子类的对象
+
+方法多态
+创建本类对象时，调用的方法为本类方法创建子类对象时，调用的方法为子类重写的方法或者继承的方法
+
+多态中的引用类型转换
+
+向上类型转换（隐式／自动类型转换），是小类型到大类型的转换
+向下类型转换(强制类型转换)，是大类型到小类型的转换
+instanceof运算符，">
+<meta property="og:updated_time" content="2016-10-12T02:27:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="8月11日至8月15日计划总结">
-<meta name="twitter:description" content="健身
-一个周体重上涨1.5kg达到69kg。系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。备跑，准备烟台国际马拉松比赛。
+<meta name="twitter:title" content="java基础知识——多态">
+<meta name="twitter:description" content="什么是多态？
+对象具有多种形态，分为引用多态和方法多态
 
-英语
-坚持背单词。">
+引用多态
+父类的引用可以指向本类的对象父类的引用可以指向子类的对象
+
+方法多态
+创建本类对象时，调用的方法为本类方法创建子类对象时，调用的方法为子类重写的方法或者继承的方法
+
+多态中的引用类型转换
+
+向上类型转换（隐式／自动类型转换），是小类型到大类型的转换
+向下类型转换(强制类型转换)，是大类型到小类型的转换
+instanceof运算符，">
 
 
 
@@ -130,9 +157,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/15/life/plan8-15/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/12/java/basics/Polymorphism/"/>
 
-  <title> 8月11日至8月15日计划总结 | 当做成长 </title>
+  <title> java基础知识——多态 | 当做成长 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +299,7 @@
             
             
               
-                8月11日至8月15日计划总结
+                java基础知识——多态
               
             
           </h1>
@@ -284,8 +311,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-15T23:10:00+08:00" content="2016-08-15">
-              2016-08-15
+            <time itemprop="dateCreated" datetime="2016-10-12T08:39:47+08:00" content="2016-10-12">
+              2016-10-12
             </time>
           </span>
 
@@ -298,8 +325,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -331,11 +358,44 @@
       
 
       
-        <h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><blockquote>
-<p>一个周体重上涨1.5kg达到69kg。<br>系统地学习了各个肌群的锻炼方法，并将在最近几天整理出来。<br>备跑，准备烟台国际马拉松比赛。</p>
+        <h1 id="什么是多态？"><a href="#什么是多态？" class="headerlink" title="什么是多态？"></a>什么是多态？</h1><blockquote>
+<p>对象具有多种形态，分为引用多态和方法多态</p>
 </blockquote>
-<h1 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h1><blockquote>
-<p>坚持背单词。</p>
+<h1 id="引用多态"><a href="#引用多态" class="headerlink" title="引用多态"></a>引用多态</h1><blockquote>
+<p>父类的引用可以指向本类的对象<br>父类的引用可以指向子类的对象</p>
+</blockquote>
+<h1 id="方法多态"><a href="#方法多态" class="headerlink" title="方法多态"></a>方法多态</h1><blockquote>
+<p>创建本类对象时，调用的方法为本类方法<br>创建子类对象时，调用的方法为子类重写的方法或者继承的方法</p>
+</blockquote>
+<h1 id="多态中的引用类型转换"><a href="#多态中的引用类型转换" class="headerlink" title="多态中的引用类型转换"></a>多态中的引用类型转换</h1><blockquote>
+<ol>
+<li>向上类型转换（隐式／自动类型转换），是小类型到大类型的转换</li>
+<li>向下类型转换(强制类型转换)，是大类型到小类型的转换</li>
+<li>instanceof运算符，来解决引用对象的类型，避免类型转换的安全性问题</li>
+</ol>
+</blockquote>
+<h1 id="java中的抽象类"><a href="#java中的抽象类" class="headerlink" title="java中的抽象类"></a>java中的抽象类</h1><h2 id="语法定义"><a href="#语法定义" class="headerlink" title="语法定义"></a>语法定义</h2><blockquote>
+<p>抽象类前使用abstract关键字修饰，则该类为抽象类</p>
+</blockquote>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><blockquote>
+<p>a.在某些情况下，某个父类只是知道其子类应该包含怎样的方法，但无法准确知道这些子类如何实现这些方法。</p>
+<p>b.从多个具有相同特征的类中抽象出一个抽象类，以这个抽象类作为子类的模板，从而避免了子类设计的随意性。</p>
+</blockquote>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><blockquote>
+<p>限制规定子类必须实现某些方法，但不关注实现细节</p>
+</blockquote>
+<h2 id="使用规则"><a href="#使用规则" class="headerlink" title="使用规则"></a>使用规则</h2><blockquote>
+<p>a.abstract定义抽象类<br>b.abstract定义抽象方法，只有声明，不需要实现<br>c.包含抽象方法的类是抽象类<br>d.抽象类中可以包含普通的方法，也可以没有抽象方法<br>e.抽象类不能直接创建，可以定义引用变量</p>
+</blockquote>
+<h2 id="抽象方法"><a href="#抽象方法" class="headerlink" title="抽象方法"></a>抽象方法</h2><blockquote>
+<p>抽象方法没有方法体以分号结束</p>
+</blockquote>
+<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="接口概念"><a href="#接口概念" class="headerlink" title="接口概念"></a>接口概念</h2><blockquote>
+<p>接口可以理解为一种特殊的类，由全局变量和公共的抽象方法所组成。</p>
+<p>类是一种具体实现体，而接口定义了某一批类所需要遵守的规范，接口不关心这些类的内部数据，也不关心这些类里方法的实现细节，它只规定这些类里必须提供某些方法。</p>
+</blockquote>
+<h2 id="接口定义"><a href="#接口定义" class="headerlink" title="接口定义"></a>接口定义</h2><blockquote>
+<p>和类定义不同，定义接口不再使用class关键字，而是使用interface关键字</p>
 </blockquote>
 
       
@@ -359,9 +419,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/健身/" rel="tag">#健身</a>
+            <a href="/tags/基础知识/" rel="tag">#基础知识</a>
           
-            <a href="/tags/生活/" rel="tag">#生活</a>
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+            <a href="/tags/多态/" rel="tag">#多态</a>
+          
+            <a href="/tags/面向对象/" rel="tag">#面向对象</a>
           
         </div>
       
@@ -370,17 +434,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/15/body-building/leg-muscles/" rel="next" title="健身知识——腿部训练">
-                <i class="fa fa-chevron-left"></i> 健身知识——腿部训练
+              <a href="/2016/10/11/java/basics/extends/" rel="next" title="java基础知识——继承">
+                <i class="fa fa-chevron-left"></i> java基础知识——继承
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/16/body-building/shoulder-muscle/" rel="prev" title="健身知识——肩部训练">
-                健身知识——肩部训练 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -448,7 +508,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">83</span>
+              <span class="site-state-item-count">78</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -456,7 +516,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -465,7 +525,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-count">65</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -521,7 +581,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#健身"><span class="nav-number">1.</span> <span class="nav-text">健身</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#英语"><span class="nav-number">2.</span> <span class="nav-text">英语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是多态？"><span class="nav-number">1.</span> <span class="nav-text">什么是多态？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用多态"><span class="nav-number">2.</span> <span class="nav-text">引用多态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法多态"><span class="nav-number">3.</span> <span class="nav-text">方法多态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多态中的引用类型转换"><span class="nav-number">4.</span> <span class="nav-text">多态中的引用类型转换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#java中的抽象类"><span class="nav-number">5.</span> <span class="nav-text">java中的抽象类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法定义"><span class="nav-number">5.1.</span> <span class="nav-text">语法定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">5.2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用"><span class="nav-number">5.3.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用规则"><span class="nav-number">5.4.</span> <span class="nav-text">使用规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象方法"><span class="nav-number">5.5.</span> <span class="nav-text">抽象方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#接口"><span class="nav-number">6.</span> <span class="nav-text">接口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#接口概念"><span class="nav-number">6.1.</span> <span class="nav-text">接口概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口定义"><span class="nav-number">6.2.</span> <span class="nav-text">接口定义</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -540,7 +600,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

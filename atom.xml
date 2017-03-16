@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-07T10:21:33.000Z</updated>
+  <updated>2016-10-12T02:27:43.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,170 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java基础知识——多态</title>
+    <link href="http://yoursite.com/2016/10/12/java/basics/Polymorphism/"/>
+    <id>http://yoursite.com/2016/10/12/java/basics/Polymorphism/</id>
+    <published>2016-10-12T00:39:47.000Z</published>
+    <updated>2016-10-12T02:27:43.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;什么是多态？&quot;&gt;&lt;a href=&quot;#什么是多态？&quot; class=&quot;headerlink&quot; title=&quot;什么是多态？&quot;&gt;&lt;/a&gt;什么是多态？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;对象具有多种形态，分为引用多态和方法多态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;引用多态&quot;&gt;&lt;a href=&quot;#引用多态&quot; class=&quot;headerlink&quot; title=&quot;引用多态&quot;&gt;&lt;/a&gt;引用多态&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;父类的引用可以指向本类的对象&lt;br&gt;父类的引用可以指向子类的对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;方法多态&quot;&gt;&lt;a href=&quot;#方法多态&quot; class=&quot;headerlink&quot; title=&quot;方法多态&quot;&gt;&lt;/a&gt;方法多态&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;创建本类对象时，调用的方法为本类方法&lt;br&gt;创建子类对象时，调用的方法为子类重写的方法或者继承的方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;多态中的引用类型转换&quot;&gt;&lt;a href=&quot;#多态中的引用类型转换&quot; class=&quot;headerlink&quot; title=&quot;多态中的引用类型转换&quot;&gt;&lt;/a&gt;多态中的引用类型转换&lt;/h1&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;向上类型转换（隐式／自动类型转换），是小类型到大类型的转换&lt;/li&gt;
+&lt;li&gt;向下类型转换(强制类型转换)，是大类型到小类型的转换&lt;/li&gt;
+&lt;li&gt;instanceof运算符，来解决引用对象的类型，避免类型转换的安全性问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;java中的抽象类&quot;&gt;&lt;a href=&quot;#java中的抽象类&quot; class=&quot;headerlink&quot; title=&quot;java中的抽象类&quot;&gt;&lt;/a&gt;java中的抽象类&lt;/h1&gt;&lt;h2 id=&quot;语法定义&quot;&gt;&lt;a href=&quot;#语法定义&quot; class=&quot;headerlink&quot; title=&quot;语法定义&quot;&gt;&lt;/a&gt;语法定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;抽象类前使用abstract关键字修饰，则该类为抽象类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;应用场景&quot;&gt;&lt;a href=&quot;#应用场景&quot; class=&quot;headerlink&quot; title=&quot;应用场景&quot;&gt;&lt;/a&gt;应用场景&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;a.在某些情况下，某个父类只是知道其子类应该包含怎样的方法，但无法准确知道这些子类如何实现这些方法。&lt;/p&gt;
+&lt;p&gt;b.从多个具有相同特征的类中抽象出一个抽象类，以这个抽象类作为子类的模板，从而避免了子类设计的随意性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;作用&quot;&gt;&lt;a href=&quot;#作用&quot; class=&quot;headerlink&quot; title=&quot;作用&quot;&gt;&lt;/a&gt;作用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;限制规定子类必须实现某些方法，但不关注实现细节&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;使用规则&quot;&gt;&lt;a href=&quot;#使用规则&quot; class=&quot;headerlink&quot; title=&quot;使用规则&quot;&gt;&lt;/a&gt;使用规则&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;a.abstract定义抽象类&lt;br&gt;b.abstract定义抽象方法，只有声明，不需要实现&lt;br&gt;c.包含抽象方法的类是抽象类&lt;br&gt;d.抽象类中可以包含普通的方法，也可以没有抽象方法&lt;br&gt;e.抽象类不能直接创建，可以定义引用变量&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;抽象方法&quot;&gt;&lt;a href=&quot;#抽象方法&quot; class=&quot;headerlink&quot; title=&quot;抽象方法&quot;&gt;&lt;/a&gt;抽象方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;抽象方法没有方法体以分号结束&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;接口&quot;&gt;&lt;a href=&quot;#接口&quot; class=&quot;headerlink&quot; title=&quot;接口&quot;&gt;&lt;/a&gt;接口&lt;/h1&gt;&lt;h2 id=&quot;接口概念&quot;&gt;&lt;a href=&quot;#接口概念&quot; class=&quot;headerlink&quot; title=&quot;接口概念&quot;&gt;&lt;/a&gt;接口概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;接口可以理解为一种特殊的类，由全局变量和公共的抽象方法所组成。&lt;/p&gt;
+&lt;p&gt;类是一种具体实现体，而接口定义了某一批类所需要遵守的规范，接口不关心这些类的内部数据，也不关心这些类里方法的实现细节，它只规定这些类里必须提供某些方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;接口定义&quot;&gt;&lt;a href=&quot;#接口定义&quot; class=&quot;headerlink&quot; title=&quot;接口定义&quot;&gt;&lt;/a&gt;接口定义&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;和类定义不同，定义接口不再使用class关键字，而是使用interface关键字&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是多态？&quot;&gt;&lt;a href=&quot;#什么是多态？&quot; class=&quot;headerlink&quot; title=&quot;什么是多态？&quot;&gt;&lt;/a&gt;什么是多态？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;对象具有多种形态，分为引用多态和方法多态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="多态" scheme="http://yoursite.com/tags/%E5%A4%9A%E6%80%81/"/>
+    
+      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java基础知识——继承</title>
+    <link href="http://yoursite.com/2016/10/11/java/basics/extends/"/>
+    <id>http://yoursite.com/2016/10/11/java/basics/extends/</id>
+    <published>2016-10-11T00:34:47.000Z</published>
+    <updated>2016-10-12T00:37:38.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;继承的概念&quot;&gt;&lt;a href=&quot;#继承的概念&quot; class=&quot;headerlink&quot; title=&quot;继承的概念&quot;&gt;&lt;/a&gt;继承的概念&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;继承是类与类的一种关系，是一种“is a”的关系&lt;/p&gt;
+&lt;p&gt;如 狗是动物，狗类是动物类的子类或派生类，动物类是狗类的父类或基类&lt;/p&gt;
+&lt;p&gt;java中的继承是单继承，也就是说，一个类只有一个父类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;继承的优点&quot;&gt;&lt;a href=&quot;#继承的优点&quot; class=&quot;headerlink&quot; title=&quot;继承的优点&quot;&gt;&lt;/a&gt;继承的优点&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;子类拥有父类的所有属性和方法，但是父类的属性和方法不能是private&lt;/p&gt;
+&lt;p&gt;子类可以实现父类代码的复用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;继承的语法规则&quot;&gt;&lt;a href=&quot;#继承的语法规则&quot; class=&quot;headerlink&quot; title=&quot;继承的语法规则&quot;&gt;&lt;/a&gt;继承的语法规则&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; 子类 &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; 父类&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;例如&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Dog&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Animal&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    ···&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;方法的重写&quot;&gt;&lt;a href=&quot;#方法的重写&quot; class=&quot;headerlink&quot; title=&quot;方法的重写&quot;&gt;&lt;/a&gt;方法的重写&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;什么是方法的重写：如果子类对继承父类的方法不满意，是可以重写父类继承的方法的，当调用方法时会优先调用子类的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;语法规则&quot;&gt;&lt;a href=&quot;#语法规则&quot; class=&quot;headerlink&quot; title=&quot;语法规则&quot;&gt;&lt;/a&gt;语法规则&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;a.返回值类型&lt;br&gt;b.方法名&lt;br&gt;c.参数类型及个数&lt;br&gt;都要与父类继承的方法相同，才叫方法的重写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;使用继承这个特性时，程序是如何执行的？&quot;&gt;&lt;a href=&quot;#使用继承这个特性时，程序是如何执行的？&quot; class=&quot;headerlink&quot; title=&quot;使用继承这个特性时，程序是如何执行的？&quot;&gt;&lt;/a&gt;使用继承这个特性时，程序是如何执行的？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;继承的初始化顺序&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;初始化父类再初始子类&lt;/li&gt;
+&lt;li&gt;先执行初始化对象中的属性，再执行构造方法中的初始化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;即 先执行父类对象的属性初始化，再执行父类对象的构造方法，然后执行子类对象的属性初始化，再执行子类对象的构造方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;final关键字&quot;&gt;&lt;a href=&quot;#final关键字&quot; class=&quot;headerlink&quot; title=&quot;final关键字&quot;&gt;&lt;/a&gt;final关键字&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;使用final关键字做标示有“最终的”含义，不可修改，不可变化&lt;br&gt;final可以修饰类、方法、属性和变量&lt;br&gt;final修饰类，则该类不允许被继承&lt;br&gt;final修饰方法，则该方法不允许被覆盖（重写）&lt;br&gt;final修饰属性，则该类的属性不会进行隐式的初始化（类的初始化属性必须有值）或在构造方法中赋值（但只能选其一）&lt;br&gt;final修饰变量，则该变量的值只能赋一次值，即变为常量&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;super关键字&quot;&gt;&lt;a href=&quot;#super关键字&quot; class=&quot;headerlink&quot; title=&quot;super关键字&quot;&gt;&lt;/a&gt;super关键字&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;在对象的内部使用，可以代表父类对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;访问父类的的对象&quot;&gt;&lt;a href=&quot;#访问父类的的对象&quot; class=&quot;headerlink&quot; title=&quot;访问父类的的对象&quot;&gt;&lt;/a&gt;访问父类的的对象&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如super.age 调用父类的age属性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;访问父类的方法&quot;&gt;&lt;a href=&quot;#访问父类的方法&quot; class=&quot;headerlink&quot; title=&quot;访问父类的方法&quot;&gt;&lt;/a&gt;访问父类的方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如super.eat() 调用父类的eat方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;super的应用&quot;&gt;&lt;a href=&quot;#super的应用&quot; class=&quot;headerlink&quot; title=&quot;super的应用&quot;&gt;&lt;/a&gt;super的应用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;子类的构造的过程中必须调用其父类的构造方法&lt;/p&gt;
+&lt;p&gt;如果子类的构造方法中没有显示调用父类的构造方法，则系统系默认调用父类无参的构造方法&lt;/p&gt;
+&lt;p&gt;如果显示的调用构造方法，必须在子类的构造方法的第一行&lt;/p&gt;
+&lt;p&gt;如果子类构造方法中既没有显示调用父类的构造方法，则父类又没有无参的构造方法，则编译出错&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Object-类&quot;&gt;&lt;a href=&quot;#Object-类&quot; class=&quot;headerlink&quot; title=&quot;Object 类&quot;&gt;&lt;/a&gt;Object 类&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;object类是所有类的父类，如果一个类没有使用extends关键字明确标识继承另外一个类，那么这个类默认继承object类&lt;/p&gt;
+&lt;p&gt;object类中的方法，适合所有子类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;toString-方法&quot;&gt;&lt;a href=&quot;#toString-方法&quot; class=&quot;headerlink&quot; title=&quot;toString()方法&quot;&gt;&lt;/a&gt;toString()方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在Object类里面定义toString()方法的时候返回的对象的哈希code码(对象的地址字符串)&lt;/p&gt;
+&lt;p&gt;可以通过重写toString()方法表示出对象的属性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;equals-方法&quot;&gt;&lt;a href=&quot;#equals-方法&quot; class=&quot;headerlink&quot; title=&quot;equals()方法&quot;&gt;&lt;/a&gt;equals()方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;比较的是对象的引用是否指向同一块内存地址&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;继承的概念&quot;&gt;&lt;a href=&quot;#继承的概念&quot; class=&quot;headerlink&quot; title=&quot;继承的概念&quot;&gt;&lt;/a&gt;继承的概念&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;继承是类与类的一种关系，是一种“is a”的关系&lt;/p&gt;
+&lt;p&gt;如 狗是动物，狗类是动物类
+    
+    </summary>
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="基础知识" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+      <category term="继承" scheme="http://yoursite.com/tags/%E7%BB%A7%E6%89%BF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java基础知识——封装</title>
     <link href="http://yoursite.com/2016/10/07/java/basics/Encapsulation/"/>
     <id>http://yoursite.com/2016/10/07/java/basics/Encapsulation/</id>
     <published>2016-10-07T07:54:47.000Z</published>
-    <updated>2016-10-07T10:21:33.000Z</updated>
+    <updated>2016-10-11T00:35:08.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;面向对象的三大特性&quot;&gt;&lt;a href=&quot;#面向对象的三大特性&quot; class=&quot;headerlink&quot; title=&quot;面向对象的三大特性&quot;&gt;&lt;/a&gt;面向对象的三大特性&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;封装、继承、多态&lt;/p&gt;
@@ -229,6 +388,8 @@
     
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
+      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
       <category term="封装" scheme="http://yoursite.com/tags/%E5%B0%81%E8%A3%85/"/>
     
       <category term="包" scheme="http://yoursite.com/tags/%E5%8C%85/"/>
@@ -420,9 +581,9 @@
       <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
@@ -481,9 +642,9 @@
       <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
@@ -542,9 +703,9 @@
       <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
@@ -627,9 +788,9 @@
       <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
   </entry>
   
@@ -750,48 +911,6 @@
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>8月21日至8月31日计划总结</title>
-    <link href="http://yoursite.com/2016/08/31/life/plan8-30/"/>
-    <id>http://yoursite.com/2016/08/31/life/plan8-30/</id>
-    <published>2016-08-31T15:10:00.000Z</published>
-    <updated>2016-09-07T12:08:45.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;达到了70kg，结果还挺满意的，嘿嘿。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;《富爸爸穷爸爸》&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;这十天在玩，无法静心学习，追了灌篮高手，补了一些护肤知识。&lt;br&gt;终于要开学了，明天就是九月，新学期，加油。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;达到了70kg，结果还挺满意的，嘿嘿。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;阅读&quot;&gt;&lt;a href=&quot;#阅读&quot; class=&quot;headerlink&quot; title=&quot;阅读&quot;&gt;&lt;/a&gt;阅读&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;《富爸爸穷爸爸》&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;PS&quot;&gt;&lt;a href=&quot;#PS&quot; class=&quot;headerlink&quot; title=&quot;PS&quot;&gt;&lt;/a&gt;PS&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;这十天在玩，无法静心学习，追了灌篮高手，补了一些护肤知识。&lt;br&gt;终于要开学了，明天就是九月，新学期，加油。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -981,70 +1100,6 @@
       <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="库" scheme="http://yoursite.com/tags/%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>8月16日至8月20日计划总结</title>
-    <link href="http://yoursite.com/2016/08/20/life/plan8-20/"/>
-    <id>http://yoursite.com/2016/08/20/life/plan8-20/</id>
-    <published>2016-08-20T15:10:00.000Z</published>
-    <updated>2016-08-20T15:28:48.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;8月19日和8月20日两天因为聚餐没有去健身真是罪恶啊啊啊啊啊啊….有一种一个暑假的成果前功尽弃的感觉QAQ&lt;br&gt;多练深蹲和硬拉，开始注重臀腿肌群的训练。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;知道了自己的六级成绩。毕竟裸考开心就好哈哈哈&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%85%AD%E7%BA%A7%E6%88%90%E7%BB%A9.png&quot; alt=&quot;六级成绩&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;背单词时断时续，变更计划，减少每日单词的学习量。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;C语言&quot;&gt;&lt;a href=&quot;#C语言&quot; class=&quot;headerlink&quot; title=&quot;C语言&quot;&gt;&lt;/a&gt;C语言&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;接着学C语言的基础知识，学渣好难活啊。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;理财&quot;&gt;&lt;a href=&quot;#理财&quot; class=&quot;headerlink&quot; title=&quot;理财&quot;&gt;&lt;/a&gt;理财&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;每天都记账，不知道能坚持多久。关注基金。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;我们&quot;&gt;&lt;a href=&quot;#我们&quot; class=&quot;headerlink&quot; title=&quot;我们&quot;&gt;&lt;/a&gt;我们&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;附上吃小龙虾的照片嘿嘿&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/1.jpg&quot; alt=&quot;吃小龙虾&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;换脸哈哈哈啊哈看一次笑一次&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8D%A2%E8%84%B8.jpg&quot; alt=&quot;换脸1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E6%8D%A2%E8%84%B81.jpg&quot; alt=&quot;换脸2&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;琨哥今天就开学了，再过几天，小狗治入伍，老潘英国，不知道下一次再聚是什么时候了。略略略，不矫情了。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;健身&quot;&gt;&lt;a href=&quot;#健身&quot; class=&quot;headerlink&quot; title=&quot;健身&quot;&gt;&lt;/a&gt;健身&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;8月19日和8月20日两天因为聚餐没有去健身真是罪恶啊啊啊啊啊啊….有一种一个暑假的成果前功尽弃的感觉QAQ&lt;br&gt;多练深蹲和硬拉，开始注重臀腿肌群的训练。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;英语&quot;&gt;&lt;a href=&quot;#英语&quot; class=&quot;headerlink&quot; title=&quot;英语&quot;&gt;&lt;/a&gt;英语&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;知道了自己的六级成绩。毕竟裸考开心就好哈哈哈&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://oab0hmzob.bkt.clouddn.com/%E5%85%AD%E7%BA%A7%E6%88%90%E7%BB%A9.png&quot; alt=&quot;六级成绩&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;背单词时断时续，变更计划，减少每日单词的学习量。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="健身" scheme="http://yoursite.com/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   

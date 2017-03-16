@@ -262,6 +262,250 @@
             
               
                 
+                <a class="post-title-link" href="/2016/09/17/java/basics/scanner/" itemprop="url">
+                  java基础知识——Scanner的使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-17T15:18:47+08:00" content="2016-09-17">
+              2016-09-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.println(<span class="string">"Echo:"</span>+in.nextLine());</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>nextLine是读一整行<br>nextInt是读一个整数</p>
+</blockquote>
+<h1 id="找零钱（一）"><a href="#找零钱（一）" class="headerlink" title="找零钱（一）"></a>找零钱（一）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"100-"</span>+price+<span class="string">"="</span>+(<span class="number">100</span>-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="找零钱（二）"><a href="#找零钱（二）" class="headerlink" title="找零钱（二）"></a>找零钱（二）</h1><pre><code><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> HDOJ;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"您好"</span>);</div><div class="line">        Scanner in = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        System.out.print(<span class="string">"请输入票面："</span>);</div><div class="line">        <span class="keyword">int</span> amount = in.nextInt();</div><div class="line">        System.out.print(<span class="string">"请输入金额："</span>);</div><div class="line">        <span class="keyword">int</span> price = in.nextInt();</div><div class="line">        System.out.println(<span class="string">"请找零钱："</span>+amount+<span class="string">"-"</span>+price+<span class="string">"="</span>+(amount-price));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>Scanner可以使用多次 读取多个数据</p>
+<p>定义常量 final int amount = 100; 常量不能再被赋值</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/07/C /answers/polynomial/" itemprop="url">
+                  多项式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-07T21:05:23+08:00" content="2016-09-07">
+              2016-09-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/题解/" itemprop="url" rel="index">
+                    <span itemprop="name">题解</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
+<p>写程序计算给定多项式在给定点x处的值</p>
+</blockquote>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><blockquote>
+</blockquote>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><p>&gt;</p>
+<h2 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h2><p>&gt;</p>
+<h2 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h2><p>&gt;</p>
+</blockquote>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/07/C /answers/PrintN/" itemprop="url">
                   PrintN
                 </a>
@@ -349,129 +593,6 @@
 </code></pre><h2 id="循环方法"><a href="#循环方法" class="headerlink" title="循环方法"></a>循环方法</h2><pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> N;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;N);</div><div class="line">    PrintN(N);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintN</span><span class="params">(<span class="keyword">int</span> N)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=N; i++) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,i);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </code></pre>
           
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/31/life/plan8-30/" itemprop="url">
-                  8月21日至8月31日计划总结
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-31T23:10:00+08:00" content="2016-08-31">
-              2016-08-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><blockquote>
-<p>达到了70kg，结果还挺满意的，嘿嘿。</p>
-</blockquote>
-<h1 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h1><blockquote>
-<p>《富爸爸穷爸爸》</p>
-</blockquote>
-<h1 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h1><blockquote>
-<p>这十天在玩，无法静心学习，追了灌篮高手，补了一些护肤知识。<br>终于要开学了，明天就是九月，新学期，加油。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/31/life/plan8-30/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
       
     </div>
@@ -839,130 +960,6 @@
 </code></pre>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/08/21/C /answers/square/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/20/life/plan8-20/" itemprop="url">
-                  8月16日至8月20日计划总结
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-20T23:10:00+08:00" content="2016-08-20">
-              2016-08-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><blockquote>
-<p>8月19日和8月20日两天因为聚餐没有去健身真是罪恶啊啊啊啊啊啊….有一种一个暑假的成果前功尽弃的感觉QAQ<br>多练深蹲和硬拉，开始注重臀腿肌群的训练。</p>
-</blockquote>
-<h1 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h1><blockquote>
-<p>知道了自己的六级成绩。毕竟裸考开心就好哈哈哈</p>
-</blockquote>
-<p><img src="http://oab0hmzob.bkt.clouddn.com/%E5%85%AD%E7%BA%A7%E6%88%90%E7%BB%A9.png" alt="六级成绩"></p>
-<blockquote>
-<p>背单词时断时续，变更计划，减少每日单词的学习量。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/20/life/plan8-20/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1533,7 +1530,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1574,7 +1571,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">83</span>
+              <span class="site-state-item-count">78</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1582,7 +1579,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1591,7 +1588,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-count">65</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1655,7 +1652,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

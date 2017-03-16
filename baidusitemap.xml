@@ -3,9 +3,62 @@
 
 
     
+    
+  <url>
+    <loc>http://yoursite.com/2016/10/12/java/basics/Polymorphism/</loc>
+    <lastmod>2016-10-12T02:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>java基础知识——多态</title>
+        <pubTime>2016-10-12T00:39:47.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>java</tag>
+         
+        <tag>多态</tag>
+         
+        <tag>面向对象</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/10/11/java/basics/extends/</loc>
+    <lastmod>2016-10-12T00:37:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>java基础知识——继承</title>
+        <pubTime>2016-10-11T00:34:47.000Z</pubTime>
+        
+        <tag>基础知识</tag>
+         
+        <tag>java</tag>
+         
+        <tag>面向对象</tag>
+         
+        <tag>继承</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://yoursite.com/2016/10/07/java/basics/Encapsulation/</loc>
-    <lastmod>2016-10-07T10:21:33.000Z</lastmod>
+    <lastmod>2016-10-11T00:35:08.000Z</lastmod>
     <data>
         <display>
         <title>java基础知识——封装</title>
@@ -14,6 +67,8 @@
         <tag>基础知识</tag>
          
         <tag>java</tag>
+         
+        <tag>面向对象</tag>
          
         <tag>封装</tag>
          
@@ -41,9 +96,9 @@
         
         <tag>基础知识</tag>
          
-        <tag>java</tag>
-         
         <tag>数组</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -137,9 +192,9 @@
         <title>输出前三名的成绩</title>
         <pubTime>2016-10-05T10:04:23.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>题解</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -159,9 +214,9 @@
         <title>随机为数组赋值</title>
         <pubTime>2016-10-05T08:57:23.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>题解</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -181,9 +236,9 @@
         <title>将成绩排序并统计个数</title>
         <pubTime>2016-10-05T07:25:23.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>题解</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -223,9 +278,9 @@
         <title>计算班级平均分</title>
         <pubTime>2016-09-29T00:37:23.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>题解</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -301,28 +356,6 @@
            
              
               <breadCrumb title="题解" url="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/31/life/plan8-30/</loc>
-    <lastmod>2016-09-07T12:08:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>8月21日至8月31日计划总结</title>
-        <pubTime>2016-08-31T15:10:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -415,52 +448,6 @@
            
              
               <breadCrumb title="C语言" url="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/20/life/plan8-20/</loc>
-    <lastmod>2016-08-20T15:28:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>8月16日至8月20日计划总结</title>
-        <pubTime>2016-08-20T15:10:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-        <tag>C语言</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/15/life/plan8-15/</loc>
-    <lastmod>2016-08-20T15:19:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>8月11日至8月15日计划总结</title>
-        <pubTime>2016-08-15T15:10:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -778,30 +765,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/10/life/plan8-10/</loc>
-    <lastmod>2016-08-16T08:23:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>8月6日至8月10日计划总结</title>
-        <pubTime>2016-08-10T15:10:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/08/13/body-building/preparation/</loc>
     <lastmod>2016-08-15T08:09:50.000Z</lastmod>
     <data>
@@ -922,84 +885,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/08/01/life/plan/</loc>
-    <lastmod>2016-08-10T15:20:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello August</title>
-        <pubTime>2016-08-01T02:35:00.000Z</pubTime>
-        
-        <tag>Arduino</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-        <tag>C语言</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/05/life/plan8-5/</loc>
-    <lastmod>2016-08-10T15:15:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>8月1日至8月5日计划总结</title>
-        <pubTime>2016-08-05T02:35:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>生活</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/07/IELTS/Listening/0/</loc>
-    <lastmod>2016-08-08T01:20:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>IELTS--ListingⅠ</title>
-        <pubTime>2016-08-07T05:57:23.000Z</pubTime>
-        
-        <tag>IELTS</tag>
-         
-        <tag>雅思</tag>
-         
-        <tag>Listing</tag>
-         
-        <tag>听力</tag>
-         
-         
-           
-             
-              <breadCrumb title="IELTS" url="http://yoursite.com/categories/IELTS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/08/06/java/answers/0/</loc>
     <lastmod>2016-08-07T03:18:05.000Z</lastmod>
     <data>
@@ -1007,9 +892,9 @@
         <title>输出考试成绩的前三名</title>
         <pubTime>2016-08-06T01:57:23.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>题解</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -1841,7 +1726,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://yoursite.com/2016/07/21/java/basics/Hello-World/</loc>
